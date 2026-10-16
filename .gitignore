@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.env*
+playwright-report/
+test-results/
+
+# Histórico local da integração encerrada; não faz parte da versão independente.
+docs/historico/
+docs/inventario-google-sites.md
