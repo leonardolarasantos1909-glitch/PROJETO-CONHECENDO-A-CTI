@@ -2,9 +2,11 @@
 
 O aplicativo está independente do Google Sites. Para abri-lo por um link no iPhone, esta orientação usa Cloudflare Pages com upload manual do ZIP já compilado. Não é necessário instalar Node.js, abrir terminal ou configurar GitHub no celular.
 
+Antes de seguir no computador da empresa: o pacote anterior teve um alerta de antivírus. Solicite à TI a análise da versão v2; os testes de integridade e funcionamento descritos no projeto não substituem uma varredura antivírus. Não desative proteções nem ignore alertas.
+
 ## 1. Salvar o arquivo pronto
 
-Baixe o arquivo [conhecendo-a-cti-publicar.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-publicar.zip) pelo GitHub. Se o repositório for privado, entre na conta com acesso antes de baixar. Se o download direto não iniciar, abra a [página do arquivo](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/blob/main/downloads/conhecendo-a-cti-publicar.zip) e toque no ícone de download (**Download raw file**). No Safari, acompanhe o download e confira o arquivo no aplicativo **Arquivos → Downloads** (a pasta pode estar em iCloud Drive ou No Meu iPhone). Se o arquivo abrir em uma visualização, use **Compartilhar → Salvar em Arquivos**.
+Baixe o arquivo [conhecendo-a-cti-v2.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-v2.zip) pelo GitHub. Se o repositório for privado, entre na conta com acesso antes de baixar. Se o download direto não iniciar, abra a [página do arquivo](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/blob/main/downloads/conhecendo-a-cti-v2.zip) e toque no ícone de download (**Download raw file**). No Safari, acompanhe o download e confira o arquivo no aplicativo **Arquivos → Downloads** (a pasta pode estar em iCloud Drive ou No Meu iPhone). Se o arquivo abrir em uma visualização, use **Compartilhar → Salvar em Arquivos**.
 
 Mantenha o arquivo em ZIP. O pacote já tem `index.html` na raiz e inclui os arquivos de produção, ícones, manifesto e service worker. Não envie o ZIP do código-fonte para esse fluxo de upload.
 
@@ -22,7 +24,7 @@ Documentação oficial que confirma o upload de ZIP pelo painel: https://develop
 
 ## 4. Publicar uma versão de teste
 
-Use o nome `conhecendo-a-cti` ou um nome disponível. Envie `conhecendo-a-cti-publicar.zip`. Ao confirmar **Deploy site**, **Save and Deploy** ou o botão equivalente, você publica o protótipo: ele poderá ser acessado por qualquer pessoa que tenha o link. O conteúdo ainda é demonstrativo e pendente de revisão clínica e institucional.
+Use o nome `conhecendo-a-cti` ou um nome disponível. Envie `conhecendo-a-cti-v2.zip`. Ao confirmar **Deploy site**, **Save and Deploy** ou o botão equivalente, você publica o protótipo: ele poderá ser acessado por qualquer pessoa que tenha o link. O conteúdo ainda é demonstrativo e pendente de revisão clínica e institucional.
 
 Espere a confirmação de sucesso. Abra o endereço HTTPS terminado em `.pages.dev` mostrado pelo painel. Use o endereço realmente fornecido pelo serviço; este guia não presume que algum nome já esteja disponível. O pacote está preparado para a raiz de um domínio.
 
@@ -42,4 +44,4 @@ Envie nesta conversa o link que funcionou e diga o que deseja mudar. Também é 
 
 Antes de distribuir como material de estágio, valide o conteúdo clínico, as referências, a autoria e a apresentação institucional com os responsáveis pelo projeto. Não coloque dados reais de pacientes no aplicativo.
 
-Para atualizar o site depois de uma nova versão, entre no projeto Pages existente, use **Create a new deployment** ou o comando equivalente e envie o novo ZIP de produção. A opção Code → Download ZIP no GitHub baixa o código-fonte para continuidade do desenvolvimento; esse arquivo não é o pacote de upload estático. Para hospedagem, use sempre downloads/conhecendo-a-cti-publicar.zip.
+Para atualizar o site depois de uma nova versão, entre no projeto Pages existente, use **Create a new deployment** ou o comando equivalente e envie o novo ZIP de produção. A opção Code → Download ZIP no GitHub baixa o código-fonte para continuidade do desenvolvimento; esse arquivo não é o pacote de upload estático. Para hospedagem, use sempre downloads/conhecendo-a-cti-v2.zip.

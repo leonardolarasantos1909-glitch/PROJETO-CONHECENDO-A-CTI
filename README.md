@@ -13,11 +13,13 @@ O conteúdo do QR foi decodificado e conferido localmente. A conexão ao endere�
 
 ## Baixar a versão pronta
 
-[Baixar conhecendo-a-cti-publicar.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-publicar.zip)
+**Estado de segurança:** houve relato de bloqueio antivírus no pacote anterior. A versão v2 é uma cópia de compatibilidade com PDFs regravados, não uma versão certificada por antivírus. No computador da empresa, peça à TI que analise o novo pacote antes de abri-lo ou utilizá-lo; não ignore alertas. [Detalhes da alteração e limites da verificação](docs/PACOTE-V2.md).
+
+[Baixar conhecendo-a-cti-v2.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-v2.zip)
 
 Este ZIP já está compilado e pronto para upload em hospedagem estática, como Cloudflare Pages. Salve sem descompactar para o fluxo de upload direto do Pages. Não é necessário instalar Node.js para usar esse pacote. Se o repositório for privado, entre no GitHub com a conta que tem acesso antes de baixar.
 
-Se o download direto não iniciar, abra a [página do arquivo no GitHub](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/blob/main/downloads/conhecendo-a-cti-publicar.zip) e use **Download raw file** (ícone de download). A opção **Code → Download ZIP** baixa o código-fonte do repositório e não substitui esse pacote pronto para hospedagem.
+Se o download direto não iniciar, abra a [página do arquivo no GitHub](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/blob/main/downloads/conhecendo-a-cti-v2.zip) e use **Download raw file** (ícone de download). A opção **Code → Download ZIP** baixa o código-fonte do repositório e não substitui esse pacote pronto para hospedagem.
 
 O envio ao GitHub guarda o projeto e permite baixar os arquivos. Não há hospedagem do aplicativo ou GitHub Pages ativado por este envio.
 
@@ -59,7 +61,7 @@ A instalação PWA pode ser oferecida pelo navegador em dispositivos compatívei
 - `public/`: manifesto e ícones próprios, sem identidade visual institucional.
 - `scripts/build-sw.mjs`: geração do cache offline a partir do build real.
 - `src/materials.ts` e `src/PdfMaterials.tsx`: catálogo e cartões dos PDFs de apoio.
-- `public/materiais/`: PDFs originais enviados pelo autor.
+- `public/materiais/`: cópias de compatibilidade dos PDFs enviados pelo autor, conforme docs/PACOTE-V2.md.
 
 ## Conteúdo e limites
 
@@ -102,7 +104,7 @@ Para testar usando somente um iPhone, consulte [o passo a passo de publicação 
 
 ## Cadernos em PDF
 
-Os dois cadernos enviados pelo autor estão em **Biblioteca científica**, com atalho na tela inicial. Os arquivos originais foram preservados byte a byte, incluindo referências, links e metadados.
+Os dois cadernos enviados pelo autor estão em **Biblioteca científica**, com atalho na tela inicial. Os arquivos distribuídos são cópias de compatibilidade: textos, layout, referências, links e autoria foram conferidos contra os originais; os anexos auxiliares de proveniência C2PA foram omitidos. Os originais permanecem preservados separadamente.
 
 - **Leitura digital:** caderno completo com 96 páginas. O botão “Ler caderno” abre o leitor nativo do navegador em nova aba; “Baixar PDF” permite salvar o arquivo.
 - **Impressão opcional:** 24 páginas A4 com quatro páginas de bolso por folha (96 páginas lógicas). O botão “Baixar para imprimir” entrega o PDF já diagramado. Imprimir A4, tamanho real/100%, uma página do PDF por folha e frente única; não aplicar novamente a opção de quatro páginas por folha da impressora. Recortar e organizar pela numeração.

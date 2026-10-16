@@ -1,0 +1,31 @@
+{
+  "purpose": "Compatibility PDF copies; not antivirus certification",
+  "change": "Ancillary Content Credentials/C2PA manifests and associated references omitted; original cryptographic provenance does not accompany copies.",
+  "files": [
+    {
+      "pages": 24,
+      "original_sha256": "033f36d3a1cb8c6baecc0214649943d499a91125242da2ccf11580d8fcb9d175",
+      "derivative_sha256": "5cd9aa49767881706da4af5d6dc58ac09c95473915e56cba262a9d2cb94e9dd6",
+      "original_bytes": 1222692,
+      "derivative_bytes": 1242866,
+      "metadata_unchanged": true,
+      "all_page_renderings_identical_at_72dpi": true,
+      "strict_parse_ok": true,
+      "all_xref_unsafe_action_or_attachment_keys": 0,
+      "filename": "caderno-cti-adulto-bolso-a4.pdf"
+    },
+    {
+      "pages": 96,
+      "original_sha256": "1643e78fe6e977ca45d6649adedf3dd3f360c3b550a0e8001fc8e1ad7c4f50b5",
+      "derivative_sha256": "a972f44330d1149e06eec607bc39ce314fb607e3d07f7c3c271864459107a0c8",
+      "original_bytes": 1194222,
+      "derivative_bytes": 1196355,
+      "metadata_unchanged": true,
+      "all_page_renderings_identical_at_72dpi": true,
+      "strict_parse_ok": true,
+      "all_xref_unsafe_action_or_attachment_keys": 0,
+      "filename": "caderno-cti-adulto-digital.pdf"
+    }
+  ],
+  "security_note": "This structural/visual comparison is not an antivirus scan or assurance of safety. It does not establish the cause of or resolve the reported antivirus alert. No antivirus exclusions, disabled protections, or signature bypasses were used."
+}

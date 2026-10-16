@@ -5,7 +5,7 @@ export function PdfMaterials() {
   return <section className="pdf-materials" aria-labelledby="pdf-materials-heading">
     <div className="eyebrow">MATERIAIS DO PROJETO</div>
     <h2 id="pdf-materials-heading">Seu caderno, do seu jeito.</h2>
-    <p className="pdf-intro">Leia a versão digital ou baixe o caderno de bolso para imprimir, se preferir. Os arquivos enviados pelo autor foram preservados com seus textos, referências e links.</p>
+    <p className="pdf-intro">Leia a versão digital ou baixe o caderno de bolso para imprimir, se preferir. Os textos, as referências e os links dos cadernos do autor foram preservados.</p>
     <div className="pdf-grid">{learningMaterials.map(material => {
       const printable = material.use === 'print';
       const Icon = printable ? Printer : BookOpen;

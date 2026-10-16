@@ -18,8 +18,8 @@ export const learningMaterials: LearningMaterial[] = [
     href: '/materiais/caderno-cti-adulto-digital.pdf',
     originalFilename: 'Caderno_CTI_Adulto_App_A4_Sem_Furos.pdf',
     pages: 96,
-    bytes: 1194222,
-    sha256: '1643e78fe6e977ca45d6649adedf3dd3f360c3b550a0e8001fc8e1ad7c4f50b5',
+    bytes: 1196355,
+    sha256: 'a972f44330d1149e06eec607bc39ce314fb607e3d07f7c3c271864459107a0c8',
     use: 'digital',
   },
   {
@@ -29,8 +29,8 @@ export const learningMaterials: LearningMaterial[] = [
     href: '/materiais/caderno-cti-adulto-bolso-a4.pdf',
     originalFilename: 'Caderno_CTI_Adulto_4_Por_A4_Atualizado_Sem_Furos.pdf',
     pages: 24,
-    bytes: 1222692,
-    sha256: '033f36d3a1cb8c6baecc0214649943d499a91125242da2ccf11580d8fcb9d175',
+    bytes: 1242866,
+    sha256: '5cd9aa49767881706da4af5d6dc58ac09c95473915e56cba262a9d2cb94e9dd6',
     use: 'print',
   },
 ];
