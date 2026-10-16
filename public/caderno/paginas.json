@@ -1,0 +1,1306 @@
+{
+  "version": 1,
+  "source": "/materiais/caderno-cti-adulto-digital.pdf",
+  "sourceSha256": "a972f44330d1149e06eec607bc39ce314fb607e3d07f7c3c271864459107a0c8",
+  "pageCount": 96,
+  "pages": [
+    {
+      "number": 1,
+      "src": "/caderno/pagina-001.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Caderno de Bolso — CTI",
+      "text": "Caderno de Bolso\nCTI\nTéc. Enfermagem\n",
+      "links": []
+    },
+    {
+      "number": 2,
+      "src": "/caderno/pagina-002.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "NAVEGAÇÃO — Índice de consulta",
+      "text": "NAVEGAÇÃO\nÍndice de consulta\nAssunto\nPáginas\nPlantão, referências e gasometria\n3 a 6\nVentilação e via aérea\n7 a 9\nEVA, BPS, PAINAD e CPOT\n10 a 16\nRASS, Glasgow e delirium\n17 a 21\nDispositivos e cuidados\n22 a 27\nMedicações e bombas\n28 a 33\nCálculos rápidos\n34 e 35\nDeterioração, sepse e PCR\n36 e 37\nRegistros, plantão e transporte\n38 a 40\nFontes e bulas de consulta\n41 a 44\n45 e 46\nFolhas de horários\n47 a 96\nSíntese dos materiais de CTI e do modelo enviado.\nCasos didáticos.\nImprima em 100%. A4: frente única, 1 página do\nPDF por folha. Recorte e organize pela numeração.\nResumo para estudo e consulta\nCTI adulto  |  06/10/2026\n02/96\nModelo básico de evolução\n",
+      "links": [
+        {
+          "kind": "page",
+          "page": 3,
+          "label": "Ir para página 3",
+          "bounds": {
+            "left": 0.07749930277827477,
+            "top": 0.2686123964568295,
+            "width": 0.8450014264848901,
+            "height": 0.040497343608108215
+          }
+        },
+        {
+          "kind": "page",
+          "page": 7,
+          "label": "Ir para página 7",
+          "bounds": {
+            "left": 0.07749930277827477,
+            "top": 0.30910974006493774,
+            "width": 0.8450014264848901,
+            "height": 0.04049741610590827
+          }
+        },
+        {
+          "kind": "page",
+          "page": 10,
+          "label": "Ir para página 10",
+          "bounds": {
+            "left": 0.07749930277827477,
+            "top": 0.349607156170846,
+            "width": 0.8450014264848901,
+            "height": 0.04049756110150837
+          }
+        },
+        {
+          "kind": "page",
+          "page": 17,
+          "label": "Ir para página 17",
+          "bounds": {
+            "left": 0.07749930277827477,
+            "top": 0.39010471727235435,
+            "width": 0.8450014264848901,
+            "height": 0.04049741610590827
+          }
+        },
+        {
+          "kind": "page",
+          "page": 22,
+          "label": "Ir para página 22",
+          "bounds": {
+            "left": 0.07749930277827477,
+            "top": 0.43060213337826264,
+            "width": 0.8450014264848901,
+            "height": 0.04049741610590827
+          }
+        },
+        {
+          "kind": "page",
+          "page": 28,
+          "label": "Ir para página 28",
+          "bounds": {
+            "left": 0.07749930277827477,
+            "top": 0.4710995494841709,
+            "width": 0.8450014264848901,
+            "height": 0.04049745235480829
+          }
+        },
+        {
+          "kind": "page",
+          "page": 34,
+          "label": "Ir para página 34",
+          "bounds": {
+            "left": 0.07749930277827477,
+            "top": 0.5115970018389792,
+            "width": 0.8450014264848901,
+            "height": 0.04049745235480829
+          }
+        },
+        {
+          "kind": "page",
+          "page": 36,
+          "label": "Ir para página 36",
+          "bounds": {
+            "left": 0.07749930277827477,
+            "top": 0.5520944541937874,
+            "width": 0.8450014264848901,
+            "height": 0.04049741610590827
+          }
+        },
+        {
+          "kind": "page",
+          "page": 38,
+          "label": "Ir para página 38",
+          "bounds": {
+            "left": 0.07749930277827477,
+            "top": 0.5925918702996957,
+            "width": 0.8450014264848901,
+            "height": 0.04049748860370832
+          }
+        },
+        {
+          "kind": "page",
+          "page": 41,
+          "label": "Ir para página 41",
+          "bounds": {
+            "left": 0.07749930277827477,
+            "top": 0.6330893589034041,
+            "width": 0.8450014264848901,
+            "height": 0.04049748860370832
+          }
+        },
+        {
+          "kind": "page",
+          "page": 45,
+          "label": "Ir para página 45",
+          "bounds": {
+            "left": 0.07749930277827477,
+            "top": 0.6735868475071124,
+            "width": 0.8450014264848901,
+            "height": 0.040497343608108215
+          }
+        },
+        {
+          "kind": "page",
+          "page": 47,
+          "label": "Ir para página 47",
+          "bounds": {
+            "left": 0.07749930277827477,
+            "top": 0.7140841911152206,
+            "width": 0.8450014264848901,
+            "height": 0.04049748860370832
+          }
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "src": "/caderno/pagina-003.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "ROTINA E MONITORIZAÇÃO — Ao assumir o plantão",
+      "text": "ROTINA E MONITORIZAÇÃO\nAo assumir o plantão\nAntes dos cuidados\n1. Confira dois identificadores, alergias,\nprecauções e motivo da internação.\n2. Receba as metas de PAM, SpO2, sedação,\nglicemia e balanço, quando definidas.\n3. Compare consciência, dor, respiração,\nperfusão e diurese com o turno anterior.\nLeia o leito\nVia aérea e ventilador → monitor → bombas →\nacessos → sondas e drenos → dieta → pele.\nRastreie cada infusão até o paciente.\nOrganize o turno\nConfira horários de medicações, cuidados\nprescritos, exames, pendências e risco de\ndeterioração. Ao sair do box, cheque conexões,\nalarmes, posição e segurança.\nFontes: [1], [2], [13], [14]\nCTI adulto  |  05/10/2026\n03/96\n",
+      "links": []
+    },
+    {
+      "number": 4,
+      "src": "/caderno/pagina-004.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "ROTINA E MONITORIZAÇÃO — Referências e metas",
+      "text": "ROTINA E MONITORIZAÇÃO\nReferências e metas\nValores de referência ajudam no estudo. No\npaciente crítico, acompanhe a meta\nindividual e a tendência.\nParâmetro\nLeitura de bolso\nFC\n60 a 100 bpm: referência em\nrepouso.\nFR\n12 a 20 irpm: referência em\nrepouso.\nSpO2\nMeta individual; conferir sensor\ne curva.\nPAM\nMeta prescrita e sinais de\nperfusão.\nTemperatura\nMétodo/local e tendência.\nDiurese\nVolume, período e mL/kg/h.\nResultado inesperado: avalie o paciente, confirme a\nmedida e comunique a mudança. Gasometria na\npágina 6; diurese na página 23.\nFontes: [10], [11], [12]\nCTI adulto  |  05/10/2026\n04/96\n",
+      "links": []
+    },
+    {
+      "number": 5,
+      "src": "/caderno/pagina-005.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "ROTINA E MONITORIZAÇÃO — Perfusão e pressão",
+      "text": "ROTINA E MONITORIZAÇÃO\nPerfusão e pressão\nObserve em conjunto\nPA/PAM, pulso e ritmo, consciência,\ntemperatura/cor das extremidades,\nenchimento capilar e diurese. Um número\nisolado não define perfusão.\nPNI e PAI\nPNI: manguito adequado, posição e repetição\nconforme rotina.\nPAI: curva, conexões, sítio, perfusão distal e\ntransdutor no nível/zero orientados pelo\nprotocolo.\nBolhas, dobras, posição e amortecimento\npodem distorcer a PAI. Compare leitura, curva\ne condição do paciente.\nMudança importante\nPAM baixa com hipoperfusão, sangramento ou\nDVA interrompida: avaliação imediata. A linha\narterial não é via de medicamentos.\nFontes: [10], [13]\nCTI adulto  |  05/10/2026\n05/96\n",
+      "links": []
+    },
+    {
+      "number": 6,
+      "src": "/caderno/pagina-006.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "RESPIRAÇÃO E VENTILAÇÃO — Gasometria arterial",
+      "text": "RESPIRAÇÃO E VENTILAÇÃO\nGasometria arterial\nDado\nReferência didática\npH\n7,35 a 7,45\nPaCO2\n35 a 45 mmHg\nHCO3-\n22 a 26 mEq/L\nSequência de leitura\npH → PaCO2 → HCO3- → compensação →\noxigenação → contexto. Compare com a faixa\ndo laboratório.\nPadrão simples\nSugere componente\npH ↓ + PaCO2 ↑\nRespiratório acidótico.\npH ↓ + HCO3- ↓\nMetabólico acidótico.\npH ↑ + PaCO2 ↓\nRespiratório alcalótico.\npH ↑ + HCO3- ↑\nMetabólico alcalótico.\nPaO2 depende de idade, altitude e FiO2.\nCompensações e distúrbios mistos exigem análise\ncompleta. Esses padrões orientam estudo e\ncomunicação.\nFontes: [12]\nCTI adulto  |  05/10/2026\n06/96\n",
+      "links": []
+    },
+    {
+      "number": 7,
+      "src": "/caderno/pagina-007.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "RESPIRAÇÃO E VENTILAÇÃO — Ventilação mecânica",
+      "text": "RESPIRAÇÃO E VENTILAÇÃO\nVentilação mecânica\nSigla\nSignificado\nFiO2\nFração inspirada de oxigênio.\nPEEP\nPressão positiva ao final da\nexpiração.\nVt / VC\nVolume corrente por ciclo.\nVE\nVolume ventilado por minuto.\nPpico\nPressão inspiratória de pico.\nPplat\nPressão de platô.\nPCV / VCV\nControle a pressão / a volume.\nPSV\nPressão de suporte.\nLeia no leito: modo, FiO2, PEEP, frequência,\nvolumes, pressões, SpO2, conforto e sincronia.\nDiferencie o valor programado do valor medido.\nA programação e as mudanças de suporte seguem a\nequipe responsável, a prescrição e o protocolo.\nFontes: [14]\nCTI adulto  |  05/10/2026\n07/96\n",
+      "links": []
+    },
+    {
+      "number": 8,
+      "src": "/caderno/pagina-008.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "RESPIRAÇÃO E VENTILAÇÃO — Via aérea e alarmes",
+      "text": "RESPIRAÇÃO E VENTILAÇÃO\nVia aérea e alarmes\nTOT/TQT: confira fixação, marca/posição\nregistrada, pele, secreções e conexões.\nMudança de marca exige avaliação.\nAlarme\nO que conferir\nAlta pressão\nPaciente, tosse, secreções,\ndobra/água no circuito e\npossível obstrução.\nBaixa pressão\nou volume\nDesconexão, fuga, circuito e\ndeslocamento da via aérea.\nSpO2 caiu\nPaciente, esforço, sensor/curva,\noferta de O2, via aérea e\ncircuito.\nResposta inicial\nAvalie o paciente e chame ajuda se houver\ndeterioração. Identifique a causa do alarme;\nevite apenas silenciá-lo.\nExtubação, obstrução ou falha ventilatória: ajuda\nimediata. Não avance o TOT por decisão própria.\nFontes: [14], [17]\nCTI adulto  |  05/10/2026\n08/96\n",
+      "links": []
+    },
+    {
+      "number": 9,
+      "src": "/caderno/pagina-009.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "RESPIRAÇÃO E VENTILAÇÃO — PAV e secreções",
+      "text": "RESPIRAÇÃO E VENTILAÇÃO\nPAV e secreções\nCuidados do dia a dia\nHigienize as mãos; mantenha o circuito íntegro;\nfaça higiene oral conforme o POP. Cabeceira de\n30 a 45° quando indicada e sem\ncontraindicação.\nCheque o cuff pelo método, atribuição e faixa\ndo setor. Evite que o condensado do circuito\nalcance o paciente. Confira o conjunto de\nmedidas de prevenção.\nAspiração de vias aéreas\nSecreções, sinais de obstrução ou piora\nventilatória precisam de avaliação. Prepare\nmaterial e monitorização e comunique o\nenfermeiro.\nNa equipe de enfermagem, a aspiração de\npacientes graves com TOT/TQT é privativa do\nenfermeiro, conforme Cofen 557/2017. No estágio,\nacompanhe e auxilie dentro da orientação recebida.\nFontes: [14], [17]\nCTI adulto  |  05/10/2026\n09/96\n",
+      "links": []
+    },
+    {
+      "number": 10,
+      "src": "/caderno/pagina-010.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "ESCALAS DE DOR — Escolha da escala",
+      "text": "ESCALAS DE DOR\nEscolha da escala\nTente o autorrelato confiável primeiro. A\nintubação, por si só, não o impede.\nSituação\nInstrumento\nCompreende e\nmarca a linha\nEVA, conforme o protocolo.\nIntubado, sem\nautorrelato\nBPS ou CPOT, com respostas\nobserváveis.\nDemência\navançada\nPAINAD se o autorrelato não for\nconfiável e o perfil for\nadequado.\nEVA\nUse o formulário com linha contínua de 10 cm,\nsem números. O paciente marca a dor atual;\nmeça a distância a partir da extremidade sem\ndor.\nMarca a 60 mm em 100 mm = EVA 60/100 mm, ou\n6/10 conforme o formulário. Use a linha de tamanho\ncorreto; esta página descreve a aplicação.\nFontes: [3], [5], [7]\nCTI adulto  |  05/10/2026\n10/96\n",
+      "links": []
+    },
+    {
+      "number": 11,
+      "src": "/caderno/pagina-011.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "ESCALAS DE DOR — BPS indicação e face",
+      "text": "ESCALAS DE DOR\nBPS indicação e face\nBehavioral Pain Scale: adulto crítico\nintubado, sem autorrelato confiável e com\ncomportamentos observáveis.\nSão três domínios, de 1 a 4 pontos cada. Total\nde 3 a 12. Observe um contexto definido e\nsome os três itens.\nExpressão facial\nPts\nCritério resumido\n1\nFace sem tensão.\n2\nTensão parcial, como sobrancelhas\ncontraídas.\n3\nTensão de toda a face, como olhos\nfechados.\n4\nCareta com contração acentuada.\nComplete com membros e ventilação na página 12.\nBPS 3 é o mínimo; isoladamente, não comprova\nausência de dor.\nFontes: [3], [4]\nCTI adulto  |  05/10/2026\n11/96\n",
+      "links": []
+    },
+    {
+      "number": 12,
+      "src": "/caderno/pagina-012.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "ESCALAS DE DOR — BPS membros e VM",
+      "text": "ESCALAS DE DOR\nBPS membros e VM\nMembros superiores\nPts\nCritério resumido\n1\nSem movimentação.\n2\nFlexão parcial.\n3\nFlexão completa de membros e dedos.\n4\nRetração contínua; membros contraídos.\nAdaptação à ventilação\nPts\nCritério resumido\n1\nTolera ventilação e movimentos.\n2\nTosse durante os movimentos.\n3\nLuta contra o ventilador.\n4\nVentilação não controlável pelo padrão\nobservado.\nExemplo: 2 + 2 + 2 = BPS 6/12. Registre contexto\ne achados. Tosse/dessincronia também exigem\navaliação respiratória.\nFontes: [3], [4]\nCTI adulto  |  05/10/2026\n12/96\n",
+      "links": []
+    },
+    {
+      "number": 13,
+      "src": "/caderno/pagina-013.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "ESCALAS DE DOR — PAINAD respiração e voz",
+      "text": "ESCALAS DE DOR\nPAINAD respiração e voz\nPara demência avançada sem autorrelato confiável.\nSão cinco domínios de 0 a 2; total 0 a 10. Tente\ncomunicação acessível primeiro.\nPts\nRespiração independente da voz\n0\nNormal.\n1\nDificuldade eventual ou hiperventilação\nbreve.\n2\nDifícil e ruidosa; hiperventilação\nprolongada ou Cheyne-Stokes.\nPts\nVocalização negativa\n0\nAusente.\n1\nGemido eventual ou fala baixa de\ndesagrado.\n2\nChamados repetidos em sofrimento;\ngemidos altos, gritos ou choro.\nComplete na página 14. Confira o perfil: PAINAD não\nsubstitui automaticamente BPS/CPOT no paciente\nsedado em VM.\nFontes: [5]\nCTI adulto  |  05/10/2026\n13/96\n",
+      "links": []
+    },
+    {
+      "number": 14,
+      "src": "/caderno/pagina-014.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "ESCALAS DE DOR — PAINAD face e corpo",
+      "text": "ESCALAS DE DOR\nPAINAD face e corpo\nPts\nExpressão facial\n0\nSorri ou sem expressão.\n1\nTristeza, medo ou sobrancelhas\ncontraídas.\n2\nCareta.\nPts\nLinguagem corporal\n0\nCorpo relaxado.\n1\nTensão, inquietação ou agitação aflita.\n2\nRigidez; punhos fechados; joelhos\ndobrados; resistência ao cuidado ou\nagressividade.\nPts\nConsolabilidade\n0\nNão precisa de consolo.\n1\nAcalma ou se distrai com voz/toque.\n2\nPermanece inconsolável.\nSome também respiração e voz. PAINAD 5/10 não\nequivale automaticamente a EVA 5/10.\nFontes: [5]\nCTI adulto  |  05/10/2026\n14/96\n",
+      "links": []
+    },
+    {
+      "number": 15,
+      "src": "/caderno/pagina-015.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "ESCALAS DE DOR — CPOT e limitações",
+      "text": "ESCALAS DE DOR\nCPOT e limitações\nCritical Care Pain Observation Tool:\nferramenta comportamental quando o adulto\ncrítico não consegue autorrelatar e as\nrespostas podem ser observadas.\nDomínios\nPontuação\nFace\n0 a 2\nMovimentos corporais\n0 a 2\nTensão muscular\n0 a 2\nVentilação OU vocalização\n0 a 2\nTotal: 0 a 8. Ventilação se intubado;\nvocalização se não intubado. Apenas um\ndesses itens entra na soma. Consulte critérios e\ntécnica do formulário oficial.\nLimitação a registrar\nSedação profunda, bloqueio muscular e lesões\nneurológicas podem impedir observar respostas.\nImobilidade não comprova ausência de dor.\nFontes: [3], [6]\nCTI adulto  |  05/10/2026\n15/96\n",
+      "links": []
+    },
+    {
+      "number": 16,
+      "src": "/caderno/pagina-016.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "ESCALAS DE DOR — Registro e reavaliação",
+      "text": "ESCALAS DE DOR\nRegistro e reavaliação\nCinco campos\nHorário → instrumento/escore → contexto e\nachados → comunicação/ação → resposta\nposterior e horário.\nExemplo fictício\n08h10: marca EVA 60/100 mm em repouso; dor\nlombar. Enfermeira informada.\nReposicionamento conforme orientação.\n08h30: marca EVA 30/100 mm em repouso e\nrefere maior conforto.\nNa nova avaliação\nUse o mesmo instrumento se adequado. Se a\ncomunicação ou o perfil mudarem, registre a\nrazão da nova escolha.\nReavalie no intervalo indicado para o cuidado, o\nmedicamento e o protocolo. Os horários acima\nilustram um registro; não definem um intervalo\nuniversal.\nFontes: [1], [3], [7]\nCTI adulto  |  05/10/2026\n16/96\n",
+      "links": []
+    },
+    {
+      "number": 17,
+      "src": "/caderno/pagina-017.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "CONSCIÊNCIA SEDAÇÃO E DELIRIUM — RASS agitação",
+      "text": "CONSCIÊNCIA SEDAÇÃO E DELIRIUM\nRASS agitação\nRichmond Agitation Sedation Scale:\nagitação e despertar. Varia de +4 a -5. Dor e\ndelirium precisam de avaliações próprias.\nPts\nResposta resumida\n+4\nCombativo: comportamento violento com\nrisco imediato.\n+3\nMuito agitado: tenta retirar dispositivos ou\nagride.\n+2\nAgitado: movimentos frequentes sem\nfinalidade; luta contra o ventilador.\n+1\nInquieto/ansioso, sem movimento\nvigoroso ou agressivo.\n0\nAlerta e calmo.\nComece observando o paciente. Registre o\ncomportamento encontrado e compare com a meta\nde sedação. Resultados negativos e sequência na\npágina 18.\nFontes: [8]\nCTI adulto  |  05/10/2026\n17/96\n",
+      "links": []
+    },
+    {
+      "number": 18,
+      "src": "/caderno/pagina-018.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "CONSCIÊNCIA SEDAÇÃO E DELIRIUM — RASS sedação",
+      "text": "CONSCIÊNCIA SEDAÇÃO E DELIRIUM\nRASS sedação\nPts\nResposta resumida\n-1\nDesperta à voz e mantém contato visual\npor mais de 10 s.\n-2\nDesperta à voz com contato visual por\nmenos de 10 s.\n-3\nMovimenta-se ou abre olhos à voz, sem\ncontato visual.\n-4\nNão responde à voz; responde ao estímulo\nfísico.\n-5\nSem resposta à voz nem ao estímulo\nfísico.\nSequência\nObserve → chame pelo nome e peça para abrir\nos olhos/olhar → sem resposta à voz, etapa\nfísica conforme treinamento e supervisão.\nExemplo: contato visual por 5 s = RASS -2.\nCompare com a meta; registre interferências. Não\nsuspenda sedação apenas para testar.\nFontes: [3], [8]\nCTI adulto  |  05/10/2026\n18/96\n",
+      "links": []
+    },
+    {
+      "number": 19,
+      "src": "/caderno/pagina-019.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "CONSCIÊNCIA SEDAÇÃO E DELIRIUM — Glasgow ocular e verbal",
+      "text": "CONSCIÊNCIA SEDAÇÃO E DELIRIUM\nGlasgow ocular e verbal\nRespostas ocular O, verbal V e motora M. Soma 3 a\n15, com todos os componentes testáveis.\nPts\nAbertura ocular\n4\nEspontânea.\n3\nÀ solicitação sonora.\n2\nÀ pressão apropriada.\n1\nAusente, sem impedimento ao teste.\nPts\nResposta verbal\n5\nOrientado: pessoa, lugar e tempo.\n4\nConversa, mas está desorientado.\n3\nPalavras reconhecíveis, sem conversa\nadequada.\n2\nSons incompreensíveis.\n1\nAusente, sem impedimento ao teste.\nMotora e limitações na página 20. Estímulos exigem\ntreinamento.\nFontes: [9]\nCTI adulto  |  05/10/2026\n19/96\n",
+      "links": []
+    },
+    {
+      "number": 20,
+      "src": "/caderno/pagina-020.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "CONSCIÊNCIA SEDAÇÃO E DELIRIUM — Glasgow motora e NT",
+      "text": "CONSCIÊNCIA SEDAÇÃO E DELIRIUM\nGlasgow motora e NT\nPts\nMelhor resposta motora\n6\nObedece a uma ordem.\n5\nLocaliza e tenta remover o estímulo.\n4\nFlexão de retirada normal.\n3\nFlexão anormal.\n2\nExtensão anormal.\n1\nAusente, sem impedimento ao teste.\nQuando não é testável\nIntubação pode impedir resposta verbal. Ex.:\nO3 VNT M6, intubado. Registre NT e o\nmotivo; evite apresentar uma soma como total\ncompleto.\nSedação, bloqueio muscular, idioma, audição e\nlimitações físicas interferem. Pupilas são\nregistradas à parte.\nExemplo testável: O3 + V4 + M6 = Glasgow\n13/15. Descreva as respostas.\nFontes: [9]\nCTI adulto  |  05/10/2026\n20/96\n",
+      "links": []
+    },
+    {
+      "number": 21,
+      "src": "/caderno/pagina-021.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "CONSCIÊNCIA SEDAÇÃO E DELIRIUM — Delirium e alerta neuro",
+      "text": "CONSCIÊNCIA SEDAÇÃO E DELIRIUM\nDelirium e alerta neuro\nCAM-ICU em visão geral\nUse formulário validado e treinamento. O\nalgoritmo verifica:\n1. Mudança aguda ou curso flutuante.\n2. Desatenção.\n3. Nível de consciência alterado.\n4. Pensamento desorganizado.\nPositivo: 1 + 2, com 3 ou 4.\nRASS -4/-5: não suficientemente desperto para\no teste; registre não avaliável.\nMudança neurológica\nCompare com o basal e informe horário,\nrespostas novas, pupilas e interferências.\nConvulsão, nova anisocoria, déficit focal ou\nrebaixamento súbito exigem avaliação\nimediata.\nOrientação, sono, recursos auditivos/visuais e\nmobilização seguem o plano de cuidado.\nFontes: [3], [8], [9]\nCTI adulto  |  05/10/2026\n21/96\n",
+      "links": []
+    },
+    {
+      "number": 22,
+      "src": "/caderno/pagina-022.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "DISPOSITIVOS E CUIDADOS — Acessos venosos",
+      "text": "DISPOSITIVOS E CUIDADOS\nAcessos venosos\nAVP CVC PICC\nConfira sítio, fixação, curativo, identificação dos\nlúmens, conexões, permeabilidade e infusões.\nRastreie cada linha até o paciente.\nObserve dor, edema, hiperemia, calor,\nsecreção, sangramento ou deslocamento. AVP\ninfiltrado/extravasado e acesso perdido com\nDVA exigem ação imediata da equipe.\nPrevenção de infecção\nHigienize as mãos e desinfete conexões pelo\nmétodo do setor. Curativo úmido, sujo ou solto\nprecisa de avaliação e troca conforme\nprotocolo.\nPreserve sistema e técnica asséptica. Evite\ndesconexões desnecessárias e não force infusão ou\nflush diante de resistência. Confira compatibilidade\ne indicação de via exclusiva.\nFontes: [2], [13]\nCTI adulto  |  05/10/2026\n22/96\n",
+      "links": []
+    },
+    {
+      "number": 23,
+      "src": "/caderno/pagina-023.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "DISPOSITIVOS E CUIDADOS — SVD e diurese",
+      "text": "DISPOSITIVOS E CUIDADOS\nSVD e diurese\nCheque o sistema\nSistema fechado; fixação; tubo sem\ndobra/compressão; fluxo livre; bolsa abaixo da\nbexiga e fora do chão. Higiene conforme\nprotocolo.\nRegistre volume, aspecto e período.\nAlteração aguda da diurese exige\ncomunicação; confira também PA/perfusão e o\ncontexto.\nCálculo\nmL/kg/h = volume ÷ peso ÷ horas.\n240 mL ÷ 80 kg ÷ 6 h = 0,5 mL/kg/h.\nKDIGO: diurese <0,5 mL/kg/h por pelo menos 6 h\né critério de lesão renal aguda. Esse intervalo é\ndiagnóstico; não espere 6 h para comunicar queda\nimportante.\nPara cultura, utilize o ponto de coleta e técnica\nindicados pelo protocolo; a bolsa não é o local de\ncoleta de urocultura.\nFontes: [11], [13]\nCTI adulto  |  05/10/2026\n23/96\n",
+      "links": []
+    },
+    {
+      "number": 24,
+      "src": "/caderno/pagina-024.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "DISPOSITIVOS E CUIDADOS — Balanço e função renal",
+      "text": "DISPOSITIVOS E CUIDADOS\nBalanço e função renal\nBH do período\nEntradas - saídas.\nRegistre o volume realmente recebido ou\neliminado e o horário.\nEntradas\nSaídas\nInfusões, soluções,\ndieta, água e sangue\nconforme rotina.\nUrina, drenos, vômitos\ne outras perdas\nmensuradas.\nExemplo: 2.100 - 1.600 = +500 mL. O\nresultado mostra diferença de volumes\nregistrados; não define volemia sozinho.\nDiálise e terapias renais\nConfira modalidade, acesso e registro da\nultrafiltração. Evite duplicar essa perda no BH.\nVigie PA, acesso, sangramento e alterações do\nperíodo.\nA interpretação combina creatinina, eletrólitos,\npeso, balanço, perfusão e evolução clínica.\nFontes: [11]\nCTI adulto  |  05/10/2026\n24/96\n",
+      "links": []
+    },
+    {
+      "number": 25,
+      "src": "/caderno/pagina-025.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "DISPOSITIVOS E CUIDADOS — Sondas e dieta enteral",
+      "text": "DISPOSITIVOS E CUIDADOS\nSondas e dieta enteral\nAntes de usar\nConfira paciente, prescrição, tipo de sonda,\nfixação, marca externa e confirmação de\nposição pelo método institucional. Identifique o\ncircuito enteral.\nA ausculta após injetar ar, isoladamente, não\nconfirma posicionamento seguro. Mudança de\nmarca, vômitos ou suspeita de deslocamento\nexigem avaliação antes do uso.\nDurante a dieta\nObserve velocidade/volume, posição prescrita,\ndistensão, vômitos, evacuações e tolerância.\nRegistre interrupções e o motivo.\nMedicação pela sonda\nConfira via, forma e lavagem da sonda. Não\ntriture liberação modificada ou revestimento\nespecial sem orientação farmacêutica.\nFontes: [2], [14]\nCTI adulto  |  05/10/2026\n25/96\n",
+      "links": []
+    },
+    {
+      "number": 26,
+      "src": "/caderno/pagina-026.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "DISPOSITIVOS E CUIDADOS — Drenos e ostomias",
+      "text": "DISPOSITIVOS E CUIDADOS\nDrenos e ostomias\nIdentifique o dispositivo\nTipo, localização, fixação, sistema, volume e\naspecto. Compare com o débito anterior e\nmantenha a posição orientada.\nDreno torácico: preserve o sistema e o selo\nd’água quando aplicável; observe conexões,\noscilação e borbulhamento conforme o tipo.\nNão clampeie nem ordenhe rotineiramente.\nDVE: nível, referência e manejo são definidos\npela equipe. Movimentação/transporte exigem\nplanejamento; não altere altura ou clamp por\ndecisão própria.\nOstomias e sinais de alerta\nObserve cor do estoma, pele, efluente e\nadaptação. Sangue vivo aumentado, cessação\ninesperada, desconexão, dor, estoma\npálido/escuro ou piora clínica precisam de\navaliação.\nFontes: [1], [13]\nCTI adulto  |  05/10/2026\n26/96\n",
+      "links": []
+    },
+    {
+      "number": 27,
+      "src": "/caderno/pagina-027.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "DISPOSITIVOS E CUIDADOS — Pele, higiene e posição",
+      "text": "DISPOSITIVOS E CUIDADOS\nPele, higiene e posição\nDurante cada cuidado\nInspecione sacro, calcâneos, occipital,\nproeminências e áreas sob dispositivos.\nObserve hiperemia persistente, umidade,\nlesões e pontos de pressão.\nA avaliação de risco, como Braden quando\nadotada, complementa a inspeção.\nReposicionamento e superfícies de apoio\nseguem risco e tolerância individual.\nPlaneje a mobilização\nConfira dor, via aérea, acessos, drenos,\nbombas e estabilidade com a equipe. Preserve\nconforto, privacidade e temperatura.\nInterrompa se houver deterioração.\nNa pronação\nManobra de equipe: proteja via aérea, olhos,\npele e dispositivos; confira tudo após a virada.\nSiga o plano prescrito.\nFontes: [14], [15]\nCTI adulto  |  05/10/2026\n27/96\n",
+      "links": []
+    },
+    {
+      "number": 28,
+      "src": "/caderno/pagina-028.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "MEDICAÇÕES E INFUSÕES — Medicação e bombas",
+      "text": "MEDICAÇÕES E INFUSÕES\nMedicação e bombas\nConferência antes de administrar\nPaciente, medicamento, dose, via, horário,\nforma, ação/indicação, registro e resposta.\nConfirme alergias e esclareça dúvidas antes de\nadministrar.\nInfusão contínua\nDroga → concentração → unidade → velocidade\n→ volume → linha → acesso. Compare rótulo,\nprescrição e tela; não deduza pela posição da\nbomba.\nUnidades diferem: mcg/kg/min, mcg/min,\nmg/h e mL/h. Faça a dupla checagem quando\nprevista.\nSe a bomba alarmar\nIdentifique a terapia e avalie o paciente.\nConfira acesso, oclusão, conexões e volume.\nDVA interrompida, extravasamento ou erro\nexigem comunicação imediata.\nFontes: [2], [18]\nCTI adulto  |  05/10/2026\n28/96\n",
+      "links": []
+    },
+    {
+      "number": 29,
+      "src": "/caderno/pagina-029.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "MEDICAÇÕES E INFUSÕES — Drogas vasoativas",
+      "text": "MEDICAÇÕES E INFUSÕES\nDrogas vasoativas\nDroga\nUso e vigilância\nNoradrenalina\nVasopressor. PAM, ritmo,\nperfusão e acesso.\nVasopressina\nVasoconstritor, adjuvante em\ncenários selecionados. PA e\nsinais de isquemia.\nDobutamina\nInotrópico. Ritmo, FC, PA e\nresposta de perfusão.\nConferência de bolso\nNome, concentração, unidade, bomba,\nvia/lúmen e meta. Observe extremidades, sítio\ne tendência hemodinâmica.\nInterrupção ou extravasamento de\nnoradrenalina pode causar deterioração e lesão\ntecidual. Acione a equipe prontamente.\nVia, diluição e titulação seguem prescrição,\nprotocolo e atribuições profissionais. Diluições\nvariam entre produtos e serviços.\nFontes: [2], [10], [18]\nCTI adulto  |  05/10/2026\n29/96\n",
+      "links": []
+    },
+    {
+      "number": 30,
+      "src": "/caderno/pagina-030.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "MEDICAÇÕES E INFUSÕES — Sedação e analgesia",
+      "text": "MEDICAÇÕES E INFUSÕES\nSedação e analgesia\nExemplo\nO que observar\nPropofol\nSedação; PA, FC e\nventilação. Pode provocar\nhipotensão/apneia.\nMidazolam\nSedação; vigie consciência e\nrespiração. Maior risco com\nopioides.\nDexmedetomidina\nSedação; FC e PA. Atenção a\nbradicardia e hipotensão.\nFentanil\nAnalgesia; dor, sedação,\nrespiração e PA. Risco de\ndepressão respiratória.\nCompare RASS e dor com as metas. Mudança\ninesperada exige avaliação da infusão, da via aérea\ne do paciente.\nFontes: [3], [18]\nCTI adulto  |  05/10/2026\n30/96\n",
+      "links": []
+    },
+    {
+      "number": 31,
+      "src": "/caderno/pagina-031.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "MEDICAÇÕES E INFUSÕES — Bloqueio neuromuscular",
+      "text": "MEDICAÇÕES E INFUSÕES\nBloqueio neuromuscular\nExemplo: rocurônio. O bloqueador produz\nparalisia muscular, sem substituir sedação e\nanalgesia.\nO que acompanhar\nSuporte ventilatório, infusões prescritas,\nmonitorização definida pela equipe, proteção\nocular, pele e posicionamento.\nConfira medicamento, concentração, unidade,\nbomba, acesso e continuidade das terapias.\nImobilidade não demonstra conforto nem\nausência de consciência.\nAvaliação da dor\nRespostas comportamentais podem não ser\nobserváveis. Registre o impedimento e\ncomunique a necessidade de avaliação; não\nconclua ausência de dor porque o paciente não\nse movimenta.\nFontes: [3], [18]\nCTI adulto  |  05/10/2026\n31/96\n",
+      "links": []
+    },
+    {
+      "number": 32,
+      "src": "/caderno/pagina-032.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "MEDICAÇÕES E INFUSÕES — Glicemia e insulina",
+      "text": "MEDICAÇÕES E INFUSÕES\nGlicemia e insulina\nAntes de administrar\nConfira tipo de insulina, concentração, dose,\nvia, horário e bomba quando utilizada.\nVerifique a prescrição e a dupla checagem\nprevista.\nDurante o tratamento\nAcompanhe a glicemia na frequência prescrita\ne sua relação com dieta/infusões. Interrupção\nde dieta precisa de comunicação e revisão das\norientações.\nHipoglicemia pode causar sudorese, tremor,\nconfusão ou rebaixamento; sedação pode\nmascarar sintomas. Insulina também pode\nreduzir o potássio.\nSe houver alteração\nComunique prontamente, siga o protocolo de\ncorreção e reavalie glicemia e resposta no\nintervalo definido. Registre horário, valor, ação\ne resultado.\nFontes: [2], [18]\nCTI adulto  |  05/10/2026\n32/96\n",
+      "links": []
+    },
+    {
+      "number": 33,
+      "src": "/caderno/pagina-033.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "MEDICAÇÕES E INFUSÕES — Eletrólitos e",
+      "text": "MEDICAÇÕES E INFUSÕES\nEletrólitos e\nantimicrobianos\nEletrólitos\nKCl concentrado nunca é IV direto. Requer\ndiluição e velocidade prescritas. Confira função\nrenal, acesso e monitorização indicada.\nAlterações de K, Mg, Ca e Na podem\nacompanhar arritmias, fraqueza, convulsão ou\nrebaixamento. Valores críticos e sintomas\nexigem comunicação rápida.\nAntimicrobianos\nRespeite horários, alergias, diluição, tempo de\ninfusão e compatibilidade. Coletas prescritas\ndevem seguir o protocolo sem atrasar\ntratamento crítico.\nFontes: [2], [10], [18]\nCTI adulto  |  05/10/2026\n33/96\n",
+      "links": []
+    },
+    {
+      "number": 34,
+      "src": "/caderno/pagina-034.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "CÁLCULOS RÁPIDOS — Cálculos volume e tempo",
+      "text": "CÁLCULOS RÁPIDOS\nCálculos volume e tempo\nBalanço e diurese\nBH = entradas - saídas.\n2.100 - 1.600 = +500 mL.\nDiurese = mL ÷ kg ÷ horas.\n240 ÷ 80 ÷ 6 = 0,5 mL/kg/h.\nInfusão\nmL/h = volume ÷ horas.\n500 mL ÷ 4 h = 125 mL/h.\nVolume = mL/h × horas.\n25 mL/h × 8 h = 200 mL.\nPAM aproximada\n(PAS + 2 × PAD) ÷ 3.\nPA 120/60: (120 + 120) ÷ 3 =\naproximadamente 80 mmHg.\nA PAM calculada é uma aproximação. Em PAI com\nsinal adequado, utilize a leitura monitorizada\nconforme a rotina.\nFontes: [2], [10], [11]\nCTI adulto  |  05/10/2026\n34/96\n",
+      "links": []
+    },
+    {
+      "number": 35,
+      "src": "/caderno/pagina-035.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "CÁLCULOS RÁPIDOS — Cálculos dose e unidade",
+      "text": "CÁLCULOS RÁPIDOS\nCálculos dose e unidade\nConversões\n1 g = 1.000 mg\n1 mg = 1.000 mcg\n1 L = 1.000 mL\nDose para volume\nmL = dose prescrita ÷ concentração.\nExemplo didático: 250 mg prescritos; solução\n50 mg/mL → 5 mL.\nConcentração final\nmg/mL = quantidade de mg ÷ volume\nfinal. Confira o volume final do preparo.\nPara soluções em % massa/volume: 1% = 10\nmg/mL; 2% = 20 mg/mL; 0,9% = 9 mg/mL.\nConfira o tipo de porcentagem no rótulo.\nUnidades devem ser compatíveis. Exemplos não\ndefinem doses, diluições, vias ou velocidades de\nmedicamentos reais.\nFontes: [2]\nCTI adulto  |  05/10/2026\n35/96\n",
+      "links": []
+    },
+    {
+      "number": 36,
+      "src": "/caderno/pagina-036.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "INTERCORRÊNCIAS — Deterioração e sepse",
+      "text": "INTERCORRÊNCIAS\nDeterioração e sepse\nMudança que exige avaliação\nHipotensão com hipoperfusão; maior\nnecessidade de O2; nova\nconfusão/rebaixamento; queda da diurese; pele\nfria/moteada; sangramento ou infusão crítica\ninterrompida.\nEm infecção suspeita/confirmada, essas\nmudanças podem acompanhar sepse. Ausência\nde febre não a exclui. Lactato é interpretado\ncom contexto e evolução.\nComo responder\nPaciente → ajuda → via aérea, respiração e\ncirculação → conferência de\nmedidas/dispositivos → ações previstas →\nreavaliação e registro.\nSSC 2026: alvo inicial de PAM de 65 mmHg no\nchoque séptico; para adultos ≥65 anos, sugere faixa\ninicial 60 a 65. A equipe define a meta do paciente.\nFontes: [10], [16]\nCTI adulto  |  05/10/2026\n36/96\n",
+      "links": []
+    },
+    {
+      "number": 37,
+      "src": "/caderno/pagina-037.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "INTERCORRÊNCIAS — PCR no adulto",
+      "text": "INTERCORRÊNCIAS\nPCR no adulto\nSem resposta, sem respiração normal e sem\npulso definido em até 10 s: acione a resposta\nde emergência, peça desfibrilador e inicie RCP\nconforme treinamento.\nCompressões de qualidade\n100 a 120/min; profundidade de pelo menos 5\ncm, evitando mais de 6 cm; retorno completo\ndo tórax e poucas interrupções.\nSem via aérea avançada: 30:2.\nCom via aérea avançada: compressões\ncontínuas e 1 ventilação a cada 6 s,\nconforme a equipe. Evite hiperventilação.\nRitmo na PCR\nCategoria\nFV / TV sem pulso\nChocável.\nAESP / assistolia\nNão chocável.\nDesfibrilação e demais medidas seguem\nequipamento, treinamento e algoritmo institucional.\nO monitor isolado não confirma presença ou\nausência de pulso.\nFontes: [16]\nCTI adulto  |  05/10/2026\n37/96\n",
+      "links": []
+    },
+    {
+      "number": 38,
+      "src": "/caderno/pagina-038.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "REGISTROS E COMUNICAÇÃO — Anotação de enfermagem",
+      "text": "REGISTROS E COMUNICAÇÃO\nAnotação de enfermagem\nDados que tornam o cuidado claro\nHorário, avaliação objetiva, contexto, cuidado\nexecutado, comunicação e resposta. Informe\ninstrumento/escore e suporte quando\nrelevantes.\nExemplo fictício\n09h00: em VMI por TOT, SpO2 95% com FiO2\n40%, RASS -2. BPS 6/12 durante mudança de\ndecúbito: face 2, membros 2, ventilação 2.\nEnfermeira informada. Reposicionamento\nconforme orientação. Às 09h20, em repouso,\nBPS 3/12.\nO exemplo descreve pontuação e contexto,\nsem concluir ausência de dor pelo escore\nmínimo. Os horários são ilustrativos.\nRegistre apenas o que avaliou/executou. Use siglas\npadronizadas e identificação exigida. A checagem\nda medicação complementa, mas não substitui, a\nanotação pertinente.\nFontes: [1], [2], [4]\nCTI adulto  |  05/10/2026\n38/96\n",
+      "links": []
+    },
+    {
+      "number": 39,
+      "src": "/caderno/pagina-039.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "REGISTROS E COMUNICAÇÃO — Passagem de plantão",
+      "text": "REGISTROS E COMUNICAÇÃO\nPassagem de plantão\nRoteiro para falar\n1. Motivo do CTI e eventos do turno.\n2. Consciência, dor e sedação.\n3. Via aérea, suporte e SpO2.\n4. Ritmo, PAM/perfusão e DVA.\n5. Acessos, sondas e drenos.\n6. Dieta, diurese e BH.\n7. Pele, precauções e riscos.\n8. Metas, horários e pendências.\nSBAR diante de uma mudança\nS: situação/problema atual.\nB: contexto e antecedentes úteis.\nA: dados observados e tendência.\nR: avaliação/ajuda necessária e pendências.\nEx.: “A PAM caiu abaixo da meta e a diurese reduziu.\nUsa noradrenalina; bomba e linha conferidas.\nPreciso de avaliação no leito.” Acrescente valores e\nhorários reais.\nFontes: [1], [10]\nCTI adulto  |  05/10/2026\n39/96\n",
+      "links": []
+    },
+    {
+      "number": 40,
+      "src": "/caderno/pagina-040.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "REGISTROS E COMUNICAÇÃO — Transporte e saída do box",
+      "text": "REGISTROS E COMUNICAÇÃO\nTransporte e saída do box\nAntes do transporte\nPlaneje com a equipe: destino, monitor,\nO2/ventilação, bombas, bateria,\nmedicamentos, acessos e material para\nintercorrências.\nConfirme o suporte durante todo o trajeto e a\nfixação de via aérea, linhas, sondas e drenos.\nLeve as informações necessárias.\nAo terminar qualquer cuidado\nPaciente posicionado e protegido → O2/VM\nconectados → bombas funcionando → linhas\nsem tração → bolsas e drenos adequados →\nalarmes ativos → registros e pendências\ncomunicados.\nHigienize as mãos. Use precauções padrão e os\nEPIs/medidas adicionais de contato, gotículas\nou aerossóis conforme o setor e a exposição.\nFontes: [1], [2], [13], [14]\nCTI adulto  |  05/10/2026\n40/96\n",
+      "links": []
+    },
+    {
+      "number": 41,
+      "src": "/caderno/pagina-041.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "REFERÊNCIAS — Fontes de dor e prática",
+      "text": "REFERÊNCIAS\nFontes de dor e prática\n[1] Cofen. Resolução 736/2024. Processo de\nEnfermagem e registros.\nAbrir resolução\n[2] MS/Anvisa. Segurança na prescrição, uso e\nadministração de medicamentos. 2013.\nAbrir protocolo\n[3] Devlin et al. SCCM PADIS. Dor, sedação e delirium.\n2018.\nAbrir diretriz\n[4] Morete et al. BPS-Brasil. RBTI. 2014;26:373-378.\nArtigo e critérios\n[5] Pinto et al. PAINAD-Brasil. Einstein. 2015;13:14-19.\nArtigo e critérios\n[6] Ministry of Health Malaysia. Pain Management\nHandbook. 3ª ed. 2023. CPOT.\nAbrir manual\nResumo para estudo e consulta\nCTI adulto  |  05/10/2026\n41/96\n",
+      "links": [
+        {
+          "kind": "external",
+          "href": "https://www.cofen.gov.br/resolucao-cofen-no-736-de-17-de-janeiro-de-2024/",
+          "label": "Abrir resolução",
+          "bounds": {
+            "left": 0.07749931559485061,
+            "top": 0.2836070439442515,
+            "width": 0.233637212210198,
+            "height": 0.02614575160716748
+          }
+        },
+        {
+          "kind": "external",
+          "href": "https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/servicosdesaude/publicacoes/protocolo-de-seguranca-na-prescricao-uso-e-administracao-de-medicamentos",
+          "label": "Abrir protocolo",
+          "bounds": {
+            "left": 0.07749931559485061,
+            "top": 0.38307446060549294,
+            "width": 0.22955972114206968,
+            "height": 0.026145679109367426
+          }
+        },
+        {
+          "kind": "external",
+          "href": "https://sccm.org/clinical-resources/guidelines/guidelines/guidelines-for-the-prevention-and-management-of-pa",
+          "label": "Abrir diretriz",
+          "bounds": {
+            "left": 0.07749931559485061,
+            "top": 0.4825418410178343,
+            "width": 0.19356921258546733,
+            "height": 0.026145715358267454
+          }
+        },
+        {
+          "kind": "external",
+          "href": "https://www.scielo.br/j/rbti/a/pJ5k9VwdGcj9xWCjFn9wdZJ/?lang=pt",
+          "label": "Artigo e critérios",
+          "bounds": {
+            "left": 0.07749931559485061,
+            "top": 0.5535899750622068,
+            "width": 0.2567030755680691,
+            "height": 0.026145715358267454
+          }
+        },
+        {
+          "kind": "external",
+          "href": "https://www.scielo.br/j/eins/a/3VW8CfBCDq3TfLHgkPw8ZTJ/?lang=pt",
+          "label": "Artigo e critérios",
+          "bounds": {
+            "left": 0.07749931559485061,
+            "top": 0.6246381453554792,
+            "width": 0.2567030755680691,
+            "height": 0.026145679109367426
+          }
+        },
+        {
+          "kind": "external",
+          "href": "https://www.moh.gov.my/images/04-penerbitan/penerbitan-klinikal/perkhidmatan-pembedahan/8_May_2024_-_FINAL_ARTWORK_-_PAIN_MANAGEMENT_HANDBOOK_Third_Edition_MOH_PDF_compressed.pdf",
+          "label": "Abrir manual",
+          "bounds": {
+            "left": 0.07749931559485061,
+            "top": 0.7241055620167206,
+            "width": 0.1997381124977507,
+            "height": 0.026145679109367426
+          }
+        }
+      ]
+    },
+    {
+      "number": 42,
+      "src": "/caderno/pagina-042.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "REFERÊNCIAS — Fontes de neuro e clínica",
+      "text": "REFERÊNCIAS\nFontes de neuro e clínica\n[7] ReBEC. RBR-86my7w2. Mensuração da EVA em\nlinha de 10 cm.\nAbrir descrição\n[8] Vanderbilt/CIBS. RASS e CAM-ICU. Recursos oficiais\nem português.\nAbrir materiais\n[9] Glasgow Coma Scale. Guia brasileiro e limitações\nde avaliação.\nGuia | Impedimentos\n[10] Prescott et al. SCCM. Surviving Sepsis Campaign\nem adultos. 2026.\nAbrir diretriz\n[11] KDIGO. Acute Kidney Injury. 2012. Critérios de\nLRA e diurese.\nAbrir diretriz\n[12] Cleveland Clinic. Arterial Blood Gas. Valores de\ngasometria.\nAbrir referência\nResumo para estudo e consulta\nCTI adulto  |  05/10/2026\n42/96\n",
+      "links": [
+        {
+          "kind": "external",
+          "href": "https://ensaiosclinicos.gov.br/rg/RBR-86my7w2/1",
+          "label": "Abrir descrição",
+          "bounds": {
+            "left": 0.07749931559485061,
+            "top": 0.2836070439442515,
+            "width": 0.23175648223955822,
+            "height": 0.02614575160716748
+          }
+        },
+        {
+          "kind": "external",
+          "href": "https://www.icudelirium.org/language-translations/portuguese-brazil",
+          "label": "Abrir materiais",
+          "bounds": {
+            "left": 0.07749931559485061,
+            "top": 0.38307446060549294,
+            "width": 0.22900299472110874,
+            "height": 0.026145679109367426
+          }
+        },
+        {
+          "kind": "external",
+          "href": "https://www.glasgowcomascale.org/downloads/GCS-Assessment-Aid-Brazilian.pdf",
+          "label": "Guia",
+          "bounds": {
+            "left": 0.07749931559485061,
+            "top": 0.4825418410178343,
+            "width": 0.07085251120296894,
+            "height": 0.026145715358267454
+          }
+        },
+        {
+          "kind": "external",
+          "href": "https://www.glasgowcomascale.org/faq/",
+          "label": "Impedimentos",
+          "bounds": {
+            "left": 0.17832381232636743,
+            "top": 0.4825418410178343,
+            "width": 0.2212390655383295,
+            "height": 0.026145715358267454
+          }
+        },
+        {
+          "kind": "external",
+          "href": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+          "label": "Abrir diretriz",
+          "bounds": {
+            "left": 0.07749931559485061,
+            "top": 0.5820092576790757,
+            "width": 0.19356921258546733,
+            "height": 0.026145679109367426
+          }
+        },
+        {
+          "kind": "external",
+          "href": "https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf",
+          "label": "Abrir diretriz",
+          "bounds": {
+            "left": 0.07749931559485061,
+            "top": 0.6814767105892172,
+            "width": 0.19356921258546733,
+            "height": 0.02614560661156737
+          }
+        },
+        {
+          "kind": "external",
+          "href": "https://my.clevelandclinic.org/health/diagnostics/22409-arterial-blood-gas-abg",
+          "label": "Abrir referência",
+          "bounds": {
+            "left": 0.07749931559485061,
+            "top": 0.7809441997482587,
+            "width": 0.2413107781250785,
+            "height": 0.02614575160716748
+          }
+        }
+      ]
+    },
+    {
+      "number": 43,
+      "src": "/caderno/pagina-043.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "REFERÊNCIAS — Fontes de cuidados e PCR",
+      "text": "REFERÊNCIAS\nFontes de cuidados e PCR\n[13] CDC. Prevenção de infecção em cateter vascular\ne cateter urinário. Resumos 2024.\nCateter vascular | Cateter urinário\n[14] Anvisa. Protocolo de prevenção de PAV. Versão 1;\ndisponibilizado em 2026.\nAbrir protocolo\n[15] Anvisa. Nota Técnica 05/2023. Prevenção de\nlesão por pressão.\nAbrir nota\n[16] AHA. Adult Basic Life Support. Diretrizes de RCP\n2025.\nAbrir diretriz\n[17] Cofen. Resolução 557/2017. Aspiração de vias\naéreas.\nAbrir resolução\nResumo para estudo e consulta\nCTI adulto  |  05/10/2026\n43/96\n",
+      "links": [
+        {
+          "kind": "external",
+          "href": "https://www.cdc.gov/infection-control/hcp/intravascular-catheter-related-infections/summary-recommendations.html",
+          "label": "Cateter vascular",
+          "bounds": {
+            "left": 0.07749931559485061,
+            "top": 0.2836070439442515,
+            "width": 0.2547018697846149,
+            "height": 0.02614575160716748
+          }
+        },
+        {
+          "kind": "external",
+          "href": "https://www.cdc.gov/infection-control/hcp/cauti/summary-of-recommendations.html",
+          "label": "Cateter urinário",
+          "bounds": {
+            "left": 0.36217336315665083,
+            "top": 0.2836070439442515,
+            "width": 0.24419970480862546,
+            "height": 0.02614575160716748
+          }
+        },
+        {
+          "kind": "external",
+          "href": "https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/prevencao-e-controle-de-infeccao-e-resistencia-microbiana/prevencao-das-principais-iras/pneumonia-associada-a-ventilacao-mecanica/protocolo-4-prevencoo-de-pav-final.pdf",
+          "label": "Abrir protocolo",
+          "bounds": {
+            "left": 0.07749931559485061,
+            "top": 0.38307446060549294,
+            "width": 0.22955972114206968,
+            "height": 0.026145679109367426
+          }
+        },
+        {
+          "kind": "external",
+          "href": "https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/servicosdesaude/notas-tecnicas/notas-tecnicas-vigentes/nota-tecnica-gvims-ggtes-anvisa-no-05-2023-praticas-de-seguranca-do-paciente-em-servicos-de-saude-prevencao-de-lesao-por-pressao",
+          "label": "Abrir nota",
+          "bounds": {
+            "left": 0.07749931559485061,
+            "top": 0.4825418410178343,
+            "width": 0.15368177288104834,
+            "height": 0.026145715358267454
+          }
+        },
+        {
+          "kind": "external",
+          "href": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-basic-life-support",
+          "label": "Abrir diretriz",
+          "bounds": {
+            "left": 0.07749931559485061,
+            "top": 0.5820092576790757,
+            "width": 0.19356921258546733,
+            "height": 0.026145679109367426
+          }
+        },
+        {
+          "kind": "external",
+          "href": "https://www.cofen.gov.br/resolucao-cofen-no-05572017/",
+          "label": "Abrir resolução",
+          "bounds": {
+            "left": 0.07749931559485061,
+            "top": 0.6814767105892172,
+            "width": 0.233637212210198,
+            "height": 0.02614560661156737
+          }
+        }
+      ]
+    },
+    {
+      "number": 44,
+      "src": "/caderno/pagina-044.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "REFERÊNCIAS — Bulas para consulta",
+      "text": "REFERÊNCIAS\nBulas para consulta\n[18] NLM/DailyMed. Informações oficiais de\nprodutos consultadas para usos e riscos\nfarmacológicos.\nNoradrenalina — abrir rótulo\nPropofol — abrir rótulo\nMidazolam — abrir rótulo\nDexmedetomidina — abrir rótulo\nFentanil — abrir rótulo\nRocurônio — abrir rótulo\nInsulina humana IV — abrir rótulo\nKCl concentrado — abrir rótulo\nEsses rótulos são referências farmacológicas dos\nEUA. No preparo, use a bula do produto disponível\nno setor, a prescrição e o protocolo institucional.\nFontes consultadas em 05/10/2026. Quadros de\nescalas são sínteses didáticas; mantenha os\nformulários validados do serviço à mão. O material\nnão representa protocolo oficial do HMV.\nResumo para estudo e consulta\nCTI adulto  |  05/10/2026\n44/96\n",
+      "links": [
+        {
+          "kind": "external",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4bb42f07-a41e-42f3-92e7-dab665584f84",
+          "label": "Noradrenalina — abrir rótulo",
+          "bounds": {
+            "left": 0.07749931559485061,
+            "top": 0.3267095234995094,
+            "width": 0.5040923390712289,
+            "height": 0.029840239497932436
+          }
+        },
+        {
+          "kind": "external",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fdb77e13-f5a7-4c4a-9f8e-338b702239c8",
+          "label": "Propofol — abrir rótulo",
+          "bounds": {
+            "left": 0.07749931559485061,
+            "top": 0.3582075701912825,
+            "width": 0.3993069885199367,
+            "height": 0.029840239497932436
+          }
+        },
+        {
+          "kind": "external",
+          "href": "https://www.dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=575d8bf0-7af7-427c-a231-966e2a5e070d",
+          "label": "Midazolam — abrir rótulo",
+          "bounds": {
+            "left": 0.07749931559485061,
+            "top": 0.3897055443852556,
+            "width": 0.4441610051579028,
+            "height": 0.029840275746832463
+          }
+        },
+        {
+          "kind": "external",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=649e777b-9b30-4f1e-9fb9-6bba57580976",
+          "label": "Dexmedetomidina — abrir rótulo",
+          "bounds": {
+            "left": 0.07749931559485061,
+            "top": 0.42120359107702876,
+            "width": 0.5792726298434481,
+            "height": 0.029840239497932436
+          }
+        },
+        {
+          "kind": "external",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0c10e465-4117-48ba-a454-23ccb7a3fcc7",
+          "label": "Fentanil — abrir rótulo",
+          "bounds": {
+            "left": 0.07749931559485061,
+            "top": 0.45270160151990185,
+            "width": 0.3959412019077217,
+            "height": 0.029840239497932436
+          }
+        },
+        {
+          "kind": "external",
+          "href": "https://www.dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=116385ea-69fc-4f44-b463-6210291032df",
+          "label": "Rocurônio — abrir rótulo",
+          "bounds": {
+            "left": 0.07749931559485061,
+            "top": 0.484199648211675,
+            "width": 0.4317454343511916,
+            "height": 0.02984016700013238
+          }
+        },
+        {
+          "kind": "external",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=afca6e80-a802-49fb-a978-5fe28a173001",
+          "label": "Insulina humana IV — abrir rótulo",
+          "bounds": {
+            "left": 0.07749931559485061,
+            "top": 0.5156976586545481,
+            "width": 0.592289092991435,
+            "height": 0.02984016700013238
+          }
+        },
+        {
+          "kind": "external",
+          "href": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=559a0a8c-a8fe-40a5-b196-21f9308780ab",
+          "label": "KCl concentrado — abrir rótulo",
+          "bounds": {
+            "left": 0.07749931559485061,
+            "top": 0.5471956328485212,
+            "width": 0.5432279584373826,
+            "height": 0.029840239497932436
+          }
+        }
+      ]
+    },
+    {
+      "number": 45,
+      "src": "/caderno/pagina-045.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Modelo básico de evolução,",
+      "text": "Modelo básico de evolução,\nestrutura:\n\"SETOR ATUAL DO PACIENTE E TURNO\"\n00:00 - assumo paciente Sr/Sra ..., 00 anos;\n- avalio na escala de dor (selecione), RASS\n(selecione);\n- como o paciente está ventilando?\n- como o paciente está se alimentando?\n- quais os acessos desse paciente? (especificar\ncaso esteja infundindo algum medicamento)\n- como são as eliminações desse paciente?\n- já visualizou o dorso do paciente?\n- como estão a extremidades do paciente?\nOBS: sempre seguir esta ordem CEFALO -\nCAUDAL, se necessário adicionar\nparticularidades, como drenos, sondas ou\ncutativos (F.O).\n45/96\n",
+      "links": []
+    },
+    {
+      "number": 46,
+      "src": "/caderno/pagina-046.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Exemplo de uma evolução",
+      "text": "Exemplo de uma evolução\nestruturada e pronta:\nCTI adulto - área 3, manhã.\n7:00 - assumo paciente Sr. João, 80 anos;\n- avalio na escala de dor PAINAD 0, RASS 0;\n- ventilando com auxílio de óculos nasal O² à\n2L/min;\n- dieta vo pastosa;\n- PICC em MSD infundindo SF 0,9% à 50ml/h;\n- F.O em flanco direito, curativo seco e limpo;\n- CVD + fralda;\n- não visualizo dorso no momento;\n- extremidades frias, mas perfundidas.\n46/96\n",
+      "links": []
+    },
+    {
+      "number": 47,
+      "src": "/caderno/pagina-047.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 47",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n47/96\n",
+      "links": []
+    },
+    {
+      "number": 48,
+      "src": "/caderno/pagina-048.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 48",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n48/96\n",
+      "links": []
+    },
+    {
+      "number": 49,
+      "src": "/caderno/pagina-049.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 49",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n49/96\n",
+      "links": []
+    },
+    {
+      "number": 50,
+      "src": "/caderno/pagina-050.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 50",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n50/96\n",
+      "links": []
+    },
+    {
+      "number": 51,
+      "src": "/caderno/pagina-051.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 51",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n51/96\n",
+      "links": []
+    },
+    {
+      "number": 52,
+      "src": "/caderno/pagina-052.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 52",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n52/96\n",
+      "links": []
+    },
+    {
+      "number": 53,
+      "src": "/caderno/pagina-053.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 53",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n53/96\n",
+      "links": []
+    },
+    {
+      "number": 54,
+      "src": "/caderno/pagina-054.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 54",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n54/96\n",
+      "links": []
+    },
+    {
+      "number": 55,
+      "src": "/caderno/pagina-055.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 55",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n55/96\n",
+      "links": []
+    },
+    {
+      "number": 56,
+      "src": "/caderno/pagina-056.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 56",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n56/96\n",
+      "links": []
+    },
+    {
+      "number": 57,
+      "src": "/caderno/pagina-057.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 57",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n57/96\n",
+      "links": []
+    },
+    {
+      "number": 58,
+      "src": "/caderno/pagina-058.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 58",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n58/96\n",
+      "links": []
+    },
+    {
+      "number": 59,
+      "src": "/caderno/pagina-059.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 59",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n59/96\n",
+      "links": []
+    },
+    {
+      "number": 60,
+      "src": "/caderno/pagina-060.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 60",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n60/96\n",
+      "links": []
+    },
+    {
+      "number": 61,
+      "src": "/caderno/pagina-061.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 61",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n61/96\n",
+      "links": []
+    },
+    {
+      "number": 62,
+      "src": "/caderno/pagina-062.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 62",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n62/96\n",
+      "links": []
+    },
+    {
+      "number": 63,
+      "src": "/caderno/pagina-063.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 63",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n63/96\n",
+      "links": []
+    },
+    {
+      "number": 64,
+      "src": "/caderno/pagina-064.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 64",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n64/96\n",
+      "links": []
+    },
+    {
+      "number": 65,
+      "src": "/caderno/pagina-065.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 65",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n65/96\n",
+      "links": []
+    },
+    {
+      "number": 66,
+      "src": "/caderno/pagina-066.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 66",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n66/96\n",
+      "links": []
+    },
+    {
+      "number": 67,
+      "src": "/caderno/pagina-067.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 67",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n67/96\n",
+      "links": []
+    },
+    {
+      "number": 68,
+      "src": "/caderno/pagina-068.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 68",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n68/96\n",
+      "links": []
+    },
+    {
+      "number": 69,
+      "src": "/caderno/pagina-069.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 69",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n69/96\n",
+      "links": []
+    },
+    {
+      "number": 70,
+      "src": "/caderno/pagina-070.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 70",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n70/96\n",
+      "links": []
+    },
+    {
+      "number": 71,
+      "src": "/caderno/pagina-071.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 71",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n71/96\n",
+      "links": []
+    },
+    {
+      "number": 72,
+      "src": "/caderno/pagina-072.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 72",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n72/96\n",
+      "links": []
+    },
+    {
+      "number": 73,
+      "src": "/caderno/pagina-073.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 73",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n73/96\n",
+      "links": []
+    },
+    {
+      "number": 74,
+      "src": "/caderno/pagina-074.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 74",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n74/96\n",
+      "links": []
+    },
+    {
+      "number": 75,
+      "src": "/caderno/pagina-075.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 75",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n75/96\n",
+      "links": []
+    },
+    {
+      "number": 76,
+      "src": "/caderno/pagina-076.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 76",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n76/96\n",
+      "links": []
+    },
+    {
+      "number": 77,
+      "src": "/caderno/pagina-077.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 77",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n77/96\n",
+      "links": []
+    },
+    {
+      "number": 78,
+      "src": "/caderno/pagina-078.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 78",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n78/96\n",
+      "links": []
+    },
+    {
+      "number": 79,
+      "src": "/caderno/pagina-079.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 79",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n79/96\n",
+      "links": []
+    },
+    {
+      "number": 80,
+      "src": "/caderno/pagina-080.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 80",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n80/96\n",
+      "links": []
+    },
+    {
+      "number": 81,
+      "src": "/caderno/pagina-081.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 81",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n81/96\n",
+      "links": []
+    },
+    {
+      "number": 82,
+      "src": "/caderno/pagina-082.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 82",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n82/96\n",
+      "links": []
+    },
+    {
+      "number": 83,
+      "src": "/caderno/pagina-083.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 83",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n83/96\n",
+      "links": []
+    },
+    {
+      "number": 84,
+      "src": "/caderno/pagina-084.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 84",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n84/96\n",
+      "links": []
+    },
+    {
+      "number": 85,
+      "src": "/caderno/pagina-085.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 85",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n85/96\n",
+      "links": []
+    },
+    {
+      "number": 86,
+      "src": "/caderno/pagina-086.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 86",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n86/96\n",
+      "links": []
+    },
+    {
+      "number": 87,
+      "src": "/caderno/pagina-087.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 87",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n87/96\n",
+      "links": []
+    },
+    {
+      "number": 88,
+      "src": "/caderno/pagina-088.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 88",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n88/96\n",
+      "links": []
+    },
+    {
+      "number": 89,
+      "src": "/caderno/pagina-089.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 89",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n89/96\n",
+      "links": []
+    },
+    {
+      "number": 90,
+      "src": "/caderno/pagina-090.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 90",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n90/96\n",
+      "links": []
+    },
+    {
+      "number": 91,
+      "src": "/caderno/pagina-091.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 91",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n91/96\n",
+      "links": []
+    },
+    {
+      "number": 92,
+      "src": "/caderno/pagina-092.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 92",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n92/96\n",
+      "links": []
+    },
+    {
+      "number": 93,
+      "src": "/caderno/pagina-093.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 93",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n93/96\n",
+      "links": []
+    },
+    {
+      "number": 94,
+      "src": "/caderno/pagina-094.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 94",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n94/96\n",
+      "links": []
+    },
+    {
+      "number": 95,
+      "src": "/caderno/pagina-095.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 95",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n95/96\n",
+      "links": []
+    },
+    {
+      "number": 96,
+      "src": "/caderno/pagina-096.webp",
+      "width": 1440,
+      "height": 2037,
+      "title": "Página 96",
+      "text": "Nome:\nLeito:\n07:00:\n08:00:\n09:00:\n10:00:\n11:00:\n12:00:\n13:00:\nObservações:\n96/96\n",
+      "links": []
+    }
+  ]
+}

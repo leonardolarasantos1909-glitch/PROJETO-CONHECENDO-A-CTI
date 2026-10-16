@@ -14,7 +14,7 @@ export const learningMaterials: LearningMaterial[] = [
   {
     id: 'caderno-digital',
     title: 'Caderno CTI Adulto',
-    description: 'O caderno completo para ler no celular ou no computador, com índice e referências de consulta.',
+    description: 'Leia uma página por vez e deslize para os lados, como um livro. Use os botões ou o índice para navegar.',
     href: '/materiais/caderno-cti-adulto-digital.pdf',
     originalFilename: 'Caderno_CTI_Adulto_App_A4_Sem_Furos.pdf',
     pages: 96,

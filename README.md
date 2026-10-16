@@ -13,15 +13,15 @@ O conteúdo do QR foi decodificado e conferido localmente. A conexão ao endere�
 
 ## Baixar a versão pronta
 
-**Estado de segurança:** houve relato de bloqueio antivírus no pacote anterior. A versão v2 é uma cópia de compatibilidade com PDFs regravados, não uma versão certificada por antivírus. No computador da empresa, peça à TI que analise o novo pacote antes de abri-lo ou utilizá-lo; não ignore alertas. [Detalhes da alteração e limites da verificação](docs/PACOTE-V2.md).
+**Estado de segurança:** houve relato de bloqueio antivírus em um pacote anterior. A versão v3 acrescenta o leitor em formato de livro e mantém os mesmos PDFs de compatibilidade da v2; não há resultado de varredura antivírus completa. Os testes de integridade e funcionamento não substituem essa análise. No computador da empresa, encaminhe eventual alerta à TI, sem desativar proteções. [Histórico da versão v2](docs/PACOTE-V2.md).
 
-[Baixar conhecendo-a-cti-v2.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-v2.zip)
+[Baixar conhecendo-a-cti-v3.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-v3.zip)
 
-Este ZIP já está compilado e pronto para upload em hospedagem estática, como Cloudflare Pages. Salve sem descompactar para o fluxo de upload direto do Pages. Não é necessário instalar Node.js para usar esse pacote. Se o repositório for privado, entre no GitHub com a conta que tem acesso antes de baixar.
+Este ZIP já está compilado e pronto para upload em hospedagem estática. Para atualizar o endereço atual, envie-o **ao mesmo projeto da Cloudflare**, pelo fluxo de implantação que já funcionou com a v2. Mantenha o arquivo em ZIP para esse envio; não é necessário instalar Node.js. Se o repositório for privado, entre no GitHub com a conta que tem acesso antes de baixar. O guia de iPhone também descreve uma primeira publicação alternativa em Pages.
 
-Se o download direto não iniciar, abra a [página do arquivo no GitHub](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/blob/main/downloads/conhecendo-a-cti-v2.zip) e use **Download raw file** (ícone de download). A opção **Code → Download ZIP** baixa o código-fonte do repositório e não substitui esse pacote pronto para hospedagem.
+Se o download direto não iniciar, abra a [página do arquivo no GitHub](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/blob/main/downloads/conhecendo-a-cti-v3.zip) e use **Download raw file** (ícone de download). A opção **Code → Download ZIP** baixa o código-fonte do repositório e não substitui esse pacote pronto para hospedagem.
 
-O envio ao GitHub guarda o projeto e permite baixar os arquivos. Não há hospedagem do aplicativo ou GitHub Pages ativado por este envio.
+O envio ao GitHub guarda o projeto e permite baixar os arquivos; ele não atualiza automaticamente a hospedagem. A nova leitura aparece no endereço atual depois de enviar o ZIP v3 à Cloudflare. Mantendo o endereço, o QR Code continua válido.
 
 ## Desenvolvimento
 
@@ -42,13 +42,15 @@ npm run build
 npm run preview -- --port 4173
 ```
 
-O build verifica TypeScript, gera `dist/` e cria o service worker com a lista exata de arquivos produzidos. O servidor de desenvolvimento não registra service worker. Para testar a experiência offline, abra a versão de produção, aguarde a ativação do service worker, recarregue uma vez e use o modo offline do navegador. O shell e os conteúdos internos ficam disponíveis; fontes externas exigem conexão. O primeiro acesso precisa de rede. O navegador pode remover caches conforme suas políticas de armazenamento.
+O build confere a correspondência SHA-256 entre o livro e seu PDF de origem, verifica as imagens e os links, verifica TypeScript, gera `dist/` e cria o service worker com a lista exata de arquivos produzidos. As páginas do livro já estão incluídas no repositório; Python é necessário somente para regenerá-las após trocar o PDF, conforme [o guia do livro virtual](docs/LIVRO-VIRTUAL.md).
 
-## Publicação (apenas com aprovação)
+O servidor de desenvolvimento não registra service worker. Para testar a experiência offline, abra a versão de produção, aguarde a ativação do service worker, recarregue uma vez e use o modo offline do navegador. O cache inicial inclui cerca de 10 MB de arquivos, com as 96 páginas do livro e os dois PDFs. O shell e os conteúdos internos ficam disponíveis; fontes externas exigem conexão. O primeiro acesso precisa de rede. O navegador pode remover caches conforme suas políticas de armazenamento.
 
-Não há publicação automática configurada. Após aprovação do responsável, execute `npm ci` e `npm run build`, e publique **somente `dist/`** em uma hospedagem estática com HTTPS na raiz de um domínio. Use cabeçalho `Cache-Control: no-cache` para `index.html`, `sw.js` e manifesto; os arquivos em `assets/` possuem hash e podem ter cache longo. Este protótipo usa caminhos absolutos e não está configurado para subdiretórios como GitHub Pages de projeto. Para isso, adapte conscientemente o `base`, manifesto e caminhos do service worker em uma tarefa de código.
+## Atualização manual da publicação
 
-Nenhuma credencial é necessária para rodar localmente. Credenciais da hospedagem só serão necessárias quando for escolhida e autorizada a publicação. Depois que existir uma URL HTTPS definitiva, gere o QR Code apontando para ela e teste com Android e iPhone. Nenhum QR Code definitivo é incluído nesta versão.
+Não há publicação automática configurada. O autor informou o endereço de teste na Cloudflare registrado acima. O responsável pode atualizar o mesmo projeto com o ZIP pronto; para gerar um pacote a partir do código, execute `npm ci` e `npm run build` e publique **somente os arquivos de `dist/`**, com `index.html` na raiz. Use HTTPS e cabeçalho `Cache-Control: no-cache` para `index.html`, `sw.js` e manifesto; os arquivos em `assets/` possuem hash e podem ter cache longo. Este protótipo usa caminhos absolutos e não está configurado para subdiretórios como GitHub Pages de projeto. Para isso, adapte conscientemente o `base`, manifesto e caminhos do service worker em uma tarefa de código.
+
+Nenhuma credencial é necessária para rodar localmente. A atualização da hospedagem é feita na conta Cloudflare do responsável. O QR Code incluído aponta para o endereço de teste informado pelo autor e permanece válido enquanto esse endereço for mantido. Teste sua abertura em Android e iPhone; se trocar o domínio ou endereço, gere e confira outro QR.
 
 A instalação PWA pode ser oferecida pelo navegador em dispositivos compatíveis. Veja “Sobre o projeto”. No Safari do iPhone, utilize Compartilhar → Adicionar à Tela de Início. Instalação e experiência em dispositivos físicos precisam ser verificadas na URL HTTPS final.
 
@@ -61,6 +63,10 @@ A instalação PWA pode ser oferecida pelo navegador em dispositivos compatívei
 - `public/`: manifesto e ícones próprios, sem identidade visual institucional.
 - `scripts/build-sw.mjs`: geração do cache offline a partir do build real.
 - `src/materials.ts` e `src/PdfMaterials.tsx`: catálogo e cartões dos PDFs de apoio.
+- `src/BookReader.tsx`, `src/book.ts` e `src/book-reader.css`: leitor horizontal e validação do manifesto do livro.
+- `scripts/preparar-caderno.py`: extração de texto e links e geração das imagens do livro a partir do PDF.
+- `scripts/check-book.mjs`: conferência do livro e do hash de origem antes do build.
+- `public/caderno/`: manifesto com texto integral e 96 imagens WebP, incluídos no cache offline.
 - `public/materiais/`: cópias de compatibilidade dos PDFs enviados pelo autor, conforme docs/PACOTE-V2.md.
 
 ## Conteúdo e limites
@@ -78,8 +84,9 @@ Apenas os IDs dos módulos visitados são armazenados em `localStorage`, sem ide
 3. Responder o quiz, verificar explicações, pontuação e reinício; filtrar um assunto.
 4. Recarregar e conferir visitas; apagá-las em Sobre o projeto.
 5. Navegar com teclado e em largura de celular; verificar ausência de rolagem horizontal.
-6. Em produção, conferir manifesto, ativação do service worker e recarregamento offline.
-7. Antes de uso educacional real, concluir revisão clínica e testes em iOS/Android físicos.
+6. Em Biblioteca científica, abrir “Ler caderno”; testar deslize horizontal, Anterior/Próxima, Índice, salto para uma página, links, texto da página e PDF original. Conferir separadamente o download de impressão.
+7. Em produção, conferir manifesto, ativação do service worker e recarregamento offline, incluindo uma página do livro ainda não visitada.
+8. Antes de uso educacional real, concluir revisão clínica e testes em iOS/Android físicos.
 
 ## Direção atual do projeto
 
@@ -96,21 +103,21 @@ Os oito módulos são:
 7. Quiz interativo.
 8. Biblioteca científica.
 
-O conteúdo clínico é demonstrativo e continua pendente de revisão clínica e institucional, conforme os limites descritos acima. Referências específicas, autoria e permissões de eventuais materiais incorporados devem ser conferidas durante essa revisão. A publicação com HTTPS e o QR Code definitivo continuam sujeitos à definição da hospedagem e à autorização do responsável.
+O conteúdo clínico é demonstrativo e continua pendente de revisão clínica e institucional, conforme os limites descritos acima. Referências específicas, autoria e permissões de eventuais materiais incorporados devem ser conferidas durante essa revisão. O endereço HTTPS de teste e o QR Code já estão registrados acima; essa disponibilidade não implica validação do conteúdo para uso no estágio.
 
 A tentativa anterior de integração com o Google Sites está encerrada. O histórico dessa tentativa é mantido apenas no ambiente de desenvolvimento; solicitações antigas de acesso à rede e de envio de páginas não são pendências da versão atual.
 
 Para testar usando somente um iPhone, consulte [o passo a passo de publicação e teste](docs/TESTAR-NO-IPHONE.md).
 
-## Cadernos em PDF
+## Caderno como livro e PDFs
 
 Os dois cadernos enviados pelo autor estão em **Biblioteca científica**, com atalho na tela inicial. Os arquivos distribuídos são cópias de compatibilidade: textos, layout, referências, links e autoria foram conferidos contra os originais; os anexos auxiliares de proveniência C2PA foram omitidos. Os originais permanecem preservados separadamente.
 
-- **Leitura digital:** caderno completo com 96 páginas. O botão “Ler caderno” abre o leitor nativo do navegador em nova aba; “Baixar PDF” permite salvar o arquivo.
+- **Leitura digital:** “Ler caderno” abre `#caderno` dentro do aplicativo, com uma página por vez e deslize horizontal. O leitor tem Anterior/Próxima, contador, Índice, campo para ir a uma página e “Ver texto da página” com o texto integral e os links. Os links internos do índice original continuam navegáveis. “PDF original” abre o PDF usado como fonte em nova aba; “Baixar PDF”, na Biblioteca, permite salvar esse mesmo arquivo. A leitura recomeça na página 1 quando o leitor é aberto novamente.
 - **Impressão opcional:** 24 páginas A4 com quatro páginas de bolso por folha (96 páginas lógicas). O botão “Baixar para imprimir” entrega o PDF já diagramado. Imprimir A4, tamanho real/100%, uma página do PDF por folha e frente única; não aplicar novamente a opção de quatro páginas por folha da impressora. Recortar e organizar pela numeração.
 
-No iPhone, se o Safari abrir o PDF em vez de baixá-lo, usar Compartilhar → Salvar em Arquivos. A impressão e a abertura no leitor nativo precisam ser confirmadas no dispositivo do usuário.
+No iPhone, se o Safari abrir o PDF em vez de baixá-lo, usar Compartilhar → Salvar em Arquivos. O deslize, a abertura do PDF, o download, a impressão e o offline precisam ser confirmados no aparelho físico do usuário. As imagens do livro preservam a aparência do PDF; a opção de texto facilita a leitura sem depender do tamanho da imagem.
 
-Os PDFs entram no cache offline do PWA após instalação completa do service worker em um primeiro acesso online (aproximadamente 2,3 MiB adicionais). O comportamento pode depender das políticas de armazenamento do navegador. Não há formulários no aplicativo para coletar dados das folhas de horários. As folhas presentes nos PDFs são modelos em branco; o exemplo de anotação é didático. A inclusão dos arquivos não significa revisão clínica ou validação institucional.
+Os PDFs, o manifesto e as imagens do livro entram no cache offline do PWA após instalação completa do service worker em um primeiro acesso online. Esse conjunto, somado ao aplicativo, representa cerca de 10 MB. O comportamento pode depender das políticas de armazenamento do navegador. Não há formulários no aplicativo para coletar dados das folhas de horários. As folhas presentes nos PDFs são modelos em branco; o exemplo de anotação é didático. A inclusão dos arquivos não significa revisão clínica ou validação institucional.
 
-Consulte [o registro de origem e integridade](docs/MATERIAIS-PDF.md).
+Consulte [o registro de origem e integridade](docs/MATERIAIS-PDF.md) e [o guia de geração e uso do livro virtual](docs/LIVRO-VIRTUAL.md).

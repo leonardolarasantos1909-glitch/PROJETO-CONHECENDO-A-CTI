@@ -11,3 +11,6 @@
 
 /materiais/*
   Cache-Control: no-cache
+
+/caderno/*
+  Cache-Control: no-cache
