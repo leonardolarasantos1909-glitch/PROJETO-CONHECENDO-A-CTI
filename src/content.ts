@@ -1,3 +1,4 @@
+import { materialSearchText } from './materials';
 export type Topic = { title: string; purpose: string; care: string; risk: string };
 export type Module = { id: string; title: string; description: string; label: string; topics: Topic[] };
 const topic = (title: string, purpose: string, care: string, risk: string): Topic => ({title,purpose,care,risk});
@@ -44,7 +45,7 @@ topic('Higiene, conforto e mobilização','Adequado: “Higiene realizada com ap
 topic('Eliminações e balanço','Adequado: registrar tipo de eliminação, volume efetivamente medido, horário e características observadas nos campos próprios.','Identifique quando um volume não pôde ser medido, em vez de estimá-lo como medição.','Inadequado: “Diurese boa.” Não informa quantidade, período ou características.'),
 topic('Intercorrências e comunicação','Adequado: descrever achado objetivo, horário, profissional acionado, orientações recebidas e cuidados efetivamente executados.','Registre de maneira cronológica, clara e identificada, conforme as normas aplicáveis e o sistema institucional.','Inadequado: “Paciente complicado; equipe avisada.” Contém julgamento e não permite identificar evento, destinatário e conduta.') ]},
 {id:'quiz',title:'Quiz interativo',description:'Pratique com situações fictícias e aprenda com cada resposta.',label:'Teste seus conhecimentos',topics:[]},
-{id:'biblioteca',title:'Biblioteca científica',description:'Fontes oficiais para aprofundar e apoiar a revisão do conteúdo.',label:'Aprenda com fontes',topics:[]} ];
+{id:'biblioteca',title:'Biblioteca científica',description:'Cadernos digitais, impressão de bolso e fontes para aprofundar o aprendizado.',label:'Aprenda com fontes',topics:[]} ];
 export const sources = [
 {title:'Anvisa — Segurança do paciente',url:'https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/seguranca-do-paciente',description:'Materiais oficiais e orientações sobre segurança na assistência.'},
 {title:'Ministério da Saúde — Saúde de A a Z',url:'https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z',description:'Portal de consulta a informações públicas de saúde.'},
@@ -63,5 +64,5 @@ export const questions = [
 {subject:'Rotinas',text:'Um volume de eliminação não pôde ser medido. Como registrar?',options:['Inventar um valor aproximado e marcar como medido.','Repetir o volume anterior.','Omitir a eliminação.','Informar a ocorrência e que o volume não foi medido.'],answer:3,explanation:'Registros devem representar o que foi observado e medido, sem transformar estimativas em dados objetivos.'}
 ];
 export const normalize = (value: string) => value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
-export function searchModules(query: string) { const term=normalize(query.trim()); return modules.filter(m=>normalize([m.title,m.description,...m.topics.flatMap(t=>[t.title,t.purpose,t.care,t.risk])].join(' ')).includes(term)); }
+export function searchModules(query: string) { const term=normalize(query.trim()); return modules.filter(m=>normalize([m.title,m.description,...(m.id==='biblioteca'?[materialSearchText]:[]),...m.topics.flatMap(t=>[t.title,t.purpose,t.care,t.risk])].join(' ')).includes(term)); }
 export function scoreAnswers(items: typeof questions, answers: number[]) { return items.reduce((sum,q,i)=>sum+Number(q.answer===answers[i]),0); }

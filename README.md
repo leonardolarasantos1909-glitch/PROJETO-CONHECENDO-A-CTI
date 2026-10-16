@@ -58,12 +58,14 @@ A instalação PWA pode ser oferecida pelo navegador em dispositivos compatívei
 - `src/content.test.ts`: testes de pesquisa, integridade dos módulos e correção do quiz.
 - `public/`: manifesto e ícones próprios, sem identidade visual institucional.
 - `scripts/build-sw.mjs`: geração do cache offline a partir do build real.
+- `src/materials.ts` e `src/PdfMaterials.tsx`: catálogo e cartões dos PDFs de apoio.
+- `public/materiais/`: PDFs originais enviados pelo autor.
 
 ## Conteúdo e limites
 
 Todo conteúdo é **demonstrativo e pendente de revisão clínica**. Os links da biblioteca são portais oficiais de consulta, não referências que comprovem validação de cada afirmação. Os responsáveis devem revisar conteúdo, fontes específicas, atribuições profissionais, versões dos instrumentos e exemplos antes de uso por estagiários. A revisão clínica ainda não tem data ou responsável definido. Os exercícios de escalas trabalham seleção e contexto, sem calculadoras ou pontuações não validadas.
 
-Os exemplos de anotações são fictícios e incompletos; não devem ser copiados para prontuários. Não há doses, ajustes de ventilação ou protocolos internos. O aplicativo não substitui prescrição, protocolos autorizados ou supervisão do enfermeiro. Não é publicação oficial do hospital citado no contexto do projeto.
+Os exemplos de anotações são fictícios e incompletos; não devem ser copiados para prontuários. O aplicativo não oferece prescrição nem ajuste de ventilação. Os cadernos anexados mantêm o conteúdo original do autor, incluindo quadros de estudo e referências, sujeitos à revisão indicada abaixo. O aplicativo não substitui prescrição, protocolos autorizados ou supervisão do enfermeiro. Não é publicação oficial do hospital citado no contexto do projeto.
 
 Apenas os IDs dos módulos visitados são armazenados em `localStorage`, sem identificação. O botão em “Sobre o projeto” permite apagá-los. Visita não significa conclusão ou certificação. Não há entrada de dados clínicos ou pessoais. Links externos e provedores de hospedagem possuem suas próprias políticas de privacidade.
 
@@ -97,3 +99,16 @@ O conteúdo clínico é demonstrativo e continua pendente de revisão clínica e
 A tentativa anterior de integração com o Google Sites está encerrada. O histórico dessa tentativa é mantido apenas no ambiente de desenvolvimento; solicitações antigas de acesso à rede e de envio de páginas não são pendências da versão atual.
 
 Para testar usando somente um iPhone, consulte [o passo a passo de publicação e teste](docs/TESTAR-NO-IPHONE.md).
+
+## Cadernos em PDF
+
+Os dois cadernos enviados pelo autor estão em **Biblioteca científica**, com atalho na tela inicial. Os arquivos originais foram preservados byte a byte, incluindo referências, links e metadados.
+
+- **Leitura digital:** caderno completo com 96 páginas. O botão “Ler caderno” abre o leitor nativo do navegador em nova aba; “Baixar PDF” permite salvar o arquivo.
+- **Impressão opcional:** 24 páginas A4 com quatro páginas de bolso por folha (96 páginas lógicas). O botão “Baixar para imprimir” entrega o PDF já diagramado. Imprimir A4, tamanho real/100%, uma página do PDF por folha e frente única; não aplicar novamente a opção de quatro páginas por folha da impressora. Recortar e organizar pela numeração.
+
+No iPhone, se o Safari abrir o PDF em vez de baixá-lo, usar Compartilhar → Salvar em Arquivos. A impressão e a abertura no leitor nativo precisam ser confirmadas no dispositivo do usuário.
+
+Os PDFs entram no cache offline do PWA após instalação completa do service worker em um primeiro acesso online (aproximadamente 2,3 MiB adicionais). O comportamento pode depender das políticas de armazenamento do navegador. Não há formulários no aplicativo para coletar dados das folhas de horários. As folhas presentes nos PDFs são modelos em branco; o exemplo de anotação é didático. A inclusão dos arquivos não significa revisão clínica ou validação institucional.
+
+Consulte [o registro de origem e integridade](docs/MATERIAIS-PDF.md).
