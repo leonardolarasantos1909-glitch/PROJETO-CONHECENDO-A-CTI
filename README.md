@@ -2,6 +2,15 @@
 
 Protótipo PWA educativo, em português, para acolhimento de estagiários de Técnico em Enfermagem em terapia intensiva. React, TypeScript, Vite, Tailwind CSS e ícones Lucide. Sem login, backend, analytics ou coleta de identificação dos estudantes.
 
+## Acesso ao protótipo e QR Code
+
+Endereço de teste informado pelo autor: https://proud-math-302f.conhecendoacti.workers.dev/ . O QR Code usa a página inicial, sem o fragmento `#acolhimento`.
+
+- [QR Code em PNG](downloads/qr-conhecendo-a-cti.png).
+- [Cartaz A4 em PDF](downloads/cartaz-conhecendo-a-cti.pdf).
+
+O conteúdo do QR foi decodificado e conferido localmente. A conexão ao endereço publicado não pôde ser verificada deste ambiente por bloqueio do proxy; confirme no iPhone que a página abre e que módulos, pesquisa e quiz funcionam. Se o endereço mudar, gere e teste outro QR. Os arquivos são para avaliação do protótipo; revisão clínica e institucional continua pendente antes da distribuição aos estagiários.
+
 ## Baixar a versão pronta
 
 [Baixar conhecendo-a-cti-publicar.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-publicar.zip)
