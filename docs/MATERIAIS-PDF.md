@@ -1,6 +1,6 @@
 # Materiais PDF do projeto
 
-Dois arquivos enviados pelo autor para inclusão no aplicativo. A documentação abaixo registra origem e conferência técnica; não constitui revisão clínica. A tabela inicial identifica os arquivos originais recebidos. Os caminhos no aplicativo contêm as cópias de compatibilidade preparadas na v2, cujos hashes estão na seção ao final. A v3 mantém esses mesmos PDFs e acrescenta o leitor em formato de livro; não houve nova regravação dos documentos.
+Dois arquivos enviados pelo autor para inclusão no aplicativo. A documentação abaixo registra origem e conferência técnica; não constitui revisão clínica. A tabela inicial identifica os arquivos originais recebidos. Os caminhos no aplicativo contêm as cópias de compatibilidade preparadas na v2, cujos hashes estão na seção ao final. Desde a v3, esses mesmos PDFs acompanham o leitor em formato de livro. A v4 amplia as orientações para iPhone e Android, sem nova regravação dos documentos.
 
 | Uso | Nome original | Páginas físicas | Arquivo no aplicativo | SHA-256 |
 | --- | --- | --- | --- | --- |
@@ -22,7 +22,9 @@ Os dois arquivos mantêm a numeração lógica de 01 a 96 e os mesmos textos. A 
 
 Materiais disponíveis na Biblioteca científica e por atalho no início. “Ler caderno” abre o livro digital dentro do aplicativo, na rota `#caderno`. As 96 páginas A4 aparecem uma por vez; a navegação é horizontal, por deslize, botões ou teclado. Há contador, Índice, salto por número e “Ver texto da página”, com a extração integral do texto e links da página atual. Os 12 links internos e 27 links externos identificados nas páginas do PDF foram preservados no livro.
 
-A opção “PDF original” abre em nova aba o mesmo PDF de leitura usado como fonte: a cópia de compatibilidade já distribuída na v2, sem alterações novas. “Baixar PDF” continua disponível na Biblioteca. A versão de bolso tem download separado e instruções de impressão; não foi transformada em páginas individuais no leitor. Há ajuda para salvar em Arquivos no Safari. A experiência no iPhone físico e a impressão precisam ser confirmadas pelo usuário.
+A opção “PDF original” abre em nova aba o mesmo PDF de leitura usado como fonte: a cópia de compatibilidade já distribuída na v2, sem alterações novas. “Baixar PDF” continua disponível na Biblioteca. A versão de bolso tem download separado e instruções de impressão; não foi transformada em páginas individuais no leitor.
+
+No **iPhone/Safari**, se o PDF abrir em vez de baixar, use **Compartilhar → Salvar em Arquivos**. No **Android/Chrome**, use **Baixar** ou o ícone de seta para baixo do visualizador de PDF e procure em **Arquivos/Files → Downloads**; os rótulos podem variar. Se estiver no navegador interno do WhatsApp, escolha **Abrir no navegador**, ou copie o endereço e abra no Safari ou Chrome. Download, leitura e impressão precisam ser confirmados nos aparelhos físicos de ambos os sistemas. Consulte [o roteiro para celular](TESTAR-NO-CELULAR.md).
 
 Os PDFs e o livro são arquivos estáticos da própria aplicação, sem serviços externos de visualização. O service worker inclui os PDFs, o manifesto e as 96 imagens no precache e usa a resposta PDF em cache, sem substituí-la pelo HTML de navegação quando offline. A atualização do cache considera os bytes desses arquivos. O cache inicial do aplicativo ocupa cerca de 10 MB. Os conteúdos ficam disponíveis após um primeiro acesso online e a instalação completa do service worker; armazenamento local e impressão dependem do navegador/dispositivo. Links externos continuam exigindo conexão.
 

@@ -1,5 +1,6 @@
 import { ArrowRight, ArrowUpRight, BookOpen, Download, FileText, Printer } from 'lucide-react';
 import { learningMaterials } from './materials';
+import { PdfInstructions } from './MobileInstructions';
 
 export function PdfMaterials() {
   return <section className="pdf-materials" aria-labelledby="pdf-materials-heading">
@@ -24,7 +25,7 @@ export function PdfMaterials() {
         {printable && <details className="pdf-instructions"><summary>Como imprimir o caderno de bolso</summary><ol><li>Selecione papel <strong>A4</strong>, <strong>tamanho real / 100%</strong> e frente única.</li><li>Imprima <strong>uma página do PDF por folha</strong>. O arquivo já traz quatro páginas de bolso em cada A4.</li><li>Recorte e organize pela numeração de 01 a 96.</li></ol></details>}
       </article>;
     })}</div>
-    <details className="pdf-help"><summary>Como salvar o PDF no iPhone</summary><p>Toque em “Baixar PDF” ou “Baixar para imprimir”. Se o Safari abrir o documento, use <strong>Compartilhar → Salvar em Arquivos</strong>. Para ler dentro do aplicativo, toque em “Ler caderno” e deslize as páginas para os lados. O leitor também oferece a opção de abrir o PDF original no navegador.</p></details>
+    <PdfInstructions/>
   </section>;
 }
 
