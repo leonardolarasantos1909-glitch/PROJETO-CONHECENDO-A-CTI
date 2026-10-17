@@ -1,3 +1,5 @@
+import { apostilaSearchText } from './apostilas';
+
 export type LearningMaterial = {
   id: string;
   title: string;
@@ -36,6 +38,7 @@ export const learningMaterials: LearningMaterial[] = [
 ];
 
 export const materialSearchText = [
+  apostilaSearchText,
   ...learningMaterials.flatMap(m => [m.title, m.description]),
   'PDF A4 bolso imprimir digital baixar materiais caderno plantão gasometria ventilação EVA BPS PAINAD CPOT RASS Glasgow delirium dispositivos medicações bombas cálculos sepse PCR registros transporte horários',
 ].join(' ');

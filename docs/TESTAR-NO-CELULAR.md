@@ -8,9 +8,11 @@ Abra https://proud-math-302f.conhecendoacti.workers.dev/ no **Safari do iPhone**
 
 Se o link recebido pelo WhatsApp abrir dentro dele, use o menu e escolha **Abrir no navegador**. Se essa opção não aparecer, copie o link e cole na barra de endereço do Safari ou Chrome. Isso ajuda a encontrar os controles de download e de adicionar à tela inicial.
 
-## 2. Ler e salvar os cadernos
+## 2. Ler e salvar os cadernos e as apostilas
 
 Na **Biblioteca científica**, toque em **Ler caderno**. O livro apresenta uma página por vez, com deslize horizontal, botões **Anterior/Próxima**, **Índice**, salto por número e **Ver texto da página**. A opção **PDF original** abre o PDF usado como fonte.
+
+Na mesma Biblioteca, a seção **Apostilas de estudo** oferece os cinco materiais temáticos disponíveis, com **Abrir apostila** (PDF em nova aba) e **Baixar PDF**. Também há atalhos nos módulos relacionados. Os PDFs seguem a paleta do aplicativo, preservando conteúdo, imagens e referências.
 
 Para salvar um arquivo, volte à Biblioteca e escolha **Baixar PDF** ou **Baixar para imprimir**:
 
@@ -38,15 +40,17 @@ Essas opções podem variar conforme a versão. Se não aparecerem, confira se o
 - Responda ao quiz e confira explicações e resultado.
 - No caderno, deslize para o lado e teste os botões, o índice e o salto para uma página.
 - Abra **Ver texto da página**, um link de referência e **PDF original**.
-- Salve os dois PDFs e procure os arquivos nas pastas indicadas acima.
+- Salve os cadernos e uma apostila e procure os arquivos nas pastas indicadas acima.
 - Confira o atalho da tela inicial, o tamanho do texto e os botões em cada aparelho.
 - Com conexão, aguarde a preparação inicial de cerca de 10 MB de arquivos. Recarregue, ative o modo avião e abra os módulos e uma página do livro ainda não visitada. Links externos exigem conexão.
+
+As novas apostilas não são baixadas todas na primeira visita. Abra cada PDF com conexão para que o navegador possa armazená-lo por completo; o espaço disponível pode limitar esse cache. Para consultar sem internet com uma cópia salva, use **Baixar PDF** e abra o arquivo no gerenciador do celular.
 
 A instalação, o download, a impressão e o offline precisam ser confirmados em iPhone e Android físicos. O navegador pode remover arquivos armazenados conforme suas políticas. Esses passos orientam o teste; não afirmam que todos os aparelhos foram validados.
 
 ## 5. Atualizar a hospedagem — somente para o responsável
 
-Baixe [conhecendo-a-cti-v4.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-v4.zip). Se o download não iniciar, abra a [página do arquivo no GitHub](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/blob/main/downloads/conhecendo-a-cti-v4.zip) e toque no ícone de download (**Download raw file**). Se o repositório for privado, entre na conta com acesso.
+Baixe [conhecendo-a-cti-v5.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-v5.zip). Se o download não iniciar, abra a [página do arquivo no GitHub](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/blob/main/downloads/conhecendo-a-cti-v5.zip) e toque no ícone de download (**Download raw file**). Se o repositório for privado, entre na conta com acesso.
 
 No iPhone, confira o ZIP em **Arquivos → Downloads**; se abrir em uma visualização, use **Compartilhar → Salvar em Arquivos**. No Android, confirme o download no Chrome e confira em **Arquivos/Files → Downloads**. Mantenha o arquivo em ZIP, sem descompactar. O comando **Code → Download ZIP** do GitHub baixa o código-fonte e não substitui esse pacote de produção.
 
@@ -54,7 +58,7 @@ No painel da Cloudflare, entre no **mesmo projeto** do aplicativo publicado e en
 
 Mantendo o projeto e o endereço, o QR Code continua válido. Depois de publicar, recarregue o aplicativo. Se a versão antiga continuar aparecendo, feche todas as abas do aplicativo e abra novamente com conexão.
 
-O histórico do alerta de download de uma versão anterior permanece em [PACOTE-V2.md](PACOTE-V2.md); verificações de integridade e funcionamento não são uma varredura antivírus. A v4 mantém os mesmos PDFs de compatibilidade.
+O histórico do alerta de download de uma versão anterior permanece em [PACOTE-V2.md](PACOTE-V2.md); verificações de integridade e funcionamento não são uma varredura antivírus. A v5 mantém os cadernos de compatibilidade e acrescenta cinco apostilas com estética adaptada; consulte [o inventário e as três pendências de envio](APOSTILAS.md).
 
 ## Primeira publicação alternativa em Pages
 

@@ -30,5 +30,5 @@ export function PdfMaterials() {
 }
 
 export function MaterialsShortcut() {
-  return <a className="materials-shortcut" href="#biblioteca"><span className="pdf-icon"><BookOpen size={23}/></span><span><strong>Caderno digital e versão de bolso</strong><span>Leia no celular ou baixe quatro páginas por A4 para imprimir.</span></span><ArrowRight size={20}/></a>;
+  return <a className="materials-shortcut" href="#biblioteca"><span className="pdf-icon"><BookOpen size={23}/></span><span><strong>Cadernos e apostilas de estudo</strong><span>Leia, baixe as apostilas ou imprima o caderno de bolso.</span></span><ArrowRight size={20}/></a>;
 }

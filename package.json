@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
-    "build": "node scripts/check-book.mjs && tsc -b && vite build && node scripts/build-sw.mjs",
+    "build": "node scripts/check-book.mjs && node scripts/check-apostilas.mjs && tsc -b && vite build && node scripts/build-sw.mjs",
     "preview": "vite preview --host 0.0.0.0",
-    "test": "vitest run"
+    "test": "vitest run && node scripts/check-sw.mjs"
   },
   "dependencies": {
     "react": "^19.0.0",

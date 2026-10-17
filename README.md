@@ -13,15 +13,15 @@ O conteúdo do QR foi decodificado e conferido localmente. A conexão ao endere�
 
 ## Baixar a versão pronta
 
-**Estado de segurança:** houve relato de bloqueio antivírus em um pacote anterior. A versão v4 mantém o leitor em formato de livro e os mesmos PDFs de compatibilidade da v2; não há resultado de varredura antivírus completa. Os testes de integridade e funcionamento não substituem essa análise. No computador da empresa, encaminhe eventual alerta à TI, sem desativar proteções. [Histórico da versão v2](docs/PACOTE-V2.md).
+**Estado de segurança:** houve relato de bloqueio antivírus em um pacote anterior. A versão v5 mantém o leitor e os cadernos de compatibilidade da v2 e acrescenta cinco apostilas com adaptação visual; não há resultado de varredura antivírus completa. Os testes de integridade e funcionamento não substituem essa análise. No computador da empresa, encaminhe eventual alerta à TI, sem desativar proteções. [Histórico da versão v2](docs/PACOTE-V2.md).
 
-[Baixar conhecendo-a-cti-v4.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-v4.zip)
+[Baixar conhecendo-a-cti-v5.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-v5.zip)
 
 Este ZIP já está compilado e pronto para upload em hospedagem estática. Para atualizar o endereço atual, envie-o **ao mesmo projeto da Cloudflare**, pelo fluxo de implantação que já funcionou com a v2. Mantenha o arquivo em ZIP para esse envio; não é necessário instalar Node.js. Se o repositório for privado, entre no GitHub com a conta que tem acesso antes de baixar. O [guia para celular](docs/TESTAR-NO-CELULAR.md) orienta iPhone e Android e também descreve uma primeira publicação alternativa em Pages.
 
-Se o download direto não iniciar, abra a [página do arquivo no GitHub](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/blob/main/downloads/conhecendo-a-cti-v4.zip) e use **Download raw file** (ícone de download). A opção **Code → Download ZIP** baixa o código-fonte do repositório e não substitui esse pacote pronto para hospedagem.
+Se o download direto não iniciar, abra a [página do arquivo no GitHub](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/blob/main/downloads/conhecendo-a-cti-v5.zip) e use **Download raw file** (ícone de download). A opção **Code → Download ZIP** baixa o código-fonte do repositório e não substitui esse pacote pronto para hospedagem.
 
-O envio ao GitHub guarda o projeto e permite baixar os arquivos; ele não atualiza automaticamente a hospedagem. As alterações aparecem no endereço atual depois de enviar o ZIP v4 à Cloudflare. Mantendo o endereço, o QR Code continua válido.
+O envio ao GitHub guarda o projeto e permite baixar os arquivos; ele não atualiza automaticamente a hospedagem. As alterações aparecem no endereço atual depois de enviar o ZIP v5 à Cloudflare. Mantendo o endereço, o QR Code continua válido.
 
 ## Desenvolvimento
 
@@ -44,7 +44,7 @@ npm run preview -- --port 4173
 
 O build confere a correspondência SHA-256 entre o livro e seu PDF de origem, verifica as imagens e os links, verifica TypeScript, gera `dist/` e cria o service worker com a lista exata de arquivos produzidos. As páginas do livro já estão incluídas no repositório; Python é necessário somente para regenerá-las após trocar o PDF, conforme [o guia do livro virtual](docs/LIVRO-VIRTUAL.md).
 
-O servidor de desenvolvimento não registra service worker. Para testar a experiência offline, abra a versão de produção, aguarde a ativação do service worker, recarregue uma vez e use o modo offline do navegador. O cache inicial inclui cerca de 10 MB de arquivos, com as 96 páginas do livro e os dois PDFs. O shell e os conteúdos internos ficam disponíveis; fontes externas exigem conexão. O primeiro acesso precisa de rede. O navegador pode remover caches conforme suas políticas de armazenamento.
+O servidor de desenvolvimento não registra service worker. Para testar a experiência offline, abra a versão de produção, aguarde a ativação do service worker, recarregue uma vez e use o modo offline do navegador. O cache inicial inclui cerca de 10 MB de arquivos, com as 96 páginas do livro e os dois PDFs do caderno. As cinco apostilas adicionais (cerca de 75 MB no total) são armazenadas sob demanda ao abrir cada PDF completo; não fazem parte desse download inicial. O shell e os conteúdos internos ficam disponíveis; fontes externas exigem conexão. O primeiro acesso precisa de rede. O navegador pode remover caches conforme suas políticas de armazenamento.
 
 ## Atualização manual da publicação
 
@@ -67,7 +67,10 @@ Se o link abrir dentro do WhatsApp, escolha **Abrir no navegador**; se essa opç
 - `src/content.test.ts`: testes de pesquisa, integridade dos módulos e correção do quiz.
 - `public/`: manifesto e ícones próprios, sem identidade visual institucional.
 - `scripts/build-sw.mjs`: geração do cache offline a partir do build real.
-- `src/materials.ts` e `src/PdfMaterials.tsx`: catálogo e cartões dos PDFs de apoio.
+- `src/materials.ts` e `src/PdfMaterials.tsx`: catálogo e cartões dos cadernos de apoio.
+- `src/apostilas.ts` e `src/ApostilaMaterials.tsx`: catálogo das apostilas, cartões na Biblioteca e atalhos nos módulos relacionados.
+- `scripts/estilizar-apostilas.py`: adaptação vetorial da paleta, com verificação do conteúdo preservado.
+- `scripts/check-apostilas.mjs` e `scripts/check-sw.mjs`: integridade dos PDFs e testes de cache sob demanda e respostas HTTP Range.
 - `src/MobileInstructions.tsx`: orientações para salvar PDFs e adicionar o aplicativo à tela inicial em iPhone e Android.
 - `src/BookReader.tsx`, `src/book.ts` e `src/book-reader.css`: leitor horizontal e validação do manifesto do livro.
 - `scripts/preparar-caderno.py`: extração de texto e links e geração das imagens do livro a partir do PDF.
@@ -132,3 +135,13 @@ O deslize, a abertura do PDF, o download, a impressão e o offline precisam ser 
 Os PDFs, o manifesto e as imagens do livro entram no cache offline do PWA após instalação completa do service worker em um primeiro acesso online. Esse conjunto, somado ao aplicativo, representa cerca de 10 MB. O comportamento pode depender das políticas de armazenamento do navegador. Não há formulários no aplicativo para coletar dados das folhas de horários. As folhas presentes nos PDFs são modelos em branco; o exemplo de anotação é didático. A inclusão dos arquivos não significa revisão clínica ou validação institucional.
 
 Consulte [o registro de origem e integridade](docs/MATERIAIS-PDF.md) e [o guia de geração e uso do livro virtual](docs/LIVRO-VIRTUAL.md).
+
+## Apostilas temáticas — v5
+
+A Biblioteca inclui cinco apostilas (147 páginas): Cuidados com o Paciente Crítico, Curativos e Cuidados com Feridas, Evolução e Anotação de Enfermagem, Medicações e Bombas de Infusão, e Monitorização e Equipamentos. A adaptação visual usa bordô e sálvia nos elementos vetoriais, preservando os textos, as imagens, as fontes, os créditos, as referências, os links e a paginação. Capas e mapas rasterizados conservam suas cores originais. Os documentos abrem como PDF em nova aba e também podem ser baixados. O caderno com leitor virtual e a versão de bolso continuam disponíveis.
+
+Rotinas, Equipamentos, Dispositivos e Anotações de enfermagem têm atalhos para os materiais relacionados. A busca do início também encontra as apostilas na Biblioteca. As instruções de download para iOS e Android permanecem disponíveis.
+
+As apostilas são guardadas em cache sob demanda, sem acrescentar cerca de 75 MB à instalação inicial. Para uma cópia offline sob controle do usuário, baixe o PDF e abra-o em Arquivos/Downloads. O cache do navegador depende de espaço, recebimento completo e políticas locais, sendo renovado em atualizações.
+
+Os PDFs de Rotina do Técnico, Segurança e Prevenção de Eventos, e Ventilação Mecânica não puderam ser transferidos por excederem 32 MiB. Aguardam reenvio comprimido ou em partes de até 25 MB. Não foram incluídos materiais inventados para esses arquivos. A revisão clínica e institucional permanece pendente. Consulte [o inventário, os créditos e a integridade das apostilas](docs/APOSTILAS.md).

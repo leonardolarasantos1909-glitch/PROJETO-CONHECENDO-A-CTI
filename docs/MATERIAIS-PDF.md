@@ -1,5 +1,7 @@
 # Materiais PDF do projeto
 
+Este registro descreve os dois PDFs do caderno. Para as cinco apostilas temáticas adicionadas na v5, consulte [o inventário das apostilas](APOSTILAS.md).
+
 Dois arquivos enviados pelo autor para inclusão no aplicativo. A documentação abaixo registra origem e conferência técnica; não constitui revisão clínica. A tabela inicial identifica os arquivos originais recebidos. Os caminhos no aplicativo contêm as cópias de compatibilidade preparadas na v2, cujos hashes estão na seção ao final. Desde a v3, esses mesmos PDFs acompanham o leitor em formato de livro. A v4 amplia as orientações para iPhone e Android, sem nova regravação dos documentos.
 
 | Uso | Nome original | Páginas físicas | Arquivo no aplicativo | SHA-256 |

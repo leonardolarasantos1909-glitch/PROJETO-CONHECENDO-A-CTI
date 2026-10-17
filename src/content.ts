@@ -45,7 +45,7 @@ topic('Higiene, conforto e mobilização','Adequado: “Higiene realizada com ap
 topic('Eliminações e balanço','Adequado: registrar tipo de eliminação, volume efetivamente medido, horário e características observadas nos campos próprios.','Identifique quando um volume não pôde ser medido, em vez de estimá-lo como medição.','Inadequado: “Diurese boa.” Não informa quantidade, período ou características.'),
 topic('Intercorrências e comunicação','Adequado: descrever achado objetivo, horário, profissional acionado, orientações recebidas e cuidados efetivamente executados.','Registre de maneira cronológica, clara e identificada, conforme as normas aplicáveis e o sistema institucional.','Inadequado: “Paciente complicado; equipe avisada.” Contém julgamento e não permite identificar evento, destinatário e conduta.') ]},
 {id:'quiz',title:'Quiz interativo',description:'Pratique com situações fictícias e aprenda com cada resposta.',label:'Teste seus conhecimentos',topics:[]},
-{id:'biblioteca',title:'Biblioteca científica',description:'Cadernos digitais, impressão de bolso e fontes para aprofundar o aprendizado.',label:'Aprenda com fontes',topics:[]} ];
+{id:'biblioteca',title:'Biblioteca científica',description:'Cadernos, apostilas de estudo e fontes para aprofundar o aprendizado.',label:'Aprenda com fontes',topics:[]} ];
 export const sources = [
 {title:'Anvisa — Segurança do paciente',url:'https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/seguranca-do-paciente',description:'Materiais oficiais e orientações sobre segurança na assistência.'},
 {title:'Ministério da Saúde — Saúde de A a Z',url:'https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z',description:'Portal de consulta a informações públicas de saúde.'},
