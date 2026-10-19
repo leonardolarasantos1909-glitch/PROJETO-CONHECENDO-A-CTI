@@ -1,4 +1,5 @@
 import { materialSearchText } from './materials';
+import { scaleSearchText } from './scales';
 export type Topic = { title: string; purpose: string; care: string; risk: string };
 export type Module = { id: string; title: string; description: string; label: string; topics: Topic[] };
 const topic = (title: string, purpose: string, care: string, risk: string): Topic => ({title,purpose,care,risk});
@@ -24,7 +25,7 @@ topic('Aspirador','Sistema de vácuo, frasco coletor e conexões para remoção 
 topic('Oxigenoterapia','Interfaces, fluxômetro e fonte de oxigênio permitem fornecer oxigênio conforme prescrição.','Confira interface, conexões, pele e prescrição. Comunique desconforto e alterações à equipe.','Oxigênio é uma terapia: não defina fluxos ou metas por conta própria. Mantenha fontes de ignição afastadas.'),
 topic('Cânula nasal de alto fluxo','Sistema com cânula, circuito e aquecimento/umidificação para suporte respiratório.','Observe conforto, pele, conexões e alarmes. Solicite avaliação da equipe diante de piora ou falha.','Não altere fluxo, temperatura ou concentração de oxigênio sem orientação profissional responsável.'),
 topic('Terapia renal substitutiva','Equipamentos com circuito extracorpóreo e filtro para suporte à função renal em situações indicadas.','Reconheça o equipamento, proteja as linhas durante os cuidados e comunique alarmes à equipe habilitada.','Não manipule o circuito, acessos ou parâmetros sem atribuição e capacitação específicas.') ]},
-{id:'escalas',title:'Escalas clínicas',description:'Dor, sedação e consciência: compreenda os instrumentos.',label:'Avaliação orientada',topics:[
+{id:'escalas',title:'Escalas clínicas',description:'Dor: EVA, BPS e PAINAD. Agitação e sedação: RASS. Consciência: Glasgow.',label:'Avaliação orientada',topics:[
 topic('EVA — Escala Visual Analógica','Instrumento de autorrelato de intensidade da dor, usualmente uma linha contínua entre ausência de dor e a pior dor imaginável.','A pessoa precisa compreender e conseguir indicar sua experiência. Use o instrumento validado adotado pelo serviço.','Não confunda automaticamente EVA com escala numérica. Não atribua dor com base apenas na aparência.'),
 topic('BPS — Behavioral Pain Scale','Avalia comportamentos relacionados à dor em contextos para os quais foi validada, incluindo pacientes sob ventilação mecânica.','Considera expressão facial, membros superiores e adaptação ao ventilador. Consulte a versão validada e o treinamento institucional.','Não substitui o autorrelato quando ele é possível. O protótipo não calcula pontuação.'),
 topic('PAINAD','Instrumento observacional de dor desenvolvido para pessoas com demência avançada.','Considera respiração, vocalização negativa, expressão facial, linguagem corporal e consolabilidade. Confirme a pertinência com o enfermeiro.','Não aplique automaticamente a todo paciente que não fala. Use a versão validada, sem improvisar critérios.'),
@@ -64,5 +65,5 @@ export const questions = [
 {subject:'Rotinas',text:'Um volume de eliminação não pôde ser medido. Como registrar?',options:['Inventar um valor aproximado e marcar como medido.','Repetir o volume anterior.','Omitir a eliminação.','Informar a ocorrência e que o volume não foi medido.'],answer:3,explanation:'Registros devem representar o que foi observado e medido, sem transformar estimativas em dados objetivos.'}
 ];
 export const normalize = (value: string) => value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
-export function searchModules(query: string) { const term=normalize(query.trim()); return modules.filter(m=>normalize([m.title,m.description,...(m.id==='biblioteca'?[materialSearchText]:[]),...m.topics.flatMap(t=>[t.title,t.purpose,t.care,t.risk])].join(' ')).includes(term)); }
+export function searchModules(query: string) { const term=normalize(query.trim()); return modules.filter(m=>normalize([m.title,m.description,...(m.id==='biblioteca'?[materialSearchText]:[]),...(m.id==='escalas'?[scaleSearchText]:[]),...m.topics.flatMap(t=>[t.title,t.purpose,t.care,t.risk])].join(' ')).includes(term)); }
 export function scoreAnswers(items: typeof questions, answers: number[]) { return items.reduce((sum,q,i)=>sum+Number(q.answer===answers[i]),0); }

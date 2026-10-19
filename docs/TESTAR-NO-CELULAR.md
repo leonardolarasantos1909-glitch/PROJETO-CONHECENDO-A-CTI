@@ -37,6 +37,7 @@ Essas opções podem variar conforme a versão. Se não aparecerem, confira se o
 ## 4. Conferir nos dois sistemas
 
 - Abra os oito módulos e alguns cartões; pesquise “glicemia” e “sonda”.
+- Abra **Escalas** no menu inferior e alterne **EVA**, **BPS**, **PAINAD** e **RASS**. Confira o texto, a comparação, as referências e os links às páginas do caderno. A RASS descreve agitação/sedação; a EVA desenhada é apenas uma ilustração, sem medida real.
 - Responda ao quiz e confira explicações e resultado.
 - No caderno, deslize para o lado e teste os botões, o índice e o salto para uma página.
 - Abra **Ver texto da página**, um link de referência e **PDF original**.
@@ -50,7 +51,7 @@ A instalação, o download, a impressão e o offline precisam ser confirmados em
 
 ## 5. Atualizar a hospedagem — somente para o responsável
 
-Baixe [conhecendo-a-cti-v5.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-v5.zip). Se o download não iniciar, abra a [página do arquivo no GitHub](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/blob/main/downloads/conhecendo-a-cti-v5.zip) e toque no ícone de download (**Download raw file**). Se o repositório for privado, entre na conta com acesso.
+Baixe [conhecendo-a-cti-v6.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-v6.zip). Se o download não iniciar, abra a [página do arquivo no GitHub](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/blob/main/downloads/conhecendo-a-cti-v6.zip) e toque no ícone de download (**Download raw file**). Se o repositório for privado, entre na conta com acesso.
 
 No iPhone, confira o ZIP em **Arquivos → Downloads**; se abrir em uma visualização, use **Compartilhar → Salvar em Arquivos**. No Android, confirme o download no Chrome e confira em **Arquivos/Files → Downloads**. Mantenha o arquivo em ZIP, sem descompactar. O comando **Code → Download ZIP** do GitHub baixa o código-fonte e não substitui esse pacote de produção.
 
@@ -58,7 +59,7 @@ No painel da Cloudflare, entre no **mesmo projeto** do aplicativo publicado e en
 
 Mantendo o projeto e o endereço, o QR Code continua válido. Depois de publicar, recarregue o aplicativo. Se a versão antiga continuar aparecendo, feche todas as abas do aplicativo e abra novamente com conexão.
 
-O histórico do alerta de download de uma versão anterior permanece em [PACOTE-V2.md](PACOTE-V2.md); verificações de integridade e funcionamento não são uma varredura antivírus. A v5 mantém os cadernos de compatibilidade e acrescenta cinco apostilas com estética adaptada; consulte [o inventário e as três pendências de envio](APOSTILAS.md).
+O histórico do alerta de download de uma versão anterior permanece em [PACOTE-V2.md](PACOTE-V2.md); verificações de integridade e funcionamento não são uma varredura antivírus. A v6 mantém os cadernos e as cinco apostilas da v5, e amplia a seção de escalas clínicas; consulte [o inventário e as três pendências de envio](APOSTILAS.md).
 
 ## Primeira publicação alternativa em Pages
 
@@ -73,3 +74,5 @@ Se já existe o projeto Workers do endereço atual, **atualize esse projeto**; n
 O plano gratuito de Pages atende a este protótipo estático e não exige comprar domínio. Os rótulos da interface podem variar. Consulte a [documentação de upload direto de arquivos](https://developers.cloudflare.com/pages/get-started/direct-upload/); o envio pelo painel aceita ZIP e difere do envio pela linha de comando.
 
 Antes de distribuir como material de estágio, valide conteúdo clínico, referências, autoria e apresentação institucional com os responsáveis. Não coloque dados reais de pacientes no aplicativo. Para detalhes técnicos, consulte [o guia do livro virtual](LIVRO-VIRTUAL.md).
+
+A seção de escalas funciona sem internet depois do primeiro carregamento completo do aplicativo. As referências externas exigem conexão. Para conhecer as fontes e as pendências de revisão do conteúdo educativo, consulte [Escalas clínicas](ESCALAS.md).
