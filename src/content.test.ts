@@ -5,6 +5,12 @@ describe('Conteúdos e pesquisa',()=>{
  it('localiza assunto interno sem exigir acentos ou caixa',()=>{expect(searchModules('GLICEMIA').map(m=>m.id)).toContain('rotinas');expect(searchModules('canula').map(m=>m.id)).toContain('equipamentos');expect(searchModules('inexistentezzz')).toHaveLength(0);expect(searchModules('caderno de bolso').map(m=>m.id)).toContain('biblioteca');expect(searchModules('imprimir').map(m=>m.id)).toContain('biblioteca');expect(searchModules('feridas').map(m=>m.id)).toContain('biblioteca');expect(searchModules('EVOLUCAO E ANOTACAO').map(m=>m.id)).toContain('biblioteca');expect(searchModules('Richmond').map(m=>m.id)).toContain('escalas');expect(searchModules('Cheyne-Stokes').map(m=>m.id)).toContain('escalas');expect(searchModules('Retração contínua').map(m=>m.id)).toContain('escalas');expect(searchModules('autorrelato confiável primeiro').map(m=>m.id)).toContain('escalas');});
 });
 describe('Quiz',()=>{
+ it('oferece 32 perguntas distintas e alternativas sem duplicação',()=>{
+  expect(questions).toHaveLength(32);
+  const normalizeText=(value:string)=>value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/\s+/g,' ').trim();
+  expect(new Set(questions.map(q=>normalizeText(q.text))).size).toBe(questions.length);
+  for(const q of questions){expect(new Set(q.options.map(normalizeText)).size).toBe(4);expect(Number.isInteger(q.answer)).toBe(true);}
+ });
  it('calcula acertos com respostas erradas e não respondidas',()=>{expect(scoreAnswers(questions,[])).toBe(0);expect(scoreAnswers(questions,questions.map(q=>q.answer))).toBe(questions.length);expect(scoreAnswers(questions,questions.map(q=>(q.answer+1)%4))).toBe(0);expect(scoreAnswers(questions,[questions[0].answer])).toBe(1);});
  it('mantém quatro alternativas, resposta válida e explicação por questão',()=>{for(const q of questions){expect(q.options).toHaveLength(4);expect(q.answer).toBeGreaterThanOrEqual(0);expect(q.answer).toBeLessThan(4);expect(q.explanation.length).toBeGreaterThan(20);}});
 });

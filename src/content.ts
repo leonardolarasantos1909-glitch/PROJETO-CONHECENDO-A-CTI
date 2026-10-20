@@ -2,6 +2,7 @@ import { materialSearchText } from './materials';
 import { scaleSearchText } from './scales';
 import { glossaryTerms, firstDayItems } from './starter-data';
 import { caseSearchText } from './cases';
+import { extraQuestions } from './extra-questions';
 export type Topic = { title: string; purpose: string; care: string; risk: string };
 export type Module = { id: string; title: string; description: string; label: string; topics: Topic[] };
 const topic = (title: string, purpose: string, care: string, risk: string): Topic => ({title,purpose,care,risk});
@@ -64,7 +65,8 @@ export const questions = [
 {subject:'Escalas',text:'Caso simulado: a resposta verbal não pode ser testada por uma limitação. O que fazer ao avaliar Glasgow?',options:['Inventar um valor médio.','Usar o valor máximo automaticamente.','Documentar a limitação e seguir a orientação do instrumento e da equipe.','Ignorar a limitação no registro.'],answer:2,explanation:'Componentes não testáveis e confundidores precisam ser documentados. Não se deve inventar pontuações.'},
 {subject:'Dispositivos',text:'Há dúvida sobre a liberação de uma sonda para administrar dieta. Qual a conduta?',options:['Administrar uma pequena quantidade para testar.','Não iniciar; esclarecer a liberação com o enfermeiro.','Usar a sonda porque está fixada.','Perguntar a outro estudante e seguir.'],answer:1,explanation:'Fixação não comprova liberação para uso. Esclareça a dúvida com o profissional responsável antes da administração.'},
 {subject:'Equipamentos',text:'Um ventilador apresenta um alarme durante a mobilização. Qual ação é apropriada?',options:['Mudar os parâmetros ventilatórios.','Desligar o equipamento.','Observar o paciente e acionar imediatamente a equipe responsável.','Ignorar se a tela continuar ligada.'],answer:2,explanation:'A avaliação da equipe é necessária. O estudante não deve ajustar parâmetros por iniciativa própria.'},
-{subject:'Rotinas',text:'Um volume de eliminação não pôde ser medido. Como registrar?',options:['Inventar um valor aproximado e marcar como medido.','Repetir o volume anterior.','Omitir a eliminação.','Informar a ocorrência e que o volume não foi medido.'],answer:3,explanation:'Registros devem representar o que foi observado e medido, sem transformar estimativas em dados objetivos.'}
+{subject:'Rotinas',text:'Um volume de eliminação não pôde ser medido. Como registrar?',options:['Inventar um valor aproximado e marcar como medido.','Repetir o volume anterior.','Omitir a eliminação.','Informar a ocorrência e que o volume não foi medido.'],answer:3,explanation:'Registros devem representar o que foi observado e medido, sem transformar estimativas em dados objetivos.'},
+...extraQuestions
 ];
 export const normalize = (value: string) => value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 export function searchModules(query: string) { const term=normalize(query.trim()); return modules.filter(m=>normalize([m.title,m.description,...(m.id==='biblioteca'?[materialSearchText]:[]),...(m.id==='escalas'?[scaleSearchText]:[]),...(m.id==='quiz'?[caseSearchText]:[]),...(m.id==='acolhimento'?firstDayItems.flatMap(item=>[item.title,item.detail]):[]),...glossaryTerms.filter(term=>term.href.split('/')[0]===`#${m.id}`).flatMap(term=>[term.term,...term.aliases,term.definition]),...m.topics.flatMap(t=>[t.title,t.purpose,t.care,t.risk])].join(' ')).includes(term)); }

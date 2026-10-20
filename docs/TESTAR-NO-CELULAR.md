@@ -43,7 +43,7 @@ Essas opções podem variar conforme a versão. Se não aparecerem, confira se o
 - Abra **Glossário**; pesquise “SpO2”, “pressao media” e um termo inexistente. Teste limpar a busca, as fontes e os links relacionados.
 - Use **Favoritar** em um assunto, uma escala e um termo. Abra **Meus favoritos** na tela inicial e confira os atalhos e a remoção.
 - Abra os assuntos de Equipamentos e Dispositivos para conferir os desenhos e suas legendas.
-- No Quiz, percorra os cinco casos simulados, confira as explicações, a discussão final e a opção de repetir. Responda também ao quiz de revisão anterior.
+- No Quiz, percorra os cinco casos simulados, confira as explicações, a discussão final e a opção de repetir. No **Quiz de revisão**, confira o banco de **32 questões**, filtre os oito assuntos, teste respostas corretas e incorretas, finalize e reinicie.
 - No caderno, deslize para o lado e teste os botões, o índice e o salto para uma página. Saia e volte, recarregue e gire o aparelho para conferir a retomada. Teste também **Voltar ao início do caderno**.
 - Abra **Ver texto da página**, um link de referência e **PDF original**.
 - Salve os cadernos e uma apostila e procure os arquivos nas pastas indicadas acima.
@@ -56,9 +56,9 @@ A instalação, o download, a impressão e o offline precisam ser confirmados em
 
 ## 5. Atualizar a hospedagem — somente para o responsável
 
-Veja o [passo a passo da versão 8](ATUALIZAR-V8.md).
+Veja o [passo a passo da versão 9](ATUALIZAR-V9.md).
 
-Baixe [conhecendo-a-cti-v8.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-v8.zip). Se o download não iniciar, abra a [página do arquivo no GitHub](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/blob/main/downloads/conhecendo-a-cti-v8.zip) e toque no ícone de download (**Download raw file**). Se o repositório for privado, entre na conta com acesso.
+Baixe [conhecendo-a-cti-v9.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-v9.zip). Se o download não iniciar, abra a [página do arquivo no GitHub](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/blob/main/downloads/conhecendo-a-cti-v9.zip) e toque no ícone de download (**Download raw file**). Se o repositório for privado, entre na conta com acesso.
 
 No iPhone, confira o ZIP em **Arquivos → Downloads**; se abrir em uma visualização, use **Compartilhar → Salvar em Arquivos**. No Android, confirme o download no Chrome e confira em **Arquivos/Files → Downloads**. Mantenha o arquivo em ZIP, sem descompactar. O comando **Code → Download ZIP** do GitHub baixa o código-fonte e não substitui esse pacote de produção.
 
@@ -66,7 +66,7 @@ No painel da Cloudflare, entre no **mesmo projeto** do aplicativo publicado e en
 
 Mantendo o projeto e o endereço, o QR Code continua válido. Depois de publicar, recarregue o aplicativo. Se a versão antiga continuar aparecendo, feche todas as abas do aplicativo e abra novamente com conexão.
 
-O histórico do alerta de download de uma versão anterior permanece em [PACOTE-V2.md](PACOTE-V2.md); verificações de integridade e funcionamento não são uma varredura antivírus. A v8 mantém os cadernos, as cinco apostilas e as escalas e acrescenta ferramentas de estudo; consulte [o inventário e as três pendências de envio](APOSTILAS.md).
+O histórico do alerta de download de uma versão anterior permanece em [PACOTE-V2.md](PACOTE-V2.md); verificações de integridade e funcionamento não são uma varredura antivírus. A v9 mantém os cadernos, as cinco apostilas, as escalas e as ferramentas de estudo e amplia o quiz para 32 questões; consulte [o inventário e as três pendências de envio](APOSTILAS.md).
 
 ## Primeira publicação alternativa em Pages
 
