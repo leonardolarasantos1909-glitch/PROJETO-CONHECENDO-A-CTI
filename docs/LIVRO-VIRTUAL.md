@@ -58,7 +58,7 @@ O comando `npm run build` executa primeiro `scripts/check-book.mjs`. Essa confer
 
 O service worker inclui o aplicativo, os dois PDFs, o manifesto e todas as imagens do livro no cache inicial: cerca de 10 MB de arquivos estáticos. O primeiro acesso requer conexão e tempo para concluir essa preparação. Para testar offline, use o build de produção, aguarde a ativação do service worker, recarregue e tente abrir também uma página ainda não visitada. O servidor `npm run dev` não registra o service worker. O navegador pode remover os dados armazenados conforme suas políticas.
 
-Para atualizar a hospedagem manual, envie **`downloads/conhecendo-a-cti-v6.zip`** ao mesmo projeto em que o aplicativo já está publicado. O ZIP deve conter os arquivos de `dist/`, com `index.html` na raiz. Manter o projeto e o endereço preserva o destino do QR Code. Depois da implantação, recarregue o aplicativo; se houver uma atualização do service worker aguardando, feche todas as abas do aplicativo e abra-o novamente com conexão.
+Para atualizar a hospedagem manual, envie **`downloads/conhecendo-a-cti-v7.zip`** ao mesmo projeto em que o aplicativo já está publicado. O ZIP deve conter os arquivos de `dist/`, com `index.html` na raiz. Manter o projeto e o endereço preserva o destino do QR Code. Depois da implantação, recarregue o aplicativo; se houver uma atualização do service worker aguardando, feche todas as abas do aplicativo e abra-o novamente com conexão.
 
 Consulte [a origem e preservação dos PDFs](MATERIAIS-PDF.md), [o histórico do pacote v2](PACOTE-V2.md) e [o roteiro de uso, publicação e teste em iPhone e Android](TESTAR-NO-CELULAR.md).
 

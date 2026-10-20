@@ -13,15 +13,15 @@ O conteúdo do QR foi decodificado e conferido localmente. A conexão ao endere�
 
 ## Baixar a versão pronta
 
-**Estado de segurança:** houve relato de bloqueio antivírus em um pacote anterior. A versão v6 mantém o leitor, os cadernos e as cinco apostilas e amplia a seção de escalas clínicas; não há resultado de varredura antivírus completa. Os testes de integridade e funcionamento não substituem essa análise. No computador da empresa, encaminhe eventual alerta à TI, sem desativar proteções. [Histórico da versão v2](docs/PACOTE-V2.md).
+**Estado de segurança:** houve relato de bloqueio antivírus em um pacote anterior. A versão v7 mantém o leitor, os cadernos e as cinco apostilas e detalha os itens e critérios das escalas clínicas; não há resultado de varredura antivírus completa. Os testes de integridade e funcionamento não substituem essa análise. No computador da empresa, encaminhe eventual alerta à TI, sem desativar proteções. [Histórico da versão v2](docs/PACOTE-V2.md).
 
-[Baixar conhecendo-a-cti-v6.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-v6.zip)
+[Baixar conhecendo-a-cti-v7.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-v7.zip)
 
 Este ZIP já está compilado e pronto para upload em hospedagem estática. Para atualizar o endereço atual, envie-o **ao mesmo projeto da Cloudflare**, pelo fluxo de implantação que já funcionou com a v2. Mantenha o arquivo em ZIP para esse envio; não é necessário instalar Node.js. Se o repositório for privado, entre no GitHub com a conta que tem acesso antes de baixar. O [guia para celular](docs/TESTAR-NO-CELULAR.md) orienta iPhone e Android e também descreve uma primeira publicação alternativa em Pages.
 
-Se o download direto não iniciar, abra a [página do arquivo no GitHub](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/blob/main/downloads/conhecendo-a-cti-v6.zip) e use **Download raw file** (ícone de download). A opção **Code → Download ZIP** baixa o código-fonte do repositório e não substitui esse pacote pronto para hospedagem.
+Se o download direto não iniciar, abra a [página do arquivo no GitHub](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/blob/main/downloads/conhecendo-a-cti-v7.zip) e use **Download raw file** (ícone de download). A opção **Code → Download ZIP** baixa o código-fonte do repositório e não substitui esse pacote pronto para hospedagem.
 
-O envio ao GitHub guarda o projeto e permite baixar os arquivos; ele não atualiza automaticamente a hospedagem. As alterações aparecem no endereço atual depois de enviar o ZIP v6 à Cloudflare. Mantendo o endereço, o QR Code continua válido.
+O envio ao GitHub guarda o projeto e permite baixar os arquivos; ele não atualiza automaticamente a hospedagem. As alterações aparecem no endereço atual depois de enviar o ZIP v7 à Cloudflare. Mantendo o endereço, o QR Code continua válido.
 
 ## Desenvolvimento
 
@@ -62,7 +62,8 @@ Se o link abrir dentro do WhatsApp, escolha **Abrir no navegador**; se essa opç
 ## Organização
 
 - `src/content.ts`: módulos, tópicos, fontes de consulta e questões estruturados para atualização.
-- `src/scales.ts`, `src/ScalesGuide.tsx` e `src/scales-guide.css`: conteúdo educativo e abas acessíveis EVA, BPS, PAINAD e RASS, com referências do caderno.
+- `src/scales.ts`, `src/ScalesGuide.tsx` e `src/scales-guide.css`: conteúdo educativo, domínios/critérios e abas acessíveis EVA, BPS, PAINAD e RASS, com referências do caderno.
+- `src/scales.test.ts`: conferência dos critérios textuais e dos pontos contra as páginas do caderno.
 - `src/main.tsx`: navegação, pesquisa, progresso local, detalhes, quiz e instalação.
 - `src/style.css`: identidade visual, responsividade e acessibilidade.
 - `src/content.test.ts`: testes de pesquisa, integridade dos módulos e correção do quiz.
@@ -152,3 +153,9 @@ Os PDFs de Rotina do Técnico, Segurança e Prevenção de Eventos, e Ventilaç�
 A opção **Escalas** do menu móvel e **Escalas clínicas** da barra lateral abre `#escalas`. A seção apresenta quatro abas: EVA, BPS, PAINAD e RASS. Cada uma explica finalidade, quando utilizar, domínios observados, leitura, cuidados e referências, com links para as páginas correspondentes do caderno. A comparação distingue autorrelato, observação da dor e avaliação de agitação/sedação. Glasgow continua disponível na mesma seção, e a busca do início inclui o conteúdo ampliado.
 
 A EVA tem uma linha ilustrativa sem medida calibrada; a RASS inclui um resumo educativo dos dez níveis. O conteúdo é para estudo, sem cálculo de escore, dados de paciente, metas universais ou orientação para ajustar medicamentos. Os textos se baseiam no caderno e nos materiais já fornecidos; os PDFs, referências e créditos permanecem intactos. A revisão clínica e institucional continua pendente. Consulte [as fontes e os limites da seção de escalas](docs/ESCALAS.md).
+
+## Itens e critérios das escalas — v7
+
+Cada aba de Escalas mostra a seção **Itens e critérios da escala** após a apresentação. Na BPS, três quadros expansíveis apresentam os critérios de expressão facial, membros superiores e adaptação à ventilação, de 1 a 4 pontos. Na PAINAD, cinco quadros trazem respiração, vocalização, face, linguagem corporal e consolabilidade, de 0 a 2 pontos. Os 27 descritores são transcritos do caderno, com links para as páginas 11–14.
+
+A EVA explica o autorrelato, a marcação e a medida da linha física; contexto e horário não são fatores somados. A RASS mostra os elementos de observação e os dez níveis, incluindo os tempos de contato visual descritos no caderno. A leitura é educativa: não soma respostas de paciente nem define tratamento. Os tempos da RASS são apresentados como resumo da fonte, com remissão ao formulário adotado. Consulte [os critérios, as fontes e as pendências de revisão](docs/ESCALAS.md).

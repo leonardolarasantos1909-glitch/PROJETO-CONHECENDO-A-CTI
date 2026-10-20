@@ -1,5 +1,5 @@
 import { useId, useRef, useState, type KeyboardEvent } from 'react';
-import { Activity, ArrowRight, ArrowUpRight, BookOpen, Brain, Eye, MessageCircle } from 'lucide-react';
+import { Activity, ArrowRight, ArrowUpRight, BookOpen, Brain, ChevronDown, Eye, MessageCircle } from 'lucide-react';
 import { scales, scaleComparison } from './scales';
 import './scales-guide.css';
 
@@ -88,6 +88,47 @@ export default function ScalesGuide() {
         </figure>}
       </section>
 
+      {scale.criteria && <section className="scales-card scales-criteria" aria-labelledby={`${prefix}-criteria-${scale.id}`}>
+        <h3 id={`${prefix}-criteria-${scale.id}`}>Itens e critérios da escala</h3>
+        <p className="scales-criteria-intro">{scale.criteria.intro}</p>
+        <p className="scales-criteria-method"><strong>Como a leitura é formada:</strong> {scale.criteria.method}</p>
+
+        {scale.criteria.steps && <ol className="scales-criteria-steps">{scale.criteria.steps.map((step, index) => <li key={index}>
+          <strong>{step.title}</strong><p>{step.detail}</p>
+        </li>)}</ol>}
+
+        {scale.criteria.domains && <div className="scales-domains">{scale.criteria.domains.map((domain, index) => {
+          const points = domain.levels.map(level => level.points);
+          return <details className="scales-domain" key={domain.id} open={index === 0}>
+            <summary>
+              <span><strong>{domain.title}</strong><span>{Math.min(...points)} a {Math.max(...points)} pontos</span></span>
+              <ChevronDown size={20} aria-hidden="true"/>
+            </summary>
+            <div className="scales-domain-content">
+              <table className="scales-domain-table">
+                <caption className="sr-only">{scale.label}: pontos e critérios de {domain.title}</caption>
+                <thead><tr><th scope="col">Pontos</th><th scope="col">Critério</th></tr></thead>
+                <tbody>{domain.levels.map(level => <tr key={level.points}>
+                  <th scope="row"><span className="scales-domain-points">{level.points}</span></th>
+                  <td>{level.criterion}</td>
+                </tr>)}</tbody>
+              </table>
+              <a className="scales-domain-source" href={`${CADERNO_PDF}#page=${domain.page}`} target="_blank" rel="noopener noreferrer">Conferir na página {domain.page} do caderno <ArrowUpRight size={16} aria-hidden="true"/><span className="sr-only"> (abre em nova aba)</span></a>
+            </div>
+          </details>;
+        })}</div>}
+
+        {scale.criteria.example && <div className="scales-criteria-example"><h4>Exemplo para estudo</h4><p>{scale.criteria.example}</p></div>}
+      </section>}
+
+      {scale.levelGuide && <section className="scales-card scales-levels" aria-labelledby={`${prefix}-levels-${scale.id}`}>
+        <h3 id={`${prefix}-levels-${scale.id}`}>Pontuações descritas na escala</h3>
+        <dl>{scale.levelGuide.map(level => <div className="scales-level" key={level.score}>
+          <dt><span className="scales-score">{level.score}</span><strong>{level.label}</strong></dt>
+          <dd>{level.description}</dd>
+        </div>)}</dl>
+      </section>}
+
       <div className="scales-content-grid">
         <section className="scales-card" aria-labelledby={`${prefix}-when-${scale.id}`}>
           <span className="scales-section-index" aria-hidden="true">01</span>
@@ -110,14 +151,6 @@ export default function ScalesGuide() {
           <ul>{scale.care.map((text, index) => <li key={index}>{text}</li>)}</ul>
         </section>
       </div>
-
-      {scale.levelGuide && <section className="scales-card scales-levels" aria-labelledby={`${prefix}-levels-${scale.id}`}>
-        <h3 id={`${prefix}-levels-${scale.id}`}>Pontuações descritas na escala</h3>
-        <dl>{scale.levelGuide.map(level => <div className="scales-level" key={level.score}>
-          <dt><span className="scales-score">{level.score}</span><strong>{level.label}</strong></dt>
-          <dd>{level.description}</dd>
-        </div>)}</dl>
-      </section>}
 
       <section className="scales-card scales-sources" aria-labelledby={`${prefix}-sources-${scale.id}`}>
         <div className="scales-sources-title"><BookOpen size={23} aria-hidden="true"/><h3 id={`${prefix}-sources-${scale.id}`}>Fontes e leitura complementar</h3></div>

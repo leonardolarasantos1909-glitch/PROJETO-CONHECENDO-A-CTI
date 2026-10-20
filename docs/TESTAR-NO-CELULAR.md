@@ -38,6 +38,7 @@ Essas opções podem variar conforme a versão. Se não aparecerem, confira se o
 
 - Abra os oito módulos e alguns cartões; pesquise “glicemia” e “sonda”.
 - Abra **Escalas** no menu inferior e alterne **EVA**, **BPS**, **PAINAD** e **RASS**. Confira o texto, a comparação, as referências e os links às páginas do caderno. A RASS descreve agitação/sedação; a EVA desenhada é apenas uma ilustração, sem medida real.
+- Em **Itens e critérios da escala**, abra os três quadros da BPS e os cinco da PAINAD para ver os pontos e as descrições. Na EVA e na RASS, confira os fatores observados e como a leitura é formada. Cada quadro tem link para a página correspondente do caderno.
 - Responda ao quiz e confira explicações e resultado.
 - No caderno, deslize para o lado e teste os botões, o índice e o salto para uma página.
 - Abra **Ver texto da página**, um link de referência e **PDF original**.
@@ -51,7 +52,7 @@ A instalação, o download, a impressão e o offline precisam ser confirmados em
 
 ## 5. Atualizar a hospedagem — somente para o responsável
 
-Baixe [conhecendo-a-cti-v6.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-v6.zip). Se o download não iniciar, abra a [página do arquivo no GitHub](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/blob/main/downloads/conhecendo-a-cti-v6.zip) e toque no ícone de download (**Download raw file**). Se o repositório for privado, entre na conta com acesso.
+Baixe [conhecendo-a-cti-v7.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-v7.zip). Se o download não iniciar, abra a [página do arquivo no GitHub](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/blob/main/downloads/conhecendo-a-cti-v7.zip) e toque no ícone de download (**Download raw file**). Se o repositório for privado, entre na conta com acesso.
 
 No iPhone, confira o ZIP em **Arquivos → Downloads**; se abrir em uma visualização, use **Compartilhar → Salvar em Arquivos**. No Android, confirme o download no Chrome e confira em **Arquivos/Files → Downloads**. Mantenha o arquivo em ZIP, sem descompactar. O comando **Code → Download ZIP** do GitHub baixa o código-fonte e não substitui esse pacote de produção.
 
@@ -59,7 +60,7 @@ No painel da Cloudflare, entre no **mesmo projeto** do aplicativo publicado e en
 
 Mantendo o projeto e o endereço, o QR Code continua válido. Depois de publicar, recarregue o aplicativo. Se a versão antiga continuar aparecendo, feche todas as abas do aplicativo e abra novamente com conexão.
 
-O histórico do alerta de download de uma versão anterior permanece em [PACOTE-V2.md](PACOTE-V2.md); verificações de integridade e funcionamento não são uma varredura antivírus. A v6 mantém os cadernos e as cinco apostilas da v5, e amplia a seção de escalas clínicas; consulte [o inventário e as três pendências de envio](APOSTILAS.md).
+O histórico do alerta de download de uma versão anterior permanece em [PACOTE-V2.md](PACOTE-V2.md); verificações de integridade e funcionamento não são uma varredura antivírus. A v7 mantém os cadernos e as cinco apostilas e detalha os itens e critérios das escalas clínicas; consulte [o inventário e as três pendências de envio](APOSTILAS.md).
 
 ## Primeira publicação alternativa em Pages
 

@@ -1,3 +1,16 @@
+export type ScaleCriteria = {
+  intro: string;
+  method: string;
+  example?: string;
+  steps?: { title: string; detail: string }[];
+  domains?: {
+    id: string;
+    title: string;
+    page: number;
+    levels: { points: number; criterion: string }[];
+  }[];
+};
+
 export type StudyScale = {
   id: 'eva' | 'bps' | 'painad' | 'rass';
   label: string;
@@ -8,6 +21,7 @@ export type StudyScale = {
   measures: { title: string; detail: string }[];
   howToRead: string[];
   care: string[];
+  criteria: ScaleCriteria;
   range?: { min: string; max: string; label: string };
   levelGuide?: { score: string; label: string; description: string }[];
   references: { id: string; label: string; href: string }[];
@@ -48,6 +62,25 @@ export const scales: StudyScale[] = [
       'Se a pessoa não consegue fornecer um autorrelato confiável, discuta com o enfermeiro um instrumento adequado ao seu perfil.',
       'Não atribua a intensidade da dor com base apenas na expressão facial ou nos sinais vitais.',
     ],
+    criteria: {
+      "intro": "A EVA usa o autorrelato e a marca feita pela própria pessoa na linha contínua. A expressão facial e os sinais vitais não recebem pontos nesse instrumento.",
+      "method": "O resultado é a distância entre a extremidade “sem dor” e a marca. Local, contexto e horário enriquecem o registro, mas não são itens somados.",
+      "example": "Exemplo do caderno: marca a 60 mm em uma linha de 100 mm = EVA 60/100 mm.",
+      "steps": [
+        {
+          "title": "Compreender e indicar a própria dor",
+          "detail": "A pessoa precisa compreender a orientação e conseguir marcar a linha. Tente uma forma de comunicação acessível."
+        },
+        {
+          "title": "Marcar a linha do formulário",
+          "detail": "O formulário descrito no caderno tem uma linha contínua de 10 cm, sem números, entre ausência de dor e a pior dor imaginável."
+        },
+        {
+          "title": "Medir a distância da marca",
+          "detail": "Meça a partir da extremidade “sem dor”, em milímetros, com o formulário de tamanho correto. A linha desta tela é somente ilustrativa."
+        }
+      ]
+    },
     range: { min: '0 mm', max: '100 mm', label: 'Linha do formulário físico' },
     references: [
       { id: 'eva-rebec', label: 'ReBEC — RBR-86my7w2: EVA em linha de 10 cm. Referência [7] do caderno.', href: 'https://ensaiosclinicos.gov.br/rg/RBR-86my7w2/1' },
@@ -80,6 +113,82 @@ export const scales: StudyScale[] = [
       'Sedação profunda, bloqueio neuromuscular e alterações neurológicas podem limitar a observação dos comportamentos.',
       'Tosse e dessincronia também exigem avaliação respiratória. Comunique os achados e não atribua automaticamente toda mudança à dor.',
     ],
+    criteria: {
+      "intro": "São observados três domínios. Abra cada quadro para consultar os critérios resumidos das páginas 11 e 12 do caderno.",
+      "method": "Cada domínio recebe de 1 a 4 pontos; a soma dos três varia de 3 a 12. O mínimo de 3, isoladamente, não comprova ausência de dor.",
+      "example": "Exemplo educativo do caderno: face 2 + membros superiores 2 + adaptação à ventilação 2 = BPS 6/12.",
+      "domains": [
+        {
+          "id": "expressao-facial",
+          "title": "Expressão facial",
+          "page": 11,
+          "levels": [
+            {
+              "points": 1,
+              "criterion": "Face sem tensão."
+            },
+            {
+              "points": 2,
+              "criterion": "Tensão parcial, como sobrancelhas contraídas."
+            },
+            {
+              "points": 3,
+              "criterion": "Tensão de toda a face, como olhos fechados."
+            },
+            {
+              "points": 4,
+              "criterion": "Careta com contração acentuada."
+            }
+          ]
+        },
+        {
+          "id": "membros-superiores",
+          "title": "Membros superiores",
+          "page": 12,
+          "levels": [
+            {
+              "points": 1,
+              "criterion": "Sem movimentação."
+            },
+            {
+              "points": 2,
+              "criterion": "Flexão parcial."
+            },
+            {
+              "points": 3,
+              "criterion": "Flexão completa de membros e dedos."
+            },
+            {
+              "points": 4,
+              "criterion": "Retração contínua; membros contraídos."
+            }
+          ]
+        },
+        {
+          "id": "adaptacao-ventilacao",
+          "title": "Adaptação à ventilação",
+          "page": 12,
+          "levels": [
+            {
+              "points": 1,
+              "criterion": "Tolera ventilação e movimentos."
+            },
+            {
+              "points": 2,
+              "criterion": "Tosse durante os movimentos."
+            },
+            {
+              "points": 3,
+              "criterion": "Luta contra o ventilador."
+            },
+            {
+              "points": 4,
+              "criterion": "Ventilação não controlável pelo padrão observado."
+            }
+          ]
+        }
+      ]
+    },
     range: { min: '3', max: '12', label: 'Total dos três domínios' },
     references: [
       { id: 'bps-brasil', label: 'Morete et al. — BPS-Brasil. RBTI, 2014;26:373–378. Referência [4] do caderno.', href: 'https://www.scielo.br/j/rbti/a/pJ5k9VwdGcj9xWCjFn9wdZJ/?lang=pt' },
@@ -114,6 +223,107 @@ export const scales: StudyScale[] = [
       'Alterações respiratórias, agitação e expressão de sofrimento também podem ter outras causas; comunique e considere o contexto com a equipe.',
       'Use a mesma escala nas reavaliações quando continuar adequada. Se a comunicação ou o perfil mudarem, registre o motivo da nova escolha.',
     ],
+    criteria: {
+      "intro": "São observados cinco domínios no perfil de demência avançada descrito no caderno. Abra os quadros para consultar os critérios resumidos das páginas 13 e 14.",
+      "method": "Cada domínio recebe de 0 a 2 pontos; a soma dos cinco varia de 0 a 10. PAINAD 5/10 não equivale automaticamente a EVA 5/10.",
+      "domains": [
+        {
+          "id": "respiracao",
+          "title": "Respiração independente da voz",
+          "page": 13,
+          "levels": [
+            {
+              "points": 0,
+              "criterion": "Normal."
+            },
+            {
+              "points": 1,
+              "criterion": "Dificuldade eventual ou hiperventilação breve."
+            },
+            {
+              "points": 2,
+              "criterion": "Difícil e ruidosa; hiperventilação prolongada ou Cheyne-Stokes."
+            }
+          ]
+        },
+        {
+          "id": "vocalizacao",
+          "title": "Vocalização negativa",
+          "page": 13,
+          "levels": [
+            {
+              "points": 0,
+              "criterion": "Ausente."
+            },
+            {
+              "points": 1,
+              "criterion": "Gemido eventual ou fala baixa de desagrado."
+            },
+            {
+              "points": 2,
+              "criterion": "Chamados repetidos em sofrimento; gemidos altos, gritos ou choro."
+            }
+          ]
+        },
+        {
+          "id": "expressao-facial",
+          "title": "Expressão facial",
+          "page": 14,
+          "levels": [
+            {
+              "points": 0,
+              "criterion": "Sorri ou sem expressão."
+            },
+            {
+              "points": 1,
+              "criterion": "Tristeza, medo ou sobrancelhas contraídas."
+            },
+            {
+              "points": 2,
+              "criterion": "Careta."
+            }
+          ]
+        },
+        {
+          "id": "linguagem-corporal",
+          "title": "Linguagem corporal",
+          "page": 14,
+          "levels": [
+            {
+              "points": 0,
+              "criterion": "Corpo relaxado."
+            },
+            {
+              "points": 1,
+              "criterion": "Tensão, inquietação ou agitação aflita."
+            },
+            {
+              "points": 2,
+              "criterion": "Rigidez; punhos fechados; joelhos dobrados; resistência ao cuidado ou agressividade."
+            }
+          ]
+        },
+        {
+          "id": "consolabilidade",
+          "title": "Consolabilidade",
+          "page": 14,
+          "levels": [
+            {
+              "points": 0,
+              "criterion": "Não precisa de consolo."
+            },
+            {
+              "points": 1,
+              "criterion": "Acalma ou se distrai com voz/toque."
+            },
+            {
+              "points": 2,
+              "criterion": "Permanece inconsolável."
+            }
+          ]
+        }
+      ]
+    },
     range: { min: '0', max: '10', label: 'Total dos cinco domínios' },
     references: [
       { id: 'painad-brasil', label: 'Pinto et al. — PAINAD-Brasil. Einstein, 2015;13:14–19. Referência [5] do caderno.', href: 'https://www.scielo.br/j/eins/a/3VW8CfBCDq3TfLHgkPw8ZTJ/?lang=pt' },
@@ -145,6 +355,25 @@ export const scales: StudyScale[] = [
       'Não suspenda nem ajuste sedação apenas para testar ou com base no número da escala. Siga a prescrição e a supervisão do enfermeiro.',
       'RASS não diagnostica delirium. Não realize estímulos físicos com base apenas nesta tela educativa.',
     ],
+    criteria: {
+      "intro": "A avaliação considera o comportamento espontâneo, a resposta à voz, o contato visual e sua duração e, quando previsto no instrumento, a resposta ao estímulo físico.",
+      "method": "Os fatores não são somados. O resultado corresponde ao nível de agitação ou despertar observado na sequência de avaliação da RASS.",
+      "example": "Exemplo do caderno: contato visual por 5 segundos após a voz corresponde a RASS −2.",
+      "steps": [
+        {
+          "title": "Comportamento espontâneo",
+          "detail": "Observe se a pessoa está alerta e calma, inquieta, agitada ou combativa. Os níveis 0 a +4 descrevem esses comportamentos."
+        },
+        {
+          "title": "Resposta à voz",
+          "detail": "Considere abertura dos olhos, movimentação, presença de contato visual e duração desse contato. Esses elementos distinguem os níveis −1, −2 e −3 conforme o instrumento."
+        },
+        {
+          "title": "Resposta ao estímulo físico",
+          "detail": "Na ausência de resposta à voz, a etapa física prevista distingue resposta presente (−4) de ausente (−5). A técnica exige treinamento e supervisão."
+        }
+      ]
+    },
     range: { min: '−5', max: '+4', label: 'Níveis de despertar e agitação' },
     levelGuide: [
       { score: '+4', label: 'Combativo', description: 'Comportamento violento, com risco imediato.' },
@@ -152,8 +381,8 @@ export const scales: StudyScale[] = [
       { score: '+2', label: 'Agitado', description: 'Movimentos frequentes sem finalidade; luta contra o ventilador.' },
       { score: '+1', label: 'Inquieto', description: 'Ansioso ou inquieto, sem movimento vigoroso ou agressivo.' },
       { score: '0', label: 'Alerta e calmo', description: 'Estado de alerta e calma.' },
-      { score: '−1', label: 'Sonolento', description: 'Desperta à voz e mantém contato visual; confira o critério de duração no formulário.' },
-      { score: '−2', label: 'Sedação leve', description: 'Desperta à voz com contato visual breve, conforme o critério de duração do formulário.' },
+      { score: '−1', label: 'Sonolento', description: 'Desperta à voz e mantém contato visual por mais de 10 s, conforme o resumo do caderno.' },
+      { score: '−2', label: 'Sedação leve', description: 'Desperta à voz com contato visual por menos de 10 s, conforme o resumo do caderno.' },
       { score: '−3', label: 'Sedação moderada', description: 'Movimenta-se ou abre os olhos à voz, sem contato visual.' },
       { score: '−4', label: 'Sedação profunda', description: 'Não responde à voz; responde ao estímulo físico previsto no instrumento.' },
       { score: '−5', label: 'Não despertável', description: 'Sem resposta à voz nem ao estímulo físico previsto no instrumento.' },
@@ -176,4 +405,7 @@ export const scaleComparison = [
 export const scaleSearchText = scales.flatMap(scale => [
   scale.label, scale.name, scale.category, scale.purpose, ...scale.when,
   ...scale.measures.flatMap(item => [item.title, item.detail]), ...scale.howToRead, ...scale.care,
+  scale.criteria.intro, scale.criteria.method, scale.criteria.example ?? '',
+  ...(scale.criteria.steps?.flatMap(step => [step.title, step.detail]) ?? []),
+  ...(scale.criteria.domains?.flatMap(domain => [domain.title, ...domain.levels.map(level => level.criterion)]) ?? []),
 ]).join(' ');
