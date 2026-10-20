@@ -1,6 +1,6 @@
 # Conhecendo a CTI
 
-Protótipo PWA educativo, em português, para acolhimento de estagiários de Técnico em Enfermagem em terapia intensiva. React, TypeScript, Vite, Tailwind CSS e ícones Lucide. Sem login, backend, analytics ou coleta de identificação dos estudantes.
+Protótipo PWA educativo, em português, para acolhimento de estagiários de Técnico em Enfermagem em terapia intensiva. React, TypeScript, Vite, Tailwind CSS e ícones Lucide. Sem login, backend, analytics ou coleta de identificação dos estudantes. Marcações, favoritos, visitas e a página do caderno ficam somente no navegador.
 
 ## Acesso ao protótipo e QR Code
 
@@ -13,15 +13,17 @@ O conteúdo do QR foi decodificado e conferido localmente. A conexão ao endere�
 
 ## Baixar a versão pronta
 
-**Estado de segurança:** houve relato de bloqueio antivírus em um pacote anterior. A versão v7 mantém o leitor, os cadernos e as cinco apostilas e detalha os itens e critérios das escalas clínicas; não há resultado de varredura antivírus completa. Os testes de integridade e funcionamento não substituem essa análise. No computador da empresa, encaminhe eventual alerta à TI, sem desativar proteções. [Histórico da versão v2](docs/PACOTE-V2.md).
+**Estado de segurança:** houve relato de bloqueio antivírus em um pacote anterior. A versão v8 mantém o leitor, os cadernos, as cinco apostilas e as escalas, e acrescenta checklist, glossário, ilustrações, casos simulados, favoritos e retomada da leitura; não há resultado de varredura antivírus completa. Os testes de integridade e funcionamento não substituem essa análise. No computador da empresa, encaminhe eventual alerta à TI, sem desativar proteções. [Histórico da versão v2](docs/PACOTE-V2.md).
 
-[Baixar conhecendo-a-cti-v7.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-v7.zip)
+[Baixar conhecendo-a-cti-v8.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-v8.zip)
 
 Este ZIP já está compilado e pronto para upload em hospedagem estática. Para atualizar o endereço atual, envie-o **ao mesmo projeto da Cloudflare**, pelo fluxo de implantação que já funcionou com a v2. Mantenha o arquivo em ZIP para esse envio; não é necessário instalar Node.js. Se o repositório for privado, entre no GitHub com a conta que tem acesso antes de baixar. O [guia para celular](docs/TESTAR-NO-CELULAR.md) orienta iPhone e Android e também descreve uma primeira publicação alternativa em Pages.
 
-Se o download direto não iniciar, abra a [página do arquivo no GitHub](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/blob/main/downloads/conhecendo-a-cti-v7.zip) e use **Download raw file** (ícone de download). A opção **Code → Download ZIP** baixa o código-fonte do repositório e não substitui esse pacote pronto para hospedagem.
+Se o download direto não iniciar, abra a [página do arquivo no GitHub](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/blob/main/downloads/conhecendo-a-cti-v8.zip) e use **Download raw file** (ícone de download). A opção **Code → Download ZIP** baixa o código-fonte do repositório e não substitui esse pacote pronto para hospedagem.
 
-O envio ao GitHub guarda o projeto e permite baixar os arquivos; ele não atualiza automaticamente a hospedagem. As alterações aparecem no endereço atual depois de enviar o ZIP v7 à Cloudflare. Mantendo o endereço, o QR Code continua válido.
+O envio ao GitHub guarda o projeto e permite baixar os arquivos; ele não atualiza automaticamente a hospedagem. As alterações aparecem no endereço atual depois de enviar o ZIP v8 à Cloudflare. Mantendo o endereço, o QR Code continua válido.
+
+Consulte também o [passo a passo para atualizar a versão 8](docs/ATUALIZAR-V8.md).
 
 ## Desenvolvimento
 
@@ -65,6 +67,10 @@ Se o link abrir dentro do WhatsApp, escolha **Abrir no navegador**; se essa opç
 - `src/scales.ts`, `src/ScalesGuide.tsx` e `src/scales-guide.css`: conteúdo educativo, domínios/critérios e abas acessíveis EVA, BPS, PAINAD e RASS, com referências do caderno.
 - `src/scales.test.ts`: conferência dos critérios textuais e dos pontos contra as páginas do caderno.
 - `src/main.tsx`: navegação, pesquisa, progresso local, detalhes, quiz e instalação.
+- `src/starter-data.ts` e `src/StarterTools.tsx`: checklist do primeiro dia e glossário pesquisável.
+- `src/equipment-diagrams.ts` e `src/EquipmentIllustration.tsx`: esquemas originais e legendas dos 15 equipamentos e dispositivos.
+- `src/cases.ts` e `src/CaseStudies.tsx`: cinco casos PBL fictícios, feedback por alternativa e discussão final.
+- `src/favorites.ts`, `src/Favorites.tsx` e `src/learning-storage.ts`: catálogo seguro de favoritos e armazenamento local de preferências de estudo.
 - `src/style.css`: identidade visual, responsividade e acessibilidade.
 - `src/content.test.ts`: testes de pesquisa, integridade dos módulos e correção do quiz.
 - `public/`: manifesto e ícones próprios, sem identidade visual institucional.
@@ -159,3 +165,14 @@ A EVA tem uma linha ilustrativa sem medida calibrada; a RASS inclui um resumo ed
 Cada aba de Escalas mostra a seção **Itens e critérios da escala** após a apresentação. Na BPS, três quadros expansíveis apresentam os critérios de expressão facial, membros superiores e adaptação à ventilação, de 1 a 4 pontos. Na PAINAD, cinco quadros trazem respiração, vocalização, face, linguagem corporal e consolabilidade, de 0 a 2 pontos. Os 27 descritores são transcritos do caderno, com links para as páginas 11–14.
 
 A EVA explica o autorrelato, a marcação e a medida da linha física; contexto e horário não são fatores somados. A RASS mostra os elementos de observação e os dez níveis, incluindo os tempos de contato visual descritos no caderno. A leitura é educativa: não soma respostas de paciente nem define tratamento. Os tempos da RASS são apresentados como resumo da fonte, com remissão ao formulário adotado. Consulte [os critérios, as fontes e as pendências de revisão](docs/ESCALAS.md).
+
+
+## Ferramentas para o estágio — v8
+
+A página inicial inclui os atalhos **Meu primeiro dia**, **Glossário** e **Meus favoritos**. O checklist tem dez itens marcáveis e o glossário reúne 29 siglas e termos, com busca por aliases e explicações, links relacionados e fontes. Os oito módulos existentes continuam disponíveis; esses atalhos não são módulos adicionais nem alteram a contagem de visitas.
+
+Ao abrir um tópico de Equipamentos hospitalares ou Dispositivos, o diálogo mostra um esquema educativo com partes numeradas, legenda e pontos de atenção. Os quinze tópicos têm ilustrações genéricas originais, sem pacientes, logotipos, parâmetros ou instruções operacionais. O módulo Quiz reúne cinco casos fictícios com duas etapas cada, feedback específico por alternativa e discussão com o preceptor, preservando as oito questões anteriores.
+
+Use **Favoritar** para guardar módulos, assuntos, escalas, termos e o caderno; a lista abre o conteúdo correspondente. A última página do caderno é retomada ao reabrir o leitor e pode ser zerada pelo botão **Voltar ao início do caderno**. Os dados ficam no navegador, sem cadastro ou sincronização. Se o armazenamento estiver bloqueado, as ferramentas continuam em memória com aviso sobre a limitação. **Sobre o projeto → Apagar meus dados de aprendizado** remove somente as quatro chaves desse progresso.
+
+Os recursos internos novos integram o build e seu cache offline. Os PDFs, as 96 imagens do caderno, referências e créditos foram preservados. Autoria, orientação e revisão clínica/institucional continuam pendentes de informações e conferência pelos responsáveis. Consulte [fontes, adaptação e verificação da v8](docs/MELHORIAS-V8.md) e o [passo a passo de atualização](docs/ATUALIZAR-V8.md).

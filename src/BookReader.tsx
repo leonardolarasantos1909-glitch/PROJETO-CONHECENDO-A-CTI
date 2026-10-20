@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState, type CSSProperties, type FormEvent } from 'react';
 import { ArrowUpRight, BookOpen, ChevronLeft, ChevronRight, FileText, List, MoveHorizontal, RotateCw } from 'lucide-react';
 import { parseBookManifest, type BookLink, type BookManifest, type BookPage } from './book';
+import { readLastPage, saveLastPage } from './learning-storage';
 import './book-reader.css';
 
 const ORIGINAL_PDF = '/materiais/caderno-cti-adulto-digital.pdf';
@@ -23,6 +24,8 @@ export default function BookReader() {
   const [request, setRequest] = useState(0);
   const [page, setPage] = useState(1);
   const [jump, setJump] = useState('1');
+  const [resumedFrom, setResumedFrom] = useState<number | null>(null);
+  const [storageAvailable, setStorageAvailable] = useState<boolean | null>(null);
   const viewport = useRef<HTMLDivElement>(null);
   const currentPage = useRef(1);
   const jumpEdited = useRef(false);
@@ -41,12 +44,23 @@ export default function BookReader() {
     jumpEdited.current = false;
     setPage(1);
     setJump('1');
+    setResumedFrom(null);
+    setStorageAvailable(null);
     void (async () => {
       try {
         const response = await fetch(MANIFEST, { signal: controller.signal });
         if (!response.ok) throw new Error('Caderno indisponível.');
         const manifest = parseBookManifest(await response.json());
-        if (!cancelled) setBook(manifest);
+        if (!cancelled) {
+          // Set the intended page before mounting the scroll viewport. Its
+          // initial resize positions that page without first persisting page 1.
+          const saved = readLastPage(manifest.pageCount);
+          currentPage.current = saved;
+          setPage(saved);
+          setJump(String(saved));
+          setResumedFrom(saved > 1 ? saved : null);
+          setBook(manifest);
+        }
       } catch {
         if (!cancelled) setFailed(true);
       } finally {
@@ -72,6 +86,7 @@ export default function BookReader() {
     currentPage.current = next;
     setPage(next);
     if (!jumpEdited.current) setJump(String(next));
+    setStorageAvailable(saveLastPage(next));
   }, []);
 
   const goTo = useCallback((next: number) => {
@@ -197,6 +212,14 @@ export default function BookReader() {
   const current = book.pages[page - 1];
   return <section className="book-reader" aria-label="Leitor do caderno digital">
     <p className="book-instructions"><MoveHorizontal size={19} aria-hidden="true"/><span>Uma página por vez. Deslize para o lado ou use as setas para continuar.</span></p>
+    <div className="book-resume">
+      <p role="status">{storageAvailable === false
+        ? 'Não foi possível guardar a página neste navegador. Você pode continuar lendo; a posição pode não ser retomada ao reabrir.'
+        : resumedFrom !== null
+          ? `Leitura retomada na página ${resumedFrom}. A página atual é guardada somente neste aparelho.`
+          : storageAvailable === true ? 'A página atual é guardada somente neste aparelho para continuar a leitura depois.' : 'Preparando a posição de leitura…'}</p>
+      <button className="book-action" onClick={() => { setResumedFrom(null); goTo(1); }} disabled={page === 1}><RotateCw size={16}/> Voltar ao início do caderno</button>
+    </div>
     <div className="book-navigation" role="group" aria-label="Navegar pelas páginas">
       <button className="book-action" onClick={() => goTo(currentPage.current - 1)} disabled={page === 1}><ChevronLeft size={19}/> Anterior</button>
       <div className="book-counter" aria-live="polite" aria-atomic="true">Página <strong>{page}</strong> de {book.pageCount}</div>

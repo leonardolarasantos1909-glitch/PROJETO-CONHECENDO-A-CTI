@@ -1,4 +1,4 @@
-import { useId, useRef, useState, type KeyboardEvent } from 'react';
+import { useEffect, useId, useRef, useState, type KeyboardEvent, type ReactNode } from 'react';
 import { Activity, ArrowRight, ArrowUpRight, BookOpen, Brain, ChevronDown, Eye, MessageCircle } from 'lucide-react';
 import { scales, scaleComparison } from './scales';
 import './scales-guide.css';
@@ -6,13 +6,17 @@ import './scales-guide.css';
 const scaleIcons = { eva: MessageCircle, bps: Activity, painad: Eye, rass: Brain };
 const CADERNO_PDF = '/materiais/caderno-cti-adulto-digital.pdf';
 
-export default function ScalesGuide() {
-  const [selectedId, setSelectedId] = useState(scales[0].id);
+export default function ScalesGuide({ initialScale, renderFavorite }: { initialScale?: string; renderFavorite?: (id: string) => ReactNode } = {}) {
+  const [selectedId, setSelectedId] = useState(scales.find(scale => scale.id === initialScale)?.id ?? scales[0].id);
   const tabRefs = useRef<(HTMLButtonElement | null)[]>([]);
   const prefix = useId();
   const selected = scales.find(scale => scale.id === selectedId) ?? scales[0];
   const tabId = (id: string) => `${prefix}-tab-${id}`;
   const panelId = (id: string) => `${prefix}-panel-${id}`;
+
+  useEffect(() => {
+    setSelectedId(scales.find(scale => scale.id === initialScale)?.id ?? scales[0].id);
+  }, [initialScale]);
 
   function selectTab(index: number, focus = false) {
     const next = scales[index];
@@ -79,6 +83,7 @@ export default function ScalesGuide() {
           {scale.range && <div className="scales-range"><span>{scale.range.label}</span><strong>{scale.range.min} a {scale.range.max}</strong></div>}
         </div>
         <p>{scale.purpose}</p>
+        {renderFavorite?.(scale.id)}
         {scale.id.toLowerCase() === 'eva' && <figure className="scales-eva-example">
           <div role="img" aria-label="Linha ilustrativa da EVA: de sem dor a pior dor imaginável, sem medida real na tela.">
             <div className="scales-eva-line" aria-hidden="true"/>
