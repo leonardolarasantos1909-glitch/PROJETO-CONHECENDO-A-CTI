@@ -1,11 +1,12 @@
+import { pdfReaderLink } from './pdf-catalog';
 import { useEffect, useId, useRef, useState } from 'react';
 import { ArrowRight, ArrowUpRight, BookOpen, Check, MessageCircle, RotateCcw } from 'lucide-react';
 import { caseStudies } from './cases';
 import './case-studies.css';
 
-export default function CaseStudies() {
+export default function CaseStudies({ initialCase }: { initialCase?: string } = {}) {
   const prefix = useId();
-  const [caseId, setCaseId] = useState(caseStudies[0].id);
+  const [caseId, setCaseId] = useState(caseStudies.find(item => item.id === initialCase)?.id ?? caseStudies[0].id);
   const [stepIndex, setStepIndex] = useState(0);
   const [answers, setAnswers] = useState<number[]>([]);
   const [finished, setFinished] = useState(false);
@@ -30,6 +31,15 @@ export default function CaseStudies() {
     setFinished(false);
     if (focus && stepIndex === 0 && !finished) heading.current?.focus();
   };
+
+  useEffect(() => {
+    const selectedCase = caseStudies.find(item => item.id === initialCase);
+    if (!selectedCase) return;
+    setCaseId(selectedCase.id);
+    setStepIndex(0);
+    setAnswers([]);
+    setFinished(false);
+  }, [initialCase]);
 
   const advance = () => {
     moveFocus.current = true;
@@ -87,7 +97,7 @@ export default function CaseStudies() {
       <div className="case-sources">
         <h4><BookOpen size={18} aria-hidden="true"/> Base para estudar</h4>
         <a href={studyCase.relatedModule.href}>{studyCase.relatedModule.label}<ArrowRight size={16} aria-hidden="true"/></a>
-        {studyCase.sources.map(source => <a key={source.href} href={source.href} target="_blank" rel="noopener noreferrer">{source.label}<ArrowUpRight size={16} aria-hidden="true"/><span className="sr-only"> (abre em nova aba)</span></a>)}
+        {studyCase.sources.map(source => <a key={source.href} {...pdfReaderLink(source.href)}>{source.label}<ArrowUpRight size={16} aria-hidden="true"/><span className="sr-only"> (leitura no aplicativo)</span></a>)}
         <p>Casos adaptados dos conteúdos do projeto. As referências e os créditos permanecem no material original.</p>
       </div>
     </div>

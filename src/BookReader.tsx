@@ -4,7 +4,7 @@ import { parseBookManifest, type BookLink, type BookManifest, type BookPage } fr
 import { readLastPage, saveLastPage } from './learning-storage';
 import './book-reader.css';
 
-const ORIGINAL_PDF = '/materiais/caderno-cti-adulto-digital.pdf';
+const ORIGINAL_PDF = '#pdf/caderno-digital';
 const MANIFEST = '/caderno/paginas.json';
 
 function useReducedMotion() {
@@ -206,7 +206,7 @@ export default function BookReader() {
     <span className="book-message-icon"><BookOpen size={28}/></span>
     {failed ? <><h2>Não foi possível abrir o caderno agora.</h2><p role="alert">Verifique a conexão e tente novamente. Você também pode abrir o PDF original.</p><button className="book-action book-action-primary" onClick={() => setRequest(previous => previous + 1)}><RotateCw size={17}/> Tentar novamente</button></>
       : <><h2>Preparando seu caderno…</h2><p role="status">Carregando as páginas para a leitura.</p></>}
-    <a className="book-action" href={ORIGINAL_PDF} target="_blank" rel="noopener noreferrer"><FileText size={17}/> Abrir PDF original <ArrowUpRight size={15}/></a>
+    <a className="book-action" href={ORIGINAL_PDF}><FileText size={17}/> Abrir PDF original <ArrowUpRight size={15}/></a>
   </section>;
 
   const current = book.pages[page - 1];
@@ -241,7 +241,7 @@ export default function BookReader() {
         <input id="book-page-number" type="number" inputMode="numeric" min={1} max={book.pageCount} step={1} value={jump} onChange={event => { jumpEdited.current = true; setJump(event.target.value); }} required/>
         <button className="book-action" type="submit">Ir <ChevronRight size={16}/></button>
       </form>
-      <a className="book-action book-pdf-link" href={book.source} target="_blank" rel="noopener noreferrer"><FileText size={17}/> PDF original <ArrowUpRight size={15}/></a>
+      <a className="book-action book-pdf-link" href={`#pdf/caderno-digital?page=${page}`}><FileText size={17}/> PDF original <ArrowUpRight size={15}/></a>
     </div>
     <details className="book-text">
       <summary><FileText size={18} aria-hidden="true"/> Ver texto da página</summary>
@@ -272,7 +272,7 @@ function PageImage({ page, current, source, goTo }: { page: BookPage; current: b
   return <>
     <img key={attempt} className={`book-page-image ${state === 'ready' ? 'is-ready' : ''}`} src={page.src} width={page.width} height={page.height} alt={`Página ${page.number}${page.title ? `: ${page.title}` : ' do caderno'}`} decoding="async" fetchPriority={current ? 'high' : 'low'} draggable={false} onLoad={() => setState('ready')} onError={() => setState('error')}/>
     {state === 'loading' && <div className="book-page-loading" role={current ? 'status' : undefined}><FileText size={24}/><span>Carregando página {page.number}…</span></div>}
-    {state === 'error' && <div className="book-page-error"><FileText size={25}/><strong>Esta página não carregou.</strong><p>Verifique a conexão ou abra o PDF original.</p><button className="book-action" onClick={() => { setState('loading'); setAttempt(previous => previous + 1); }}><RotateCw size={16}/> Tentar novamente</button><a className="book-action" href={`${source}#page=${page.number}`} target="_blank" rel="noopener noreferrer">Abrir no PDF <ArrowUpRight size={15}/></a></div>}
+    {state === 'error' && <div className="book-page-error"><FileText size={25}/><strong>Esta página não carregou.</strong><p>Verifique a conexão ou abra o PDF original.</p><button className="book-action" onClick={() => { setState('loading'); setAttempt(previous => previous + 1); }}><RotateCw size={16}/> Tentar novamente</button><a className="book-action" href={`#pdf/caderno-digital?page=${page.number}`}>Abrir no PDF <ArrowUpRight size={15}/></a></div>}
     {state === 'ready' && current && <div className="book-page-links">{page.links.map((link, index) => <DocumentLink key={index} link={link} goTo={goTo} overlay/>)}</div>}
   </>;
 }

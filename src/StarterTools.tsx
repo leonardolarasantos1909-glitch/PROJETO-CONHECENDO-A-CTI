@@ -6,7 +6,7 @@ import './starter-tools.css';
 
 const CHECKLIST_KEY = 'cti-first-day-v1';
 const CHECKLIST_IDS = firstDayItems.map(item => item.id);
-const CADERNO_PDF = '/materiais/caderno-cti-adulto-digital.pdf';
+const CADERNO_PDF = '#pdf/caderno-digital';
 
 export function FirstDayChecklist() {
   const [completed, setCompleted] = useState(() => readSavedIds(CHECKLIST_KEY, CHECKLIST_IDS));
@@ -37,7 +37,7 @@ export function FirstDayChecklist() {
       const checked = completed.includes(item.id);
       return <li className={checked ? 'is-complete' : ''} key={item.id}>
         <label htmlFor={`${prefix}-${item.id}`}><input id={`${prefix}-${item.id}`} type="checkbox" checked={checked} onChange={() => update(checked ? completed.filter(id => id !== item.id) : [...completed, item.id])}/><span><span className="starter-item-number">{String(index + 1).padStart(2, '0')}</span><strong>{item.title}</strong>{checked && <Check className="starter-item-check" size={18} aria-hidden="true"/>}</span></label>
-        <div className="starter-item-body"><p>{item.detail}</p><a href={item.href}>Revisar assunto relacionado <ArrowRight size={16} aria-hidden="true"/></a><p className="starter-source">Base: {item.sourceLabel}.{item.sourcePage && <> <a href={`${CADERNO_PDF}#page=${item.sourcePage}`} target="_blank" rel="noopener noreferrer">Conferir no caderno <ArrowUpRight size={14} aria-hidden="true"/><span className="sr-only"> (abre em nova aba)</span></a></>}</p></div>
+        <div className="starter-item-body"><p>{item.detail}</p><a href={item.href}>Revisar assunto relacionado <ArrowRight size={16} aria-hidden="true"/></a><p className="starter-source">Base: {item.sourceLabel}.{item.sourcePage && <> <a href={`${CADERNO_PDF}?page=${item.sourcePage}`}>Conferir no caderno <ArrowUpRight size={14} aria-hidden="true"/></a></>}</p></div>
       </li>;
     })}</ul>
     <div className="starter-checklist-bottom">{completed.length === firstDayItems.length && <p role="status">Roteiro marcado. Continue levando suas dúvidas ao preceptor e respeitando a supervisão em cada atividade.</p>}<button className="starter-secondary" onClick={() => update([])} disabled={completed.length === 0}>Desmarcar todos os itens</button></div>
@@ -62,7 +62,7 @@ export function Glossary({ renderFavorite, initialTerm, initialQuery }: { render
       <div className="starter-term-top"><h3>{item.term}</h3>{renderFavorite?.(item.id)}</div>
       <p>{item.definition}</p>
       <a className="starter-related" href={item.href}>Explorar assunto relacionado <ArrowRight size={17} aria-hidden="true"/></a>
-      <div className="starter-term-source"><span>Base: {item.sourceLabel}.</span>{item.sourcePage && <a href={`${CADERNO_PDF}#page=${item.sourcePage}`} target="_blank" rel="noopener noreferrer">Conferir no caderno <ArrowUpRight size={15} aria-hidden="true"/><span className="sr-only"> (abre em nova aba)</span></a>}</div>
+      <div className="starter-term-source"><span>Base: {item.sourceLabel}.</span>{item.sourcePage && <a href={`${CADERNO_PDF}?page=${item.sourcePage}`}>Conferir no caderno <ArrowUpRight size={15} aria-hidden="true"/></a>}</div>
     </article>)}</div>
     {!results.length && <div className="starter-empty"><h3>Nenhum termo encontrado.</h3><p>Tente uma sigla, como “CVC”, ou uma palavra, como “pressão”.</p><button className="starter-secondary" onClick={() => setQuery('')}>Mostrar todos os termos</button></div>}
     <p className="starter-review">Definições educativas elaboradas a partir dos módulos e do caderno fornecido pelo autor. Consulte as referências preservadas no material e a nomenclatura adotada pelo serviço. Revisão clínica e institucional pendente.</p>

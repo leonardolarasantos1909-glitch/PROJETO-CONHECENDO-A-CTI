@@ -162,10 +162,11 @@ self.addEventListener('fetch', event => {
 
 export async function buildServiceWorker() {
   const assets = await listFiles('/assets/');
+  const pdfAssets = await listFiles('/pdfjs/');
   const materials = (await readdir('dist/materiais')).filter(name => name.endsWith('.pdf')).sort().map(name => `/materiais/${name}`);
   const book = (await readdir('dist/caderno')).filter(name => name.endsWith('.webp') || name === 'paginas.json').sort().map(name => `/caderno/${name}`);
   const apostilas = await readApostilas();
-  const files = ['/', '/index.html', '/icon.svg', '/icon-192.png', '/icon-512.png', '/manifest.webmanifest', ...assets, ...materials, ...book, ...apostilas.manifest];
+  const files = ['/', '/index.html', '/icon.svg', '/icon-192.png', '/icon-512.png', '/manifest.webmanifest', ...assets, ...pdfAssets, ...materials, ...book, ...apostilas.manifest];
   const hash = createHash('sha256');
   // Changes to a PDF also invalidate its on-demand cache, without precaching it.
   for (const file of [...files.filter(href => href !== '/'), ...apostilas.hrefs].sort()) {

@@ -4,23 +4,25 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "predev": "node scripts/copy-pdf-assets.mjs public",
     "dev": "vite --host 0.0.0.0",
-    "build": "node scripts/check-book.mjs && node scripts/check-apostilas.mjs && tsc -b && vite build && node scripts/build-sw.mjs",
+    "build": "node scripts/check-book.mjs && node scripts/check-apostilas.mjs && tsc -b && vite build && node scripts/copy-pdf-assets.mjs && node scripts/build-sw.mjs",
     "preview": "vite preview --host 0.0.0.0",
     "test": "vitest run && node scripts/check-sw.mjs"
   },
   "dependencies": {
+    "lucide-react": "^0.468.0",
+    "pdfjs-dist": "6.4.299",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "lucide-react": "^0.468.0"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@tailwindcss/vite": "^4.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
+    "tailwindcss": "^4.0.0",
     "typescript": "~5.7.2",
     "vite": "^6.1.0",
-    "vitest": "^3.0.0",
-    "tailwindcss": "^4.0.0",
-    "@tailwindcss/vite": "^4.0.0"
+    "vitest": "^3.0.0"
   }
 }

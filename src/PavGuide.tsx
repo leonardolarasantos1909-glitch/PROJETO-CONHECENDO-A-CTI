@@ -1,3 +1,4 @@
+import { pdfReaderLink } from './pdf-catalog';
 import { useId } from 'react';
 import { ArrowUpRight, BookOpen } from 'lucide-react';
 import { pavMeasures, pavReferences } from './pav';
@@ -21,7 +22,7 @@ export default function PavGuide() {
     <section className="pav-sources" aria-labelledby={`${prefix}-sources`}>
       <h3 id={`${prefix}-sources`}><BookOpen size={21} aria-hidden="true"/>Fontes e referências</h3>
       <ul role="list">{pavReferences.map(reference => <li key={reference.id}>
-        <a href={reference.href} target="_blank" rel="noopener noreferrer"><span>{reference.label}</span><ArrowUpRight size={17} aria-hidden="true"/><span className="sr-only"> (abre em nova aba)</span></a>
+        <a {...pdfReaderLink(reference.href)}><span>{reference.label}</span><ArrowUpRight size={17} aria-hidden="true"/>{pdfReaderLink(reference.href).target && <span className="sr-only"> (abre em nova aba)</span>}</a>
       </li>)}</ul>
     </section>
   </section>;

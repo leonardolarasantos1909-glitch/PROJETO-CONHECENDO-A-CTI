@@ -8,11 +8,21 @@ Abra https://proud-math-302f.conhecendoacti.workers.dev/ no **Safari do iPhone**
 
 Se o link recebido pelo WhatsApp abrir dentro dele, use o menu e escolha **Abrir no navegador**. Se essa opção não aparecer, copie o link e cole na barra de endereço do Safari ou Chrome. Isso ajuda a encontrar os controles de download e de adicionar à tela inicial.
 
-## 2. Ler e salvar os cadernos e as apostilas
+## 2. Encontrar um assunto pelo nome
+
+Na tela inicial, use **Pesquisar no app**. Digite **PAV**, **RASS**, **Curativos** ou **bomba de infusão**. Também há atalhos para os três primeiros exemplos. Toque em um resultado para abrir o assunto, a escala, o termo, o material ou o caso simulado correspondente.
+
+O botão **Buscar**, ou a tecla de pesquisa do teclado do celular, leva à lista sem abrir o primeiro resultado automaticamente. Quando houver mais de oito resultados, toque em **Mostrar mais resultados**. Para voltar aos oito módulos da tela inicial, use **Limpar pesquisa**, no botão com **X**.
+
+Um resultado de PDF abre o cartão do material na Biblioteca; você escolhe abrir ou baixar. A busca considera nomes, descrições e textos catalogados, sem pesquisar o texto integral dos PDFs. Ela não guarda suas consultas e funciona offline depois de carregar e armazenar a versão atual do aplicativo.
+
+## 3. Ler e salvar os cadernos e as apostilas
 
 Na **Biblioteca científica**, toque em **Ler caderno**. O livro apresenta uma página por vez, com deslize horizontal, botões **Anterior/Próxima**, **Índice**, salto por número e **Ver texto da página**. A opção **PDF original** abre o PDF usado como fonte.
 
-Na mesma Biblioteca, a seção **Apostilas de estudo** oferece os cinco materiais temáticos disponíveis, com **Abrir apostila** (PDF em nova aba) e **Baixar PDF**. Também há atalhos nos módulos relacionados. Os PDFs seguem a paleta do aplicativo, preservando conteúdo, imagens e referências.
+Na mesma Biblioteca, a seção **Apostilas de estudo** oferece os cinco materiais temáticos disponíveis, com **Abrir apostila** (leitor dentro do aplicativo) e **Baixar PDF**. Também há atalhos nos módulos relacionados. Os PDFs seguem a paleta do aplicativo, preservando conteúdo, imagens e referências.
+
+Ao abrir uma apostila, o **PDF original** ou a versão de impressão, use **Voltar à biblioteca** no topo para retornar. **Início** volta diretamente à tela inicial. Os botões ficam visíveis durante a rolagem, o carregamento e eventuais falhas. Use **Anterior**, **Próxima**, **Ir para página** e ampliação para ler; **Ver texto e links da página** oferece o conteúdo selecionável. Não é necessário fechar o aplicativo para sair do PDF.
 
 Para salvar um arquivo, volte à Biblioteca e escolha **Baixar PDF** ou **Baixar para imprimir**:
 
@@ -25,7 +35,7 @@ Os nomes e a posição dos controles podem variar conforme a versão do navegado
 
 O PDF de impressão tem quatro páginas de bolso em cada A4. Imprima em A4, tamanho real/100%, frente única e **uma página do PDF por folha**. Não aplique novamente quatro páginas por folha na impressora. Recorte e organize a numeração de 01 a 96. Esse download é opcional e separado da leitura digital.
 
-## 3. Colocar um atalho na tela inicial
+## 4. Colocar um atalho na tela inicial
 
 | Celular | Passos |
 | --- | --- |
@@ -34,9 +44,10 @@ O PDF de impressão tem quatro páginas de bolso em cada A4. Imprima em A4, tama
 
 Essas opções podem variar conforme a versão. Se não aparecerem, confira se o aplicativo está aberto no Safari ou Chrome, em vez do navegador interno do WhatsApp. O atalho é opcional: o link continua funcionando sem instalar.
 
-## 4. Conferir nos dois sistemas
+## 5. Conferir nos dois sistemas
 
-- Abra os oito módulos e alguns cartões; pesquise “glicemia” e “sonda”.
+- Na tela inicial, teste **Pesquisar no app** com **PAV**, **RASS**, **Curativos** e **bomba de infusão**. Abra um resultado específico e volte. Teste **Buscar**, os atalhos, **Mostrar mais resultados** quando aparecer e uma palavra inexistente. Use **Limpar pesquisa** e confira o retorno dos oito módulos.
+- Abra os oito módulos e alguns cartões; pesquise “glicemia” e “sonda”. Ao pesquisar um PDF, confira que o resultado leva ao cartão na Biblioteca sem iniciar o download.
 - Pesquise “PAV” ou abra **Rotinas da CTI → Bundle de prevenção da PAV**. Confira as oito medidas, as fontes e a aplicação conforme o protocolo do serviço. Teste favoritar, reabrir pelo favorito e remover. O conteúdo interno funciona offline após o carregamento completo; referências externas exigem conexão.
 - Abra **Escalas** no menu inferior e alterne **EVA**, **BPS**, **PAINAD** e **RASS**. Confira o texto, a comparação, as referências e os links às páginas do caderno. A RASS descreve agitação/sedação; a EVA desenhada é apenas uma ilustração, sem medida real.
 - Em **Itens e critérios da escala**, abra os três quadros da BPS e os cinco da PAINAD para ver os pontos e as descrições. Na EVA e na RASS, confira os fatores observados e como a leitura é formada. Cada quadro tem link para a página correspondente do caderno.
@@ -46,20 +57,20 @@ Essas opções podem variar conforme a versão. Se não aparecerem, confira se o
 - Abra os assuntos de Equipamentos e Dispositivos para conferir os desenhos e suas legendas.
 - No Quiz, percorra os cinco casos simulados, confira as explicações, a discussão final e a opção de repetir. No **Quiz de revisão**, confira o banco de **32 questões**, filtre os oito assuntos, teste respostas corretas e incorretas, finalize e reinicie.
 - No caderno, deslize para o lado e teste os botões, o índice e o salto para uma página. Saia e volte, recarregue e gire o aparelho para conferir a retomada. Teste também **Voltar ao início do caderno**.
-- Abra **Ver texto da página**, um link de referência e **PDF original**.
+- Abra **Ver texto da página**, um link de referência e **PDF original**. No leitor de PDF, teste próxima/anterior, salto por número, ampliação e **Voltar à biblioteca**; reabra e use **Início**. Confira também uma apostila e a versão de impressão.
 - Salve os cadernos e uma apostila e procure os arquivos nas pastas indicadas acima.
 - Confira o atalho da tela inicial, o tamanho do texto e os botões em cada aparelho.
-- Com conexão, aguarde a preparação inicial de cerca de 10 MB de arquivos. Recarregue, ative o modo avião e abra os módulos e uma página do livro ainda não visitada. Links externos exigem conexão.
+- Com conexão, aguarde a preparação inicial de cerca de 16 MB de arquivos. Recarregue, ative o modo avião e teste a busca, os módulos e uma página do livro ainda não visitada. Links externos exigem conexão.
 
 As novas apostilas não são baixadas todas na primeira visita. Abra cada PDF com conexão para que o navegador possa armazená-lo por completo; o espaço disponível pode limitar esse cache. Para consultar sem internet com uma cópia salva, use **Baixar PDF** e abra o arquivo no gerenciador do celular.
 
 A instalação, o download, a impressão e o offline precisam ser confirmados em iPhone e Android físicos. O navegador pode remover arquivos armazenados conforme suas políticas. Esses passos orientam o teste; não afirmam que todos os aparelhos foram validados.
 
-## 5. Atualizar a hospedagem — somente para o responsável
+## 6. Atualizar a hospedagem — somente para o responsável
 
-Veja o [passo a passo da versão 10](ATUALIZAR-V10.md).
+Veja o [passo a passo da versão 11](ATUALIZAR-V11.md).
 
-Baixe [conhecendo-a-cti-v10.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-v10.zip). Se o download não iniciar, abra a [página do arquivo no GitHub](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/blob/main/downloads/conhecendo-a-cti-v10.zip) e toque no ícone de download (**Download raw file**). Se o repositório for privado, entre na conta com acesso.
+Baixe [conhecendo-a-cti-v11.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-v11.zip). Se o download não iniciar, abra a [página do arquivo no GitHub](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/blob/main/downloads/conhecendo-a-cti-v11.zip) e toque no ícone de download (**Download raw file**). Se o repositório for privado, entre na conta com acesso.
 
 No iPhone, confira o ZIP em **Arquivos → Downloads**; se abrir em uma visualização, use **Compartilhar → Salvar em Arquivos**. No Android, confirme o download no Chrome e confira em **Arquivos/Files → Downloads**. Mantenha o arquivo em ZIP, sem descompactar. O comando **Code → Download ZIP** do GitHub baixa o código-fonte e não substitui esse pacote de produção.
 
@@ -67,7 +78,7 @@ No painel da Cloudflare, entre no **mesmo projeto** do aplicativo publicado e en
 
 Mantendo o projeto e o endereço, o QR Code continua válido. Depois de publicar, recarregue o aplicativo. Se a versão antiga continuar aparecendo, feche todas as abas do aplicativo e abra novamente com conexão.
 
-O histórico do alerta de download de uma versão anterior permanece em [PACOTE-V2.md](PACOTE-V2.md); verificações de integridade e funcionamento não são uma varredura antivírus. A v10 mantém os cadernos, as cinco apostilas, as escalas, as ferramentas e o quiz de 32 questões e acrescenta o tópico de prevenção da PAV; consulte [o inventário e as três pendências de envio](APOSTILAS.md).
+O histórico do alerta de download de uma versão anterior permanece em [PACOTE-V2.md](PACOTE-V2.md); verificações de integridade e funcionamento não são uma varredura antivírus. A v11 acrescenta a busca unificada e o leitor de PDFs com botões de retorno, e mantém o tópico de prevenção da PAV, os cadernos, as cinco apostilas, as escalas, as ferramentas e o quiz de 32 questões; consulte [o inventário e as três pendências de envio](APOSTILAS.md).
 
 ## Primeira publicação alternativa em Pages
 

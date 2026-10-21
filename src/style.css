@@ -14,3 +14,5 @@
 .quiz .quiz-intro{font-size:14px;line-height:1.9;margin:0 0 22px;color:#60745f}.quiz .answer{font-size:14px;line-height:1.8;min-height:44px}.quiz .filter{font-size:14px}.quiz .filter select{font-size:14px;min-height:44px;max-width:100%}.quiz .answer svg{flex-shrink:0}
 
 .quiz .button{min-height:44px;font-size:14px}.quiz .answer b{font-size:14px}
+
+.pdf-card[id]{scroll-margin-top:24px}.pdf-card[id]:focus{outline:3px solid #ae394b;outline-offset:4px}

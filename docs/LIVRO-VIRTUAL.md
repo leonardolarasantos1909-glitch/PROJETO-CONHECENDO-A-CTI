@@ -8,9 +8,11 @@ Desde a versão v3, o caderno digital pode ser lido como um livro dentro do apli
 2. Deslize a página para o lado ou use **Anterior** e **Próxima**. No computador, as setas do teclado também funcionam, exceto durante a edição de campos.
 3. Use **Índice** para abrir a página 2 e toque nos assuntos do índice original para saltar à página correspondente. Também é possível preencher **Ir para página** e tocar em **Ir**.
 4. Abra **Ver texto da página** para ler o texto integral em formato selecionável e acessar os links daquela página.
-5. Use **PDF original** para abrir o documento usado como fonte em uma nova aba. A Biblioteca mantém **Baixar PDF**.
+5. Use **PDF original** para abrir o documento usado como fonte no leitor interno com **Voltar à biblioteca** e **Início**. A Biblioteca mantém **Baixar PDF**.
 
-O contador informa a página atual. O leitor mantém essa página ao mudar a largura da tela; cada nova entrada no leitor começa na página 1. As imagens preservam a proporção e a aparência do PDF. Somente a imagem atual e suas vizinhas ficam montadas no leitor, para reduzir o uso de memória. As folhas de horários permanecem modelos em branco, sem campos para coleta de dados no aplicativo.
+O contador informa a página atual. O leitor mantém essa página ao mudar a largura da tela e, desde a v8, retoma a última página válida salva neste navegador ao reabrir. A primeira leitura começa na página 1; **Voltar ao início do caderno** permite reiniciar. As imagens preservam a proporção e a aparência do PDF. Somente a imagem atual e suas vizinhas ficam montadas no leitor, para reduzir o uso de memória. As folhas de horários permanecem modelos em branco, sem campos para coleta de dados no aplicativo.
+
+Na v11, **Pesquisar no app**, na tela inicial, também encontra o caderno e os materiais pelo nome ou pela descrição. Um resultado de PDF abre seu cartão na Biblioteca, sem baixar automaticamente. A busca não pesquisa o texto integral dos PDFs ou das páginas do livro; **Ver texto da página** continua disponível dentro do leitor.
 
 Se o manifesto ou uma imagem falhar, o leitor oferece nova tentativa e acesso ao PDF. Os links das referências externas abrem em nova aba e precisam de conexão. A experiência em iPhone e Android físicos, a impressão e as políticas de armazenamento dos navegadores precisam ser confirmadas no aparelho do usuário.
 
@@ -56,9 +58,9 @@ O comando `npm run build` executa primeiro `scripts/check-book.mjs`. Essa confer
 
 ## Offline e atualização da hospedagem
 
-O service worker inclui o aplicativo, os dois PDFs, o manifesto e todas as imagens do livro no cache inicial: cerca de 10 MB de arquivos estáticos. O primeiro acesso requer conexão e tempo para concluir essa preparação. Para testar offline, use o build de produção, aguarde a ativação do service worker, recarregue e tente abrir também uma página ainda não visitada. O servidor `npm run dev` não registra o service worker. O navegador pode remover os dados armazenados conforme suas políticas.
+O service worker inclui o aplicativo, os dois PDFs, o manifesto e todas as imagens do livro no cache inicial: cerca de 16 MB de arquivos estáticos, incluindo os recursos locais do leitor de PDFs. O primeiro acesso requer conexão e tempo para concluir essa preparação. Para testar offline, use o build de produção, aguarde a ativação do service worker, recarregue e tente abrir também uma página ainda não visitada. O servidor `npm run dev` não registra o service worker. O navegador pode remover os dados armazenados conforme suas políticas.
 
-Para atualizar a hospedagem manual, envie **`downloads/conhecendo-a-cti-v10.zip`** ao mesmo projeto em que o aplicativo já está publicado. O ZIP deve conter os arquivos de `dist/`, com `index.html` na raiz. Manter o projeto e o endereço preserva o destino do QR Code. Depois da implantação, recarregue o aplicativo; se houver uma atualização do service worker aguardando, feche todas as abas do aplicativo e abra-o novamente com conexão.
+Para atualizar a hospedagem manual, envie **`downloads/conhecendo-a-cti-v11.zip`** ao mesmo projeto em que o aplicativo já está publicado. O ZIP deve conter os arquivos de `dist/`, com `index.html` na raiz. Manter o projeto e o endereço preserva o destino do QR Code. Siga o [passo a passo da versão 11](ATUALIZAR-V11.md). Depois da implantação, recarregue o aplicativo; se houver uma atualização do service worker aguardando, feche todas as abas do aplicativo e abra-o novamente com conexão.
 
 Consulte [a origem e preservação dos PDFs](MATERIAIS-PDF.md), [o histórico do pacote v2](PACOTE-V2.md) e [o roteiro de uso, publicação e teste em iPhone e Android](TESTAR-NO-CELULAR.md).
 

@@ -1,10 +1,11 @@
 import { useEffect, useId, useRef, useState, type KeyboardEvent, type ReactNode } from 'react';
 import { Activity, ArrowRight, ArrowUpRight, BookOpen, Brain, ChevronDown, Eye, MessageCircle } from 'lucide-react';
 import { scales, scaleComparison } from './scales';
+import { pdfReaderLink } from './pdf-catalog';
 import './scales-guide.css';
 
 const scaleIcons = { eva: MessageCircle, bps: Activity, painad: Eye, rass: Brain };
-const CADERNO_PDF = '/materiais/caderno-cti-adulto-digital.pdf';
+const CADERNO_PDF = '#pdf/caderno-digital';
 
 export default function ScalesGuide({ initialScale, renderFavorite }: { initialScale?: string; renderFavorite?: (id: string) => ReactNode } = {}) {
   const [selectedId, setSelectedId] = useState(scales.find(scale => scale.id === initialScale)?.id ?? scales[0].id);
@@ -118,7 +119,7 @@ export default function ScalesGuide({ initialScale, renderFavorite }: { initialS
                   <td>{level.criterion}</td>
                 </tr>)}</tbody>
               </table>
-              <a className="scales-domain-source" href={`${CADERNO_PDF}#page=${domain.page}`} target="_blank" rel="noopener noreferrer">Conferir na página {domain.page} do caderno <ArrowUpRight size={16} aria-hidden="true"/><span className="sr-only"> (abre em nova aba)</span></a>
+              <a className="scales-domain-source" href={`${CADERNO_PDF}?page=${domain.page}`}>Conferir na página {domain.page} do caderno <ArrowUpRight size={16} aria-hidden="true"/></a>
             </div>
           </details>;
         })}</div>}
@@ -159,8 +160,8 @@ export default function ScalesGuide({ initialScale, renderFavorite }: { initialS
 
       <section className="scales-card scales-sources" aria-labelledby={`${prefix}-sources-${scale.id}`}>
         <div className="scales-sources-title"><BookOpen size={23} aria-hidden="true"/><h3 id={`${prefix}-sources-${scale.id}`}>Fontes e leitura complementar</h3></div>
-        <ul>{scale.references.map(reference => <li key={reference.id}><a href={reference.href} target="_blank" rel="noopener noreferrer"><span>{reference.label}</span><ArrowUpRight size={18} aria-hidden="true"/><span className="sr-only"> (abre em nova aba)</span></a></li>)}</ul>
-        {scale.sourcePages.length > 0 && <div className="scales-caderno-links"><span>No caderno do projeto:</span>{scale.sourcePages.map(page => <a key={page} href={`${CADERNO_PDF}#page=${page}`} target="_blank" rel="noopener noreferrer">Página {page}<ArrowUpRight size={16} aria-hidden="true"/><span className="sr-only"> do PDF (abre em nova aba)</span></a>)}</div>}
+        <ul>{scale.references.map(reference => <li key={reference.id}><a {...pdfReaderLink(reference.href)}><span>{reference.label}</span><ArrowUpRight size={18} aria-hidden="true"/>{pdfReaderLink(reference.href).target && <span className="sr-only"> (abre em nova aba)</span>}</a></li>)}</ul>
+        {scale.sourcePages.length > 0 && <div className="scales-caderno-links"><span>No caderno do projeto:</span>{scale.sourcePages.map(page => <a key={page} href={`${CADERNO_PDF}?page=${page}`}>Página {page}<ArrowUpRight size={16} aria-hidden="true"/><span className="sr-only"> do PDF no aplicativo</span></a>)}</div>}
       </section>
     </>}</div>)}
 

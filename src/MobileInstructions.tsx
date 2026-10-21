@@ -18,7 +18,7 @@ export function PdfInstructions() {
       <li>Abra o aplicativo <strong>Arquivos</strong> ou <strong>Files</strong> e procure a pasta <strong>Downloads</strong>.</li>
     </ol>
     <BrowserHelp/>
-    <p>Para ler no aplicativo, toque em <strong>Ler caderno</strong> e deslize as páginas para os lados. No leitor, a opção <strong>PDF original</strong> abre o documento no navegador.</p>
+    <p>Para ler no aplicativo, toque em <strong>Ler caderno</strong> e deslize as páginas para os lados. No leitor, a opção <strong>PDF original</strong> abre uma tela do aplicativo com <strong>Voltar à biblioteca</strong> e <strong>Início</strong>. As apostilas usam o mesmo leitor.</p>
   </details>;
 }
 
