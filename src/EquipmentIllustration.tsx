@@ -117,7 +117,7 @@ export default function EquipmentIllustration({ moduleId, topicTitle }: { module
     </ol>
     <div className="equipment-attention"><Eye size={19} aria-hidden="true"/><p><strong>Para observar com a equipe:</strong> {diagram.attention}</p></div>
     <p className="equipment-description">Base: tópico “{diagram.topicTitle}” do módulo {moduleId === 'equipamentos' ? 'Equipamentos hospitalares' : 'Dispositivos'}. O desenho é uma adaptação educativa original; a leitura abaixo complementa o estudo.</p>
-    <a className="equipment-source" {...pdfReaderLink(diagram.source.href)}>Leitura complementar: {diagram.source.label} <ArrowUpRight size={17} aria-hidden="true"/><span className="sr-only"> (leitura no aplicativo)</span></a>
+    <a className="equipment-source" {...pdfReaderLink(diagram.source.href)}>Leitura complementar: {diagram.source.label} <ArrowUpRight size={17} aria-hidden="true"/><span className="sr-only"> (abre em outra aba)</span></a>
     <p className="equipment-review">Desenho original para estudo · conteúdo e representação sujeitos à revisão clínica e institucional.</p>
   </figure>;
 }

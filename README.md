@@ -13,17 +13,17 @@ O conteúdo do QR foi decodificado e conferido localmente. A conexão ao endere�
 
 ## Baixar a versão pronta
 
-**Estado de segurança:** houve relato de bloqueio antivírus em um pacote anterior. A versão v11 mantém os recursos anteriores, incluindo o tópico de prevenção da PAV, e acrescenta busca inicial e leitura de PDFs com botões de retorno; não há resultado de varredura antivírus completa. Os testes de integridade e funcionamento não substituem essa análise. No computador da empresa, encaminhe eventual alerta à TI, sem desativar proteções. [Histórico da versão v2](docs/PACOTE-V2.md).
+**Estado de segurança:** houve relato de bloqueio antivírus em um pacote anterior. A versão v12 mantém os recursos anteriores, incluindo a busca e o tópico de prevenção da PAV, e corrige a abertura dos PDFs originais no visualizador do aparelho; não há resultado de varredura antivírus completa. Os testes de integridade e funcionamento não substituem essa análise. No computador da empresa, encaminhe eventual alerta à TI, sem desativar proteções. [Histórico da versão v2](docs/PACOTE-V2.md).
 
-[Baixar conhecendo-a-cti-v11.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-v11.zip)
+[Baixar conhecendo-a-cti-v12.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-v12.zip)
 
 Este ZIP já está compilado e pronto para upload em hospedagem estática. Para atualizar o endereço atual, envie-o **ao mesmo projeto da Cloudflare**, pelo fluxo de implantação que já funcionou com a v2. Mantenha o arquivo em ZIP para esse envio; não é necessário instalar Node.js. Se o repositório for privado, entre no GitHub com a conta que tem acesso antes de baixar. O [guia para celular](docs/TESTAR-NO-CELULAR.md) orienta iPhone e Android e também descreve uma primeira publicação alternativa em Pages.
 
-Se o download direto não iniciar, abra a [página do arquivo no GitHub](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/blob/main/downloads/conhecendo-a-cti-v11.zip) e use **Download raw file** (ícone de download). A opção **Code → Download ZIP** baixa o código-fonte do repositório e não substitui esse pacote pronto para hospedagem.
+Se o download direto não iniciar, abra a [página do arquivo no GitHub](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/blob/main/downloads/conhecendo-a-cti-v12.zip) e use **Download raw file** (ícone de download). A opção **Code → Download ZIP** baixa o código-fonte do repositório e não substitui esse pacote pronto para hospedagem.
 
-O envio ao GitHub guarda o projeto e permite baixar os arquivos; ele não atualiza automaticamente a hospedagem. As alterações aparecem no endereço atual depois de enviar o ZIP v11 à Cloudflare. Mantendo o endereço, o QR Code continua válido.
+O envio ao GitHub guarda o projeto e permite baixar os arquivos; ele não atualiza automaticamente a hospedagem. As alterações aparecem no endereço atual depois de enviar o ZIP v12 à Cloudflare. Mantendo o endereço, o QR Code continua válido.
 
-Consulte também o [passo a passo para atualizar a versão 11](docs/ATUALIZAR-V11.md).
+Consulte também o [passo a passo para atualizar a versão 12](docs/ATUALIZAR-V12.md).
 
 ## Desenvolvimento
 
@@ -46,7 +46,7 @@ npm run preview -- --port 4173
 
 O build confere a correspondência SHA-256 entre o livro e seu PDF de origem, verifica as imagens e os links, verifica TypeScript, gera `dist/` e cria o service worker com a lista exata de arquivos produzidos. As páginas do livro já estão incluídas no repositório; Python é necessário somente para regenerá-las após trocar o PDF, conforme [o guia do livro virtual](docs/LIVRO-VIRTUAL.md).
 
-O servidor de desenvolvimento não registra service worker. Para testar a experiência offline, abra a versão de produção, aguarde a ativação do service worker, recarregue uma vez e use o modo offline do navegador. O cache inicial inclui cerca de 16 MB de arquivos, com as 96 páginas do livro e os dois PDFs do caderno. As cinco apostilas adicionais (cerca de 75 MB no total) são armazenadas sob demanda ao abrir cada PDF completo; não fazem parte desse download inicial. O shell e os conteúdos internos ficam disponíveis; fontes externas exigem conexão. O primeiro acesso precisa de rede. O navegador pode remover caches conforme suas políticas de armazenamento.
+O servidor de desenvolvimento não registra service worker. Para testar a experiência offline, abra a versão de produção, aguarde a ativação do service worker, recarregue uma vez e use o modo offline do navegador. O cache inicial inclui cerca de 10 MB de arquivos, com as 96 páginas do livro e os dois PDFs do caderno. As cinco apostilas adicionais (cerca de 75 MB no total) são armazenadas sob demanda ao abrir cada PDF completo; não fazem parte desse download inicial. O shell e os conteúdos internos ficam disponíveis; fontes externas exigem conexão. O primeiro acesso precisa de rede. O navegador pode remover caches conforme suas políticas de armazenamento.
 
 ## Atualização manual da publicação
 
@@ -68,7 +68,7 @@ Se o link abrir dentro do WhatsApp, escolha **Abrir no navegador**; se essa opç
 - `src/scales.test.ts`: conferência dos critérios textuais e dos pontos contra as páginas do caderno.
 - `src/main.tsx`: navegação, progresso local, detalhes, quiz e instalação.
 - `src/search.ts`, `src/HomeSearch.tsx` e `src/home-search.css`: catálogo de pesquisa e busca na tela inicial.
-- `src/pdf-catalog.ts`, `src/PdfReader.tsx`, `src/pdf-reader.css` e `scripts/copy-pdf-assets.mjs`: rotas seguras dos PDFs, leitor interno e recursos locais do PDF.js.
+- `src/pdf-catalog.ts`, `src/PdfReader.tsx` e `src/pdf-reader.css`: catálogo dos PDFs originais, links diretos e página leve de compatibilidade para as rotas antigas.
 - `src/starter-data.ts` e `src/StarterTools.tsx`: checklist do primeiro dia e glossário pesquisável.
 - `src/equipment-diagrams.ts` e `src/EquipmentIllustration.tsx`: esquemas originais e legendas dos 15 equipamentos e dispositivos.
 - `src/cases.ts` e `src/CaseStudies.tsx`: cinco casos PBL fictícios, feedback por alternativa e discussão final.
@@ -132,7 +132,7 @@ Para usar, salvar os PDFs e testar em iPhone ou Android, consulte [o passo a pas
 
 Os dois cadernos enviados pelo autor estão em **Biblioteca científica**, com atalho na tela inicial. Os arquivos distribuídos são cópias de compatibilidade: textos, layout, referências, links e autoria foram conferidos contra os originais; os anexos auxiliares de proveniência C2PA foram omitidos. Os originais permanecem preservados separadamente.
 
-- **Leitura digital:** “Ler caderno” abre `#caderno` dentro do aplicativo, com uma página por vez e deslize horizontal. O leitor tem Anterior/Próxima, contador, Índice, campo para ir a uma página e “Ver texto da página” com o texto integral e os links. Os links internos do índice original continuam navegáveis. “PDF original” abre o PDF usado como fonte no leitor interno com botões de retorno; “Baixar PDF”, na Biblioteca, permite salvar esse mesmo arquivo. Desde a v8, a leitura retoma a última página válida salva neste navegador; o leitor oferece um botão para voltar ao início.
+- **Leitura digital:** “Ler caderno” abre `#caderno` dentro do aplicativo, com uma página por vez e deslize horizontal. O leitor tem Anterior/Próxima, contador, Índice, campo para ir a uma página e “Ver texto da página” com o texto integral e os links. Os links internos do índice original continuam navegáveis. “PDF original” abre o PDF usado como fonte no navegador ou visualizador do aparelho, solicitando outra aba; para retornar, selecione a aba do aplicativo ou seu ícone; “Baixar PDF”, na Biblioteca, permite salvar esse mesmo arquivo. Desde a v8, a leitura retoma a última página válida salva neste navegador; o leitor oferece um botão para voltar ao início.
 - **Impressão opcional:** 24 páginas A4 com quatro páginas de bolso por folha (96 páginas lógicas). O botão “Baixar para imprimir” entrega o PDF já diagramado. Imprimir A4, tamanho real/100%, uma página do PDF por folha e frente única; não aplicar novamente a opção de quatro páginas por folha da impressora. Recortar e organizar pela numeração.
 
 Para salvar os PDFs:
@@ -142,13 +142,13 @@ Para salvar os PDFs:
 
 O deslize, a abertura do PDF, o download, a impressão e o offline precisam ser confirmados nos aparelhos físicos de ambos os sistemas. As imagens do livro preservam a aparência do PDF; a opção de texto facilita a leitura sem depender do tamanho da imagem.
 
-Os PDFs, o manifesto e as imagens do livro entram no cache offline do PWA após instalação completa do service worker em um primeiro acesso online. Esse conjunto, somado ao aplicativo, representa cerca de 16 MB. O comportamento pode depender das políticas de armazenamento do navegador. Não há formulários no aplicativo para coletar dados das folhas de horários. As folhas presentes nos PDFs são modelos em branco; o exemplo de anotação é didático. A inclusão dos arquivos não significa revisão clínica ou validação institucional.
+Os PDFs, o manifesto e as imagens do livro entram no cache offline do PWA após instalação completa do service worker em um primeiro acesso online. Esse conjunto, somado ao aplicativo, representa cerca de 10 MB. O comportamento pode depender das políticas de armazenamento do navegador. Não há formulários no aplicativo para coletar dados das folhas de horários. As folhas presentes nos PDFs são modelos em branco; o exemplo de anotação é didático. A inclusão dos arquivos não significa revisão clínica ou validação institucional.
 
 Consulte [o registro de origem e integridade](docs/MATERIAIS-PDF.md) e [o guia de geração e uso do livro virtual](docs/LIVRO-VIRTUAL.md).
 
 ## Apostilas temáticas — v5
 
-A Biblioteca inclui cinco apostilas (147 páginas): Cuidados com o Paciente Crítico, Curativos e Cuidados com Feridas, Evolução e Anotação de Enfermagem, Medicações e Bombas de Infusão, e Monitorização e Equipamentos. A adaptação visual usa bordô e sálvia nos elementos vetoriais, preservando os textos, as imagens, as fontes, os créditos, as referências, os links e a paginação. Capas e mapas rasterizados conservam suas cores originais. Na v5, os documentos abriam como PDF em nova aba; desde a v11, abrem no leitor interno com botões de retorno. Também podem ser baixados. O caderno com leitor virtual e a versão de bolso continuam disponíveis.
+A Biblioteca inclui cinco apostilas (147 páginas): Cuidados com o Paciente Crítico, Curativos e Cuidados com Feridas, Evolução e Anotação de Enfermagem, Medicações e Bombas de Infusão, e Monitorização e Equipamentos. A adaptação visual usa bordô e sálvia nos elementos vetoriais, preservando os textos, as imagens, as fontes, os créditos, as referências, os links e a paginação. Capas e mapas rasterizados conservam suas cores originais. Na v5, os documentos abriam como PDF em nova aba. A v11 adotou um leitor interno e a v12 voltou a abrir os PDFs originais no visualizador do aparelho. Também podem ser baixados. O caderno com leitor virtual e a versão de bolso continuam disponíveis.
 
 Rotinas, Equipamentos, Dispositivos e Anotações de enfermagem têm atalhos para os materiais relacionados. A busca do início também encontra as apostilas na Biblioteca. As instruções de download para iOS e Android permanecem disponíveis.
 
@@ -198,8 +198,19 @@ A base são o caderno e as apostilas já fornecidas. Links de Anvisa e Cofen sã
 
 ## Busca na tela inicial e retorno dos PDFs — v11
 
+Histórico da entrega v11: sua busca foi preservada, e a visualização dos PDFs descrita abaixo foi substituída pela abertura dos arquivos originais na v12.
+
 **Pesquisar no app** aparece em destaque no início. Digite **PAV**, **RASS**, **Curativos**, **bomba de infusão** ou outro nome para encontrar módulos, assuntos, escalas, termos, ferramentas, materiais e casos simulados. Os resultados abrem o conteúdo correspondente; PDFs levam ao cartão interno da Biblioteca, sem iniciar downloads. A pesquisa usa os nomes, as descrições e os textos catalogados, sem consultar o texto integral dos PDFs ou a internet.
 
 A lista mostra até oito resultados inicialmente, oferece **Mostrar mais resultados** e informa quantos estão visíveis. **Buscar** ou Enter leva à lista; **Limpar pesquisa** restaura os oito módulos. A busca funciona offline após o carregamento e o cache da versão atual, sem guardar as consultas, exigir cadastro ou acrescentar analytics. Os conteúdos e recursos da v10, os PDFs, as referências e os créditos foram preservados. Consulte [escopo e verificação da busca v11](docs/BUSCA-V11.md) e [como atualizar o mesmo projeto da Cloudflare](docs/ATUALIZAR-V11.md), mantendo o endereço e o QR Code.
 
-As opções **Abrir apostila**, **Abrir PDF**, **PDF original** e as referências aos PDFs locais abrem agora o leitor `#pdf/<id>`, dentro do aplicativo. **Voltar à biblioteca** e **Início** ficam no topo durante a leitura e o carregamento. O leitor tem página anterior/próxima, salto por número, ampliação, texto e links da página; **Baixar PDF** continua disponível. Os sete PDFs originais são preservados. PDF.js 6.4.299 e seus recursos são distribuídos localmente, com licença Apache-2.0, sem CDN; as apostilas continuam sendo carregadas apenas ao abrir. Consulte [o guia e os limites do leitor de PDFs](docs/LEITOR-PDF-V11.md).
+Na v11, as opções **Abrir apostila**, **Abrir PDF**, **PDF original** e as referências aos PDFs locais abriam o leitor `#pdf/<id>`, dentro do aplicativo. **Voltar à biblioteca** e **Início** ficam no topo durante a leitura e o carregamento. O leitor tem página anterior/próxima, salto por número, ampliação, texto e links da página; **Baixar PDF** continua disponível. Os sete PDFs originais são preservados. PDF.js 6.4.299 e seus recursos são distribuídos localmente, com licença Apache-2.0, sem CDN; as apostilas continuam sendo carregadas apenas ao abrir. Consulte [o guia e os limites do leitor de PDFs](docs/LEITOR-PDF-V11.md).
+
+
+## PDFs originais no visualizador do aparelho — v12
+
+**Abrir PDF** abre o arquivo original no navegador ou no visualizador do aparelho, solicitando uma nova aba. A visualização reduzida com PDF.js foi retirada. Para retornar, selecione a aba **Conhecendo a CTI** ou feche somente a aba do PDF. Se o sistema abrir outro aplicativo, volte pelo ícone do Conhecendo a CTI ou pelo alternador de aplicativos. Alguns navegadores Android podem baixar o PDF; nesse caso, abra o arquivo em **Arquivos/Files → Downloads**. Não há botão do aplicativo dentro do visualizador nativo: seus controles pertencem ao navegador ou ao sistema.
+
+As rotas antigas `#pdf/<id>?page=N` continuam funcionando como páginas leves de acesso, com **Abrir PDF**, **Baixar PDF**, **Voltar à biblioteca** e **Início**, sem carregar automaticamente o arquivo. As referências mantêm as páginas indicadas no endereço do PDF; o salto depende do visualizador. O livro **Ler caderno**, com 96 páginas, deslize horizontal, índice e retomada, continua dentro do aplicativo.
+
+Os sete PDFs, o livro, as referências, os créditos, a busca, os favoritos, o checklist, os cinco casos e as 32 questões foram preservados. O cache inicial volta a aproximadamente 10 MB; apostilas continuam sob demanda. A entrega passou nos 49 testes automatizados, no build e nas verificações de navegador para PDFs, ampliação, retorno, busca e offline. Testes em aparelhos físicos continuam no roteiro manual. Consulte [a correção e a verificação dos PDFs v12](docs/PDFS-V12.md), [como atualizar o mesmo projeto](docs/ATUALIZAR-V12.md) e [as instruções para iPhone e Android](docs/TESTAR-NO-CELULAR.md). O endereço e o QR Code são mantidos ao atualizar o mesmo projeto da Cloudflare; revisão clínica e institucional permanece pendente.

@@ -20,9 +20,17 @@ Um resultado de PDF abre o cartão do material na Biblioteca; você escolhe abri
 
 Na **Biblioteca científica**, toque em **Ler caderno**. O livro apresenta uma página por vez, com deslize horizontal, botões **Anterior/Próxima**, **Índice**, salto por número e **Ver texto da página**. A opção **PDF original** abre o PDF usado como fonte.
 
-Na mesma Biblioteca, a seção **Apostilas de estudo** oferece os cinco materiais temáticos disponíveis, com **Abrir apostila** (leitor dentro do aplicativo) e **Baixar PDF**. Também há atalhos nos módulos relacionados. Os PDFs seguem a paleta do aplicativo, preservando conteúdo, imagens e referências.
+Na mesma Biblioteca, a seção **Apostilas de estudo** oferece os cinco materiais temáticos disponíveis, com **Abrir PDF** e **Baixar PDF**. Também há atalhos nos módulos relacionados. **Abrir PDF** e **PDF original** abrem o arquivo original no navegador ou no visualizador do aparelho, solicitando outra aba. Alguns aparelhos podem baixar o documento; nesse caso, abra **Arquivos/Files → Downloads** e toque no PDF. Os arquivos seguem a paleta do aplicativo, preservando conteúdo, imagens, referências e créditos.
 
-Ao abrir uma apostila, o **PDF original** ou a versão de impressão, use **Voltar à biblioteca** no topo para retornar. **Início** volta diretamente à tela inicial. Os botões ficam visíveis durante a rolagem, o carregamento e eventuais falhas. Use **Anterior**, **Próxima**, **Ir para página** e ampliação para ler; **Ver texto e links da página** oferece o conteúdo selecionável. Não é necessário fechar o aplicativo para sair do PDF.
+Use os controles de zoom do visualizador ou o gesto de ampliar com dois dedos. O PDF não fica mais reduzido dentro da página do aplicativo.
+
+| Onde o PDF abriu | Como voltar ao aplicativo |
+| --- | --- |
+| Outra aba do Safari no iPhone ou do Chrome no Android | Use o botão de abas e selecione **Conhecendo a CTI**, ou feche somente a aba do PDF. |
+| Outro visualizador no Android | Use **Voltar** do Android ou o alternador de aplicativos. |
+| Safari ou visualizador a partir do ícone instalado | Volte pelo ícone **Conhecendo a CTI** na tela inicial ou pelo alternador de aplicativos. |
+
+A página do aplicativo continua disponível; não é necessário fechar o aplicativo inteiro. Dentro do arquivo, os controles são do navegador ou do visualizador. Links antigos `#pdf/<id>` abrem uma página de acesso com **Abrir PDF**, **Baixar PDF**, **Voltar à biblioteca** e **Início**; ela não carrega o documento automaticamente.
 
 Para salvar um arquivo, volte à Biblioteca e escolha **Baixar PDF** ou **Baixar para imprimir**:
 
@@ -57,10 +65,10 @@ Essas opções podem variar conforme a versão. Se não aparecerem, confira se o
 - Abra os assuntos de Equipamentos e Dispositivos para conferir os desenhos e suas legendas.
 - No Quiz, percorra os cinco casos simulados, confira as explicações, a discussão final e a opção de repetir. No **Quiz de revisão**, confira o banco de **32 questões**, filtre os oito assuntos, teste respostas corretas e incorretas, finalize e reinicie.
 - No caderno, deslize para o lado e teste os botões, o índice e o salto para uma página. Saia e volte, recarregue e gire o aparelho para conferir a retomada. Teste também **Voltar ao início do caderno**.
-- Abra **Ver texto da página**, um link de referência e **PDF original**. No leitor de PDF, teste próxima/anterior, salto por número, ampliação e **Voltar à biblioteca**; reabra e use **Início**. Confira também uma apostila e a versão de impressão.
+- Abra **Ver texto da página**, um link de referência e **PDF original**. No arquivo original, teste ampliação, rolagem de páginas e retorno pela aba do aplicativo. Confira também um link antigo `#pdf/<id>`: a página de acesso deve oferecer o PDF e os botões de retorno sem carregá-lo automaticamente. Confira também uma apostila e a versão de impressão.
 - Salve os cadernos e uma apostila e procure os arquivos nas pastas indicadas acima.
 - Confira o atalho da tela inicial, o tamanho do texto e os botões em cada aparelho.
-- Com conexão, aguarde a preparação inicial de cerca de 16 MB de arquivos. Recarregue, ative o modo avião e teste a busca, os módulos e uma página do livro ainda não visitada. Links externos exigem conexão.
+- Com conexão, aguarde a preparação inicial de cerca de 10 MB de arquivos. Recarregue, ative o modo avião e teste a busca, os módulos e uma página do livro ainda não visitada. Links externos exigem conexão.
 
 As novas apostilas não são baixadas todas na primeira visita. Abra cada PDF com conexão para que o navegador possa armazená-lo por completo; o espaço disponível pode limitar esse cache. Para consultar sem internet com uma cópia salva, use **Baixar PDF** e abra o arquivo no gerenciador do celular.
 
@@ -68,9 +76,9 @@ A instalação, o download, a impressão e o offline precisam ser confirmados em
 
 ## 6. Atualizar a hospedagem — somente para o responsável
 
-Veja o [passo a passo da versão 11](ATUALIZAR-V11.md).
+Veja o [passo a passo da versão 12](ATUALIZAR-V12.md).
 
-Baixe [conhecendo-a-cti-v11.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-v11.zip). Se o download não iniciar, abra a [página do arquivo no GitHub](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/blob/main/downloads/conhecendo-a-cti-v11.zip) e toque no ícone de download (**Download raw file**). Se o repositório for privado, entre na conta com acesso.
+Baixe [conhecendo-a-cti-v12.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-v12.zip). Se o download não iniciar, abra a [página do arquivo no GitHub](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/blob/main/downloads/conhecendo-a-cti-v12.zip) e toque no ícone de download (**Download raw file**). Se o repositório for privado, entre na conta com acesso.
 
 No iPhone, confira o ZIP em **Arquivos → Downloads**; se abrir em uma visualização, use **Compartilhar → Salvar em Arquivos**. No Android, confirme o download no Chrome e confira em **Arquivos/Files → Downloads**. Mantenha o arquivo em ZIP, sem descompactar. O comando **Code → Download ZIP** do GitHub baixa o código-fonte e não substitui esse pacote de produção.
 
@@ -78,7 +86,7 @@ No painel da Cloudflare, entre no **mesmo projeto** do aplicativo publicado e en
 
 Mantendo o projeto e o endereço, o QR Code continua válido. Depois de publicar, recarregue o aplicativo. Se a versão antiga continuar aparecendo, feche todas as abas do aplicativo e abra novamente com conexão.
 
-O histórico do alerta de download de uma versão anterior permanece em [PACOTE-V2.md](PACOTE-V2.md); verificações de integridade e funcionamento não são uma varredura antivírus. A v11 acrescenta a busca unificada e o leitor de PDFs com botões de retorno, e mantém o tópico de prevenção da PAV, os cadernos, as cinco apostilas, as escalas, as ferramentas e o quiz de 32 questões; consulte [o inventário e as três pendências de envio](APOSTILAS.md).
+O histórico do alerta de download de uma versão anterior permanece em [PACOTE-V2.md](PACOTE-V2.md); verificações de integridade e funcionamento não são uma varredura antivírus. A v12 corrige a abertura dos PDFs para usar os arquivos originais no visualizador do aparelho, preserva a busca unificada e mantém o tópico de prevenção da PAV, os cadernos, as cinco apostilas, as escalas, as ferramentas e o quiz de 32 questões; consulte [o inventário e as três pendências de envio](APOSTILAS.md).
 
 ## Primeira publicação alternativa em Pages
 

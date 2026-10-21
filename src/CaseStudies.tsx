@@ -97,7 +97,7 @@ export default function CaseStudies({ initialCase }: { initialCase?: string } = 
       <div className="case-sources">
         <h4><BookOpen size={18} aria-hidden="true"/> Base para estudar</h4>
         <a href={studyCase.relatedModule.href}>{studyCase.relatedModule.label}<ArrowRight size={16} aria-hidden="true"/></a>
-        {studyCase.sources.map(source => <a key={source.href} {...pdfReaderLink(source.href)}>{source.label}<ArrowUpRight size={16} aria-hidden="true"/><span className="sr-only"> (leitura no aplicativo)</span></a>)}
+        {studyCase.sources.map(source => <a key={source.href} {...pdfReaderLink(source.href)}>{source.label}<ArrowUpRight size={16} aria-hidden="true"/><span className="sr-only"> (abre em outra aba)</span></a>)}
         <p>Casos adaptados dos conteúdos do projeto. As referências e os créditos permanecem no material original.</p>
       </div>
     </div>

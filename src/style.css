@@ -16,3 +16,6 @@
 .quiz .button{min-height:44px;font-size:14px}.quiz .answer b{font-size:14px}
 
 .pdf-card[id]{scroll-margin-top:24px}.pdf-card[id]:focus{outline:3px solid #ae394b;outline-offset:4px}
+
+.pdf-open-help{font-size:14px;line-height:1.8;color:#60745f;margin:12px 0 20px;max-width:75ch}
+.pdf-actions .button,.pdf-actions .pdf-open{font-size:14px;min-height:44px}
