@@ -1,6 +1,7 @@
 import { useEffect, useId, useRef, useState, type ReactNode } from 'react';
 import { ArrowRight, ArrowUpRight, Check, ClipboardCheck, Search, X } from 'lucide-react';
 import { filterGlossary, firstDayItems, glossaryTerms } from './starter-data';
+import { glossarySource } from './hospital-glossary';
 import { readSavedIds, writeSavedIds } from './learning-storage';
 import './starter-tools.css';
 
@@ -111,14 +112,17 @@ export function Glossary({ renderFavorite, initialTerm, initialQuery }: { render
     <div ref={gridRef} className="starter-glossary-grid" id={`${prefix}-results`}>{visibleResults.map(item => <article className="starter-term" id={`glossary-${item.id}`} key={item.id} tabIndex={-1} aria-labelledby={`${prefix}-term-${item.id}`}>
       <div className="starter-term-top"><h3 id={`${prefix}-term-${item.id}`}>{item.term}</h3>{renderFavorite?.(item.id)}</div>
       <p>{item.definition}</p>
+      {item.supplement && <p>{item.supplement}</p>}
       {item.reviewNote && <div className="glossary-review-note"><strong>Conferir com a fonte</strong><p>{item.reviewNote}</p></div>}
       {item.href && <a className="starter-related" href={item.href}>Explorar assunto relacionado <ArrowRight size={17} aria-hidden="true"/></a>}
+      {item.reference && <div className="starter-term-source"><a href={item.reference.href} target="_blank" rel="noopener noreferrer">{item.reference.label} <ArrowUpRight size={15} aria-hidden="true"/></a></div>}
+      {item.sourceLabel !== glossarySource.label && <p className="starter-term-source">{item.sourceLabel}</p>}
     </article>)}</div>
     {visibleResults.length < results.length && <button className="starter-secondary glossary-more" type="button" aria-controls={`${prefix}-results`} onClick={() => {
       firstNewResultRef.current = visibleResults.length;
       setLimit(previous => previous + GLOSSARY_PAGE_SIZE);
     }}>Mostrar mais termos</button>}
     {!results.length && <div className="starter-empty"><h3>Nenhum termo encontrado.</h3><p>Tente outra sigla ou palavra da definição, ou limpe a pesquisa e o filtro.</p><button className="starter-secondary" type="button" onClick={clearSearch}>Mostrar todos os termos</button></div>}
-    <p className="starter-review glossary-transcription-source">Transcrição fornecida para este projeto, a partir do glossário indicado no Google Looker Studio. Revisão clínica e institucional pendente.</p>
+    <p className="starter-review glossary-transcription-source">Transcrição fornecida para este projeto, a partir do glossário indicado no Google Looker Studio, com atualizações enviadas pelo responsável, que informou conferência com a instituição. Essa confirmação foi relatada pelo responsável; não representa aprovação institucional do aplicativo. Revisão clínica e institucional do aplicativo pendente.</p>
   </section>;
 }

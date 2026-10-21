@@ -1,4 +1,5 @@
 import transcription from './data/glossario-hospital.txt?raw';
+import confirmation from './data/siglario-confirmacao.json';
 
 export type GlossaryTerm = {
   id: string;
@@ -9,6 +10,8 @@ export type GlossaryTerm = {
   sourceLabel: string;
   sourcePage?: number;
   reviewNote?: string;
+  supplement?: string;
+  reference?: { label: string; href: string };
   group: string;
 };
 
@@ -18,10 +21,8 @@ export const glossarySource = {
 };
 
 const reviewNotes: Record<string, string> = {
-  'TG EXT': 'A sigla e “Tangente externa” vieram separadas na transcrição. Esta associação precisa ser conferida com a fonte.',
-  MSSA: 'A redação enviada traz “resistant” e “sensível” na mesma definição. Confirmar com o responsável pelo material antes de utilizar.',
+  MSSA: 'A redação mantida traz “resistant” em inglês e “sensível” em português na mesma definição.',
   SIRS: 'Confirmar com o responsável a correspondência entre esta sigla e a expansão enviada.',
-  NPT: 'Conferir a grafia “potal” na transcrição. O texto enviado foi preservado.',
   PPlato: 'Conferir a expressão “Pressão de Plantô” na transcrição. O texto enviado foi preservado.',
   VEF1: 'Conferir a expressão de tempo “minuto 1” com a fonte. O texto enviado foi preservado.',
   ECOG: 'Conferir a repetição “Cooperative Cooperative” na transcrição.',
@@ -29,9 +30,13 @@ const reviewNotes: Record<string, string> = {
   MeV: 'Conferir a correspondência entre a sigla e a unidade informada na fonte.',
   'AC + D': 'Conferir a grafia dos nomes e a composição informada com o responsável pelo material; não usar como orientação de tratamento.',
   FOLFIRI: 'Conferir a grafia dos nomes e a composição informada com o responsável pelo material; não usar como orientação de tratamento.',
-  'R-CHOP': 'Conferir a composição informada com o responsável pelo material. Nenhum componente foi acrescentado ao texto enviado.',
+  'R-CHOP': 'O complemento fornecido menciona cinco medicamentos, enquanto a lista recebida contém quatro. Nenhum componente foi acrescentado.',
   'R-CVP': 'Conferir a composição informada com o responsável pelo material. Nenhum componente foi acrescentado ao texto enviado.',
 };
+
+type SuppliedUpdate = { term: string; definition: string; supplement?: string; reference?: { label: string; href: string } };
+const suppliedUpdates: Record<string, SuppliedUpdate> = confirmation.entries;
+export const glossaryConfirmationLabel = confirmation.sourceLabel;
 
 // Related learning screens only; these links do not validate the transcription.
 const related: Record<string, string> = {
@@ -63,16 +68,21 @@ for (let i = 0; i < lines.length;) {
 
 const ids = new Map<string, number>();
 export const glossaryTerms: GlossaryTerm[] = pairs.map(({ term, definition }) => {
+  const update = Object.hasOwn(suppliedUpdates, term) ? suppliedUpdates[term] : undefined;
+  const visibleTerm = update?.term ?? term;
+  // IDs remain based on the original transcription, preserving saved links and favorites.
   const base = term.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'termo';
   const count = (ids.get(base) ?? 0) + 1;
   ids.set(base, count);
-  const initial = term.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toUpperCase().charAt(0);
+  const initial = visibleTerm.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toUpperCase().charAt(0);
   return {
     id: count === 1 ? base : `${base}-${count}`,
-    term, definition, aliases: [],
+    term: visibleTerm, definition: update?.definition ?? definition, aliases: visibleTerm === term ? [] : [term],
     href: Object.hasOwn(related, term) ? related[term] : undefined,
-    sourceLabel: glossarySource.label,
+    sourceLabel: update ? glossaryConfirmationLabel : glossarySource.label,
     reviewNote: Object.hasOwn(reviewNotes, term) ? reviewNotes[term] : undefined,
+    supplement: update?.supplement,
+    reference: update?.reference,
     group: term === 'ºC' ? 'C' : /[0-9]/.test(initial) ? '0–9' : /[A-Z]/.test(initial) ? initial : 'O',
   };
 });
@@ -86,7 +96,7 @@ export function filterGlossary(query: string): GlossaryTerm[] {
   if (!normalized) return glossaryTerms;
   const words = normalized.split(' ');
   return glossaryTerms.filter(item => {
-    const text = normalize([item.term, ...item.aliases, item.definition].join(' '));
+    const text = normalize([item.term, ...item.aliases, item.definition, item.supplement ?? ''].join(' '));
     return words.every(word => text.includes(word));
   }).sort((a, b) => {
     const rank = (item: GlossaryTerm) => item.term === query.trim() ? 4 : normalize(item.term) === normalized ? 3 : normalize(item.term).startsWith(normalized) ? 2 : 0;

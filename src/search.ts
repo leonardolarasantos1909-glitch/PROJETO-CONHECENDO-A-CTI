@@ -80,7 +80,7 @@ const entries: SearchEntry[] = [
     description: term.definition,
     href: `#glossario/${term.id}`,
     aliases: [term.id, ...term.aliases],
-    body: term.sourceLabel,
+    body: [term.sourceLabel, term.supplement ?? ''].join(' '),
   })),
   {
     id: 'tool.primeiro-dia', title: 'Checklist do primeiro dia', kind: 'Ferramenta',

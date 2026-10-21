@@ -13,17 +13,17 @@ O conteúdo do QR foi decodificado e conferido localmente. A conexão ao endere�
 
 ## Baixar a versão pronta
 
-**Estado de segurança:** houve relato de bloqueio antivírus em um pacote anterior. A versão v13 incorpora o Siglário transcrito dentro do aplicativo e mantém a busca, o tópico de prevenção da PAV e a abertura dos PDFs originais no visualizador do aparelho; não há resultado de varredura antivírus completa. Os testes de integridade e funcionamento não substituem essa análise. No computador da empresa, encaminhe eventual alerta à TI, sem desativar proteções. [Histórico da versão v2](docs/PACOTE-V2.md).
+**Estado de segurança:** houve relato de bloqueio antivírus em um pacote anterior. A versão v14 atualiza o Siglário com o texto que o autor informou ter conferido com a instituição e mantém a busca, o tópico de prevenção da PAV e a abertura dos PDFs originais no visualizador do aparelho; não há resultado de varredura antivírus completa. Os testes de integridade e funcionamento não substituem essa análise. No computador da empresa, encaminhe eventual alerta à TI, sem desativar proteções. [Histórico da versão v2](docs/PACOTE-V2.md).
 
-[Baixar conhecendo-a-cti-v13.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-v13.zip)
+[Baixar conhecendo-a-cti-v14.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-v14.zip)
 
 Este ZIP já está compilado e pronto para upload em hospedagem estática. Para atualizar o endereço atual, envie-o **ao mesmo projeto da Cloudflare**, pelo fluxo de implantação que já funcionou com a v2. Mantenha o arquivo em ZIP para esse envio; não é necessário instalar Node.js. Se o repositório for privado, entre no GitHub com a conta que tem acesso antes de baixar. O [guia para celular](docs/TESTAR-NO-CELULAR.md) orienta iPhone e Android e também descreve uma primeira publicação alternativa em Pages.
 
-Se o download direto não iniciar, abra a [página do arquivo no GitHub](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/blob/main/downloads/conhecendo-a-cti-v13.zip) e use **Download raw file** (ícone de download). A opção **Code → Download ZIP** baixa o código-fonte do repositório e não substitui esse pacote pronto para hospedagem.
+Se o download direto não iniciar, abra a [página do arquivo no GitHub](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/blob/main/downloads/conhecendo-a-cti-v14.zip) e use **Download raw file** (ícone de download). A opção **Code → Download ZIP** baixa o código-fonte do repositório e não substitui esse pacote pronto para hospedagem.
 
-O envio ao GitHub guarda o projeto e permite baixar os arquivos; ele não atualiza automaticamente a hospedagem. As alterações aparecem no endereço atual depois de enviar o ZIP v13 à Cloudflare. Mantendo o endereço, o QR Code continua válido.
+O envio ao GitHub guarda o projeto e permite baixar os arquivos; ele não atualiza automaticamente a hospedagem. As alterações aparecem no endereço atual depois de enviar o ZIP v14 à Cloudflare. Mantendo o endereço, o QR Code continua válido.
 
-Consulte também o [passo a passo para atualizar a versão 13](docs/ATUALIZAR-V13.md).
+Consulte também o [passo a passo para atualizar a versão 14](docs/ATUALIZAR-V14.md).
 
 ## Desenvolvimento
 
@@ -71,6 +71,7 @@ Se o link abrir dentro do WhatsApp, escolha **Abrir no navegador**; se essa opç
 - `src/pdf-catalog.ts`, `src/PdfReader.tsx` e `src/pdf-reader.css`: catálogo dos PDFs originais, links diretos e página leve de compatibilidade para as rotas antigas.
 - `src/starter-data.ts` e `src/StarterTools.tsx`: checklist do primeiro dia e consulta ao Siglário.
 - `src/data/glossario-hospital.txt` e `src/hospital-glossary.ts`: transcrição UTF-8 fornecida, parser, IDs, busca e notas de conferência das 746 entradas.
+- `src/data/siglario-confirmacao.json`: as 13 entradas reenviadas pelo autor, que informou conferência com a instituição; atualização aplicada sobre a transcrição original, sem apagar seu registro.
 - `src/equipment-diagrams.ts` e `src/EquipmentIllustration.tsx`: esquemas originais e legendas dos 15 equipamentos e dispositivos.
 - `src/cases.ts` e `src/CaseStudies.tsx`: cinco casos PBL fictícios, feedback por alternativa e discussão final.
 - `src/favorites.ts`, `src/Favorites.tsx` e `src/learning-storage.ts`: catálogo seguro de favoritos e armazenamento local de preferências de estudo.
@@ -228,3 +229,13 @@ O relatório do Google Looker Studio foi indicado pelo usuário como origem; sua
 Favoritos antigos são mantidos onde existe equivalência; **Glasgow** passa a **GCS**. Quando não há equivalente, o atalho leva ao siglário geral, sem confundir **PAI** com **PAI + CD** nem remover o restante do progresso. Os sete PDFs e sua abertura nativa da v12, o livro de 96 páginas, os oito módulos, as 32 questões, os cinco casos e os demais recursos foram preservados.
 
 A v13 passou em 55 testes automatizados, nos testes do service worker, no build e em 11 grupos de verificações no Chromium, incluindo pesquisa, filtros, paginação completa, favoritos antigos, links dos PDFs e leitura offline. O ZIP pronto contém 118 arquivos e teve sua integridade e correspondência com `dist/` conferidas. Os resultados, o cache e o SHA-256 estão em [Siglário v13](docs/GLOSSARIO-V13.md). A conferência em aparelhos físicos e a revisão clínica e institucional continuam pendentes. Consulte [como atualizar o mesmo projeto da Cloudflare](docs/ATUALIZAR-V13.md) e [o guia de celular](docs/TESTAR-NO-CELULAR.md). O endereço e o QR Code permanecem os mesmos ao atualizar esse projeto.
+
+## Atualização do Siglário conforme o texto reenviado — v14
+
+O autor reenviou 13 entradas e informou que as conferiu com a instituição. A v14 aplica esse texto: **NPT — Nutrição parenteral total**, o nome visível **PPlat**, a associação **TG EXT — Tangente externa** e os contextos de **R-CHOP/R-CVP**. As definições que se repetiram foram mantidas, sem completar medicamentos nem corrigir outras expansões automaticamente. **MV — Murmúrio vesicular** já coincidia com a transcrição anterior. O link de R-CVP indicado pelo autor fica disponível para consulta opcional; não foi apresentado como fonte lida ou verificada neste ambiente.
+
+A confirmação é registrada como informação fornecida pelo autor, sem atribuir aprovação oficial ou validação clínica independente à instituição. Onze notas específicas de conferência permanecem, incluindo a divergência entre os quatro medicamentos enumerados e a expressão “cinco medicamentos” no texto de R-CHOP. As notas de NPT e da associação de TG EXT foram retiradas conforme o novo envio. A transcrição da v13 continua preservada; a atualização está registrada separadamente em `src/data/siglario-confirmacao.json`.
+
+O Siglário mantém 746 entradas e 745 formas textuais distintas. O endereço técnico `#glossario`, os IDs e os favoritos existentes permanecem válidos, inclusive o antigo atalho de PPlato, que abre PPlat. Busca, filtros, leitura offline, PDFs, caderno, quiz e progresso local foram preservados.
+
+A v14 passou em **57 testes automatizados**, nos testes do service worker, no build e em **11 grupos de verificações no Chromium**, incluindo os textos recebidos, PPlat, favoritos, busca e leitura offline. O ZIP pronto teve CRC, correspondência com `dist/` e preservação dos materiais conferidos. Cache, tamanho e SHA-256 estão registrados em [Siglário v14](docs/SIGLARIO-V14.md). Para publicar no mesmo endereço e preservar o QR Code, siga [Atualizar versão 14](docs/ATUALIZAR-V14.md).

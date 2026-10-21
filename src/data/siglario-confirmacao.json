@@ -1,0 +1,63 @@
+{
+  "sourceLabel": "Texto fornecido pelo responsável pelo projeto, que informou conferência com a instituição.",
+  "entries": {
+    "AC + D": {
+      "term": "AC + D",
+      "definition": "Doxorrubicina + Ciclofosfamida + Docitaxel"
+    },
+    "ECOG": {
+      "term": "ECOG",
+      "definition": "Eastern Cooperative Cooperative Group"
+    },
+    "FOLFIRI": {
+      "term": "FOLFIRI",
+      "definition": "Irinitecano + Leucovorin + Fluorouracil"
+    },
+    "KeV": {
+      "term": "KeV",
+      "definition": "Kilovolt"
+    },
+    "MSSA": {
+      "term": "MSSA",
+      "definition": "Methicillin-resistant Staphylococcys aureaus – Staphylococcus aureus sensível à Meticilina/Oxacilina"
+    },
+    "MV": {
+      "term": "MV",
+      "definition": "Murmúrio vesicular"
+    },
+    "NPT": {
+      "term": "NPT",
+      "definition": "Nutrição parenteral total"
+    },
+    "PPlato": {
+      "term": "PPlat",
+      "definition": "Pressão de Plantô"
+    },
+    "R-CHOP": {
+      "term": "R-CHOP",
+      "definition": "Rituximabe + Vincristina + Doxorrubicina + Ciclofosfamida",
+      "supplement": "é um protocolo de tratamento oncológico padrão para o linfoma não-Hodgkin e outros linfomas de células B. A sigla representa a combinação de cinco medicamentos"
+    },
+    "R-CVP": {
+      "term": "R-CVP",
+      "definition": "Rituximabe + Vincristina + Ciclofosfamida",
+      "supplement": "refere-se a um protocolo de quimioimunoterapia utilizado no tratamento do câncer, mais especificamente para o linfoma não Hodgkin de células B",
+      "reference": {
+        "label": "R-CVP — Cancer Research UK (link fornecido)",
+        "href": "https://www.cancerresearchuk.org/about-cancer/treatment/drugs/r-cvp"
+      }
+    },
+    "SIRS": {
+      "term": "SIRS",
+      "definition": "Síndrome de insuficiência respiratória"
+    },
+    "TG EXT": {
+      "term": "TG EXT",
+      "definition": "Tangente externa"
+    },
+    "VEF1": {
+      "term": "VEF1",
+      "definition": "Volume Expiratório Forçado no minuto 1"
+    }
+  }
+}

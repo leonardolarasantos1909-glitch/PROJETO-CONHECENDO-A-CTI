@@ -22,7 +22,7 @@ Toque em **Siglário**, na tela inicial. A cópia transcrita reúne **746 entrad
 
 A lista mostra até **40 termos por vez**; toque em **Mostrar mais termos** para continuar. O contador informa o total encontrado e quantos estão visíveis. **Limpar pesquisa do siglário** ou **Mostrar todos os termos** restaura a consulta geral. Use **Favoritar** para guardar uma entrada neste navegador.
 
-A sigla **HD** tem duas definições na transcrição e ambas foram mantidas. Algumas entradas mostram **Conferir com a fonte**: são pontos de revisão, com o texto recebido preservado. Os termos ficam disponíveis offline após o primeiro carregamento completo, enquanto o navegador mantiver seu cache. Mudanças no relatório de origem não atualizam automaticamente esta cópia. Consulte [origem e pendências do siglário](GLOSSARIO-V13.md).
+A sigla **HD** tem duas definições na transcrição e ambas foram mantidas. Algumas entradas mostram **Conferir com a fonte**: são pontos de revisão, com o texto recebido preservado. Os termos ficam disponíveis offline após o primeiro carregamento completo, enquanto o navegador mantiver seu cache. Mudanças no relatório de origem não atualizam automaticamente esta cópia. Na atualização v14, confira também **NPT — Nutrição parenteral total**, o nome **PPlat** e os contextos de R-CHOP/R-CVP. O autor informou conferência com a instituição; essa confirmação é registrada como informação fornecida por ele. Consulte [origem e pendências do siglário](SIGLARIO-V14.md).
 
 ## 3. Ler e salvar os cadernos e as apostilas
 
@@ -84,9 +84,9 @@ A instalação, o download, a impressão e o offline precisam ser confirmados em
 
 ## 6. Atualizar a hospedagem — somente para o responsável
 
-Veja o [passo a passo da versão 13](ATUALIZAR-V13.md).
+Veja o [passo a passo da versão 14](ATUALIZAR-V14.md).
 
-Baixe [conhecendo-a-cti-v13.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-v13.zip). Se o download não iniciar, abra a [página do arquivo no GitHub](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/blob/main/downloads/conhecendo-a-cti-v13.zip) e toque no ícone de download (**Download raw file**). Se o repositório for privado, entre na conta com acesso.
+Baixe [conhecendo-a-cti-v14.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-v14.zip). Se o download não iniciar, abra a [página do arquivo no GitHub](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/blob/main/downloads/conhecendo-a-cti-v14.zip) e toque no ícone de download (**Download raw file**). Se o repositório for privado, entre na conta com acesso.
 
 No iPhone, confira o ZIP em **Arquivos → Downloads**; se abrir em uma visualização, use **Compartilhar → Salvar em Arquivos**. No Android, confirme o download no Chrome e confira em **Arquivos/Files → Downloads**. Mantenha o arquivo em ZIP, sem descompactar. O comando **Code → Download ZIP** do GitHub baixa o código-fonte e não substitui esse pacote de produção.
 
@@ -94,7 +94,7 @@ No painel da Cloudflare, entre no **mesmo projeto** do aplicativo publicado e en
 
 Mantendo o projeto e o endereço, o QR Code continua válido. Depois de publicar, recarregue o aplicativo. Se a versão antiga continuar aparecendo, feche todas as abas do aplicativo e abra novamente com conexão.
 
-O histórico do alerta de download de uma versão anterior permanece em [PACOTE-V2.md](PACOTE-V2.md); verificações de integridade e funcionamento não são uma varredura antivírus. A v13 apresenta o Siglário com 746 entradas transcritas dentro do aplicativo, preserva a busca unificada, a abertura dos PDFs originais da v12 e mantém o tópico de prevenção da PAV, os cadernos, as cinco apostilas, as escalas, as ferramentas e o quiz de 32 questões; consulte [o inventário e as três pendências de envio](APOSTILAS.md).
+O histórico do alerta de download de uma versão anterior permanece em [PACOTE-V2.md](PACOTE-V2.md); verificações de integridade e funcionamento não são uma varredura antivírus. A v14 atualiza o texto reenviado do Siglário, mantém as 746 entradas dentro do aplicativo e preserva a busca unificada, a abertura dos PDFs originais da v12 e mantém o tópico de prevenção da PAV, os cadernos, as cinco apostilas, as escalas, as ferramentas e o quiz de 32 questões; consulte [o inventário e as três pendências de envio](APOSTILAS.md).
 
 ## Primeira publicação alternativa em Pages
 
