@@ -79,4 +79,13 @@ describe('Busca por nome e assunto', () => {
       }
     }
   });
+  it('encontra o Siglário pelo nome novo e pelo nome anterior', () => {
+    for (const query of ['Siglário', 'siglario', 'glossario']) {
+      expect(searchContent(query)[0].title).toBe('Siglário');
+      expect(searchContent(query)[0].href).toBe('#glossario');
+    }
+    expect(searchIndex.filter(item => item.kind === 'Siglário')).toHaveLength(746);
+    expect(searchIndex.some(item => item.kind as string === 'Glossário')).toBe(false);
+  });
+
 });

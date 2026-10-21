@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { favoriteCatalog, findFavorites, topicFavoriteId, topicHref, topicSlug } from './favorites';
+import { favoriteCatalog, findFavorites, topicFavoriteId, topicHref, topicSlug, normalizeFavoriteIds } from './favorites';
 import { modules } from './content';
 import { glossaryTerms } from './starter-data';
 
@@ -15,7 +15,7 @@ describe('Favoritos e atalhos de conteúdo', () => {
     for (const item of favoriteCatalog) {
       expect(item.title).toBeTruthy();
       const [route, target] = item.href.slice(1).split('/');
-      if (route === 'glossario') expect(glossaryTerms.some(term => term.id === target)).toBe(true);
+      if (route === 'glossario') { if (target) expect(glossaryTerms.some(term => term.id === target)).toBe(true); }
       else if (route === 'caderno' || route === 'primeiro-dia') expect(target).toBeUndefined();
       else {
         const module = modules.find(entry => entry.id === route);
@@ -30,4 +30,10 @@ describe('Favoritos e atalhos de conteúdo', () => {
     expect(entries[0].href).toBe('#equipamentos/monitor-multiparametrico');
     expect(entries[1].href).toBe('#glossario/spo2');
   });
+  it('preserva favoritos ao substituir o glossário sem confundir PAI com PAI + CD', () => {
+    expect(normalizeFavoriteIds(['module.acolhimento', 'term.glasgow', 'term.pai', 'term.bps', 'term.spo2', 'term.nao-existe', 'term.pai']))
+      .toEqual(['module.acolhimento', 'term.gcs', 'tool.glossario', 'term.spo2']);
+    expect(findFavorites(['term.pai'])[0].href).toBe('#glossario');
+  });
+
 });

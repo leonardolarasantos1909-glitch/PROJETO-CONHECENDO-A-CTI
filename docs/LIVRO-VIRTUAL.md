@@ -16,6 +16,8 @@ Na v11, **Pesquisar no app**, na tela inicial, também encontra o caderno e os m
 
 Desde a v12, o PDF original abre diretamente no visualizador do aparelho; o leitor PDF.js da v11 foi retirado. O livro em imagens descrito nesta página continua disponível, com os mesmos controles e progresso local. Links antigos `#pdf/<id>` levam a uma página de acesso ao arquivo, sem renderização ou carregamento automático. Consulte [a correção de abertura dos PDFs](PDFS-V12.md).
 
+Na v13, o Siglário reúne a transcrição de 746 entradas consultáveis dentro do app, com busca e funcionamento offline após o carregamento completo. O PDF, as 96 imagens, o manifesto, os links e a retomada do livro permanecem preservados. A abertura nativa de **PDF original**, adotada na v12, continua disponível. Consulte [o registro do Siglário](GLOSSARIO-V13.md).
+
 Se o manifesto ou uma imagem falhar, o leitor oferece nova tentativa e acesso ao PDF. Os links das referências externas abrem em nova aba e precisam de conexão. A experiência em iPhone e Android físicos, a impressão e as políticas de armazenamento dos navegadores precisam ser confirmadas no aparelho do usuário.
 
 Para salvar o PDF no **iPhone/Safari**, use **Compartilhar → Salvar em Arquivos** caso o documento abra em uma visualização. No **Android/Chrome**, use **Baixar** ou o ícone de seta para baixo do PDF e procure o arquivo em **Arquivos/Files → Downloads**. Se o aplicativo estiver aberto dentro do WhatsApp, escolha **Abrir no navegador**; também é possível copiar o endereço e abrir no Safari ou Chrome.
@@ -62,7 +64,7 @@ O comando `npm run build` executa primeiro `scripts/check-book.mjs`. Essa confer
 
 O service worker inclui o aplicativo, os dois PDFs, o manifesto e todas as imagens do livro no cache inicial: cerca de 10 MB de arquivos estáticos. O primeiro acesso requer conexão e tempo para concluir essa preparação. Para testar offline, use o build de produção, aguarde a ativação do service worker, recarregue e tente abrir também uma página ainda não visitada. O servidor `npm run dev` não registra o service worker. O navegador pode remover os dados armazenados conforme suas políticas.
 
-Para atualizar a hospedagem manual, envie **`downloads/conhecendo-a-cti-v12.zip`** ao mesmo projeto em que o aplicativo já está publicado. O ZIP deve conter os arquivos de `dist/`, com `index.html` na raiz. Manter o projeto e o endereço preserva o destino do QR Code. Siga o [passo a passo da versão 12](ATUALIZAR-V12.md). Depois da implantação, recarregue o aplicativo; se houver uma atualização do service worker aguardando, feche todas as abas do aplicativo e abra-o novamente com conexão.
+Para atualizar a hospedagem manual, envie **`downloads/conhecendo-a-cti-v13.zip`** ao mesmo projeto em que o aplicativo já está publicado. O ZIP deve conter os arquivos de `dist/`, com `index.html` na raiz. Manter o projeto e o endereço preserva o destino do QR Code. Siga o [passo a passo da versão 13](ATUALIZAR-V13.md). Depois da implantação, recarregue o aplicativo; se houver uma atualização do service worker aguardando, feche todas as abas do aplicativo e abra-o novamente com conexão.
 
 Consulte [a origem e preservação dos PDFs](MATERIAIS-PDF.md), [o histórico do pacote v2](PACOTE-V2.md) e [o roteiro de uso, publicação e teste em iPhone e Android](TESTAR-NO-CELULAR.md).
 

@@ -16,6 +16,14 @@ O botão **Buscar**, ou a tecla de pesquisa do teclado do celular, leva à lista
 
 Um resultado de PDF abre o cartão do material na Biblioteca; você escolhe abrir ou baixar. A busca considera nomes, descrições e textos catalogados, sem pesquisar o texto integral dos PDFs. Ela não guarda suas consultas e funciona offline depois de carregar e armazenar a versão atual do aplicativo.
 
+### Siglário sem sair do aplicativo
+
+Toque em **Siglário**, na tela inicial. A cópia transcrita reúne **746 entradas** e abre dentro do próprio app, sem consultar o Google ou outro site. Pesquise uma sigla ou uma palavra da definição, como **AAS**, **SpO2** ou **balanço hídrico**. Use **Filtrar por inicial** para escolher **0–9**, uma letra de **A a Z** ou **Todas as iniciais**.
+
+A lista mostra até **40 termos por vez**; toque em **Mostrar mais termos** para continuar. O contador informa o total encontrado e quantos estão visíveis. **Limpar pesquisa do siglário** ou **Mostrar todos os termos** restaura a consulta geral. Use **Favoritar** para guardar uma entrada neste navegador.
+
+A sigla **HD** tem duas definições na transcrição e ambas foram mantidas. Algumas entradas mostram **Conferir com a fonte**: são pontos de revisão, com o texto recebido preservado. Os termos ficam disponíveis offline após o primeiro carregamento completo, enquanto o navegador mantiver seu cache. Mudanças no relatório de origem não atualizam automaticamente esta cópia. Consulte [origem e pendências do siglário](GLOSSARIO-V13.md).
+
 ## 3. Ler e salvar os cadernos e as apostilas
 
 Na **Biblioteca científica**, toque em **Ler caderno**. O livro apresenta uma página por vez, com deslize horizontal, botões **Anterior/Próxima**, **Índice**, salto por número e **Ver texto da página**. A opção **PDF original** abre o PDF usado como fonte.
@@ -60,7 +68,7 @@ Essas opções podem variar conforme a versão. Se não aparecerem, confira se o
 - Abra **Escalas** no menu inferior e alterne **EVA**, **BPS**, **PAINAD** e **RASS**. Confira o texto, a comparação, as referências e os links às páginas do caderno. A RASS descreve agitação/sedação; a EVA desenhada é apenas uma ilustração, sem medida real.
 - Em **Itens e critérios da escala**, abra os três quadros da BPS e os cinco da PAINAD para ver os pontos e as descrições. Na EVA e na RASS, confira os fatores observados e como a leitura é formada. Cada quadro tem link para a página correspondente do caderno.
 - Na tela inicial, abra **Meu primeiro dia**; marque um item e recarregue para conferir se ele foi guardado. Não informe dados de pacientes.
-- Abra **Glossário**; pesquise “SpO2”, “pressao media” e um termo inexistente. Teste limpar a busca, as fontes e os links relacionados.
+- Abra **Siglário** e confira as **746 entradas**. Pesquise “SpO2”, “balanco hidrico”, “HD” e uma palavra inexistente. Teste **Filtrar por inicial**, **0–9**, **Mostrar mais termos**, limpar a busca, favoritar e as notas **Conferir com a fonte**. A leitura deve permanecer na própria página; teste também offline após preparar o cache.
 - Use **Favoritar** em um assunto, uma escala e um termo. Abra **Meus favoritos** na tela inicial e confira os atalhos e a remoção.
 - Abra os assuntos de Equipamentos e Dispositivos para conferir os desenhos e suas legendas.
 - No Quiz, percorra os cinco casos simulados, confira as explicações, a discussão final e a opção de repetir. No **Quiz de revisão**, confira o banco de **32 questões**, filtre os oito assuntos, teste respostas corretas e incorretas, finalize e reinicie.
@@ -76,9 +84,9 @@ A instalação, o download, a impressão e o offline precisam ser confirmados em
 
 ## 6. Atualizar a hospedagem — somente para o responsável
 
-Veja o [passo a passo da versão 12](ATUALIZAR-V12.md).
+Veja o [passo a passo da versão 13](ATUALIZAR-V13.md).
 
-Baixe [conhecendo-a-cti-v12.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-v12.zip). Se o download não iniciar, abra a [página do arquivo no GitHub](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/blob/main/downloads/conhecendo-a-cti-v12.zip) e toque no ícone de download (**Download raw file**). Se o repositório for privado, entre na conta com acesso.
+Baixe [conhecendo-a-cti-v13.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-v13.zip). Se o download não iniciar, abra a [página do arquivo no GitHub](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/blob/main/downloads/conhecendo-a-cti-v13.zip) e toque no ícone de download (**Download raw file**). Se o repositório for privado, entre na conta com acesso.
 
 No iPhone, confira o ZIP em **Arquivos → Downloads**; se abrir em uma visualização, use **Compartilhar → Salvar em Arquivos**. No Android, confirme o download no Chrome e confira em **Arquivos/Files → Downloads**. Mantenha o arquivo em ZIP, sem descompactar. O comando **Code → Download ZIP** do GitHub baixa o código-fonte e não substitui esse pacote de produção.
 
@@ -86,7 +94,7 @@ No painel da Cloudflare, entre no **mesmo projeto** do aplicativo publicado e en
 
 Mantendo o projeto e o endereço, o QR Code continua válido. Depois de publicar, recarregue o aplicativo. Se a versão antiga continuar aparecendo, feche todas as abas do aplicativo e abra novamente com conexão.
 
-O histórico do alerta de download de uma versão anterior permanece em [PACOTE-V2.md](PACOTE-V2.md); verificações de integridade e funcionamento não são uma varredura antivírus. A v12 corrige a abertura dos PDFs para usar os arquivos originais no visualizador do aparelho, preserva a busca unificada e mantém o tópico de prevenção da PAV, os cadernos, as cinco apostilas, as escalas, as ferramentas e o quiz de 32 questões; consulte [o inventário e as três pendências de envio](APOSTILAS.md).
+O histórico do alerta de download de uma versão anterior permanece em [PACOTE-V2.md](PACOTE-V2.md); verificações de integridade e funcionamento não são uma varredura antivírus. A v13 apresenta o Siglário com 746 entradas transcritas dentro do aplicativo, preserva a busca unificada, a abertura dos PDFs originais da v12 e mantém o tópico de prevenção da PAV, os cadernos, as cinco apostilas, as escalas, as ferramentas e o quiz de 32 questões; consulte [o inventário e as três pendências de envio](APOSTILAS.md).
 
 ## Primeira publicação alternativa em Pages
 

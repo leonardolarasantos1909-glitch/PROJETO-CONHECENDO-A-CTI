@@ -10,7 +10,7 @@ import { pavTopic, pavSearchText } from './pav';
 export type SearchResult = {
   id: string;
   title: string;
-  kind: 'Módulo' | 'Assunto' | 'Escala' | 'Glossário' | 'Ferramenta' | 'PDF' | 'Caso simulado';
+  kind: 'Módulo' | 'Assunto' | 'Escala' | 'Siglário' | 'Ferramenta' | 'PDF' | 'Caso simulado';
   description: string;
   href: string;
   external?: boolean;
@@ -76,7 +76,7 @@ const entries: SearchEntry[] = [
   ...glossaryTerms.map(term => ({
     id: `term.${term.id}`,
     title: term.term,
-    kind: 'Glossário' as const,
+    kind: 'Siglário' as const,
     description: term.definition,
     href: `#glossario/${term.id}`,
     aliases: [term.id, ...term.aliases],
@@ -89,9 +89,9 @@ const entries: SearchEntry[] = [
     body: firstDayItems.flatMap(item => [item.title, item.detail]).join(' '),
   },
   {
-    id: 'tool.glossario', title: 'Glossário', kind: 'Ferramenta',
-    description: 'Consulte siglas e termos com explicações e assuntos relacionados.',
-    href: '#glossario', aliases: ['siglas', 'glossário de siglas', 'termos'], body: '',
+    id: 'tool.glossario', title: 'Siglário', kind: 'Ferramenta',
+    description: 'Consulte as 746 siglas e definições da transcrição enviada para o projeto, dentro do aplicativo.',
+    href: '#glossario', aliases: ['siglas', 'siglário', 'glossário', 'glossário de siglas', 'termos'], body: '',
   },
   {
     id: 'tool.favoritos', title: 'Meus favoritos', kind: 'Ferramenta',
@@ -147,7 +147,7 @@ const normalizedIndex = entries.map((entry, index) => {
 });
 
 const kindOrder: Record<SearchResult['kind'], number> = {
-  Escala: 0, Assunto: 1, Glossário: 2, Ferramenta: 3, PDF: 4, 'Caso simulado': 5, Módulo: 6,
+  Escala: 0, Assunto: 1, Siglário: 2, Ferramenta: 3, PDF: 4, 'Caso simulado': 5, Módulo: 6,
 };
 
 /** All query words must match one entry; return every match in a stable order. */
@@ -169,6 +169,8 @@ export function searchContent(query: string): SearchResult[] {
     // Whole words outrank accidental substrings: ‘dor’ must not prioritize ‘ventilador’.
     if (words.every(word => entry.tokens.includes(word))) score += 10000;
     else if (words.every(word => entry.tokens.some(token => token.startsWith(word)))) score += 5000;
+    // Preserve the distinction between codes such as C/C., CA/Ca and D+/D-.
+    if (entry.result.title === query.trim()) score += 20000;
     score += words.reduce((sum, word) => sum + (entry.title.includes(word) ? 8 : entry.aliases.some(alias => alias.includes(word)) ? 5 : entry.description.includes(word) ? 2 : 0), 0);
     return [{ ...entry, score }];
   }).sort((a, b) => b.score - a.score || kindOrder[a.result.kind] - kindOrder[b.result.kind] || a.index - b.index)
