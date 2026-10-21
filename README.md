@@ -13,17 +13,17 @@ O conteúdo do QR foi decodificado e conferido localmente. A conexão ao endere�
 
 ## Baixar a versão pronta
 
-**Estado de segurança:** houve relato de bloqueio antivírus em um pacote anterior. A versão v9 mantém os recursos da v8 e amplia o quiz de revisão de oito para 32 questões; não há resultado de varredura antivírus completa. Os testes de integridade e funcionamento não substituem essa análise. No computador da empresa, encaminhe eventual alerta à TI, sem desativar proteções. [Histórico da versão v2](docs/PACOTE-V2.md).
+**Estado de segurança:** houve relato de bloqueio antivírus em um pacote anterior. A versão v10 mantém os recursos anteriores e acrescenta um tópico educativo sobre o bundle de prevenção da PAV; não há resultado de varredura antivírus completa. Os testes de integridade e funcionamento não substituem essa análise. No computador da empresa, encaminhe eventual alerta à TI, sem desativar proteções. [Histórico da versão v2](docs/PACOTE-V2.md).
 
-[Baixar conhecendo-a-cti-v9.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-v9.zip)
+[Baixar conhecendo-a-cti-v10.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-v10.zip)
 
 Este ZIP já está compilado e pronto para upload em hospedagem estática. Para atualizar o endereço atual, envie-o **ao mesmo projeto da Cloudflare**, pelo fluxo de implantação que já funcionou com a v2. Mantenha o arquivo em ZIP para esse envio; não é necessário instalar Node.js. Se o repositório for privado, entre no GitHub com a conta que tem acesso antes de baixar. O [guia para celular](docs/TESTAR-NO-CELULAR.md) orienta iPhone e Android e também descreve uma primeira publicação alternativa em Pages.
 
-Se o download direto não iniciar, abra a [página do arquivo no GitHub](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/blob/main/downloads/conhecendo-a-cti-v9.zip) e use **Download raw file** (ícone de download). A opção **Code → Download ZIP** baixa o código-fonte do repositório e não substitui esse pacote pronto para hospedagem.
+Se o download direto não iniciar, abra a [página do arquivo no GitHub](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/blob/main/downloads/conhecendo-a-cti-v10.zip) e use **Download raw file** (ícone de download). A opção **Code → Download ZIP** baixa o código-fonte do repositório e não substitui esse pacote pronto para hospedagem.
 
-O envio ao GitHub guarda o projeto e permite baixar os arquivos; ele não atualiza automaticamente a hospedagem. As alterações aparecem no endereço atual depois de enviar o ZIP v9 à Cloudflare. Mantendo o endereço, o QR Code continua válido.
+O envio ao GitHub guarda o projeto e permite baixar os arquivos; ele não atualiza automaticamente a hospedagem. As alterações aparecem no endereço atual depois de enviar o ZIP v10 à Cloudflare. Mantendo o endereço, o QR Code continua válido.
 
-Consulte também o [passo a passo para atualizar a versão 9](docs/ATUALIZAR-V9.md).
+Consulte também o [passo a passo para atualizar a versão 10](docs/ATUALIZAR-V10.md).
 
 ## Desenvolvimento
 
@@ -183,3 +183,12 @@ Os recursos internos novos integram o build e seu cache offline. Os PDFs, as 96 
 O **Quiz de revisão**, no módulo Quiz interativo, passa de oito para **32 questões**: as oito originais foram preservadas e foram acrescentadas 24. Os temas são Segurança, Registros, Ética, Escalas, Dispositivos, Equipamentos, Rotinas e Comunicação. Cada questão tem quatro alternativas, uma resposta adequada e uma explicação. O filtro por assunto, a pontuação, o reinício e os cinco casos PBL da v8 foram mantidos. As alternativas e o filtro ficam mais legíveis no celular, com fonte de 14 pixels e controles de pelo menos 44 pixels.
 
 As questões novas usam os módulos e o caderno já fornecidos, com mapa de fontes e revisão educativa em [Quiz v9](docs/QUIZ-V9.md). Não introduzem doses, metas de tratamento, ajustes de suporte ou dados de pacientes. A revisão clínica e institucional continua pendente. O quiz continua sem cadastro e seus resultados não são sincronizados entre aparelhos. Para publicar o pacote no mesmo endereço, siga [Atualizar versão 9](docs/ATUALIZAR-V9.md).
+
+
+## Bundle de prevenção da PAV — v10
+
+Em **Rotinas da CTI**, o tópico **Bundle de prevenção da PAV** abre um guia com oito seções: higiene das mãos, cabeceira quando indicada, higiene oral conforme POP, circuito e condensado, cuff, secreções e aspiração, avaliação diária da necessidade de ventilação pela equipe e conferência/registro. A tela distingue cuidados acompanhados pelo estagiário de decisões e atribuições da equipe e preserva a avaliação individual e o protocolo do serviço.
+
+A busca encontra “PAV”, “bundle”, “pneumonia associada a ventilacao mecanica” e os assuntos internos do guia. O tópico pode ser favoritado e aberto pelo atalho direto `#rotinas/bundle-de-prevencao-da-pav`. As oito seções são uma organização para estudo, sem formulário assistencial, pontuação ou certificação. Os oito módulos e as 32 questões do quiz continuam disponíveis.
+
+A base são o caderno e as apostilas já fornecidas. Links de Anvisa e Cofen são preservados conforme as referências do caderno; não foi possível recuperar novamente os textos externos. Não são prescritos antisséptico universal, pressão de cuff ou mudanças de sedação/ventilação. A revisão clínica e institucional permanece pendente; veja [fontes e limites do tópico](docs/BUNDLE-PAV.md) e [como atualizar a versão 10](docs/ATUALIZAR-V10.md).

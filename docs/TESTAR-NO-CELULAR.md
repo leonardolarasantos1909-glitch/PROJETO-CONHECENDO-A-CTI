@@ -37,6 +37,7 @@ Essas opções podem variar conforme a versão. Se não aparecerem, confira se o
 ## 4. Conferir nos dois sistemas
 
 - Abra os oito módulos e alguns cartões; pesquise “glicemia” e “sonda”.
+- Pesquise “PAV” ou abra **Rotinas da CTI → Bundle de prevenção da PAV**. Confira as oito medidas, as fontes e a aplicação conforme o protocolo do serviço. Teste favoritar, reabrir pelo favorito e remover. O conteúdo interno funciona offline após o carregamento completo; referências externas exigem conexão.
 - Abra **Escalas** no menu inferior e alterne **EVA**, **BPS**, **PAINAD** e **RASS**. Confira o texto, a comparação, as referências e os links às páginas do caderno. A RASS descreve agitação/sedação; a EVA desenhada é apenas uma ilustração, sem medida real.
 - Em **Itens e critérios da escala**, abra os três quadros da BPS e os cinco da PAINAD para ver os pontos e as descrições. Na EVA e na RASS, confira os fatores observados e como a leitura é formada. Cada quadro tem link para a página correspondente do caderno.
 - Na tela inicial, abra **Meu primeiro dia**; marque um item e recarregue para conferir se ele foi guardado. Não informe dados de pacientes.
@@ -56,9 +57,9 @@ A instalação, o download, a impressão e o offline precisam ser confirmados em
 
 ## 5. Atualizar a hospedagem — somente para o responsável
 
-Veja o [passo a passo da versão 9](ATUALIZAR-V9.md).
+Veja o [passo a passo da versão 10](ATUALIZAR-V10.md).
 
-Baixe [conhecendo-a-cti-v9.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-v9.zip). Se o download não iniciar, abra a [página do arquivo no GitHub](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/blob/main/downloads/conhecendo-a-cti-v9.zip) e toque no ícone de download (**Download raw file**). Se o repositório for privado, entre na conta com acesso.
+Baixe [conhecendo-a-cti-v10.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-v10.zip). Se o download não iniciar, abra a [página do arquivo no GitHub](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/blob/main/downloads/conhecendo-a-cti-v10.zip) e toque no ícone de download (**Download raw file**). Se o repositório for privado, entre na conta com acesso.
 
 No iPhone, confira o ZIP em **Arquivos → Downloads**; se abrir em uma visualização, use **Compartilhar → Salvar em Arquivos**. No Android, confirme o download no Chrome e confira em **Arquivos/Files → Downloads**. Mantenha o arquivo em ZIP, sem descompactar. O comando **Code → Download ZIP** do GitHub baixa o código-fonte e não substitui esse pacote de produção.
 
@@ -66,7 +67,7 @@ No painel da Cloudflare, entre no **mesmo projeto** do aplicativo publicado e en
 
 Mantendo o projeto e o endereço, o QR Code continua válido. Depois de publicar, recarregue o aplicativo. Se a versão antiga continuar aparecendo, feche todas as abas do aplicativo e abra novamente com conexão.
 
-O histórico do alerta de download de uma versão anterior permanece em [PACOTE-V2.md](PACOTE-V2.md); verificações de integridade e funcionamento não são uma varredura antivírus. A v9 mantém os cadernos, as cinco apostilas, as escalas e as ferramentas de estudo e amplia o quiz para 32 questões; consulte [o inventário e as três pendências de envio](APOSTILAS.md).
+O histórico do alerta de download de uma versão anterior permanece em [PACOTE-V2.md](PACOTE-V2.md); verificações de integridade e funcionamento não são uma varredura antivírus. A v10 mantém os cadernos, as cinco apostilas, as escalas, as ferramentas e o quiz de 32 questões e acrescenta o tópico de prevenção da PAV; consulte [o inventário e as três pendências de envio](APOSTILAS.md).
 
 ## Primeira publicação alternativa em Pages
 
