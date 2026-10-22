@@ -73,7 +73,7 @@ describe('Progresso de aprendizagem no aparelho', () => {
   });
 
   it('apaga apenas o progresso conhecido do aplicativo e preserva outros dados', () => {
-    for (const key of ['cti-first-day-v1', 'cti-favorites-v1', LAST_PAGE_KEY, 'cti-visited']) storage.setItem(key, 'saved');
+    for (const key of ['cti-first-day-v1', 'cti-favorites-v1', LAST_PAGE_KEY, 'cti-visited', 'cti-learning-profile-v1', 'cti-integration-v1']) storage.setItem(key, 'saved');
     storage.setItem('unrelated', 'keep');
     storage.setItem('cti-other', 'keep');
     expect(clearLearningStorage()).toBe(true);

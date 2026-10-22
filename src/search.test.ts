@@ -1,11 +1,14 @@
 import { describe, expect, it } from 'vitest';
-import { normalizeSearch, searchContent, searchIndex } from './search';
+import { normalizeSearch, searchCategories, searchContent, searchIndex } from './search';
 import { modules } from './content';
 import { topicSlug } from './favorites';
 import { glossaryTerms } from './starter-data';
 import { learningMaterials } from './materials';
 import { apostilas } from './apostilas';
 import { caseStudies } from './cases';
+import { newTools } from './new-tools';
+import { annotationScenarios } from './annotation-lab';
+import { virtualStations } from './virtual-cti';
 
 describe('Busca por nome e assunto', () => {
   it('prioriza o conteúdo específico para nomes, siglas e aliases', () => {
@@ -70,7 +73,8 @@ describe('Busca por nome e assunto', () => {
       if (route === 'glossario') { if (target) expect(glossaryTerms.some(term => term.id === target)).toBe(true); }
       else if (route === 'biblioteca') { if (target) expect(materialIds).toContain(target); }
       else if (route === 'quiz') { if (target) expect(caseStudies.some(studyCase => studyCase.id === target)).toBe(true); }
-      else if (['caderno', 'primeiro-dia', 'favoritos'].includes(route)) expect(target).toBeUndefined();
+      else if (route === 'laboratorio') { if (target) expect(annotationScenarios.some(scenario => scenario.id === target)).toBe(true); }
+      else if (['caderno', 'primeiro-dia', 'favoritos'].includes(route) || newTools.some(tool => tool.href === `#${route}`)) expect(target).toBeUndefined();
       else {
         const module = modules.find(entry => entry.id === route);
         expect(module).toBeDefined();
@@ -86,6 +90,43 @@ describe('Busca por nome e assunto', () => {
     }
     expect(searchIndex.filter(item => item.kind === 'Siglário')).toHaveLength(746);
     expect(searchIndex.some(item => item.kind as string === 'Glossário')).toBe(false);
+  });
+
+  it('filtra por categoria mantendo a relevância e todos os resultados relacionados', () => {
+    const all = searchContent('pressao');
+    expect(new Set(all.map(item => item.kind)).size).toBeGreaterThan(1);
+    for (const category of searchCategories) {
+      expect(searchContent('pressão', category)).toEqual(all.filter(item => item.kind === category));
+      expect(searchContent('', category)).toEqual([]);
+    }
+    expect(searchContent('pressao', 'Siglário').length).toBeGreaterThan(4);
+    expect(searchContent('RASS', 'Escala')[0].href).toBe('#escalas/rass');
+    expect(searchContent('RASS', '')).toEqual(searchContent('RASS'));
+    expect(searchContent('PAV', 'Assunto')[0].href).toBe('#rotinas/bundle-de-prevencao-da-pav');
+  });
+
+  it('inclui as novas ferramentas sem remover os atalhos anteriores', () => {
+    for (const tool of newTools) {
+      expect(searchIndex.find(item => item.id === tool.id)).toMatchObject({ href: tool.href, kind: 'Ferramenta', title: tool.title });
+      expect(searchContent(tool.title, 'Ferramenta')[0].id).toBe(tool.id);
+    }
+    expect(searchContent('feedback', 'Ferramenta')[0].href).toBe('#avaliacao-pbl');
+    expect(searchContent('rubrica', 'Ferramenta')[0].href).toBe('#laboratorio');
+    expect(searchContent('checklist')[0].href).toBe('#primeiro-dia');
+    expect(searchContent('monitor')[0].href).toBe('#equipamentos/monitor-multiparametrico');
+    expect(searchContent('ventilador')[0].href).toBe('#equipamentos/ventilador-mecanico');
+  });
+
+  it('encontra os exercícios específicos pelo nome e pelos fatos fictícios sem indexar rascunhos do usuário', () => {
+    for (const scenario of annotationScenarios) {
+      const result = searchContent(scenario.title, 'Ferramenta')[0];
+      expect(result).toMatchObject({ id: `annotation.${scenario.id}`, href: `#laboratorio/${scenario.id}`, description: scenario.goal });
+    }
+    expect(searchContent('volume nao pode ser medido', 'Ferramenta').some(item => item.id === 'annotation.volume-nao-medido')).toBe(true);
+    expect(searchContent('alguem escreveu um rascunho privado inexistente', 'Ferramenta')).toEqual([]);
+    expect(searchIndex.filter(item => item.id.startsWith('annotation.'))).toHaveLength(3);
+    expect(searchIndex.filter(item => item.id.startsWith('virtual.'))).toHaveLength(8);
+    for (const station of virtualStations) expect(searchIndex.find(item => item.id === `virtual.${station.id}`)?.href).toBe('#cti-virtual');
   });
 
 });

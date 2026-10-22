@@ -1,6 +1,7 @@
 import { ArrowRight, ArrowUpRight, BookOpen, Download, FileText, Printer } from 'lucide-react';
 import { learningMaterials } from './materials';
 import { PdfInstructions, PdfOpenHelp } from './MobileInstructions';
+import ContentReview from './ContentReview';
 
 export function PdfMaterials() {
   return <section className="pdf-materials" aria-labelledby="pdf-materials-heading">
@@ -25,6 +26,7 @@ export function PdfMaterials() {
           <a className="pdf-open" href={material.href} download={material.originalFilename}><Download size={15}/> Baixar PDF</a>
         </>}</div>
         {printable && <details className="pdf-instructions"><summary>Como imprimir o caderno de bolso</summary><ol><li>Selecione papel <strong>A4</strong>, <strong>tamanho real / 100%</strong> e frente única.</li><li>Imprima <strong>uma página do PDF por folha</strong>. O arquivo já traz quatro páginas de bolso em cada A4.</li><li>Recorte e organize pela numeração de 01 a 96.</li></ol></details>}
+        <ContentReview contentId={`pdf.${material.id}`} compact/>
       </article>;
     })}</div>
     <PdfInstructions/>

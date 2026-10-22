@@ -6,6 +6,10 @@ import { learningMaterials } from './materials';
 import { apostilas } from './apostilas';
 import { caseStudies } from './cases';
 import { pavTopic, pavSearchText } from './pav';
+import { newTools } from './new-tools';
+import { annotationScenarios, annotationSearchText } from './annotation-lab';
+import { integrationItems } from './integration-checklist';
+import { virtualStations } from './virtual-cti';
 
 export type SearchResult = {
   id: string;
@@ -17,6 +21,7 @@ export type SearchResult = {
 };
 
 type SearchEntry = SearchResult & { aliases: string[]; body: string };
+export const searchCategories: readonly SearchResult['kind'][] = ['Módulo', 'Assunto', 'Escala', 'Siglário', 'Ferramenta', 'PDF', 'Caso simulado'];
 
 /** Preserve letter order, while accepting accents, punctuation and subscripts. */
 export function normalizeSearch(value: string): string {
@@ -103,6 +108,16 @@ const entries: SearchEntry[] = [
     description: 'Leia o Caderno CTI Adulto no aplicativo, uma página por vez.',
     href: '#caderno', aliases: ['livro', 'caderno CTI Adulto', 'ler caderno', 'continuar leitura'], body: learningMaterials[0].description,
   },
+  ...newTools.map(tool => ({ ...tool, kind: 'Ferramenta' as const, aliases: [...tool.aliases], body:
+    tool.id === 'tool.laboratorio' ? annotationSearchText : tool.id === 'tool.integracao' ? integrationItems.flatMap(item => [item.title, item.detail]).join(' ') : tool.id === 'tool.cti-virtual' ? virtualStations.flatMap(item => [item.title, item.description]).join(' ') : '',
+  })),
+  ...annotationScenarios.map(item => ({ id: `annotation.${item.id}`, title: item.title, kind: 'Ferramenta' as const, description: item.goal,
+    href: `#laboratorio/${item.id}`, aliases: ['exercício de anotação', 'anotação simulada', 'laboratório de anotações'],
+    body: [...item.facts.map(fact => fact.text), ...item.missingData].join(' '),
+  })),
+  ...virtualStations.map(item => ({ id: `virtual.${item.id}`, title: `CTI virtual — ${item.title}`, kind: 'Ferramenta' as const, description: item.description,
+    href: '#cti-virtual', aliases: ['box fictício', 'desenho educativo', 'equipamento ilustrado'], body: item.title,
+  })),
   ...learningMaterials.map(material => ({
     id: `material.${material.id}`,
     title: material.title,
@@ -143,7 +158,9 @@ const normalizedIndex = entries.map((entry, index) => {
   const aliases = entry.aliases.map(normalizeSearch);
   const description = normalizeSearch(entry.description);
   const text = [title, ...aliases, description, normalizeSearch(entry.body)].join(' ');
-  return { result: searchIndex[index], index, title, aliases, description, text, tokens: text.split(' ') };
+  // A broad tool alias, such as “monitor”, should also lead to the specifically named equipment.
+  const exactAliasScore = newTools.some(tool => tool.id === entry.id) ? 750 : 950;
+  return { result: searchIndex[index], index, title, aliases, description, text, tokens: text.split(' '), exactAliasScore };
 });
 
 const kindOrder: Record<SearchResult['kind'], number> = {
@@ -151,15 +168,16 @@ const kindOrder: Record<SearchResult['kind'], number> = {
 };
 
 /** All query words must match one entry; return every match in a stable order. */
-export function searchContent(query: string): SearchResult[] {
+export function searchContent(query: string, category: SearchResult['kind'] | '' = ''): SearchResult[] {
   const normalized = normalizeSearch(query);
   if (!normalized) return [];
   const words = [...new Set(normalized.split(' '))];
   return normalizedIndex.flatMap(entry => {
+    if (category && entry.result.kind !== category) return [];
     if (!words.every(word => entry.text.includes(word))) return [];
     let score = 0;
     if (entry.title === normalized) score = 1000;
-    else if (entry.aliases.includes(normalized)) score = 950;
+    else if (entry.aliases.includes(normalized)) score = entry.exactAliasScore;
     else if (entry.title.startsWith(normalized)) score = 800;
     else if (entry.title.includes(normalized)) score = 700;
     else if (words.every(word => entry.title.includes(word))) score = 650;

@@ -1,6 +1,7 @@
 import { ArrowUpRight, BookOpen, Download, FileText } from 'lucide-react';
 import { apostilas } from './apostilas';
 import { PdfOpenHelp } from './MobileInstructions';
+import ContentReview from './ContentReview';
 
 export function ApostilaMaterials() {
   return <section className="apostila-materials pdf-materials" aria-labelledby="apostila-heading">
@@ -17,6 +18,7 @@ export function ApostilaMaterials() {
         <a className="button" href={material.href} target="_blank" rel="noopener noreferrer" aria-label={`Abrir PDF: ${material.title} (outra aba ou visualizador do aparelho)`}><BookOpen size={16}/> Abrir PDF <ArrowUpRight size={15}/></a>
         <a className="pdf-open" href={material.href} download={material.downloadFilename} aria-label={`Baixar apostila: ${material.title}`}><Download size={15}/> Baixar PDF</a>
       </div>
+      <ContentReview contentId={`pdf.${material.id}`} compact/>
     </article>)}</div>
     <p className="apostila-offline">Para ler sem internet, use “Baixar PDF” e abra o arquivo salvo em Arquivos no iPhone ou na pasta Downloads no Android.</p>
   </section>;

@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { ArrowLeft, ArrowUpRight, Download, House } from 'lucide-react';
 import { validPdfPage, type AppPdf } from './pdf-catalog';
+import ContentReview from './ContentReview';
 import './pdf-reader.css';
 
 /** Keep older #pdf links usable without embedding a reduced document preview. */
@@ -22,5 +23,6 @@ export default function PdfReader({ material, initialPage }: { material: AppPdf;
       <a href={material.href} download={material.filename}><Download size={18} aria-hidden="true"/>Baixar PDF</a>
     </div>
     <p className="pdf-reader-return">O aplicativo permanece aberto. Para voltar, feche apenas a aba do PDF e selecione a aba do Conhecendo a CTI. Se o arquivo abrir em outro aplicativo, volte pelo alternador de aplicativos ou pelo ícone do Conhecendo a CTI.</p>
+    <ContentReview contentId={`pdf.${material.id}`}/>
   </section>;
 }

@@ -1,0 +1,6 @@
+.quiz .question-references{border-top:1px solid #dce4d7;padding-top:17px;margin-top:22px;color:#435c49}
+.quiz .question-references h3{font-size:15px;line-height:1.7;margin:0 0 8px;color:#435c49}
+.quiz .question-references ul{list-style:none;padding:0;margin:0}
+.quiz .question-references a{display:inline-flex;align-items:center;min-height:44px;padding:8px 0;max-width:100%;font-size:14px;line-height:1.8;color:#8d2e3f;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.quiz .question-references p{font-size:14px;line-height:1.8;color:#435c49;margin:10px 0 0}
+.quiz .question-references a:focus-visible{outline:3px solid #ae394b;outline-offset:4px}

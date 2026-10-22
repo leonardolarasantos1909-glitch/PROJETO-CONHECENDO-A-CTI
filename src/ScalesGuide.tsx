@@ -2,25 +2,29 @@ import { useEffect, useId, useRef, useState, type KeyboardEvent, type ReactNode 
 import { Activity, ArrowRight, ArrowUpRight, BookOpen, Brain, ChevronDown, Eye, MessageCircle } from 'lucide-react';
 import { scales, scaleComparison } from './scales';
 import { pdfReaderLink } from './pdf-catalog';
+import ContentReview from './ContentReview';
 import './scales-guide.css';
 
 const scaleIcons = { eva: MessageCircle, bps: Activity, painad: Eye, rass: Brain };
 const CADERNO_PDF = '/materiais/caderno-cti-adulto-digital.pdf';
 
-export default function ScalesGuide({ initialScale, renderFavorite }: { initialScale?: string; renderFavorite?: (id: string) => ReactNode } = {}) {
-  const [selectedId, setSelectedId] = useState(scales.find(scale => scale.id === initialScale)?.id ?? scales[0].id);
+export default function ScalesGuide({ initialScale, renderFavorite, scaleIds, onRequestScale }: { initialScale?: string; renderFavorite?: (id: string) => ReactNode; scaleIds?: readonly string[]; onRequestScale?: (id: string) => void } = {}) {
+  const visibleScales = scales.filter(scale => !scaleIds || scaleIds.includes(scale.id));
+  const available = visibleScales.length ? visibleScales : scales;
+  const filterKey = available.map(scale => scale.id).join(',');
+  const [selectedId, setSelectedId] = useState(available.find(scale => scale.id === initialScale)?.id ?? available[0].id);
   const tabRefs = useRef<(HTMLButtonElement | null)[]>([]);
   const prefix = useId();
-  const selected = scales.find(scale => scale.id === selectedId) ?? scales[0];
+  const selected = available.find(scale => scale.id === selectedId) ?? available[0];
   const tabId = (id: string) => `${prefix}-tab-${id}`;
   const panelId = (id: string) => `${prefix}-panel-${id}`;
 
   useEffect(() => {
-    setSelectedId(scales.find(scale => scale.id === initialScale)?.id ?? scales[0].id);
-  }, [initialScale]);
+    setSelectedId(available.find(scale => scale.id === initialScale)?.id ?? available[0].id);
+  }, [initialScale, filterKey]);
 
   function selectTab(index: number, focus = false) {
-    const next = scales[index];
+    const next = available[index];
     if (!next) return;
     setSelectedId(next.id);
     if (focus) tabRefs.current[index]?.focus();
@@ -29,10 +33,10 @@ export default function ScalesGuide({ initialScale, renderFavorite }: { initialS
   function handleTabKey(event: KeyboardEvent<HTMLButtonElement>, index: number) {
     let destination: number;
     switch (event.key) {
-      case 'ArrowRight': destination = (index + 1) % scales.length; break;
-      case 'ArrowLeft': destination = (index + scales.length - 1) % scales.length; break;
+      case 'ArrowRight': destination = (index + 1) % available.length; break;
+      case 'ArrowLeft': destination = (index + available.length - 1) % available.length; break;
       case 'Home': destination = 0; break;
-      case 'End': destination = scales.length - 1; break;
+      case 'End': destination = available.length - 1; break;
       default: return;
     }
     event.preventDefault();
@@ -40,8 +44,8 @@ export default function ScalesGuide({ initialScale, renderFavorite }: { initialS
   }
 
   function openComparisonScale(id: string) {
-    const index = scales.findIndex(scale => scale.id === id);
-    if (index < 0) return;
+    const index = available.findIndex(scale => scale.id === id);
+    if (index < 0) { if (onRequestScale) onRequestScale(id); else window.location.hash = `escalas/${id}`; return; }
     selectTab(index, true);
     tabRefs.current[index]?.scrollIntoView({ block: 'nearest', inline: 'nearest', behavior: 'instant' });
   }
@@ -49,7 +53,7 @@ export default function ScalesGuide({ initialScale, renderFavorite }: { initialS
   return <div className="scales-guide">
     <p className="scales-intro">EVA, BPS e PAINAD avaliam dor em perfis diferentes de pacientes. A RASS descreve agitação e sedação. Selecione uma aba para conhecer cada instrumento.</p>
     <div className="scales-tabs" role="tablist" aria-label="Escolha uma escala">
-      {scales.map((scale, index) => {
+      {available.map((scale, index) => {
         const Icon = scaleIcons[scale.id as keyof typeof scaleIcons] ?? Activity;
         return <button
           key={scale.id}
@@ -57,8 +61,8 @@ export default function ScalesGuide({ initialScale, renderFavorite }: { initialS
           role="tab"
           id={tabId(scale.id)}
           aria-controls={panelId(scale.id)}
-          aria-selected={selectedId === scale.id}
-          tabIndex={selectedId === scale.id ? 0 : -1}
+          aria-selected={selected.id === scale.id}
+          tabIndex={selected.id === scale.id ? 0 : -1}
           ref={element => { tabRefs.current[index] = element; }}
           onClick={() => selectTab(index)}
           onKeyDown={event => handleTabKey(event, index)}
@@ -69,15 +73,15 @@ export default function ScalesGuide({ initialScale, renderFavorite }: { initialS
       })}
     </div>
 
-    {scales.map(scale => <div
+    {available.map(scale => <div
       key={scale.id}
       role="tabpanel"
       id={panelId(scale.id)}
       aria-labelledby={tabId(scale.id)}
-      hidden={selectedId !== scale.id}
+      hidden={selected.id !== scale.id}
       tabIndex={0}
       className="scales-tabpanel"
-    >{selectedId === scale.id && <>
+    >{selected.id === scale.id && <>
       <section className="scales-overview" aria-labelledby={`${prefix}-name-${scale.id}`}>
         <div className="scales-overview-heading">
           <div><span className="scales-category">{scale.category}</span><h2 id={`${prefix}-name-${scale.id}`}>{scale.name}</h2></div>
@@ -85,6 +89,7 @@ export default function ScalesGuide({ initialScale, renderFavorite }: { initialS
         </div>
         <p>{scale.purpose}</p>
         {renderFavorite?.(scale.id)}
+        <ContentReview contentId={`scale.${scale.id}`} compact/>
         {scale.id.toLowerCase() === 'eva' && <figure className="scales-eva-example">
           <div role="img" aria-label="Linha ilustrativa da EVA: de sem dor a pior dor imaginável, sem medida real na tela.">
             <div className="scales-eva-line" aria-hidden="true"/>

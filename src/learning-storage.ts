@@ -1,6 +1,9 @@
+import { PROFILE_KEY } from './learning-profile';
+import { INTEGRATION_KEY } from './integration-checklist';
+
 export const LAST_PAGE_KEY = 'cti-book-page-v1';
 
-const LEARNING_KEYS = ['cti-first-day-v1', 'cti-favorites-v1', LAST_PAGE_KEY, 'cti-visited'] as const;
+const LEARNING_KEYS = ['cti-first-day-v1', 'cti-favorites-v1', LAST_PAGE_KEY, 'cti-visited', PROFILE_KEY, INTEGRATION_KEY] as const;
 
 /** Read only known identifiers; stored values never become labels, URLs or markup. */
 export function readSavedIds(key: string, allowed: readonly string[]): string[] {

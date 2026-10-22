@@ -1,21 +1,19 @@
 import { modules } from './content';
-import { scales } from './scales';
 import { glossaryTerms } from './starter-data';
 import { legacyGlossaryFavorites } from './hospital-glossary';
+import { scaleIdForTopic, topicRouteId } from './topic-identifiers';
+import { newTools } from './new-tools';
+export { topicSlug } from './topic-identifiers';
 
 export type FavoriteEntry = { id: string; title: string; href: string; kind: string };
 
-export const topicSlug = (title: string) => title.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-
 export function topicHref(moduleId: string, title: string): string {
-  const module = modules.find(item => item.id === moduleId);
-  const index = module?.topics.findIndex(item => item.title === title) ?? -1;
-  if (moduleId === 'escalas' && index >= 0 && index < scales.length) return `#escalas/${scales[index].id}`;
-  return `#${moduleId}/${topicSlug(title)}`;
+  const scaleId = moduleId === 'escalas' ? scaleIdForTopic(title) : undefined;
+  return `#${moduleId}/${scaleId ?? topicRouteId(moduleId, title)}`;
 }
 
 export function topicFavoriteId(moduleId: string, title: string): string {
-  return `topic.${moduleId}.${topicSlug(title)}`;
+  return `topic.${moduleId}.${topicRouteId(moduleId, title)}`;
 }
 
 export const favoriteCatalog: FavoriteEntry[] = [
@@ -25,6 +23,7 @@ export const favoriteCatalog: FavoriteEntry[] = [
   { id: 'tool.glossario', title: 'Siglário', href: '#glossario', kind: 'Siglário' },
   { id: 'tool.primeiro-dia', title: 'Checklist do primeiro dia', href: '#primeiro-dia', kind: 'Roteiro' },
   { id: 'tool.caderno', title: 'Caderno CTI Adulto', href: '#caderno', kind: 'Leitura' },
+  ...newTools.map(tool => ({ id: tool.id, title: tool.title, href: tool.href, kind: 'Ferramenta' })),
 ];
 
 export const readableFavoriteIds = [...favoriteCatalog.map(item => item.id), ...Object.keys(legacyGlossaryFavorites)];

@@ -1,0 +1,10 @@
+/** Shared public learning destinations. Profiles prioritize these links, never authorize access. */
+export const newTools = [
+  { id: 'tool.perfil', title: 'Meu perfil de aprendizagem', description: 'Escolha estagiário ou novo colaborador e troque quando quiser, sem cadastro.', href: '#perfil', aliases: ['perfil', 'estagiário', 'novo colaborador', 'acolhimento'] },
+  { id: 'tool.integracao', title: 'Checklist de integração', description: 'Roteiro educativo separado para novos colaboradores, com marcações locais e itens pendentes de validação institucional.', href: '#integracao', aliases: ['integração', 'colaborador', 'primeiro plantão', 'ambientação', 'checklist'] },
+  { id: 'tool.laboratorio', title: 'Laboratório de anotações', description: 'Pratique registros com fatos fictícios, rubrica de autorrevisão e exemplos comentados.', href: '#laboratorio', aliases: ['anotação', 'anotações', 'registro', 'escrita', 'rubrica', 'laboratório'] },
+  { id: 'tool.cti-virtual', title: 'CTI virtual', description: 'Explore equipamentos em um box fictício 2D, com lista acessível e explicações educativas.', href: '#cti-virtual', aliases: ['box', 'virtual', 'equipamentos', 'desenhos', 'monitor', 'bomba', 'ventilador'] },
+  { id: 'tool.avaliacao-pbl', title: 'Avaliação do PBL', description: 'Questionário voluntário de usabilidade e aprendizagem percebida, sem envio remoto.', href: '#avaliacao-pbl', aliases: ['feedback', 'avaliação', 'PBL', 'opinião', 'usabilidade'] },
+  { id: 'tool.demonstracao', title: 'Demonstração guiada', description: 'Percorra os dois perfis e os recursos do projeto usando somente situações fictícias.', href: '#demonstracao', aliases: ['demonstração', 'apresentação', 'tour', 'institucional', 'roteiro'] },
+  { id: 'tool.conteudos', title: 'Revisão dos conteúdos', description: 'Consulte referências, versões editoriais e pendências de revisão dos materiais educativos.', href: '#conteudos', aliases: ['revisão', 'referências', 'validação', 'fontes', 'catálogo', 'conteúdos'] },
+] as const;

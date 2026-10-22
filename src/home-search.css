@@ -125,6 +125,33 @@
   background: #882737;
 }
 
+.home-search .home-search-category {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+  margin-top: 14px;
+  color: #435c49;
+  font-size: 14px;
+}
+
+.home-search .home-search-category select {
+  max-width: 100%;
+  min-height: 44px;
+  padding: 9px 12px;
+  border: 1px solid #d8e1d2;
+  border-radius: 8px;
+  background: #f8faf6;
+  color: #293737;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.home-search .home-search-category select:focus-visible {
+  outline: 3px solid #a73344;
+  outline-offset: 3px;
+}
+
 .home-search .home-search-shortcuts {
   display: flex;
   align-items: center;

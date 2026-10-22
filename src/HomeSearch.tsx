@@ -1,6 +1,6 @@
 import { useEffect, useId, useRef, useState, type FormEvent } from 'react';
 import { ArrowRight, ChevronDown, Search, X } from 'lucide-react';
-import { searchContent } from './search';
+import { searchCategories, searchContent, type SearchResult } from './search';
 import './home-search.css';
 
 type HomeSearchProps = {
@@ -17,21 +17,23 @@ export default function HomeSearch({ query, onQueryChange }: HomeSearchProps) {
   const resultsHeadingRef = useRef<HTMLHeadingElement>(null);
   const listRef = useRef<HTMLUListElement>(null);
   const firstNewResultRef = useRef<number | null>(null);
-  const [pagination, setPagination] = useState({ query, limit: RESULTS_PER_PAGE });
+  const [category, setCategory] = useState<SearchResult['kind'] | ''>('');
+  const [pagination, setPagination] = useState({ query, category, limit: RESULTS_PER_PAGE });
   const hasQuery = query.trim().length > 0;
-  const results = hasQuery ? searchContent(query) : [];
-  const limit = pagination.query === query ? pagination.limit : RESULTS_PER_PAGE;
+  const results = hasQuery ? searchContent(query, category) : [];
+  const limit = pagination.query === query && pagination.category === category ? pagination.limit : RESULTS_PER_PAGE;
   const visibleResults = results.slice(0, limit);
   useEffect(() => {
     const index = firstNewResultRef.current;
     if (index === null) return;
     firstNewResultRef.current = null;
     listRef.current?.querySelectorAll<HTMLAnchorElement>('a')[index]?.focus();
-  }, [limit, query]);
+  }, [limit, query, category]);
+  const categoryDescription = category ? ` na categoria ${category}` : '';
   const status = hasQuery
     ? results.length === 0
-      ? `Nenhum resultado encontrado para “${query.trim()}”.`
-      : `${results.length === 1 ? '1 resultado encontrado' : `${results.length} resultados encontrados`} para “${query.trim()}”. Mostrando ${visibleResults.length} de ${results.length}.`
+      ? `Nenhum resultado encontrado para “${query.trim()}”${categoryDescription}.`
+      : `${results.length === 1 ? '1 resultado encontrado' : `${results.length} resultados encontrados`} para “${query.trim()}”${categoryDescription}. Mostrando ${visibleResults.length} de ${results.length}.`
     : '';
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
@@ -46,14 +48,16 @@ export default function HomeSearch({ query, onQueryChange }: HomeSearchProps) {
   function clearSearch() {
     firstNewResultRef.current = null;
     onQueryChange('');
-    setPagination({ query: '', limit: RESULTS_PER_PAGE });
+    setCategory('');
+    setPagination({ query: '', category: '', limit: RESULTS_PER_PAGE });
     inputRef.current?.focus();
   }
 
   function selectQuickSearch(value: string) {
     firstNewResultRef.current = null;
     onQueryChange(value);
-    setPagination({ query: value, limit: RESULTS_PER_PAGE });
+    setCategory('');
+    setPagination({ query: value, category: '', limit: RESULTS_PER_PAGE });
     inputRef.current?.focus();
   }
 
@@ -81,7 +85,7 @@ export default function HomeSearch({ query, onQueryChange }: HomeSearchProps) {
               onChange={(event) => {
                 const value = event.target.value;
                 firstNewResultRef.current = null;
-                setPagination({ query: value, limit: RESULTS_PER_PAGE });
+                setPagination({ query: value, category, limit: RESULTS_PER_PAGE });
                 onQueryChange(value);
               }}
               enterKeyHint="search"
@@ -101,6 +105,18 @@ export default function HomeSearch({ query, onQueryChange }: HomeSearchProps) {
           <button className="home-search-submit" type="submit">
             Buscar
           </button>
+        </div>
+        <div className="home-search-category">
+          <label htmlFor={`${id}-category`}>Categoria da pesquisa</label>
+          <select id={`${id}-category`} value={category} onChange={event => {
+            const selected = event.target.value as SearchResult['kind'] | '';
+            firstNewResultRef.current = null;
+            setCategory(selected);
+            setPagination({ query, category: selected, limit: RESULTS_PER_PAGE });
+          }}>
+            <option value="">Todas as categorias</option>
+            {searchCategories.map(value => <option key={value}>{value}</option>)}
+          </select>
         </div>
       </form>
 
@@ -166,7 +182,7 @@ export default function HomeSearch({ query, onQueryChange }: HomeSearchProps) {
                   aria-controls={`${id}-results`}
                   onClick={() => {
                     firstNewResultRef.current = visibleResults.length;
-                    setPagination({ query, limit: limit + RESULTS_PER_PAGE });
+                    setPagination({ query, category, limit: limit + RESULTS_PER_PAGE });
                   }}
                 >
                   Mostrar mais resultados

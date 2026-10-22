@@ -75,3 +75,7 @@ main#conteudo-principal:focus-visible{outline:3px solid #ae394b;outline-offset:-
 .quiz .feedback:focus-visible{outline:3px solid #ae394b;outline-offset:4px}
 
 @media(max-width:760px){.topbar{gap:12px;padding:0 18px;font-size:12px}.topbar>span{min-width:0}.topbar>div{gap:8px}.badge{white-space:nowrap}.section-heading p{font-size:14px}.learning-tip p,.learning-tip strong{font-size:14px}.materials-shortcut>span:nth-child(2){min-width:0}.mobile-nav a{font-size:11px}}
+
+/* Keep the expanded learning navigation reachable in short viewports. */
+.sidebar{overflow-y:auto;overscroll-behavior:contain}.sidebar-bottom,.sidebar-footer{flex-shrink:0}
+@media(max-width:760px){.topbar{height:auto;min-height:72px;padding:12px 18px;flex-wrap:wrap}.topbar>div{width:100%;justify-content:space-between;flex-wrap:wrap}.topbar .avatar{display:none}.topbar .profile-compact{flex:1 1 200px;align-items:flex-end}.topbar .profile-compact select{max-width:245px}}

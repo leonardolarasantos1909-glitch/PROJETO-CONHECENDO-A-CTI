@@ -1,6 +1,9 @@
 import { useEffect, useId, useRef, useState } from 'react';
 import { ArrowRight, Check, GraduationCap } from 'lucide-react';
 import { questions, scoreAnswers } from './content';
+import { getQuestionReferences } from './question-references';
+import { pdfReaderLink } from './pdf-catalog';
+import './question-references.css';
 
 /** Educational quiz only: responses stay in memory for the current visit. */
 export default function Quiz() {
@@ -16,6 +19,7 @@ export default function Quiz() {
   const finished = index >= items.length;
   const selected = answers[index];
   const answered = selected !== undefined;
+  const references = question ? getQuestionReferences(question.text) : [];
 
   useEffect(() => {
     const destination = focusAfterChange.current;
@@ -79,6 +83,14 @@ export default function Quiz() {
         <strong id={`${prefix}-feedback-title`}>{selected === question.answer ? 'Resposta correta.' : 'Vamos aprender com essa resposta.'}</strong>
         <p id={`${prefix}-feedback-text`}>{question.explanation}</p>
         <button className="button" onClick={advance}>{index === items.length - 1 ? 'Ver resultado' : 'Próxima questão'}<ArrowRight size={17} aria-hidden="true"/></button>
+        <div className="question-references">
+          <h3>Materiais de apoio à questão</h3>
+          <ul>{references.map(reference => <li key={reference.href}>
+            {reference.href.startsWith('#') ? <a href={reference.href}>{reference.label}</a>
+              : <a {...pdfReaderLink(reference.href)}>{reference.label}<span className="sr-only"> — abre o PDF em outra aba</span></a>}
+          </li>)}</ul>
+          <p>Base: conteúdos educativos já fornecidos ao projeto. Revisão clínica e institucional pendente; estas fontes não representam aprovação profissional.</p>
+        </div>
       </div>}
     </>}
   </section>;

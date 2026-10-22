@@ -2,6 +2,7 @@ import { pdfReaderLink } from './pdf-catalog';
 import { useEffect, useId, useRef, useState } from 'react';
 import { ArrowRight, ArrowUpRight, BookOpen, Check, MessageCircle, RotateCcw } from 'lucide-react';
 import { caseStudies } from './cases';
+import ContentReview from './ContentReview';
 import './case-studies.css';
 
 export default function CaseStudies({ initialCase }: { initialCase?: string } = {}) {
@@ -101,5 +102,6 @@ export default function CaseStudies({ initialCase }: { initialCase?: string } = 
         <p>Casos adaptados dos conteúdos do projeto. As referências e os créditos permanecem no material original.</p>
       </div>
     </div>
+    <ContentReview contentId={`case.${studyCase.id}`} compact/>
   </section>;
 }
