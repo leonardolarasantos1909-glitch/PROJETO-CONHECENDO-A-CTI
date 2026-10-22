@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-22",
+  "timezone": "America/Sao_Paulo",
+  "phase": 1,
+  "status": "Concluída para revisão; sem implantação",
+  "branch": "avaliacao-institucional/fase-1",
+  "baseline_commit": "e31d24b2e479f867b2c672831e16d2bedc09ec56",
+  "implementation_commit": "8da5761d9a9382c54a1ae232b1c2d51cbec5e238",
+  "production_deployed": false,
+  "main_updated": false,
+  "tests": {
+    "files": 10,
+    "passed": 57,
+    "service_worker": "passed",
+    "clean_lock_install": "passed",
+    "build": "passed"
+  },
+  "npm_audit": {
+    "all_alerts": 0,
+    "production_alerts": 0,
+    "vitest": "4.1.12",
+    "tinypool_removed": true
+  },
+  "browser": {
+    "groups_passed": 12,
+    "unique_destinations": 74,
+    "topic_dialogs": 32,
+    "illustrations": 15,
+    "layout_samples": 48,
+    "viewport_widths": [
+      320,
+      390,
+      1440
+    ],
+    "failures": 0,
+    "javascript_errors": [],
+    "console_warnings": [],
+    "external_requests": [],
+    "evidence": "evidencias/navegador.json"
+  },
+  "package": {
+    "path": "downloads/conhecendo-a-cti-fase-1-revisao.zip",
+    "files": 118,
+    "bytes": 70157156,
+    "sha256": "485c503f8b97f37da521adb4ca1eb81bb8329073ebd7bc9525abbaf31cda1156",
+    "cache": "const CACHE = 'cti-23dbb6d5f52f';"
+  },
+  "content_and_materials_preserved": true,
+  "limits": [
+    "Chromium headless on Linux only; no physical iPhone/Android, Safari, VoiceOver, TalkBack or NVDA.",
+    "Production Cloudflare and a separate homologation deploy are not exercised by this local test.",
+    "No claim of full WCAG conformance or independent clinical/institutional validation.",
+    "Native browser zoom at200%/400% was not exercised; responsive viewport widths were checked."
+  ],
+  "next_planned_phase": "Fase 2: dois perfis e checklists separados"
+}

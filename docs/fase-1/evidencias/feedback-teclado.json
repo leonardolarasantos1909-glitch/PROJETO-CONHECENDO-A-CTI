@@ -1,0 +1,17 @@
+{
+  "cache": "cti-23dbb6d5f52f",
+  "state": {
+    "focusVisible": true,
+    "outlineWidth": "3px",
+    "outlineStyle": "solid",
+    "outlineColor": "rgb(174, 57, 75)",
+    "role": "status",
+    "tabIndex": -1
+  },
+  "nextTab": "Próxima questão",
+  "skip": {
+    "focused": false,
+    "bottom": -12
+  },
+  "physicalDevices": false
+}

@@ -1,0 +1,85 @@
+{
+  "scope": "Fase 1: cálculo de pares declarados; aguardando conferência de estilos computados em navegador",
+  "files": [
+    "src/style.css",
+    "src/starter-tools.css",
+    "src/book-reader.css"
+  ],
+  "method": "WCAG luminância relativa sRGB; (Lmais clara + 0.05)/(Lmais escura +0.05)",
+  "samples": [
+    {
+      "selectors": ".module-card>p, .sidebar-caption, .starter-term-source",
+      "text": "#596c5e",
+      "background": "#ffffff",
+      "ratio": 5.6279,
+      "minimum": 4.5
+    },
+    {
+      "selectors": ".breadcrumb, .section-heading p, .page-description, footer, .starter-results, .starter-review",
+      "text": "#596c5e",
+      "background": "#f9faf9",
+      "ratio": 5.3787,
+      "minimum": 4.5
+    },
+    {
+      "selectors": ".welcome p, .hero-note, .learning-tip p",
+      "text": "#596c5e",
+      "background": "#f1f3ed",
+      "ratio": 5.0338,
+      "minimum": 4.5
+    },
+    {
+      "selectors": ".topbar .badge",
+      "text": "#596c5e",
+      "background": "#f9fbf7",
+      "ratio": 5.4054,
+      "minimum": 4.5
+    },
+    {
+      "selectors": ".quiz-meta",
+      "text": "#705b55",
+      "background": "#ffffff",
+      "ratio": 6.3319,
+      "minimum": 4.5
+    },
+    {
+      "selectors": ".quiz-answer-state",
+      "text": "#435c49",
+      "background": "#ffffff",
+      "ratio": 7.328,
+      "minimum": 4.5
+    },
+    {
+      "selectors": ".answer.incorrect .quiz-answer-state",
+      "text": "#9e3041",
+      "background": "#ffffff",
+      "ratio": 7.1116,
+      "minimum": 4.5
+    },
+    {
+      "selectors": ".skip-link",
+      "text": "#ffffff",
+      "background": "#a73344",
+      "ratio": 6.5623,
+      "minimum": 4.5
+    },
+    {
+      "selectors": ".mobile-nav a.active",
+      "text": "#9e3041",
+      "background": "#ffffff",
+      "ratio": 7.1116,
+      "minimum": 4.5
+    }
+  ],
+  "controls": {
+    "quiz_select": 16,
+    "book_page_input": 16,
+    "existing_home_search_input": 16,
+    "existing_siglario_input": 16
+  },
+  "limitations": [
+    "Não é auditoria WCAG integral.",
+    "Layouts e cascata final precisam de validação no navegador após o build.",
+    "Não foi executado teste em Safari/iPhone real."
+  ]
+}

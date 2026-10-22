@@ -13,6 +13,8 @@ O conteúdo do QR foi decodificado e conferido localmente. A conexão ao endere�
 
 ## Baixar a versão pronta
 
+**Preparação institucional:** a Fase 1 do plano aprovado foi concluída para revisão em uma branch separada, `avaliacao-institucional/fase-1`. O [registro da fase e seu pacote](docs/FASE-1-CONSOLIDACAO.md) informa as correções e os testes; o [checklist técnico de homologação](docs/HOMOLOGACAO-TECNICA.md) descreve os ensaios no ambiente real. Não houve publicação na Cloudflare nem atualização de `main` por esta fase. O pacote v14 abaixo pertence à entrega anterior.
+
 **Estado de segurança:** houve relato de bloqueio antivírus em um pacote anterior. A versão v14 atualiza o Siglário com o texto que o autor informou ter conferido com a instituição e mantém a busca, o tópico de prevenção da PAV e a abertura dos PDFs originais no visualizador do aparelho; não há resultado de varredura antivírus completa. Os testes de integridade e funcionamento não substituem essa análise. No computador da empresa, encaminhe eventual alerta à TI, sem desativar proteções. [Histórico da versão v2](docs/PACOTE-V2.md).
 
 [Baixar conhecendo-a-cti-v14.zip](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/main/downloads/conhecendo-a-cti-v14.zip)
@@ -27,7 +29,7 @@ Consulte também o [passo a passo para atualizar a versão 14](docs/ATUALIZAR-V1
 
 ## Desenvolvimento
 
-Requer Node.js 22 (a partir de 22.13) ou 24+ e npm. Na raiz do repositório:
+Requer Node.js 22 (a partir de 22.13) ou 24+ e npm, conforme `package.json`. A versão de referência está em `.nvmrc` (**24.19.0**); com nvm instalado, execute `nvm install` e `nvm use`. Na raiz do repositório:
 
 ```sh
 npm ci
@@ -66,7 +68,7 @@ Se o link abrir dentro do WhatsApp, escolha **Abrir no navegador**; se essa opç
 - `src/content.ts`: módulos, tópicos, fontes de consulta e questões estruturados para atualização.
 - `src/scales.ts`, `src/ScalesGuide.tsx` e `src/scales-guide.css`: conteúdo educativo, domínios/critérios e abas acessíveis EVA, BPS, PAINAD e RASS, com referências do caderno.
 - `src/scales.test.ts`: conferência dos critérios textuais e dos pontos contra as páginas do caderno.
-- `src/main.tsx`: navegação, progresso local, detalhes, quiz e instalação.
+- `src/main.tsx`: navegação, progresso local, detalhes e instalação; `src/Quiz.tsx`: quiz com estados textuais e foco na explicação, pergunta e resultado.
 - `src/search.ts`, `src/HomeSearch.tsx` e `src/home-search.css`: catálogo de pesquisa e busca na tela inicial.
 - `src/pdf-catalog.ts`, `src/PdfReader.tsx` e `src/pdf-reader.css`: catálogo dos PDFs originais, links diretos e página leve de compatibilidade para as rotas antigas.
 - `src/starter-data.ts` e `src/StarterTools.tsx`: checklist do primeiro dia e consulta ao Siglário.
