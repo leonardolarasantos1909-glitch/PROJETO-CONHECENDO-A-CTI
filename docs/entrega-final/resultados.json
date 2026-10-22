@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-22",
+  "branch": "avaliacao-institucional/final",
+  "baseline_commit": "29512441a52cddb9a9e7682da685db33118a1954",
+  "implementation_commit": "89e1706758b2afb9cef8cc1c92895691b968ae56",
+  "status": "Implementação consolidada e testada localmente; homologação externa e validação institucional pendentes",
+  "production_deployed": false,
+  "homologation_deployed": false,
+  "main_updated": false,
+  "production_url_preserved": "https://proud-math-302f.conhecendoacti.workers.dev/",
+  "phases": {
+    "0": "auditoria concluída anteriormente",
+    "1": "consolidação concluída anteriormente e preservada",
+    "2": "perfis e checklists implementados/testados",
+    "3": "busca e organização implementadas/testadas",
+    "4": "casos, laboratório e escalas implementados/testados",
+    "5": "box virtual implementado/testado em Chromium",
+    "6": "avaliação local, demonstração e projeto implementados/testados",
+    "7": "testes locais e pacote concluídos; homologação real/aceite não executados"
+  },
+  "tests": {
+    "files": 19,
+    "passed": 91,
+    "service_worker": "passed",
+    "build": "passed",
+    "content_metadata_records": 847,
+    "clean_lock_install": "passed in phase1; no new dependencies added"
+  },
+  "browser": {
+    "groups_passed": 20,
+    "unique_destinations": 82,
+    "topic_dialogs": 32,
+    "illustrations": 15,
+    "virtual_dialog_paths": 16,
+    "layout_samples": 69,
+    "viewport_widths": [
+      320,
+      390,
+      1440
+    ],
+    "contrast_samples": 151,
+    "minimum_contrast": 4.919696047633856,
+    "javascript_errors": [],
+    "console_warnings": [],
+    "csp_violations": [],
+    "external_requests": [],
+    "request_methods": [
+      "GET"
+    ],
+    "evidence": "evidencias/navegador.json"
+  },
+  "npm_audit": {
+    "all_alerts": 0,
+    "production_alerts": 0
+  },
+  "privacy": {
+    "login": false,
+    "database": false,
+    "remote_feedback": false,
+    "analytics_added": false,
+    "learning_keys": 6,
+    "annotation_text_persisted": false,
+    "feedback_responses_persisted": false,
+    "manual_feedback_export": true
+  },
+  "offline": {
+    "cache": "cti-24151e273c6b",
+    "precache_urls": 113,
+    "precache_bytes": 10939783,
+    "apostilas": "complete PDFs cached on demand; external links require connection"
+  },
+  "package": {
+    "path": "downloads/conhecendo-a-cti-final-revisao.zip",
+    "files": 119,
+    "bytes": 70183448,
+    "sha256": "ce5f1833e8c2282979b96bfeb3f0b4e09e549f1e06b0f16fa060ecf4476a9c6a",
+    "cache": "const CACHE = 'cti-24151e273c6b';",
+    "crc_valid": true,
+    "matches_dist": true,
+    "safe_paths": true,
+    "baseline": "downloads/conhecendo-a-cti-v14.zip",
+    "preserved_assets": 105,
+    "production_deployed": false
+  },
+  "acceptance": {
+    "passed_local": 9,
+    "partial": 4,
+    "not_executed": 1,
+    "matrix": "MATRIZ-ACEITACAO.md"
+  },
+  "limits": [
+    "Chromium headless on Linux only; no physical iPhone/Android, Safari, VoiceOver, TalkBack or NVDA.",
+    "Production Cloudflare and a separate homologation deploy are not exercised by this local test.",
+    "No claim of full WCAG conformance or independent clinical/institutional validation.",
+    "Native browser zoom at200%/400% was not exercised; responsive viewport widths were checked.",
+    "Revisão integral de conteúdo clínico, fontes, direitos e dados identificáveis nos documentos herdados depende dos responsáveis.",
+    "Três anexos antigos acima do limite de transferência não foram recuperados; inventário em docs/APOSTILAS.md.",
+    "Autores, orientadores, responsáveis e autorização institucional não foram inventados."
+  ]
+}

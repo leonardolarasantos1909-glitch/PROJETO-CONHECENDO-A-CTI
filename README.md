@@ -1,6 +1,6 @@
 # Conhecendo a CTI
 
-Protótipo PWA educativo, em português, para acolhimento de estagiários de Técnico em Enfermagem em terapia intensiva. React, TypeScript, Vite, Tailwind CSS e ícones Lucide. Sem login, backend, analytics ou coleta de identificação dos estudantes. Marcações, favoritos, visitas e a página do caderno ficam somente no navegador.
+Protótipo PWA educativo, em português, para acolhimento de estagiários de Técnico em Enfermagem e ambientação de novos colaboradores na CTI Adulto. React, TypeScript, Vite, Tailwind CSS e ícones Lucide. Sem login, backend, analytics ou coleta de identificação dos estudantes. Perfil, marcações dos dois checklists, favoritos, visitas e a página do caderno ficam somente no navegador. Exercícios escritos e avaliação do PBL funcionam em memória, sem coleta remota.
 
 ## Acesso ao protótipo e QR Code
 
@@ -13,7 +13,14 @@ O conteúdo do QR foi decodificado e conferido localmente. A conexão ao endere�
 
 ## Baixar a versão pronta
 
-**Preparação institucional:** a Fase 1 do plano aprovado foi concluída para revisão em uma branch separada, `avaliacao-institucional/fase-1`. O [registro da fase e seu pacote](docs/FASE-1-CONSOLIDACAO.md) informa as correções e os testes; o [checklist técnico de homologação](docs/HOMOLOGACAO-TECNICA.md) descreve os ensaios no ambiente real. Não houve publicação na Cloudflare nem atualização de `main` por esta fase. O pacote v14 abaixo pertence à entrega anterior.
+**Entrega atual para avaliação institucional:** implementação consolidada das Fases 1–6, com testes locais e pacote da Fase 7, na branch `avaliacao-institucional/final`. Inclui dois perfis, checklists independentes, pesquisa por categoria, catálogo de revisão, laboratório de anotações, escalas por finalidade, box fictício, avaliação local e demonstração guiada. **A homologação real e a publicação continuam pendentes; produção e `main` não foram atualizadas.**
+
+- [Baixar ZIP final para revisão](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/avaliacao-institucional/final/downloads/conhecendo-a-cti-final-revisao.zip).
+- [Passo a passo simples da entrega](docs/GUIA-ENTREGA-FINAL.md).
+- [Relatório final e situação de todas as fases](docs/RELATORIO-FINAL-INSTITUCIONAL.md).
+- [Manutenção dos conteúdos](docs/MANUTENCAO-CONTEUDOS.md) e [privacidade da avaliação](docs/PRIVACIDADE-AVALIACAO-PBL.md).
+
+Os testes locais não substituem revisão clínica, direitos de divulgação dos materiais, aparelhos reais e homologação autorizada. O [checklist técnico](docs/HOMOLOGACAO-TECNICA.md) orienta essas verificações externas. A v14 abaixo pertence ao histórico anterior.
 
 **Estado de segurança:** houve relato de bloqueio antivírus em um pacote anterior. A versão v14 atualiza o Siglário com o texto que o autor informou ter conferido com a instituição e mantém a busca, o tópico de prevenção da PAV e a abertura dos PDFs originais no visualizador do aparelho; não há resultado de varredura antivírus completa. Os testes de integridade e funcionamento não substituem essa análise. No computador da empresa, encaminhe eventual alerta à TI, sem desativar proteções. [Histórico da versão v2](docs/PACOTE-V2.md).
 
@@ -46,13 +53,13 @@ npm run build
 npm run preview -- --port 4173
 ```
 
-O build confere a correspondência SHA-256 entre o livro e seu PDF de origem, verifica as imagens e os links, verifica TypeScript, gera `dist/` e cria o service worker com a lista exata de arquivos produzidos. As páginas do livro já estão incluídas no repositório; Python é necessário somente para regenerá-las após trocar o PDF, conforme [o guia do livro virtual](docs/LIVRO-VIRTUAL.md).
+O build executa o catálogo de metadados e bloqueia rótulos de validação sem evidências mínimas, material restrito e links locais ausentes. Depois confere a correspondência SHA-256 entre o livro e seu PDF de origem, verifica as imagens e os links, verifica TypeScript, gera `dist/` e cria o service worker com a lista exata de arquivos produzidos. As páginas do livro já estão incluídas no repositório; Python é necessário somente para regenerá-las após trocar o PDF, conforme [o guia do livro virtual](docs/LIVRO-VIRTUAL.md).
 
 O servidor de desenvolvimento não registra service worker. Para testar a experiência offline, abra a versão de produção, aguarde a ativação do service worker, recarregue uma vez e use o modo offline do navegador. O cache inicial inclui cerca de 10 MB de arquivos, com as 96 páginas do livro e os dois PDFs do caderno. As cinco apostilas adicionais (cerca de 75 MB no total) são armazenadas sob demanda ao abrir cada PDF completo; não fazem parte desse download inicial. O shell e os conteúdos internos ficam disponíveis; fontes externas exigem conexão. O primeiro acesso precisa de rede. O navegador pode remover caches conforme suas políticas de armazenamento.
 
 ## Atualização manual da publicação
 
-Não há publicação automática configurada. O autor informou o endereço de teste na Cloudflare registrado acima. O responsável pode atualizar o mesmo projeto com o ZIP pronto; para gerar um pacote a partir do código, execute `npm ci` e `npm run build` e publique **somente os arquivos de `dist/`**, com `index.html` na raiz. Use HTTPS e cabeçalho `Cache-Control: no-cache` para `index.html`, `sw.js` e manifesto; os arquivos em `assets/` possuem hash e podem ter cache longo. Este protótipo usa caminhos absolutos e não está configurado para subdiretórios como GitHub Pages de projeto. Para isso, adapte conscientemente o `base`, manifesto e caminhos do service worker em uma tarefa de código.
+A entrega atual deve passar primeiro por homologação separada e autorização de publicação, conforme o guia final acima. Não há publicação automática configurada. O autor informou o endereço de teste na Cloudflare registrado acima. O responsável pode atualizar o mesmo projeto com o ZIP pronto; para gerar um pacote a partir do código, execute `npm ci` e `npm run build` e publique **somente os arquivos de `dist/`**, com `index.html` na raiz. Use HTTPS e cabeçalho `Cache-Control: no-cache` para `index.html`, `sw.js` e manifesto; os arquivos em `assets/` possuem hash e podem ter cache longo. Este protótipo usa caminhos absolutos e não está configurado para subdiretórios como GitHub Pages de projeto. Para isso, adapte conscientemente o `base`, manifesto e caminhos do service worker em uma tarefa de código.
 
 Nenhuma credencial é necessária para rodar localmente. A atualização da hospedagem é feita na conta Cloudflare do responsável. O QR Code incluído aponta para o endereço de teste informado pelo autor e permanece válido enquanto esse endereço for mantido. Teste sua abertura em Android e iPhone; se trocar o domínio ou endereço, gere e confira outro QR.
 
@@ -65,6 +72,16 @@ Se o link abrir dentro do WhatsApp, escolha **Abrir no navegador**; se essa opç
 
 ## Organização
 
+- `src/learning-profile.ts`, `src/LearningProfile.tsx`: escolha local de perfil e prioridades, sem ocultar módulos.
+- `src/integration-checklist.ts`, `src/IntegrationChecklist.tsx`: roteiro de integração separado, pendente de contextualização institucional.
+- `src/content-registry.ts`, `src/ContentReview.tsx`, `scripts/check-content.mjs`: metadados, referências, catálogo e barreira editorial no build.
+- `src/topic-identifiers.ts`: IDs e vínculos explícitos de escalas, preservando as rotas antigas.
+- `src/annotation-lab.ts`, `src/AnnotationLab.tsx`: três exercícios fictícios com rubrica manual e sem persistência de texto.
+- `src/ScalePurposeGuide.tsx`: organização educativa por dor, sedação/agitação e consciência.
+- `src/virtual-cti.ts`, `src/VirtualCTI.tsx`: oito itens selecionáveis em box fictício com alternativa em lista.
+- `src/pbl-feedback.ts`, `src/PblFeedback.tsx`: consentimento, sete perguntas fechadas e exportação manual local.
+- `src/guided-demo.ts`, `src/GuidedDemo.tsx`, `src/ProjectOverview.tsx`: roteiro de nove etapas e apresentação institucional em avaliação.
+- `src/new-tools.ts`, `src/AdditionalTools.tsx`: destinos compartilhados na busca, navegação e favoritos.
 - `src/content.ts`: módulos, tópicos, fontes de consulta e questões estruturados para atualização.
 - `src/scales.ts`, `src/ScalesGuide.tsx` e `src/scales-guide.css`: conteúdo educativo, domínios/critérios e abas acessíveis EVA, BPS, PAINAD e RASS, com referências do caderno.
 - `src/scales.test.ts`: conferência dos critérios textuais e dos pontos contra as páginas do caderno.
@@ -98,7 +115,7 @@ Todo conteúdo é **demonstrativo e pendente de revisão clínica**. Os links da
 
 Os exemplos de anotações são fictícios e incompletos; não devem ser copiados para prontuários. O aplicativo não oferece prescrição nem ajuste de ventilação. Os cadernos anexados mantêm o conteúdo original do autor, incluindo quadros de estudo e referências, sujeitos à revisão indicada abaixo. O aplicativo não substitui prescrição, protocolos autorizados ou supervisão do enfermeiro. Não é publicação oficial do hospital citado no contexto do projeto.
 
-Apenas os IDs dos módulos visitados são armazenados em `localStorage`, sem identificação. O botão em “Sobre o projeto” permite apagá-los. Visita não significa conclusão ou certificação. Não há entrada de dados clínicos ou pessoais. Links externos e provedores de hospedagem possuem suas próprias políticas de privacidade.
+O `localStorage` recebe somente valores permitidos de perfil, IDs marcados nos dois checklists, IDs de favoritos, módulos visitados e a última página do caderno, sem identificação. O botão em “Sobre o projeto” permite apagar as seis chaves conhecidas, preservando outros dados da origem. Marcações e visitas não representam conclusão ou certificação. O laboratório recebe exclusivamente texto de exercício fictício em memória; o questionário permite apenas respostas fechadas locais, com consentimento e exportação manual. Nenhum desses campos deve receber dados reais. Links externos e provedores de hospedagem possuem suas próprias políticas de privacidade.
 
 ## Roteiro manual complementar
 

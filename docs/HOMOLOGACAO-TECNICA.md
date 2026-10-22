@@ -12,7 +12,7 @@ Preparado em 22/10/2026 para a Fase 1. **Este documento não cria um ambiente ne
 
 ## Cabeçalhos e tipos a verificar no endereço real
 
-O arquivo `public/_headers` contém regras de cache. Sua existência não comprova que o projeto Workers as aplica. Consultar as respostas reais após uma implantação autorizada e registrar os resultados.
+Na entrega final, o arquivo `public/_headers` contém regras de cache, `nosniff`, política de referência/permissões e CSP nas entradas HTML. Essas regras foram simuladas em servidor local durante os testes finais; a política permite scripts/conexões de mesma origem, estilos inline necessários e não permite frames ou objetos na página HTML. Não se aplica CSP aos PDFs originais, que abrem no visualizador nativo. Sua existência não comprova que o projeto Workers as aplica. Consultar as respostas reais após uma implantação autorizada e registrar os resultados.
 
 | Recurso | Tipo esperado | Cache e comportamento a conferir |
 | --- | --- | --- |
@@ -47,4 +47,4 @@ Avaliar e testar no ambiente autorizado políticas de conteúdo/conexão/enquadr
 - Registrar navegador/aparelho, resultado, defeito, responsável e reteste de cada verificação. Automação Chromium não substitui Safari, leitores de tela ou aparelhos físicos.
 - Obter aceite da homologação e autorização final antes de atualizar a produção. Preservar o projeto e o endereço atuais para manter o QR Code.
 
-O endereço público não pôde ser validado durante a Fase 0 por bloqueio do proxy. Sem acesso e autorização de um ambiente separado, não declarar este checklist como executado. As pendências serão resolvidas na etapa de homologação do plano aprovado.
+O endereço público não pôde ser validado durante a Fase 0 por bloqueio do proxy. Sem acesso e autorização de um ambiente separado, não declarar este checklist como executado. As pendências externas permanecem para a homologação autorizada. A implementação final e os testes locais estão registrados em [Relatório final](RELATORIO-FINAL-INSTITUCIONAL.md); não caracterizam uma implantação na Cloudflare.

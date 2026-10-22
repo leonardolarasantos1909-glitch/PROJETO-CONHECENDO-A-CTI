@@ -1,0 +1,14 @@
+
+> conhecendo-a-cti@0.1.0 test
+> vitest run && node scripts/check-sw.mjs
+
+
+ RUN  v4.1.12 /workspace/PROJETO-CONHECENDO-A-CTI
+
+
+ Test Files  19 passed (19)
+      Tests  91 passed (91)
+   Start at  23:32:13
+   Duration  1.64s (transform 762ms, setup 0ms, import 1.62s, tests 549ms, environment 2ms)
+
+Service worker OK: Range/If-Range, cache completo sob demanda, leitura offline, allowlist e falhas de armazenamento.

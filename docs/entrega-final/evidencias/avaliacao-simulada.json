@@ -1,0 +1,33 @@
+{
+  "instrumentVersion": "1.0.0",
+  "answers": [
+    {
+      "item": "localizar",
+      "answer": "5"
+    },
+    {
+      "item": "clareza",
+      "answer": "5"
+    },
+    {
+      "item": "navegacao",
+      "answer": "5"
+    },
+    {
+      "item": "ambientacao",
+      "answer": "5"
+    },
+    {
+      "item": "equipamentos",
+      "answer": "5"
+    },
+    {
+      "item": "discussao",
+      "answer": "5"
+    },
+    {
+      "item": "limites",
+      "answer": "5"
+    }
+  ]
+}
