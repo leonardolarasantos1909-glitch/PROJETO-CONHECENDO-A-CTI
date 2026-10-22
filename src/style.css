@@ -19,3 +19,59 @@
 
 .pdf-open-help{font-size:14px;line-height:1.8;color:#60745f;margin:12px 0 20px;max-width:75ch}
 .pdf-actions .button,.pdf-actions .pdf-open{font-size:14px;min-height:44px}
+
+/* Fase 1: contraste e legibilidade, preservando a paleta e os cartões existentes. */
+.sidebar{overflow-y:auto}
+.sidebar-caption{font-size:11px;letter-spacing:1.2px;color:#596c5e}
+.sidebar nav a{font-size:13px}
+.sidebar .tools-caption{font-size:11px;color:#596c5e}
+.sidebar-bottom,.sidebar-bottom p,.sidebar-footer{color:#596c5e}
+.sidebar-bottom p{font-size:13px}
+.sidebar-bottom{font-size:12px}
+.sidebar-footer{font-size:10px;letter-spacing:1px}
+.nav-count,.module-number{font-size:12px;color:#596c5e}
+.topbar{color:#596c5e}
+.badge{font-size:11px;color:#596c5e}
+.breadcrumb{font-size:13px;color:#596c5e}
+.eyebrow{font-size:11px;letter-spacing:1.5px}
+.welcome p{font-size:14px;color:#596c5e}
+.button{font-size:14px;min-height:44px}
+.hero-note{font-size:12px;color:#596c5e}
+.journey strong{font-size:14px}
+.journey p{font-size:14px;color:#596c5e}
+.progress-info strong span{font-size:12px;color:#596c5e}
+.section-heading .eyebrow{font-size:11px;color:#596c5e}
+.section-heading p{font-size:14px;color:#596c5e}
+.module-card h3{font-size:15px}
+.module-card>p{font-size:14px;color:#596c5e;line-height:1.8}
+.card-bottom{font-size:12px;color:#596c5e;line-height:1.6}
+.card-bottom span{min-width:0;overflow-wrap:anywhere}
+.learning-tip strong{font-size:14px}
+.learning-tip p{font-size:14px;color:#596c5e}
+footer{font-size:12px;color:#596c5e}
+footer strong{font-size:14px}
+.back{font-size:14px;min-height:44px}
+.page-description,.topic-card p,.panel p,.library-intro{color:#596c5e}
+.topic-card p{font-size:14px}
+.filter{color:#596c5e}
+.quiz .filter select{font-size:16px}
+.quiz-meta{font-size:12px;color:#705b55}
+.pdf-intro,.pdf-card>p,.pdf-meta,.pdf-tag,.apostila-offline{color:#596c5e}
+.pdf-tag{font-size:12px;letter-spacing:.8px}
+.pdf-meta{font-size:13px}
+.pdf-actions .button,.pdf-open{font-size:14px;min-height:44px}
+.materials-shortcut>span>span{font-size:14px;color:#596c5e}
+.apostila-related li a>span>span{font-size:13px;color:#596c5e}
+.mobile-nav a{font-size:11px;color:#596c5e}
+.mobile-nav a.active{color:#9e3041;font-weight:650;box-shadow:inset 0 2px 0 currentColor}
+
+.skip-link{position:fixed;top:12px;left:12px;z-index:1000;display:inline-flex;align-items:center;min-height:48px;max-width:calc(100% - 24px);padding:11px 18px;border:2px solid #fff;border-radius:8px;background:#a73344;color:#fff;font-size:16px;font-weight:650;transform:translateY(calc(-100% - 24px))}
+.skip-link:focus{transform:translateY(0);outline:3px solid #293737;outline-offset:3px}
+main#conteudo-principal:focus-visible{outline:3px solid #ae394b;outline-offset:-3px}
+.quiz .quiz-answer-copy{display:flex;flex:1;flex-direction:column;gap:7px;min-width:0;overflow-wrap:anywhere}
+.quiz .quiz-answer-labels{display:flex;flex-wrap:wrap;gap:6px}
+.quiz .quiz-answer-state{display:inline-flex;align-items:center;gap:5px;padding:3px 8px;border:1px solid #cbd8c4;border-radius:5px;background:#fff;color:#435c49;font-size:13px;font-weight:650;line-height:1.6}
+.quiz .answer.incorrect .quiz-answer-state{border-color:#d6a2aa;color:#9e3041}
+.quiz .feedback:focus-visible{outline:3px solid #ae394b;outline-offset:4px}
+
+@media(max-width:760px){.topbar{gap:12px;padding:0 18px;font-size:12px}.topbar>span{min-width:0}.topbar>div{gap:8px}.badge{white-space:nowrap}.section-heading p{font-size:14px}.learning-tip p,.learning-tip strong{font-size:14px}.materials-shortcut>span:nth-child(2){min-width:0}.mobile-nav a{font-size:11px}}
