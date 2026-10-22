@@ -1,0 +1,255 @@
+[
+  {
+    "file": "public/materiais/caderno-cti-adulto-bolso-a4.pdf",
+    "pages": 24,
+    "bytes": 1242866,
+    "sha256": "5cd9aa49767881706da4af5d6dc58ac09c95473915e56cba262a9d2cb94e9dd6",
+    "metadata": {
+      "format": "PDF 1.3",
+      "title": "Caderno de Bolso CTI - Téc. Enfermagem - impressão A4",
+      "author": "Leonardo",
+      "subject": "24 folhas A4 com quatro páginas de 93 x 140 mm, sem furos, com folha de rosto e corte pontilhado. Imprimir em 100%, uma página do PDF por folha.",
+      "keywords": "",
+      "creator": "",
+      "producer": "",
+      "creationDate": "",
+      "modDate": "",
+      "trapped": "",
+      "encryption": null
+    },
+    "image_occurrences": 0,
+    "links": 27,
+    "matches": {
+      "dose_numeric": [
+        {
+          "page": 2,
+          "count": 1
+        },
+        {
+          "page": 9,
+          "count": 8
+        }
+      ],
+      "institutional_label": [
+        {
+          "page": 11,
+          "count": 1
+        }
+      ],
+      "patient_identifiers": []
+    },
+    "text_path": "/tmp/cti-phase0-caderno-cti-adulto-bolso-a4.txt"
+  },
+  {
+    "file": "public/materiais/caderno-cti-adulto-digital.pdf",
+    "pages": 96,
+    "bytes": 1196355,
+    "sha256": "a972f44330d1149e06eec607bc39ce314fb607e3d07f7c3c271864459107a0c8",
+    "metadata": {
+      "format": "PDF 1.3",
+      "title": "CTI adulto - versão para aplicativo - uma página por A4",
+      "author": "",
+      "subject": "96 páginas A4, uma página por folha, sem marcações de furos. Folha de rosto e índice com links preservados.",
+      "keywords": "",
+      "creator": "",
+      "producer": "",
+      "creationDate": "",
+      "modDate": "",
+      "trapped": "",
+      "encryption": null
+    },
+    "image_occurrences": 0,
+    "links": 39,
+    "matches": {
+      "dose_numeric": [
+        {
+          "page": 6,
+          "count": 1
+        },
+        {
+          "page": 35,
+          "count": 8
+        }
+      ],
+      "institutional_label": [
+        {
+          "page": 44,
+          "count": 1
+        }
+      ],
+      "patient_identifiers": []
+    },
+    "text_path": "/tmp/cti-phase0-caderno-cti-adulto-digital.txt"
+  },
+  {
+    "file": "public/materiais/apostilas/evolucao-anotacao-enfermagem.pdf",
+    "pages": 22,
+    "bytes": 21305044,
+    "sha256": "aa186acfd3ac34aa3ce2511532103fb84d31c9b7053c3b3a0674f1f05b91ba16",
+    "metadata": {
+      "format": "PDF 1.4",
+      "title": "Evolução e Anotação de Enfermagem no CTI Adulto",
+      "author": "Material educativo",
+      "subject": "(unspecified)",
+      "keywords": "",
+      "creator": "(unspecified)",
+      "producer": "ReportLab PDF Library - (opensource)",
+      "creationDate": "D:20260923123630-05'00'",
+      "modDate": "D:20260923123630-05'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "image_occurrences": 3,
+    "links": 8,
+    "matches": {
+      "dose_numeric": [
+        {
+          "page": 18,
+          "count": 1
+        }
+      ],
+      "institutional_label": [
+        {
+          "page": 14,
+          "count": 1
+        },
+        {
+          "page": 16,
+          "count": 1
+        },
+        {
+          "page": 22,
+          "count": 3
+        }
+      ],
+      "patient_identifiers": []
+    },
+    "text_path": "/tmp/cti-phase0-evolucao-anotacao-enfermagem.txt"
+  },
+  {
+    "file": "public/materiais/apostilas/monitorizacao-equipamentos.pdf",
+    "pages": 24,
+    "bytes": 9966782,
+    "sha256": "897eeaa99b239cd862d27e068e34bf882c36362518eab88de38182c6fd4cc716",
+    "metadata": {
+      "format": "PDF 1.4",
+      "title": "Monitorização e Equipamentos no CTI Adulto",
+      "author": "Material educacional",
+      "subject": "(unspecified)",
+      "keywords": "",
+      "creator": "(unspecified)",
+      "producer": "ReportLab PDF Library - (opensource)",
+      "creationDate": "D:20260922181123-07'00'",
+      "modDate": "D:20260922181123-07'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "image_occurrences": 8,
+    "links": 10,
+    "matches": {
+      "dose_numeric": [],
+      "institutional_label": [],
+      "patient_identifiers": []
+    },
+    "text_path": "/tmp/cti-phase0-monitorizacao-equipamentos.txt"
+  },
+  {
+    "file": "public/materiais/apostilas/medicacoes-bombas-infusao.pdf",
+    "pages": 42,
+    "bytes": 9341472,
+    "sha256": "cd80e4f2e4d070e58695b97bc66963f4b1c2f5bf45b8ff4dce17c60ea043e49f",
+    "metadata": {
+      "format": "PDF 1.4",
+      "title": "Apostila de Medicações e Bombas de Infusão no CTI Adulto",
+      "author": "(anonymous)",
+      "subject": "(unspecified)",
+      "keywords": "",
+      "creator": "(unspecified)",
+      "producer": "ReportLab PDF Library - (opensource)",
+      "creationDate": "D:20260922181903-07'00'",
+      "modDate": "D:20260922181903-07'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "image_occurrences": 12,
+    "links": 14,
+    "matches": {
+      "dose_numeric": [],
+      "institutional_label": [
+        {
+          "page": 3,
+          "count": 1
+        },
+        {
+          "page": 42,
+          "count": 1
+        }
+      ],
+      "patient_identifiers": []
+    },
+    "text_path": "/tmp/cti-phase0-medicacoes-bombas-infusao.txt"
+  },
+  {
+    "file": "public/materiais/apostilas/cuidados-paciente-critico.pdf",
+    "pages": 26,
+    "bytes": 10232257,
+    "sha256": "cc4befd2a5e038f21f58978c83c496cc6b68561f311f6c898e83f29daf953f23",
+    "metadata": {
+      "format": "PDF 1.4",
+      "title": "Apostila de Cuidados com o Paciente Crítico",
+      "author": "(anonymous)",
+      "subject": "(unspecified)",
+      "keywords": "",
+      "creator": "(unspecified)",
+      "producer": "ReportLab PDF Library - (opensource)",
+      "creationDate": "D:20260922180900-07'00'",
+      "modDate": "D:20260922180900-07'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "image_occurrences": 11,
+    "links": 18,
+    "matches": {
+      "dose_numeric": [],
+      "institutional_label": [],
+      "patient_identifiers": []
+    },
+    "text_path": "/tmp/cti-phase0-cuidados-paciente-critico.txt"
+  },
+  {
+    "file": "public/materiais/apostilas/curativos-feridas.pdf",
+    "pages": 33,
+    "bytes": 24228286,
+    "sha256": "25a8d1c4c1a8fd8359ea9d008134d7dbe3208f6347d33a732d697563a5fd2fd5",
+    "metadata": {
+      "format": "PDF 1.4",
+      "title": "Curativos e Cuidados com Feridas - CTI, Emergência e APH",
+      "author": "Material educativo",
+      "subject": "(unspecified)",
+      "keywords": "",
+      "creator": "(unspecified)",
+      "producer": "ReportLab PDF Library - (opensource)",
+      "creationDate": "D:20260923130239-05'00'",
+      "modDate": "D:20260923130239-05'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "image_occurrences": 7,
+    "links": 8,
+    "matches": {
+      "dose_numeric": [],
+      "institutional_label": [
+        {
+          "page": 2,
+          "count": 1
+        },
+        {
+          "page": 33,
+          "count": 2
+        }
+      ],
+      "patient_identifiers": []
+    },
+    "text_path": "/tmp/cti-phase0-curativos-feridas.txt"
+  }
+]

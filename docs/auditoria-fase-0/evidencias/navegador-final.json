@@ -1,0 +1,863 @@
+{
+  "baseline": "02c5dddbc0c62ff781e27277373b15959e61e231",
+  "cache": "cti-f6aac852484a",
+  "checks": [
+    {
+      "name": "Crawl every existing top-level route, all topic dialogs, and seven PDF access pages",
+      "moduleCount": 8,
+      "topicCount": 32,
+      "illustrationCount": 15,
+      "pdfCount": 7
+    },
+    {
+      "name": "Search, internal destinations, glossary filters and pagination"
+    },
+    {
+      "name": "Checklist persists, resets, reports local-only storage and does not create a second integration checklist"
+    },
+    {
+      "name": "Favorites, 96-page book, resume, keyboard navigation and explicit storage reset"
+    },
+    {
+      "name": "All five two-step fictional cases provide feedback, discussion, references and repeat controls",
+      "caseIds": [
+        "alarme-na-mobilizacao",
+        "duvida-sobre-sonda",
+        "comunicacao-de-mudanca",
+        "registro-do-cuidado",
+        "escolha-e-limites-das-escalas"
+      ]
+    },
+    {
+      "name": "Quiz32 completes, filters, explains each answer and exposes keyboard-focus behavior",
+      "questions": 32,
+      "subjects": [
+        "Todos",
+        "Segurança",
+        "Registros",
+        "Ética",
+        "Escalas",
+        "Dispositivos",
+        "Equipamentos",
+        "Rotinas",
+        "Comunicação"
+      ],
+      "nextFocus": {
+        "tag": "BODY",
+        "text": "Conhecendoa CTI.GUIA PARA ESTAGIÁRIOSVisão geralMódulos de aprendizado8Escalas clínicasBib",
+        "className": ""
+      },
+      "repeatFocus": {
+        "tag": "BODY",
+        "text": "Conhecendoa CTI.GUIA PARA ESTAGIÁRIOSVisão geralMódulos de aprendizado8Escalas clínicasBib",
+        "className": ""
+      },
+      "quizProgressStored": false
+    },
+    {
+      "name": "Educational scale tabs support keyboard and references without patient inputs or a scoring calculator"
+    },
+    {
+      "name": "Mobile and desktop layout survey, computed contrast, navigation state and screenshot evidence",
+      "contrasts": [
+        {
+          "text": "GUIA PARA ESTAGIÁRIOS",
+          "selector": "sidebar-caption",
+          "color": "rgb(139, 148, 146)",
+          "background": "rgb(255, 255, 255)",
+          "font": "9px",
+          "weight": "400",
+          "ratio": 3.1116551271707706
+        },
+        {
+          "text": "Seu primeiro passo na terapia intensiva: pessoas, cuidado e acolhimento.",
+          "selector": "P",
+          "color": "rgb(125, 136, 127)",
+          "background": "rgb(255, 255, 255)",
+          "font": "10px",
+          "weight": "400",
+          "ratio": 3.6841331090631284
+        },
+        {
+          "text": "Entenda a organização do cuidado ao longo do plantão.",
+          "selector": "P",
+          "color": "rgb(125, 136, 127)",
+          "background": "rgb(255, 255, 255)",
+          "font": "10px",
+          "weight": "400",
+          "ratio": 3.6841331090631284
+        },
+        {
+          "text": "Conheça os recursos que fazem parte do cuidado intensivo.",
+          "selector": "P",
+          "color": "rgb(125, 136, 127)",
+          "background": "rgb(255, 255, 255)",
+          "font": "10px",
+          "weight": "400",
+          "ratio": 3.6841331090631284
+        },
+        {
+          "text": "Dor: EVA, BPS e PAINAD. Agitação e sedação: RASS. Consciência: Glasgow.",
+          "selector": "P",
+          "color": "rgb(125, 136, 127)",
+          "background": "rgb(255, 255, 255)",
+          "font": "10px",
+          "weight": "400",
+          "ratio": 3.6841331090631284
+        },
+        {
+          "text": "Identificação, finalidade e atenção à segurança.",
+          "selector": "P",
+          "color": "rgb(125, 136, 127)",
+          "background": "rgb(255, 255, 255)",
+          "font": "10px",
+          "weight": "400",
+          "ratio": 3.6841331090631284
+        },
+        {
+          "text": "Aprenda com exemplos fictícios, objetivos e contextualizados.",
+          "selector": "P",
+          "color": "rgb(125, 136, 127)",
+          "background": "rgb(255, 255, 255)",
+          "font": "10px",
+          "weight": "400",
+          "ratio": 3.6841331090631284
+        },
+        {
+          "text": "Pratique com situações fictícias e aprenda com cada resposta.",
+          "selector": "P",
+          "color": "rgb(125, 136, 127)",
+          "background": "rgb(255, 255, 255)",
+          "font": "10px",
+          "weight": "400",
+          "ratio": 3.6841331090631284
+        },
+        {
+          "text": "Cadernos, apostilas de estudo e fontes para aprofundar o aprendizado.",
+          "selector": "P",
+          "color": "rgb(125, 136, 127)",
+          "background": "rgb(255, 255, 255)",
+          "font": "10px",
+          "weight": "400",
+          "ratio": 3.6841331090631284
+        }
+      ],
+      "navState": {
+        "desktop": 0,
+        "mobile": 0
+      }
+    },
+    {
+      "name": "Unavailable storage fails gracefully without collecting personal data"
+    },
+    {
+      "name": "Production cache works offline for internal routes, search, case/scales, checklist and resumed book"
+    }
+  ],
+  "failures": [],
+  "findings": [
+    {
+      "id": "quiz-focus-loss-next",
+      "severity": "moderate",
+      "evidence": {
+        "tag": "BODY",
+        "text": "Conhecendoa CTI.GUIA PARA ESTAGIÁRIOSVisão geralMódulos de aprendizado8Escalas clínicasBib",
+        "className": ""
+      },
+      "repro": "Answer first quiz question, focus Próxima questão, press Enter: focus moves to BODY rather than new question."
+    },
+    {
+      "id": "quiz-focus-loss-repeat",
+      "severity": "moderate",
+      "evidence": {
+        "tag": "BODY",
+        "text": "Conhecendoa CTI.GUIA PARA ESTAGIÁRIOSVisão geralMódulos de aprendizado8Escalas clínicasBib",
+        "className": ""
+      }
+    },
+    {
+      "id": "small-text-contrast",
+      "severity": "moderate",
+      "samples": [
+        {
+          "text": "GUIA PARA ESTAGIÁRIOS",
+          "selector": "sidebar-caption",
+          "color": "rgb(139, 148, 146)",
+          "background": "rgb(255, 255, 255)",
+          "font": "9px",
+          "weight": "400",
+          "ratio": 3.1116551271707706
+        },
+        {
+          "text": "Seu primeiro passo na terapia intensiva: pessoas, cuidado e acolhimento.",
+          "selector": "P",
+          "color": "rgb(125, 136, 127)",
+          "background": "rgb(255, 255, 255)",
+          "font": "10px",
+          "weight": "400",
+          "ratio": 3.6841331090631284
+        },
+        {
+          "text": "Entenda a organização do cuidado ao longo do plantão.",
+          "selector": "P",
+          "color": "rgb(125, 136, 127)",
+          "background": "rgb(255, 255, 255)",
+          "font": "10px",
+          "weight": "400",
+          "ratio": 3.6841331090631284
+        },
+        {
+          "text": "Conheça os recursos que fazem parte do cuidado intensivo.",
+          "selector": "P",
+          "color": "rgb(125, 136, 127)",
+          "background": "rgb(255, 255, 255)",
+          "font": "10px",
+          "weight": "400",
+          "ratio": 3.6841331090631284
+        },
+        {
+          "text": "Dor: EVA, BPS e PAINAD. Agitação e sedação: RASS. Consciência: Glasgow.",
+          "selector": "P",
+          "color": "rgb(125, 136, 127)",
+          "background": "rgb(255, 255, 255)",
+          "font": "10px",
+          "weight": "400",
+          "ratio": 3.6841331090631284
+        },
+        {
+          "text": "Identificação, finalidade e atenção à segurança.",
+          "selector": "P",
+          "color": "rgb(125, 136, 127)",
+          "background": "rgb(255, 255, 255)",
+          "font": "10px",
+          "weight": "400",
+          "ratio": 3.6841331090631284
+        },
+        {
+          "text": "Aprenda com exemplos fictícios, objetivos e contextualizados.",
+          "selector": "P",
+          "color": "rgb(125, 136, 127)",
+          "background": "rgb(255, 255, 255)",
+          "font": "10px",
+          "weight": "400",
+          "ratio": 3.6841331090631284
+        },
+        {
+          "text": "Pratique com situações fictícias e aprenda com cada resposta.",
+          "selector": "P",
+          "color": "rgb(125, 136, 127)",
+          "background": "rgb(255, 255, 255)",
+          "font": "10px",
+          "weight": "400",
+          "ratio": 3.6841331090631284
+        },
+        {
+          "text": "Cadernos, apostilas de estudo e fontes para aprofundar o aprendizado.",
+          "selector": "P",
+          "color": "rgb(125, 136, 127)",
+          "background": "rgb(255, 255, 255)",
+          "font": "10px",
+          "weight": "400",
+          "ratio": 3.6841331090631284
+        }
+      ]
+    },
+    {
+      "id": "navigation-current-state",
+      "severity": "low",
+      "evidence": {
+        "desktop": 0,
+        "mobile": 0
+      },
+      "detail": "Current section has a visual active class but no aria-current on primary or mobile nav."
+    },
+    {
+      "id": "no-skip-link",
+      "severity": "low",
+      "evidence": {
+        "firstFocus": {
+          "tag": "H2",
+          "text": "Pesquisar no app",
+          "className": ""
+        },
+        "next": {
+          "tag": "INPUT",
+          "text": "",
+          "className": ""
+        },
+        "skipLinkCount": 0
+      },
+      "detail": "Route change focuses main heading; there is no explicit keyboard skip-to-main link for repeated navigation."
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "routes": [
+    "inicio",
+    "modulos",
+    "acolhimento",
+    "acolhimento/o-que-e-uma-cti",
+    "acolhimento/equipe-multiprofissional",
+    "acolhimento/etica-sigilo-e-humanizacao",
+    "acolhimento/seguranca-e-primeiro-dia",
+    "rotinas",
+    "rotinas/recebimento-e-passagem-de-plantao",
+    "rotinas/sinais-vitais-e-glicemia-capilar",
+    "rotinas/higiene-conforto-e-mobilizacao",
+    "rotinas/administracao-segura-de-medicamentos",
+    "rotinas/balanco-hidrico-e-dispositivos",
+    "rotinas/alteracoes-clinicas-e-registros",
+    "rotinas/bundle-de-prevencao-da-pav",
+    "equipamentos",
+    "equipamentos/monitor-multiparametrico",
+    "equipamentos/ventilador-mecanico",
+    "equipamentos/bomba-de-infusao",
+    "equipamentos/bomba-de-seringa",
+    "equipamentos/aspirador",
+    "equipamentos/oxigenoterapia",
+    "equipamentos/canula-nasal-de-alto-fluxo",
+    "equipamentos/terapia-renal-substitutiva",
+    "escalas",
+    "escalas/escala-de-coma-de-glasgow",
+    "dispositivos",
+    "dispositivos/cateter-venoso-central-cvc",
+    "dispositivos/picc",
+    "dispositivos/sonda-vesical-de-demora",
+    "dispositivos/sonda-nasoenteral",
+    "dispositivos/tubo-orotraqueal",
+    "dispositivos/traqueostomia",
+    "dispositivos/cateteres-de-oxigenoterapia",
+    "registros",
+    "registros/sinais-vitais-e-glicemia",
+    "registros/medicamentos",
+    "registros/higiene-conforto-e-mobilizacao",
+    "registros/eliminacoes-e-balanco",
+    "registros/intercorrencias-e-comunicacao",
+    "quiz",
+    "biblioteca",
+    "primeiro-dia",
+    "glossario",
+    "favoritos",
+    "caderno",
+    "projeto",
+    "biblioteca/caderno-digital",
+    "pdf/caderno-digital?page=2",
+    "biblioteca/caderno-bolso",
+    "pdf/caderno-bolso?page=2",
+    "biblioteca/cuidados-paciente-critico",
+    "pdf/cuidados-paciente-critico?page=2",
+    "biblioteca/curativos-feridas",
+    "pdf/curativos-feridas?page=2",
+    "biblioteca/evolucao-anotacao-enfermagem",
+    "pdf/evolucao-anotacao-enfermagem?page=2",
+    "biblioteca/medicacoes-bombas-infusao",
+    "pdf/medicacoes-bombas-infusao?page=2",
+    "biblioteca/monitorizacao-equipamentos",
+    "pdf/monitorizacao-equipamentos?page=2",
+    "pagina-inexistente",
+    "pdf/inexistente",
+    "glossario/pplato",
+    "quiz/alarme-na-mobilizacao",
+    "quiz/duvida-sobre-sonda",
+    "quiz/comunicacao-de-mudanca",
+    "quiz/registro-do-cuidado",
+    "quiz/escolha-e-limites-das-escalas",
+    "escalas/eva",
+    "escalas/bps",
+    "escalas/painad",
+    "escalas/rass"
+  ],
+  "modules": [
+    "acolhimento",
+    "rotinas",
+    "equipamentos",
+    "escalas",
+    "dispositivos",
+    "registros",
+    "quiz",
+    "biblioteca"
+  ],
+  "topicCount": 32,
+  "illustrationCount": 15,
+  "forms": [
+    {
+      "route": "inicio",
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": "search",
+          "label": "Pesquisar pelo nome ou assunto"
+        }
+      ]
+    },
+    {
+      "route": "modulos",
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": "search",
+          "label": "Pesquisar pelo nome ou assunto"
+        }
+      ]
+    },
+    {
+      "route": "acolhimento",
+      "inputs": []
+    },
+    {
+      "route": "rotinas",
+      "inputs": []
+    },
+    {
+      "route": "equipamentos",
+      "inputs": []
+    },
+    {
+      "route": "escalas",
+      "inputs": []
+    },
+    {
+      "route": "dispositivos",
+      "inputs": []
+    },
+    {
+      "route": "registros",
+      "inputs": []
+    },
+    {
+      "route": "quiz",
+      "inputs": [
+        {
+          "tag": "SELECT",
+          "type": "select-one",
+          "label": "Escolha um caso"
+        },
+        {
+          "tag": "SELECT",
+          "type": "select-one",
+          "label": "Escolha um assunto TodosSegurançaRegistrosÉticaEscalasDispositivosEquipamentosRotinasComunicação"
+        }
+      ]
+    },
+    {
+      "route": "biblioteca",
+      "inputs": []
+    },
+    {
+      "route": "primeiro-dia",
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": "checkbox",
+          "label": "01Identificar meu preceptor e enfermeiro supervisor"
+        },
+        {
+          "tag": "INPUT",
+          "type": "checkbox",
+          "label": "02Conhecer a equipe e os canais de comunicação"
+        },
+        {
+          "tag": "INPUT",
+          "type": "checkbox",
+          "label": "03Localizar os materiais com orientação"
+        },
+        {
+          "tag": "INPUT",
+          "type": "checkbox",
+          "label": "04Conhecer os recursos para higiene das mãos"
+        },
+        {
+          "tag": "INPUT",
+          "type": "checkbox",
+          "label": "05Conferir EPIs e precauções"
+        },
+        {
+          "tag": "INPUT",
+          "type": "checkbox",
+          "label": "06Revisar identificação, privacidade e sigilo"
+        },
+        {
+          "tag": "INPUT",
+          "type": "checkbox",
+          "label": "07Entender a organização do plantão"
+        },
+        {
+          "tag": "INPUT",
+          "type": "checkbox",
+          "label": "08Reconhecer os equipamentos com o preceptor"
+        },
+        {
+          "tag": "INPUT",
+          "type": "checkbox",
+          "label": "09Saber como pedir ajuda e acionar o fluxo de emergência"
+        },
+        {
+          "tag": "INPUT",
+          "type": "checkbox",
+          "label": "10Conhecer as orientações de registro"
+        }
+      ]
+    },
+    {
+      "route": "glossario",
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": "search",
+          "label": "Pesquisar siglas e termos do siglário"
+        },
+        {
+          "tag": "SELECT",
+          "type": "select-one",
+          "label": "Filtrar por inicialTodas as iniciais0–9ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        }
+      ]
+    },
+    {
+      "route": "favoritos",
+      "inputs": []
+    },
+    {
+      "route": "caderno",
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": "number",
+          "label": "Ir para página"
+        }
+      ]
+    },
+    {
+      "route": "projeto",
+      "inputs": []
+    }
+  ],
+  "layouts": [
+    {
+      "route": "inicio",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "acolhimento",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "rotinas",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "equipamentos",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "escalas",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "dispositivos",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "registros",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "quiz",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "biblioteca",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "primeiro-dia",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "glossario",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "favoritos",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "caderno",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "projeto",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "equipamentos/modal",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "inicio",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "acolhimento",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "rotinas",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "equipamentos",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "escalas",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "dispositivos",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "registros",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "quiz",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "biblioteca",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "primeiro-dia",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "glossario",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "favoritos",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "caderno",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "projeto",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "equipamentos/modal",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "inicio",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "acolhimento",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "rotinas",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "equipamentos",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "escalas",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "dispositivos",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "registros",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "quiz",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "biblioteca",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "primeiro-dia",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "glossario",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "favoritos",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "caderno",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "projeto",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "equipamentos/modal",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    }
+  ],
+  "screenshots": [
+    "/tmp/cti-phase0-final-home-mobile.png",
+    "/tmp/cti-phase0-final-about-desktop.png"
+  ],
+  "externalRequests": [],
+  "limits": [
+    "Chromium headless on Linux only; no physical iPhone/Android, Safari, VoiceOver, TalkBack or NVDA.",
+    "Production Cloudflare and a separate homologation deploy are not exercised by this local audit.",
+    "No claim of WCAG conformance or independent clinical/institutional validation."
+  ],
+  "status": "completed"
+}

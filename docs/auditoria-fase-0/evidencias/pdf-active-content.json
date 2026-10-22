@@ -1,0 +1,50 @@
+[
+  {
+    "file": "public/materiais/apostilas/cuidados-paciente-critico.pdf",
+    "pages": 26,
+    "active_markers": {
+      "EmbeddedFile": 1
+    },
+    "embedded_files": 0
+  },
+  {
+    "file": "public/materiais/apostilas/curativos-feridas.pdf",
+    "pages": 33,
+    "active_markers": {},
+    "embedded_files": 0
+  },
+  {
+    "file": "public/materiais/apostilas/evolucao-anotacao-enfermagem.pdf",
+    "pages": 22,
+    "active_markers": {},
+    "embedded_files": 0
+  },
+  {
+    "file": "public/materiais/apostilas/medicacoes-bombas-infusao.pdf",
+    "pages": 42,
+    "active_markers": {
+      "EmbeddedFile": 1
+    },
+    "embedded_files": 0
+  },
+  {
+    "file": "public/materiais/apostilas/monitorizacao-equipamentos.pdf",
+    "pages": 24,
+    "active_markers": {
+      "EmbeddedFile": 1
+    },
+    "embedded_files": 0
+  },
+  {
+    "file": "public/materiais/caderno-cti-adulto-bolso-a4.pdf",
+    "pages": 24,
+    "active_markers": {},
+    "embedded_files": 0
+  },
+  {
+    "file": "public/materiais/caderno-cti-adulto-digital.pdf",
+    "pages": 96,
+    "active_markers": {},
+    "embedded_files": 0
+  }
+]

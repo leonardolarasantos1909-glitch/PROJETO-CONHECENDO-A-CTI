@@ -1,0 +1,209 @@
+{
+  "date": "2026-10-22",
+  "timezone": "America/Sao_Paulo",
+  "baseline_commit": "02c5dddbc0c62ff781e27277373b15959e61e231",
+  "scope": "Fase 0: auditoria e plano, sem implementação das fases seguintes",
+  "application_changes": false,
+  "dependency_changes": false,
+  "deployment_performed": false,
+  "tests": {
+    "command": "npm test",
+    "files_passed": 10,
+    "tests_passed": 57,
+    "service_worker_checks_passed": true
+  },
+  "build": {
+    "command": "npm run build",
+    "passed": true,
+    "book_pages": 96,
+    "apostilas_integrity_checked": 5,
+    "cache": "cti-f6aac852484a"
+  },
+  "browser": {
+    "engine": "Chromium headless/Linux",
+    "groups_completed": 10,
+    "unique_destinations": 73,
+    "topic_dialogs": 32,
+    "illustrations": 15,
+    "layout_samples": 45,
+    "viewport_widths": [
+      320,
+      390,
+      1440
+    ],
+    "harness_failures": 0,
+    "javascript_errors": [],
+    "console_warnings": [],
+    "findings": [
+      {
+        "id": "quiz-focus-loss-next",
+        "severity": "moderate",
+        "evidence": {
+          "tag": "BODY",
+          "text": "Conhecendoa CTI.GUIA PARA ESTAGIÁRIOSVisão geralMódulos de aprendizado8Escalas clínicasBib",
+          "className": ""
+        },
+        "repro": "Answer first quiz question, focus Próxima questão, press Enter: focus moves to BODY rather than new question."
+      },
+      {
+        "id": "quiz-focus-loss-repeat",
+        "severity": "moderate",
+        "evidence": {
+          "tag": "BODY",
+          "text": "Conhecendoa CTI.GUIA PARA ESTAGIÁRIOSVisão geralMódulos de aprendizado8Escalas clínicasBib",
+          "className": ""
+        }
+      },
+      {
+        "id": "small-text-contrast",
+        "severity": "moderate",
+        "samples": [
+          {
+            "text": "GUIA PARA ESTAGIÁRIOS",
+            "selector": "sidebar-caption",
+            "color": "rgb(139, 148, 146)",
+            "background": "rgb(255, 255, 255)",
+            "font": "9px",
+            "weight": "400",
+            "ratio": 3.1116551271707706
+          },
+          {
+            "text": "Seu primeiro passo na terapia intensiva: pessoas, cuidado e acolhimento.",
+            "selector": "P",
+            "color": "rgb(125, 136, 127)",
+            "background": "rgb(255, 255, 255)",
+            "font": "10px",
+            "weight": "400",
+            "ratio": 3.6841331090631284
+          },
+          {
+            "text": "Entenda a organização do cuidado ao longo do plantão.",
+            "selector": "P",
+            "color": "rgb(125, 136, 127)",
+            "background": "rgb(255, 255, 255)",
+            "font": "10px",
+            "weight": "400",
+            "ratio": 3.6841331090631284
+          },
+          {
+            "text": "Conheça os recursos que fazem parte do cuidado intensivo.",
+            "selector": "P",
+            "color": "rgb(125, 136, 127)",
+            "background": "rgb(255, 255, 255)",
+            "font": "10px",
+            "weight": "400",
+            "ratio": 3.6841331090631284
+          },
+          {
+            "text": "Dor: EVA, BPS e PAINAD. Agitação e sedação: RASS. Consciência: Glasgow.",
+            "selector": "P",
+            "color": "rgb(125, 136, 127)",
+            "background": "rgb(255, 255, 255)",
+            "font": "10px",
+            "weight": "400",
+            "ratio": 3.6841331090631284
+          },
+          {
+            "text": "Identificação, finalidade e atenção à segurança.",
+            "selector": "P",
+            "color": "rgb(125, 136, 127)",
+            "background": "rgb(255, 255, 255)",
+            "font": "10px",
+            "weight": "400",
+            "ratio": 3.6841331090631284
+          },
+          {
+            "text": "Aprenda com exemplos fictícios, objetivos e contextualizados.",
+            "selector": "P",
+            "color": "rgb(125, 136, 127)",
+            "background": "rgb(255, 255, 255)",
+            "font": "10px",
+            "weight": "400",
+            "ratio": 3.6841331090631284
+          },
+          {
+            "text": "Pratique com situações fictícias e aprenda com cada resposta.",
+            "selector": "P",
+            "color": "rgb(125, 136, 127)",
+            "background": "rgb(255, 255, 255)",
+            "font": "10px",
+            "weight": "400",
+            "ratio": 3.6841331090631284
+          },
+          {
+            "text": "Cadernos, apostilas de estudo e fontes para aprofundar o aprendizado.",
+            "selector": "P",
+            "color": "rgb(125, 136, 127)",
+            "background": "rgb(255, 255, 255)",
+            "font": "10px",
+            "weight": "400",
+            "ratio": 3.6841331090631284
+          }
+        ]
+      },
+      {
+        "id": "navigation-current-state",
+        "severity": "low",
+        "evidence": {
+          "desktop": 0,
+          "mobile": 0
+        },
+        "detail": "Current section has a visual active class but no aria-current on primary or mobile nav."
+      },
+      {
+        "id": "no-skip-link",
+        "severity": "low",
+        "evidence": {
+          "firstFocus": {
+            "tag": "H2",
+            "text": "Pesquisar no app",
+            "className": ""
+          },
+          "next": {
+            "tag": "INPUT",
+            "text": "",
+            "className": ""
+          },
+          "skipLinkCount": 0
+        },
+        "detail": "Route change focuses main heading; there is no explicit keyboard skip-to-main link for repeated navigation."
+      }
+    ],
+    "evidence": "evidencias/navegador-final.json"
+  },
+  "npm_audit": {
+    "all": {
+      "info": 0,
+      "low": 0,
+      "moderate": 1,
+      "high": 0,
+      "critical": 2,
+      "total": 3
+    },
+    "production": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    },
+    "evidence": "evidencias/npm-audit.json",
+    "production_evidence": "evidencias/npm-audit-production.json"
+  },
+  "public_url": {
+    "url": "https://proud-math-302f.conhecendoacti.workers.dev/",
+    "verified": false,
+    "reason": "Proxy bloqueou CONNECT com 403 antes de resposta do aplicativo; curl HTTP000. Não prova indisponibilidade."
+  },
+  "not_executed": [
+    "Safari/iPhone e Android físicos",
+    "Leitores de tela reais",
+    "Avaliação WCAG integral",
+    "Deploy de homologação",
+    "Verificação online de todas as referências clínicas",
+    "Auditoria integral de imagens/OCR, anonimização e licenças",
+    "Varredura antivírus e pentest integral"
+  ],
+  "next_step": "Aprovação do diagnóstico e do plano antes da Fase 1"
+}
