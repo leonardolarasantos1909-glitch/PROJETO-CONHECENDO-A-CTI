@@ -1,0 +1,64 @@
+[
+  {
+    "name": "folheto-familia-a5.pdf",
+    "pages": 4,
+    "contentComplete": true,
+    "order": [
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ]
+    ],
+    "dimensionsMm": [
+      [
+        148.0,
+        210.0
+      ],
+      [
+        148.0,
+        210.0
+      ],
+      [
+        148.0,
+        210.0
+      ],
+      [
+        148.0,
+        210.0
+      ]
+    ]
+  },
+  {
+    "name": "folheto-familia-a4.pdf",
+    "pages": 2,
+    "contentComplete": true,
+    "order": [
+      [
+        4,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "dimensionsMm": [
+      [
+        297.0,
+        210.0
+      ],
+      [
+        297.0,
+        210.0
+      ]
+    ]
+  }
+]

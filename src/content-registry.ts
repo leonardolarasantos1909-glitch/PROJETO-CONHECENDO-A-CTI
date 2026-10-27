@@ -16,6 +16,9 @@ import { virtualStations } from './virtual-cti';
 import { integrationItems } from './integration-checklist';
 import { FEEDBACK_INSTRUMENT_VERSION } from './pbl-feedback';
 import { guidedDemoSteps } from './guided-demo';
+import { communicationCases, communicationSituations, familyGuidance, familyReferences, familySections, visitorGuidance } from './family-welcome';
+import { familyCaseHref, familyContentReferences, familyLeafletPdfs, familySectionHref } from './family-catalog';
+import familyLeaflet from './data/family-leaflet.json';
 
 export type ContentReference = { label: string; href: string; page?: number };
 export type ContentMetadata = {
@@ -45,6 +48,7 @@ const pending = (entry: Pick<ContentMetadata, 'id' | 'title' | 'category' | 'des
 });
 
 function moduleReferences(moduleId: string): ContentReference[] {
+  if (moduleId === 'acolher-familia') return familyReferences.map(reference => ({ label: reference.title, href: reference.href }));
   const mapped = extraQuestionSources.filter(source => source.moduleId === moduleId && source.page)
     .map(source => caderno(source.page!, source.label));
   const caseRefs = caseStudies.filter(item => item.relatedModule.href.split('/')[0] === `#${moduleId}`).flatMap(item => item.sources);
@@ -59,6 +63,14 @@ const existingTools = [
   { id: 'caderno', title: 'Caderno digital', description: 'Livro educativo com leitura horizontal e retomada local.', references: [{ label: 'PDF de origem do caderno', href: learningMaterials[0].href }] },
   { id: 'favoritos', title: 'Meus favoritos', description: 'Atalhos de leitura guardados somente neste navegador.', references: [] },
 ];
+
+const familySectionReferenceIds: Record<string, string[]> = {
+  acolhimento: familyGuidance.flatMap(item => item.referenceIds),
+  visitante: visitorGuidance.flatMap(item => item.referenceIds),
+  falas: communicationSituations.flatMap(item => item.referenceIds),
+  simulador: communicationCases.flatMap(item => item.referenceIds),
+  material: familyReferences.map(reference => reference.id),
+};
 
 function additionalToolMetadata(id: string): Partial<ContentMetadata> {
   if (id === 'tool.laboratorio') return {
@@ -102,6 +114,22 @@ export const contentRegistry: ContentMetadata[] = [
       referenceStatus: references.length ? 'provided_materials' : 'specific_reference_pending',
       notes: references.length ? ['Fontes fornecidas no projeto; confirmar versão, adequação profissional e vigência antes de validação clínica.'] : ['Referência específica deste assunto ainda precisa ser documentada. A lista geral de portais não valida o texto.'],
     });
+  })),
+  ...familySections.map(section => pending({ id: `family.section.${section.id}`, title: section.title, category: 'Acolhimento familiar', description: section.description, href: familySectionHref(section.id),
+    references: familyContentReferences(familySectionReferenceIds[section.id] ?? []), referenceStatus: 'specific_reference_pending',
+    notes: ['Orientações gerais de acolhimento e segurança. Aplicação, atribuições, condições clínicas e participação em cuidados dependem de supervisão e normas aplicáveis. A regra relatada para a CTI Cardio é local e ainda precisa de confirmação institucional.'],
+  })),
+  ...communicationSituations.map(item => pending({ id: `family.speech.${item.id}`, title: item.title, category: 'Comunicação com familiares', description: item.recommended, href: familySectionHref('falas'),
+    references: familyContentReferences(item.referenceIds), referenceStatus: 'specific_reference_pending',
+    notes: ['Exemplos de comunicação educativa, sem previsão de recuperação, promessa de prognóstico ou garantia de percepção durante sedação. Revisão pela enfermeira responsável pendente.'],
+  })),
+  ...communicationCases.map(item => pending({ id: `family.case.${item.id}`, title: item.title, category: 'Simulação de comunicação', description: item.situation, href: familyCaseHref(item.id),
+    references: familyContentReferences(item.referenceIds), referenceStatus: 'specific_reference_pending',
+    notes: ['Situação inteiramente fictícia. As alternativas e explicações orientam a reflexão; não substituem supervisão ou protocolo institucional e não certificam competência.'],
+  })),
+  ...familyLeafletPdfs.map(item => pending({ id: `pdf.${item.id}`, title: item.title, category: 'PDF', description: item.description, href: familySectionHref('material'), version: familyLeaflet.version,
+    references: [{ label: `${familyLeaflet.fullTitle} — ${item.layout === 'booklet-a4' ? 'duas faces A4 impostas para dobra central' : 'quatro páginas A5 em ordem de leitura'}`, href: item.href }, ...familyContentReferences(familySectionReferenceIds.material)], referenceStatus: 'provided_materials',
+    notes: ['Material educativo sujeito à validação institucional. Atualização editorial e geração de PDF não equivalem a revisão clínica. Confirmar o conteúdo com a enfermeira responsável antes de entregar aos familiares.'],
   })),
   ...scales.map(scale => pending({ id: `scale.${scale.id}`, title: scale.name, category: 'Escala', description: scale.purpose, href: `#escalas/${scale.id}`,
     references: scale.references, referenceStatus: 'provided_materials', notes: ['Guia de leitura educativo, sem avaliação de paciente ou decisão clínica autônoma.'],

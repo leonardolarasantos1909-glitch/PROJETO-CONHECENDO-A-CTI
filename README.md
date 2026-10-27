@@ -13,6 +13,14 @@ O conteúdo do QR foi decodificado e conferido localmente. A conexão ao endere�
 
 ## Baixar a versão pronta
 
+**Novo módulo — Acolher também é cuidar (27/10/2026):** esta branch acrescenta acolhimento familiar à última entrega completa. São cinco seções, oito simulações, oito situações de fala e folheto em quatro páginas A5, com PDF A4 frente e verso pronto para dobrar. A implantação na Cloudflare e a aprovação institucional continuam pendentes.
+
+- [Baixar o aplicativo completo com acolhimento familiar](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/acolhimento-familiar/implementacao/downloads/conhecendo-a-cti-acolher-familia.zip).
+- [Passo a passo do módulo e do folheto](docs/GUIA-ACOLHER-FAMILIA.md).
+- [Arquivos, funcionamento e validação pendente](docs/ACOLHER-FAMILIA.md).
+
+O pacote preserva os oito módulos anteriores e acrescenta o nono, sem substituir os PDFs, perfis ou progresso. As versões abaixo registram o histórico anterior.
+
 **Entrega atual para avaliação institucional:** implementação consolidada das Fases 1–6, com testes locais e pacote da Fase 7, na branch `avaliacao-institucional/final`. Inclui dois perfis, checklists independentes, pesquisa por categoria, catálogo de revisão, laboratório de anotações, escalas por finalidade, box fictício, avaliação local e demonstração guiada. **A homologação real e a publicação continuam pendentes; produção e `main` não foram atualizadas.**
 
 - [Baixar ZIP final para revisão](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/avaliacao-institucional/final/downloads/conhecendo-a-cti-final-revisao.zip).

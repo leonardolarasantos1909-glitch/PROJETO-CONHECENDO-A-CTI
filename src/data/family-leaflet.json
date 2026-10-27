@@ -1,0 +1,103 @@
+{
+  "version": "1.0",
+  "updatedAt": "2026-10-27",
+  "lastClinicalReview": null,
+  "validationStatus": "pending_institutional_review",
+  "fullTitle": "Bem-vindo à CTI — Sua presença também é cuidado",
+  "statusNotice": "Material educativo sujeito à validação institucional",
+  "projectName": "Conhecendo a CTI",
+  "pages": [
+    {
+      "number": 1,
+      "title": "Bem-vindo à CTI",
+      "subtitle": "Sua presença também é cuidado",
+      "intro": "Orientações para uma visita acolhedora e segura.",
+      "message": "A família faz parte do cuidado. Conte com a equipe para orientar sua participação, respeitando as condições de cada pessoa."
+    },
+    {
+      "number": 2,
+      "title": "Sua presença importa",
+      "intro": "Pequenos gestos podem ajudar a manter o vínculo com quem você ama.",
+      "blocks": [
+        {
+          "title": "Converse com tranquilidade",
+          "text": "Apresente-se e fale com calma. Conte notícias da família e assuntos do cotidiano que sejam de interesse da pessoa. Respeite suas preferências."
+        },
+        {
+          "title": "Demonstre carinho",
+          "text": "Pergunte à equipe como se aproximar e se o toque é permitido naquele momento. Respeite o conforto, o descanso e as orientações recebidas."
+        },
+        {
+          "title": "Quando há sedação",
+          "text": "Você pode conversar e manter o vínculo, conforme orientação da equipe. Não é possível garantir que a pessoa ouça ou compreenda tudo."
+        },
+        {
+          "title": "Compartilhe o que importa",
+          "text": "Conte à equipe hábitos, preferências e necessidades. Cuidado direto só com autorização, orientação e supervisão da equipe."
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Cuidados e segurança",
+      "blocks": [
+        {
+          "title": "Mãos limpas",
+          "text": "Higienize as mãos antes e depois do contato. Use preparação alcoólica quando indicada e sem sujeira visível. Com sujeira visível, use água e sabonete. Siga também as indicações da equipe."
+        },
+        {
+          "title": "Equipamentos e dispositivos",
+          "text": "Não mexa em bombas, ventiladores, monitores, sondas, cateteres ou conexões. Mesmo um pequeno ajuste pode trazer riscos."
+        },
+        {
+          "title": "Se um alarme tocar",
+          "text": "Chame a equipe. Não aperte botões, não silencie o alarme e não tente resolver a causa por conta própria."
+        },
+        {
+          "title": "Peça ajuda",
+          "text": "Se perceber algo diferente ou tiver dúvida, avise a equipe. Siga as precauções e as orientações sobre equipamentos de proteção."
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Estamos aqui para orientar",
+      "blocks": [
+        {
+          "title": "Dúvidas são bem-vindas",
+          "text": "Procure a equipe. Cada profissional orienta conforme suas atribuições e encaminha dúvidas clínicas ao responsável."
+        },
+        {
+          "title": "Visitação e privacidade",
+          "text": "Confirme as orientações de visita do setor. Respeite o descanso e a privacidade de todas as pessoas. Não fotografe nem compartilhe informações sem autorização."
+        }
+      ],
+      "message": "Acolher a família também é cuidar do paciente. Sua presença, seu carinho e sua parceria com a equipe fazem parte de uma assistência mais humana e segura."
+    }
+  ],
+  "pdfs": [
+    {
+      "id": "familia-a4",
+      "title": "Folheto para familiares — A4 frente e verso",
+      "href": "/materiais/acolher-familia/folheto-familia-a4.pdf",
+      "pages": 2,
+      "layout": "booklet-a4"
+    },
+    {
+      "id": "familia-a5",
+      "title": "Folheto para familiares — leitura em A5",
+      "href": "/materiais/acolher-familia/folheto-familia-a5.pdf",
+      "pages": 4,
+      "layout": "reading-a5"
+    }
+  ],
+  "print": {
+    "sheets": [[4, 1], [2, 3]],
+    "instructions": [
+      "Use uma folha A4, em paisagem, tamanho real / 100%, sem a opção de várias páginas por folha.",
+      "Imprima frente e verso, virando pela borda curta. Desative cabeçalhos e rodapés do navegador.",
+      "O arquivo já está montado: frente com páginas 4 | 1 e verso com páginas 2 | 3. Não ative novamente o modo livreto da impressora.",
+      "Faça primeiro uma cópia de teste, confira a orientação do verso e dobre a folha ao meio. Os ajustes de frente e verso podem variar conforme a impressora."
+    ]
+  }
+}

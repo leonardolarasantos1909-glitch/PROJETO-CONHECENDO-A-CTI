@@ -10,6 +10,9 @@ import { newTools } from './new-tools';
 import { annotationScenarios, annotationSearchText } from './annotation-lab';
 import { integrationItems } from './integration-checklist';
 import { virtualStations } from './virtual-cti';
+import { communicationCases, communicationSituations, familyGuidance, familySections, localVisitingRule, visitorGuidance } from './family-welcome';
+import { familyCaseHref, familyLeafletPdfs, familySectionHref } from './family-catalog';
+import familyLeaflet from './data/family-leaflet.json';
 
 export type SearchResult = {
   id: string;
@@ -38,6 +41,15 @@ const moduleAliases: Record<string, string[]> = {
   registros: ['registros', 'anotação', 'anotações'],
   quiz: ['quiz', 'questões', 'perguntas', 'teste de conhecimentos'],
   biblioteca: ['biblioteca', 'materiais', 'apostilas', 'PDF'],
+  'acolher-familia': ['família', 'familiares', 'acolhimento familiar', 'humanização', 'comunicação com a família'],
+};
+
+const familySectionText: Record<string, string> = {
+  acolhimento: familyGuidance.flatMap(item => [item.title, item.text, item.example]).join(' '),
+  visitante: [...visitorGuidance.flatMap(item => [item.title, item.text, item.attention]), localVisitingRule.unit, localVisitingRule.reportedRule, localVisitingRule.note].join(' '),
+  falas: communicationSituations.flatMap(item => [item.title, item.recommended, item.avoid, item.explanation]).join(' '),
+  simulador: communicationCases.flatMap(item => [item.title, item.situation, item.question, item.explanation, ...item.options.flatMap(option => [option.text, option.feedback])]).join(' '),
+  material: [familyLeaflet.fullTitle, ...familyLeaflet.pages.flatMap(page => [page.title, ...((page as { blocks?: { title: string; text: string }[] }).blocks?.flatMap(block => [block.title, block.text]) ?? [])])].join(' '),
 };
 
 const entries: SearchEntry[] = [
@@ -48,7 +60,7 @@ const entries: SearchEntry[] = [
     description: module.description,
     href: `#${module.id}`,
     aliases: moduleAliases[module.id] ?? [],
-    body: module.label,
+    body: module.id === 'acolher-familia' ? [module.label, ...Object.values(familySectionText)].join(' ') : module.label,
   })),
   ...modules.flatMap(module => module.topics.map(topic => {
     const href = topicHref(module.id, topic.title);
@@ -117,6 +129,20 @@ const entries: SearchEntry[] = [
   })),
   ...virtualStations.map(item => ({ id: `virtual.${item.id}`, title: `CTI virtual — ${item.title}`, kind: 'Ferramenta' as const, description: item.description,
     href: '#cti-virtual', aliases: ['box fictício', 'desenho educativo', 'equipamento ilustrado'], body: item.title,
+  })),
+  ...familySections.map(section => ({ id: `family.section.${section.id}`, title: section.title, kind: 'Assunto' as const, description: section.description,
+    href: familySectionHref(section.id), aliases: ['acolhimento familiar', ...(section.id === 'visitante' ? ['visitante', 'paciente sedado'] : section.id === 'material' ? ['folheto para familiares', 'imprimir folheto', 'material para entregar ao familiar'] : [])],
+    body: familySectionText[section.id] ?? '',
+  })),
+  ...communicationSituations.map(item => ({ id: `family.speech.${item.id}`, title: item.title, kind: 'Assunto' as const, description: item.recommended,
+    href: familySectionHref('falas'), aliases: ['o que dizer', 'o que evitar', 'comunicação com familiares'], body: [item.avoid, item.explanation].join(' '),
+  })),
+  ...communicationCases.map(item => ({ id: `family.case.${item.id}`, title: item.title, kind: 'Caso simulado' as const, description: item.situation,
+    href: familyCaseHref(item.id), aliases: ['simulador de comunicação', 'caso familiar', 'situação fictícia'],
+    body: [item.question, item.explanation, ...item.options.flatMap(option => [option.text, option.feedback])].join(' '),
+  })),
+  ...familyLeafletPdfs.map(item => ({ id: `material.${item.id}`, title: item.title, kind: 'PDF' as const, description: item.description,
+    href: familySectionHref('material'), aliases: ['folheto família', 'PDF para familiares', item.layout === 'booklet-a4' ? 'A4 dobrado frente e verso' : 'A5 ordem de leitura'], body: familySectionText.material,
   })),
   ...learningMaterials.map(material => ({
     id: `material.${material.id}`,

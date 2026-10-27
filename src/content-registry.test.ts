@@ -10,6 +10,8 @@ import { annotationScenarios } from './annotation-lab';
 import { virtualStations } from './virtual-cti';
 import { integrationItems } from './integration-checklist';
 import { FEEDBACK_INSTRUMENT_VERSION } from './pbl-feedback';
+import { communicationCases, communicationSituations, familyReferences, familySections } from './family-welcome';
+import { familyCaseHref, familyContentReferences, familyLeafletPdfs, familySectionHref } from './family-catalog';
 
 const fixture = (changes: Partial<ContentMetadata> = {}): ContentMetadata => ({ ...contentRegistry[0], id: 'test.fixture', references: [{ label: 'Fonte fictícia para teste do validador', href: 'https://example.org/test-only' }], ...changes });
 const reviewedFixture = () => fixture({ status: 'institutional_validated', publicationScope: 'institutional_public', reviewedBy: 'Responsável fictício do teste', lastReviewedAt: '2026-10-22', authorizationReference: 'Evidência fictícia somente para teste' });
@@ -26,7 +28,7 @@ describe('Governança do catálogo público', () => {
 
   it('preserva os PDFs e as referências específicas já existentes de escalas e casos', () => {
     const materials = [...learningMaterials, ...apostilas];
-    expect(contentRegistry.filter(item => item.id.startsWith('pdf.'))).toHaveLength(7);
+    expect(contentRegistry.filter(item => item.id.startsWith('pdf.'))).toHaveLength(9);
     for (const material of materials) {
       expect(getContentMetadata(`pdf.${material.id}`)?.references[0].href).toBe(material.href);
       expect(getContentMetadata(`material.${material.id}`)).toBe(getContentMetadata(`pdf.${material.id}`));
@@ -71,6 +73,29 @@ describe('Governança do catálogo público', () => {
     expect(getContentMetadata('tool.avaliacao-pbl')?.notes.join(' ')).toContain('Não foi apresentado como instrumento validado');
     expect(getContentMetadata('tool.integracao')?.referenceStatus).toBe('specific_reference_pending');
     expect(getContentMetadata('tool.demonstracao')?.referenceStatus).toBe('specific_reference_pending');
+  });
+
+  it('integra os conteúdos familiares com origem rastreável e mantém a validação profissional pendente', () => {
+    expect(() => familyContentReferences(['fonte-nao-cadastrada'])).toThrow(/Referência familiar não cadastrada/);
+    const module = getContentMetadata('module.acolher-familia')!;
+    expect(module).toMatchObject({ title: 'Acolher também é cuidar', href: '#acolher-familia', status: 'pending_review', reviewedBy: null, lastReviewedAt: null });
+    expect(module.references).toEqual(familyReferences.map(item => ({ label: item.title, href: item.href })));
+    for (const section of familySections) expect(getContentMetadata(`family.section.${section.id}`)).toMatchObject({ title: section.title, href: familySectionHref(section.id), category: 'Acolhimento familiar', status: 'pending_review', referenceStatus: 'specific_reference_pending' });
+    for (const item of communicationCases) expect(getContentMetadata(`family.case.${item.id}`)).toMatchObject({ title: item.title, description: item.situation, href: familyCaseHref(item.id), status: 'pending_review' });
+    for (const item of communicationSituations) expect(getContentMetadata(`family.speech.${item.id}`)).toMatchObject({ title: item.title, description: item.recommended, href: '#acolher-familia/falas', status: 'pending_review' });
+    const references = new Set(familyReferences.map(item => item.href));
+    const familyRecords = contentRegistry.filter(item => item.id.startsWith('family.'));
+    expect(familyRecords).toHaveLength(21);
+    for (const item of familyRecords) {
+      expect(item.references.length).toBeGreaterThan(0);
+      expect(item.references.every(reference => references.has(reference.href))).toBe(true);
+      expect(item).toMatchObject({ lastReviewedAt: null, reviewedBy: null, authorizationReference: null, publicationScope: 'educational_public' });
+    }
+    for (const item of familyLeafletPdfs) {
+      expect(getContentMetadata(`pdf.${item.id}`)).toMatchObject({ title: item.title, href: '#acolher-familia/material', status: 'pending_review', lastReviewedAt: null, reviewedBy: null });
+      expect(getContentMetadata(`pdf.${item.id}`)?.references[0].href).toBe(item.href);
+      expect(getContentMetadata(`material.${item.id}`)).toBe(getContentMetadata(`pdf.${item.id}`));
+    }
   });
 
   it('bloqueia selos de validação institucional sem responsável, data, autorização e fontes', () => {

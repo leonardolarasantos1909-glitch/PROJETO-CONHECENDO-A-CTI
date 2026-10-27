@@ -1,0 +1,118 @@
+{
+  "cache": "cti-d12796ff1838",
+  "suppliedPdfs": [
+    {
+      "file": "folheto-familia-a5.pdf",
+      "pages": 4,
+      "dimensionsMm": [
+        [
+          148.0,
+          210.0
+        ],
+        [
+          148.0,
+          210.0
+        ],
+        [
+          148.0,
+          210.0
+        ],
+        [
+          148.0,
+          210.0
+        ]
+      ],
+      "panelOrder": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "allSourceTextPresent": true
+    },
+    {
+      "file": "folheto-familia-a4.pdf",
+      "pages": 2,
+      "dimensionsMm": [
+        [
+          297.0,
+          210.0
+        ],
+        [
+          297.0,
+          210.0
+        ]
+      ],
+      "panelOrder": [
+        [
+          4,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "allSourceTextPresent": true
+    }
+  ],
+  "printButtonCalled": true,
+  "browserPrintedPdf": "/tmp/cti-family-browser-printed.pdf",
+  "browserPrint": {
+    "pages": 2,
+    "dimensionsMm": [
+      [
+        297.01,
+        209.89
+      ],
+      [
+        297.01,
+        209.89
+      ]
+    ],
+    "order": [
+      [
+        4,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "panels": [
+      {
+        "panel": 4,
+        "allTextPresent": true
+      },
+      {
+        "panel": 1,
+        "allTextPresent": true
+      },
+      {
+        "panel": 2,
+        "allTextPresent": true
+      },
+      {
+        "panel": 3,
+        "allTextPresent": true
+      }
+    ]
+  },
+  "menusHiddenInPrint": true,
+  "physicalPrinterTested": false,
+  "duplexHardwareTested": false,
+  "grayscaleRenders": [
+    "/tmp/cti-family-browser-print-1.png",
+    "/tmp/cti-family-browser-print-2.png"
+  ],
+  "captureNote": "Folheto recortado após remover foco; barras fixas ocultadas apenas durante a captura do painel, sem alterar fontes do produto."
+}

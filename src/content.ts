@@ -4,6 +4,7 @@ import { glossaryTerms, firstDayItems } from './starter-data';
 import { caseSearchText } from './cases';
 import { extraQuestions } from './extra-questions';
 import { pavTopic, pavSearchText } from './pav';
+import { familyWelcomeModule, familyGuidance, visitorGuidance, communicationSituations } from './family-welcome';
 export type Topic = { title: string; purpose: string; care: string; risk: string };
 export type Module = { id: string; title: string; description: string; label: string; topics: Topic[] };
 const topic = (title: string, purpose: string, care: string, risk: string): Topic => ({title,purpose,care,risk});
@@ -50,7 +51,7 @@ topic('Higiene, conforto e mobilização','Adequado: “Higiene realizada com ap
 topic('Eliminações e balanço','Adequado: registrar tipo de eliminação, volume efetivamente medido, horário e características observadas nos campos próprios.','Identifique quando um volume não pôde ser medido, em vez de estimá-lo como medição.','Inadequado: “Diurese boa.” Não informa quantidade, período ou características.'),
 topic('Intercorrências e comunicação','Adequado: descrever achado objetivo, horário, profissional acionado, orientações recebidas e cuidados efetivamente executados.','Registre de maneira cronológica, clara e identificada, conforme as normas aplicáveis e o sistema institucional.','Inadequado: “Paciente complicado; equipe avisada.” Contém julgamento e não permite identificar evento, destinatário e conduta.') ]},
 {id:'quiz',title:'Quiz interativo',description:'Pratique com situações fictícias e aprenda com cada resposta.',label:'Teste seus conhecimentos',topics:[]},
-{id:'biblioteca',title:'Biblioteca científica',description:'Cadernos, apostilas de estudo e fontes para aprofundar o aprendizado.',label:'Aprenda com fontes',topics:[]} ];
+{id:'biblioteca',title:'Biblioteca científica',description:'Cadernos, apostilas de estudo e fontes para aprofundar o aprendizado.',label:'Aprenda com fontes',topics:[]},familyWelcomeModule ];
 export const sources = [
 {title:'Anvisa — Segurança do paciente',url:'https://www.gov.br/anvisa/pt-br/assuntos/servicosdesaude/seguranca-do-paciente',description:'Materiais oficiais e orientações sobre segurança na assistência.'},
 {title:'Ministério da Saúde — Saúde de A a Z',url:'https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z',description:'Portal de consulta a informações públicas de saúde.'},
@@ -70,5 +71,5 @@ export const questions = [
 ...extraQuestions
 ];
 export const normalize = (value: string) => value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
-export function searchModules(query: string) { const term=normalize(query.trim()); return modules.filter(m=>normalize([m.title,m.description,...(m.id==='biblioteca'?[materialSearchText]:[]),...(m.id==='escalas'?[scaleSearchText]:[]),...(m.id==='quiz'?[caseSearchText]:[]),...(m.id==='rotinas'?[pavSearchText]:[]),...(m.id==='acolhimento'?firstDayItems.flatMap(item=>[item.title,item.detail]):[]),...glossaryTerms.filter(term=>term.href?.split('/')[0]===`#${m.id}`).flatMap(term=>[term.term,...term.aliases,term.definition]),...m.topics.flatMap(t=>[t.title,t.purpose,t.care,t.risk])].join(' ')).includes(term)); }
+export function searchModules(query: string) { const term=normalize(query.trim()); return modules.filter(m=>normalize([m.title,m.description,...(m.id==='biblioteca'?[materialSearchText]:[]),...(m.id==='escalas'?[scaleSearchText]:[]),...(m.id==='quiz'?[caseSearchText]:[]),...(m.id==='rotinas'?[pavSearchText]:[]),...(m.id==='acolhimento'?firstDayItems.flatMap(item=>[item.title,item.detail]):[]),...(m.id==='acolher-familia'?[...familyGuidance.flatMap(item=>[item.title,item.text,item.example]),...visitorGuidance.flatMap(item=>[item.title,item.text,item.attention]),...communicationSituations.flatMap(item=>[item.title,item.recommended,item.avoid,item.explanation])]:[]),...glossaryTerms.filter(term=>term.href?.split('/')[0]===`#${m.id}`).flatMap(term=>[term.term,...term.aliases,term.definition]),...m.topics.flatMap(t=>[t.title,t.purpose,t.care,t.risk])].join(' ')).includes(term)); }
 export function scoreAnswers(items: typeof questions, answers: number[]) { return items.reduce((sum,q,i)=>sum+Number(q.answer===answers[i]),0); }

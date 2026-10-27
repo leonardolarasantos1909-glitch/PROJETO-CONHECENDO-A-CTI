@@ -1,11 +1,13 @@
 import { learningMaterials } from './materials';
 import { apostilas } from './apostilas';
+import { familyLeafletPdfs } from './family-catalog';
 
 export type AppPdf = { id: string; title: string; href: string; pages: number; filename: string };
 
 export const appPdfs: AppPdf[] = [
   ...learningMaterials.map(item => ({ id: item.id, title: item.title, href: item.href, pages: item.pages, filename: item.originalFilename })),
   ...apostilas.map(item => ({ id: item.id, title: item.title, href: item.href, pages: item.pages, filename: item.downloadFilename })),
+  ...familyLeafletPdfs.map(item => ({ id: item.id, title: item.title, href: item.href, pages: item.pages, filename: item.filename })),
 ];
 
 export function findAppPdf(id: string | undefined): AppPdf | undefined {

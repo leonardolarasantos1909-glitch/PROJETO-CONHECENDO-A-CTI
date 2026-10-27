@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-27",
+  "baseline_commit": "1fed72be139fc7c2d77cb6b5e2fb15805bcecece",
+  "branch": "acolhimento-familiar/implementacao",
+  "status": "Implementação e validação local concluídas; pacote pronto para revisão, sem publicação em produção",
+  "production_deployed": false,
+  "main_updated": false,
+  "tests": {
+    "passed": 103,
+    "files": 21,
+    "service_worker": "passed",
+    "build": "passed",
+    "metadata": 871
+  },
+  "browser": {
+    "groups_passed": 27,
+    "unique_destinations": 102,
+    "layouts": 112,
+    "viewport_widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "contrast_samples": 167,
+    "minimum_contrast": 4.919696047633856,
+    "errors": [],
+    "warnings": [],
+    "csp_violations": [],
+    "external_requests": []
+  },
+  "package": {
+    "path": "downloads/conhecendo-a-cti-acolher-familia.zip",
+    "files": 124,
+    "bytes": 70296286,
+    "sha256": "1398db729928f003778b186e942c8e19548971dcfa2ef3adbf5f35a1f5c6c346",
+    "cache": "const CACHE = 'cti-d12796ff1838';",
+    "crc_valid": true,
+    "matches_dist": true,
+    "safe_paths": true,
+    "baseline": "downloads/conhecendo-a-cti-final-revisao.zip",
+    "preserved_assets": 105,
+    "added_materials": [
+      "materiais/acolher-familia/folheto-familia-a4.pdf",
+      "materiais/acolher-familia/folheto-familia-a5.pdf",
+      "materiais/acolher-familia/manifest.json"
+    ],
+    "production_deployed": false
+  },
+  "external_source_reading": "blocked by proxy HTTP403; proposed references, access/review dates null",
+  "clinical_validation": "pending",
+  "limits": [
+    "Chromium headless on Linux only; no physical iPhone/Android, Safari, VoiceOver, TalkBack or NVDA.",
+    "Production Cloudflare and a separate homologation deploy are not exercised by this local test.",
+    "No claim of full WCAG conformance or independent clinical/institutional validation.",
+    "Native browser zoom at200%/400% was not exercised; responsive viewport widths were checked.",
+    "Printer hardware, physical duplex orientation, folded paper and native mobile print dialogs were not exercised; CSS print rendering and supplied PDF imposition were checked."
+  ]
+}

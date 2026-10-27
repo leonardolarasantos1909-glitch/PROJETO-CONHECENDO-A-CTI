@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "source": "src/data/family-leaflet.json",
+  "sourceSha256": "5e27624ea5bde816d4e0282fb8aa62bf2e4fd59ac336d805024ee05a1777dd78",
+  "contentVersion": "1.0",
+  "updatedAt": "2026-10-27",
+  "lastClinicalReview": null,
+  "validationStatus": "pending_institutional_review",
+  "logicalPages": 4,
+  "printOrder": [
+    [
+      4,
+      1
+    ],
+    [
+      2,
+      3
+    ]
+  ],
+  "materials": [
+    {
+      "id": "familia-a4",
+      "title": "Folheto para familiares — A4 frente e verso",
+      "href": "/materiais/acolher-familia/folheto-familia-a4.pdf",
+      "pages": 2,
+      "layout": "booklet-a4",
+      "bytes": 50182,
+      "sha256": "4cfc3536208cb93bced94caecd2a8df13361f5a370864155194fe945a09a8b9f",
+      "mediaBox": [
+        841.8898,
+        595.2756
+      ]
+    },
+    {
+      "id": "familia-a5",
+      "title": "Folheto para familiares — leitura em A5",
+      "href": "/materiais/acolher-familia/folheto-familia-a5.pdf",
+      "pages": 4,
+      "layout": "reading-a5",
+      "bytes": 50119,
+      "sha256": "dc36856e89f2e4d22b3506895847da38547583e194877c934ef388a5110601d6",
+      "mediaBox": [
+        419.5276,
+        595.2756
+      ]
+    }
+  ],
+  "fit": [
+    {
+      "page": 1,
+      "lastBodyBaseline": 155.76,
+      "footerTop": 69,
+      "bodyFontPt": 13,
+      "bodyFits": true
+    },
+    {
+      "page": 2,
+      "lastBodyBaseline": 87.26,
+      "footerTop": 69,
+      "bodyFontPt": 13,
+      "bodyFits": true
+    },
+    {
+      "page": 3,
+      "lastBodyBaseline": 122.76,
+      "footerTop": 69,
+      "bodyFontPt": 13,
+      "bodyFits": true
+    },
+    {
+      "page": 4,
+      "lastBodyBaseline": 204.76,
+      "footerTop": 69,
+      "bodyFontPt": 13,
+      "bodyFits": true
+    }
+  ]
+}

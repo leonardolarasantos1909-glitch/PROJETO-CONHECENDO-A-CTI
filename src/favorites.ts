@@ -3,6 +3,8 @@ import { glossaryTerms } from './starter-data';
 import { legacyGlossaryFavorites } from './hospital-glossary';
 import { scaleIdForTopic, topicRouteId } from './topic-identifiers';
 import { newTools } from './new-tools';
+import { communicationCases, familySections } from './family-welcome';
+import { familyCaseHref, familySectionHref } from './family-catalog';
 export { topicSlug } from './topic-identifiers';
 
 export type FavoriteEntry = { id: string; title: string; href: string; kind: string };
@@ -24,6 +26,8 @@ export const favoriteCatalog: FavoriteEntry[] = [
   { id: 'tool.primeiro-dia', title: 'Checklist do primeiro dia', href: '#primeiro-dia', kind: 'Roteiro' },
   { id: 'tool.caderno', title: 'Caderno CTI Adulto', href: '#caderno', kind: 'Leitura' },
   ...newTools.map(tool => ({ id: tool.id, title: tool.title, href: tool.href, kind: 'Ferramenta' })),
+  ...familySections.map(section => ({ id: `family.section.${section.id}`, title: section.title, href: familySectionHref(section.id), kind: 'Acolhimento familiar' })),
+  ...communicationCases.map(item => ({ id: `family.case.${item.id}`, title: item.title, href: familyCaseHref(item.id), kind: 'Simulação de comunicação' })),
 ];
 
 export const readableFavoriteIds = [...favoriteCatalog.map(item => item.id), ...Object.keys(legacyGlossaryFavorites)];

@@ -9,6 +9,8 @@ import { caseStudies } from './cases';
 import { newTools } from './new-tools';
 import { annotationScenarios } from './annotation-lab';
 import { virtualStations } from './virtual-cti';
+import { communicationCases, communicationSituations, familySections } from './family-welcome';
+import { familyCaseHref, familyLeafletPdfs, familySectionHref, isFamilySection } from './family-catalog';
 
 describe('Busca por nome e assunto', () => {
   it('prioriza o conteúdo específico para nomes, siglas e aliases', () => {
@@ -60,17 +62,25 @@ describe('Busca por nome e assunto', () => {
 
   it('indexa cada nome do catálogo uma vez e mantém todos os destinos dentro do app', () => {
     expect(new Set(searchIndex.map(item => item.id)).size).toBe(searchIndex.length);
-    expect(searchIndex.filter(item => item.kind === 'Módulo')).toHaveLength(8);
-    expect(searchIndex.filter(item => item.kind === 'PDF')).toHaveLength(7);
-    expect(searchIndex.filter(item => item.kind === 'Caso simulado')).toHaveLength(5);
-    const materialIds = [...learningMaterials, ...apostilas].map(item => item.id);
+    expect(searchIndex.filter(item => item.kind === 'Módulo')).toHaveLength(9);
+    expect(searchIndex.filter(item => item.kind === 'PDF')).toHaveLength(9);
+    expect(searchIndex.filter(item => item.kind === 'Caso simulado')).toHaveLength(13);
+    const materialIds = [...learningMaterials, ...apostilas, ...familyLeafletPdfs].map(item => item.id);
     for (const item of searchIndex) {
       expect(item.title).toBeTruthy();
       expect(item.description).toBeTruthy();
       expect(item.external).not.toBe(true);
-      expect(item.href).toMatch(/^#[a-z0-9-]+(?:\/[a-z0-9-]+)?$/);
-      const [route, target] = item.href.slice(1).split('/');
+      expect(item.href).toMatch(/^#[a-z0-9-]+(?:\/[a-z0-9-]+)?(?:\?caso=[a-z0-9-]+)?$/);
+      const [path, query] = item.href.slice(1).split('?');
+      const [route, target] = path.split('/');
       if (route === 'glossario') { if (target) expect(glossaryTerms.some(term => term.id === target)).toBe(true); }
+      else if (route === 'acolher-familia') {
+        if (target) expect(isFamilySection(target)).toBe(true);
+        if (query) {
+          expect(target).toBe('simulador');
+          expect(communicationCases.some(item => item.id === new URLSearchParams(query).get('caso'))).toBe(true);
+        }
+      }
       else if (route === 'biblioteca') { if (target) expect(materialIds).toContain(target); }
       else if (route === 'quiz') { if (target) expect(caseStudies.some(studyCase => studyCase.id === target)).toBe(true); }
       else if (route === 'laboratorio') { if (target) expect(annotationScenarios.some(scenario => scenario.id === target)).toBe(true); }
@@ -127,6 +137,23 @@ describe('Busca por nome e assunto', () => {
     expect(searchIndex.filter(item => item.id.startsWith('annotation.'))).toHaveLength(3);
     expect(searchIndex.filter(item => item.id.startsWith('virtual.'))).toHaveLength(8);
     for (const station of virtualStations) expect(searchIndex.find(item => item.id === `virtual.${station.id}`)?.href).toBe('#cti-virtual');
+  });
+
+  it('localiza acolhimento familiar, falas, oito simulações e as duas versões do folheto', () => {
+    expect(searchContent('Acolher também é cuidar')[0]).toMatchObject({ id: 'module.acolher-familia', href: '#acolher-familia', kind: 'Módulo' });
+    expect(searchContent('humanizacao', 'Módulo').some(item => item.href === '#acolher-familia')).toBe(true);
+    expect(searchContent('paciente sedado').some(item => item.href === '#acolher-familia/visitante')).toBe(true);
+    expect(searchContent('um visitante por vez').some(item => item.href === '#acolher-familia/visitante')).toBe(true);
+    for (const section of familySections) expect(searchIndex.find(item => item.id === `family.section.${section.id}`)).toMatchObject({ title: section.title, href: familySectionHref(section.id), kind: 'Assunto' });
+    for (const item of communicationSituations) expect(searchIndex.find(entry => entry.id === `family.speech.${item.id}`)).toMatchObject({ title: item.title, href: '#acolher-familia/falas' });
+    for (const item of communicationCases) {
+      expect(searchIndex.find(entry => entry.id === `family.case.${item.id}`)).toMatchObject({ title: item.title, href: familyCaseHref(item.id), kind: 'Caso simulado' });
+      expect(searchContent(item.title, 'Caso simulado').some(entry => entry.id === `family.case.${item.id}`)).toBe(true);
+    }
+    for (const item of familyLeafletPdfs) expect(searchContent(item.title, 'PDF').some(entry => entry.id === `material.${item.id}`)).toBe(true);
+    expect(searchIndex.filter(item => item.id.startsWith('family.case.'))).toHaveLength(8);
+    expect(searchIndex.filter(item => item.id.startsWith('family.speech.'))).toHaveLength(8);
+    expect(searchIndex.filter(item => item.id.startsWith('family.section.'))).toHaveLength(5);
   });
 
 });

@@ -3,6 +3,8 @@ import { favoriteCatalog, findFavorites, topicFavoriteId, topicHref, topicSlug, 
 import { modules } from './content';
 import { glossaryTerms } from './starter-data';
 import { newTools } from './new-tools';
+import { communicationCases, familySections } from './family-welcome';
+import { familyCaseHref, familySectionHref, isFamilySection } from './family-catalog';
 
 describe('Favoritos e atalhos de conteúdo', () => {
   it('abre a aba exata de uma escala e o tópico exato de um módulo', () => {
@@ -15,8 +17,16 @@ describe('Favoritos e atalhos de conteúdo', () => {
     expect(new Set(favoriteCatalog.map(item => item.id)).size).toBe(favoriteCatalog.length);
     for (const item of favoriteCatalog) {
       expect(item.title).toBeTruthy();
-      const [route, target] = item.href.slice(1).split('/');
+      const [path, query] = item.href.slice(1).split('?');
+      const [route, target] = path.split('/');
       if (route === 'glossario') { if (target) expect(glossaryTerms.some(term => term.id === target)).toBe(true); }
+      else if (route === 'acolher-familia') {
+        if (target) expect(isFamilySection(target)).toBe(true);
+        if (query) {
+          expect(target).toBe('simulador');
+          expect(communicationCases.some(item => item.id === new URLSearchParams(query).get('caso'))).toBe(true);
+        }
+      }
       else if (route === 'caderno' || route === 'primeiro-dia' || newTools.some(tool => tool.href === `#${route}`)) expect(target).toBeUndefined();
       else {
         const module = modules.find(entry => entry.id === route);
@@ -42,6 +52,13 @@ describe('Favoritos e atalhos de conteúdo', () => {
     expect(topicFavoriteId('escalas', 'BPS — Behavioral Pain Scale')).toBe('topic.escalas.bps-behavioral-pain-scale');
     expect(topicFavoriteId('registros', 'Higiene, conforto e mobilização')).toBe('topic.registros.higiene-conforto-e-mobilizacao');
     for (const tool of newTools) expect(findFavorites([tool.id])).toEqual([{ id: tool.id, title: tool.title, href: tool.href, kind: 'Ferramenta' }]);
+  });
+
+  it('retoma seções e simulações familiares sem substituir os favoritos anteriores', () => {
+    expect(findFavorites(['module.acolhimento', 'module.acolher-familia']).map(item => item.href)).toEqual(['#acolhimento', '#acolher-familia']);
+    for (const section of familySections) expect(findFavorites([`family.section.${section.id}`])[0]).toMatchObject({ title: section.title, href: familySectionHref(section.id) });
+    for (const item of communicationCases) expect(findFavorites([`family.case.${item.id}`])[0]).toMatchObject({ title: item.title, href: familyCaseHref(item.id) });
+    expect(normalizeFavoriteIds(['family.case.inexistente', 'family.section.inexistente', 'family.case.__proto__'])).toEqual([]);
   });
 
 });
