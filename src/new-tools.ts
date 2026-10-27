@@ -1,5 +1,6 @@
 /** Shared public learning destinations. Profiles prioritize these links, never authorize access. */
 export const newTools = [
+  { id: 'tool.calculadora', title: 'Calculadora', description: 'Faça contas de soma, subtração, multiplicação e divisão, com vírgula decimal e suporte ao teclado.', href: '#calculadora', aliases: ['calculadora comum', 'calculadora básica', 'contas', 'aritmética', 'soma', 'subtração', 'multiplicação', 'divisão'] },
   { id: 'tool.perfil', title: 'Meu perfil de aprendizagem', description: 'Escolha estagiário ou novo colaborador e troque quando quiser, sem cadastro.', href: '#perfil', aliases: ['perfil', 'estagiário', 'novo colaborador', 'acolhimento'] },
   { id: 'tool.integracao', title: 'Checklist de integração', description: 'Roteiro educativo separado para novos colaboradores, com marcações locais e itens pendentes de validação institucional.', href: '#integracao', aliases: ['integração', 'colaborador', 'primeiro plantão', 'ambientação', 'checklist'] },
   { id: 'tool.laboratorio', title: 'Laboratório de anotações', description: 'Pratique registros com fatos fictícios, rubrica de autorrevisão e exemplos comentados.', href: '#laboratorio', aliases: ['anotação', 'anotações', 'registro', 'escrita', 'rubrica', 'laboratório'] },

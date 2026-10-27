@@ -73,6 +73,9 @@ const familySectionReferenceIds: Record<string, string[]> = {
 };
 
 function additionalToolMetadata(id: string): Partial<ContentMetadata> {
+  if (id === 'tool.calculadora') return {
+    notes: ['Ferramenta de aritmética comum, com operações e limites documentados e verificados por testes de software. Não contém conteúdo clínico nem coleta ou conserva as contas digitadas.'],
+  };
   if (id === 'tool.laboratorio') return {
     references: uniqueReferences(annotationScenarios.flatMap(item => item.sourceRefs)), referenceStatus: 'provided_materials',
     notes: ['Exercícios fictícios baseados nos casos e nas páginas do caderno indicados. Rubrica de autorrevisão educativa, sem pontuação automática, certificação ou validação de competência. A revisão profissional permanece pendente.'],

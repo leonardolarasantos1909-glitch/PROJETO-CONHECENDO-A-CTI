@@ -156,4 +156,10 @@ describe('Busca por nome e assunto', () => {
     expect(searchIndex.filter(item => item.id.startsWith('family.section.'))).toHaveLength(5);
   });
 
+  it('encontra a calculadora comum pelo nome e pelas operações básicas', () => {
+    for (const query of ['calculadora', 'calculadora comum', 'soma', 'subtracao', 'multiplicacao', 'divisao']) {
+      expect(searchContent(query, 'Ferramenta')[0]).toMatchObject({ id: 'tool.calculadora', href: '#calculadora' });
+    }
+  });
+
 });
