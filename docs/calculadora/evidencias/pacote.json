@@ -1,0 +1,556 @@
+{
+  "path": "downloads/conhecendo-a-cti-com-calculadora.zip",
+  "files": 126,
+  "bytes": 70301275,
+  "sha256": "b8dabf4df62e5bc92d721057da9b623a64cf8656921a4f542eca0538c75fb01e",
+  "cache": "const CACHE = 'cti-938cecb18315';",
+  "crc_valid": true,
+  "matches_dist": true,
+  "safe_paths": true,
+  "baseline": "downloads/conhecendo-a-cti-acolher-familia.zip",
+  "preserved_assets": 108,
+  "preserved": [
+    {
+      "path": "caderno/pagina-001.webp",
+      "bytes": 17144,
+      "sha256": "1c72b0409435a1571d8d6338e03993ef3bfc018fa85ce00694467e2b004b3780"
+    },
+    {
+      "path": "caderno/pagina-002.webp",
+      "bytes": 141328,
+      "sha256": "021409d462fa9471c5331d6c866f7aab5620e33c9e1f10ea1b8d139d4edb65e8"
+    },
+    {
+      "path": "caderno/pagina-003.webp",
+      "bytes": 152004,
+      "sha256": "0d5069e19442879b94a458cb0d50a3558c2ed61265b874fffb05247076ca2e67"
+    },
+    {
+      "path": "caderno/pagina-004.webp",
+      "bytes": 126720,
+      "sha256": "0ec0bcab084422a086c2c032607b26de2e027595f501ef4323b81ee1835b07c2"
+    },
+    {
+      "path": "caderno/pagina-005.webp",
+      "bytes": 155250,
+      "sha256": "19d47338e44d72c841044517fb83ed079dbbd4639e20f7bf9193b125852dc5b5"
+    },
+    {
+      "path": "caderno/pagina-006.webp",
+      "bytes": 135500,
+      "sha256": "be2c5e8501c39f66ca348711cbee6c6ac884b1815239a26278eaf575291678ef"
+    },
+    {
+      "path": "caderno/pagina-007.webp",
+      "bytes": 128674,
+      "sha256": "9290ea5769cd1865fabdc39262a64fc48d37927598e4006c8f3a18fdfb4157c7"
+    },
+    {
+      "path": "caderno/pagina-008.webp",
+      "bytes": 156806,
+      "sha256": "7fda20209e6723f030903940f60e5e1fd89f9aa2895d2da601fea86a23a965da"
+    },
+    {
+      "path": "caderno/pagina-009.webp",
+      "bytes": 167962,
+      "sha256": "4d99c832694bfa9a6f0b7df4d280e8e3ce4488da82fcb7590478422d896c8cb6"
+    },
+    {
+      "path": "caderno/pagina-010.webp",
+      "bytes": 144088,
+      "sha256": "2d2881f57a300ac4f7404c18e6fe9a4e11812e17346b970b8c7c7632c80a22d6"
+    },
+    {
+      "path": "caderno/pagina-011.webp",
+      "bytes": 129728,
+      "sha256": "206b72833f21fbd9163ed36a9630c6c94ca69277aa5894df209bdec3192cb4ef"
+    },
+    {
+      "path": "caderno/pagina-012.webp",
+      "bytes": 121898,
+      "sha256": "1545d92ad614ddec4424b8993137f71a5b0f317849d61df9437473499e97aa12"
+    },
+    {
+      "path": "caderno/pagina-013.webp",
+      "bytes": 134076,
+      "sha256": "9717eeca0873c76a8d6e3fcd44021cf6c7eaef1da490fbf2f03260def1a416ce"
+    },
+    {
+      "path": "caderno/pagina-014.webp",
+      "bytes": 120258,
+      "sha256": "ba56b3abf1fb94ea7d1f96d6ca1b1eae38a0369bad0b1429a7c8ac1f8e1dcdb9"
+    },
+    {
+      "path": "caderno/pagina-015.webp",
+      "bytes": 143180,
+      "sha256": "7340fada98fa3e6e3e32b6e98e427f5c0bc0133e0ad74a200fe969fbda5fa768"
+    },
+    {
+      "path": "caderno/pagina-016.webp",
+      "bytes": 148558,
+      "sha256": "f781521f2e3cfe7a813ed4ed2ad11bc4ea39578a3b060bc29a4a623193674212"
+    },
+    {
+      "path": "caderno/pagina-017.webp",
+      "bytes": 139518,
+      "sha256": "f409b18bc482d564d4bbddbdad9e1870abb15f48f8c05022d91397e938adff2a"
+    },
+    {
+      "path": "caderno/pagina-018.webp",
+      "bytes": 140942,
+      "sha256": "eced3e984f8c29ef6c05d7c49e101bfb363129d4420196bc419b7b1c15a9f55e"
+    },
+    {
+      "path": "caderno/pagina-019.webp",
+      "bytes": 125762,
+      "sha256": "0b38e9c66ced7b899ef8c18ff8e17eb0d28a084df5f18297082054fd1aec9125"
+    },
+    {
+      "path": "caderno/pagina-020.webp",
+      "bytes": 141324,
+      "sha256": "8305d9c0e985b169bdce654450b75ecb83a933335438ecfdfe624133131aaced"
+    },
+    {
+      "path": "caderno/pagina-021.webp",
+      "bytes": 152360,
+      "sha256": "c2bdf1566397cf8c564109ce0fdf061578c56aa522a4aad62ad6bda297518234"
+    },
+    {
+      "path": "caderno/pagina-022.webp",
+      "bytes": 167012,
+      "sha256": "170e6ccce635a72ce03b4eb84257940b18fbf32f09b27aee576a422119e2d281"
+    },
+    {
+      "path": "caderno/pagina-023.webp",
+      "bytes": 149652,
+      "sha256": "055ab204e22da6dd042963c31339eb4b541ab97271e35fc562da206d35068bee"
+    },
+    {
+      "path": "caderno/pagina-024.webp",
+      "bytes": 150902,
+      "sha256": "3f8f2d6673041a9d48c4aa87c3cda23a74175168bc9537a73e9b45d0a961f566"
+    },
+    {
+      "path": "caderno/pagina-025.webp",
+      "bytes": 165182,
+      "sha256": "7a1aeb9db26b3a94cd5d066e082496483fabc2c1ee94cf8737ad2ced00a40122"
+    },
+    {
+      "path": "caderno/pagina-026.webp",
+      "bytes": 176086,
+      "sha256": "e43acde6c95914694550203db85613b4dc1c25dd0ffc34d65998ed7cce2f789d"
+    },
+    {
+      "path": "caderno/pagina-027.webp",
+      "bytes": 167888,
+      "sha256": "67a7757294e4ed4fb71e2f748fb1f0241653cd2b47547bb89582bd8dc6bcddfb"
+    },
+    {
+      "path": "caderno/pagina-028.webp",
+      "bytes": 162796,
+      "sha256": "9675bc80bba36bb47bd7a3873fb28d0abedb2c1b354053b92425b35afd068d3b"
+    },
+    {
+      "path": "caderno/pagina-029.webp",
+      "bytes": 158120,
+      "sha256": "3d66c69cdaac2099235da0af8fcdec4a939daf9a0198ee8b5564ebc22efbc841"
+    },
+    {
+      "path": "caderno/pagina-030.webp",
+      "bytes": 120086,
+      "sha256": "9dbe504c116e3352f606f9fe95042f7cd357d4b8ab86503b8625c64713f7d438"
+    },
+    {
+      "path": "caderno/pagina-031.webp",
+      "bytes": 160420,
+      "sha256": "b88afda92b8b0532243767ef018c9e806f04f1d17ca2a8c1a26f2c5345510269"
+    },
+    {
+      "path": "caderno/pagina-032.webp",
+      "bytes": 168502,
+      "sha256": "17243f5f42700fe6a16d147eb3d33beaf6d0e3c40cd21b15ffcb57639d3f86ab"
+    },
+    {
+      "path": "caderno/pagina-033.webp",
+      "bytes": 128500,
+      "sha256": "c4ceb38ac0465726266cdc2748b69f994710e025dbf07604abe9d723c09f9c7f"
+    },
+    {
+      "path": "caderno/pagina-034.webp",
+      "bytes": 105882,
+      "sha256": "1ef8bc8c13e65f06b13bdfd492cb527717c934f2e204016f377261d81f1ab664"
+    },
+    {
+      "path": "caderno/pagina-035.webp",
+      "bytes": 132718,
+      "sha256": "a830fcf34fb720fe19216ea00608396771750064a1d431ff11e9124437186972"
+    },
+    {
+      "path": "caderno/pagina-036.webp",
+      "bytes": 167582,
+      "sha256": "9329e7afb76dbdf96d0a606e5a2bdb7edb4e686df1f2f1e6aadd250b645abfb3"
+    },
+    {
+      "path": "caderno/pagina-037.webp",
+      "bytes": 168248,
+      "sha256": "fd3bc5c1630e57af49b6ac490ff95dbbaa16182a46d333fb0429956a4f7ba780"
+    },
+    {
+      "path": "caderno/pagina-038.webp",
+      "bytes": 180530,
+      "sha256": "b4edfaf4704760900d5f7d8937ce6f8a9d8df02dcaf550a735fe794bcef7d8e7"
+    },
+    {
+      "path": "caderno/pagina-039.webp",
+      "bytes": 151404,
+      "sha256": "96543de4e370b952670b63c54396c8e763d42c78395caf47c6f6dced71e86451"
+    },
+    {
+      "path": "caderno/pagina-040.webp",
+      "bytes": 167038,
+      "sha256": "230360b1c1b34272cd382a2376c44f933d9274cedf73c5f1c6f1067269a32805"
+    },
+    {
+      "path": "caderno/pagina-041.webp",
+      "bytes": 121324,
+      "sha256": "73d6bd90ff56424ce291fd7086aa8787988d3a876aa5a140a14dd47755be5273"
+    },
+    {
+      "path": "caderno/pagina-042.webp",
+      "bytes": 122778,
+      "sha256": "b87029e90a00356af19cfa8617b3949fef194792a14fd0f81878fe9c93c5b483"
+    },
+    {
+      "path": "caderno/pagina-043.webp",
+      "bytes": 114874,
+      "sha256": "1a3a5e756526291b9157ee44a37eeb2918027a5c062ac1f6c2465b3032fdbfa6"
+    },
+    {
+      "path": "caderno/pagina-044.webp",
+      "bytes": 162428,
+      "sha256": "fdf88361d78e0e7cc391ee09d133ab6021e81ce61cbc384b3554745604727b6e"
+    },
+    {
+      "path": "caderno/pagina-045.webp",
+      "bytes": 140960,
+      "sha256": "86f2c212333c9d691e6e36541a936987d7574059ac94cdd5bdfb8e808e772ae8"
+    },
+    {
+      "path": "caderno/pagina-046.webp",
+      "bytes": 96770,
+      "sha256": "2ea50dc09677711f87315717e08c5e57285ed5734f3411805a3873dc8d36bb82"
+    },
+    {
+      "path": "caderno/pagina-047.webp",
+      "bytes": 24392,
+      "sha256": "6dc2e2e414c535a06b32f0b6dc29f2081867515c439f83538eb35e64ff803fd5"
+    },
+    {
+      "path": "caderno/pagina-048.webp",
+      "bytes": 24524,
+      "sha256": "45915835d2bdf34afe41f77a6d779795c3f91bd572a3afc7cc60755e4aa2d2a0"
+    },
+    {
+      "path": "caderno/pagina-049.webp",
+      "bytes": 24520,
+      "sha256": "9f1d90ac6adb59e4971d106dce10e7f30c25d213326815fc3e2c4dbc84e4456c"
+    },
+    {
+      "path": "caderno/pagina-050.webp",
+      "bytes": 24550,
+      "sha256": "507b743f61c2e639952c1c8f104220a5572b7083c0c6f767eba28b7d3b402114"
+    },
+    {
+      "path": "caderno/pagina-051.webp",
+      "bytes": 24420,
+      "sha256": "592f6bcd7bb3c62ac54c68dd19d48ab873efbfbdf0bbd10d8e5d879368b5c2b1"
+    },
+    {
+      "path": "caderno/pagina-052.webp",
+      "bytes": 24560,
+      "sha256": "b3a60c6de6bcfb073b17412475afb02b8245c2f5785d8d0183a424094e94501a"
+    },
+    {
+      "path": "caderno/pagina-053.webp",
+      "bytes": 24578,
+      "sha256": "e67542b7dae773b9af54fc8d68f2c5bdc5bfdc6f417cce16d64ecd959f9e7b3f"
+    },
+    {
+      "path": "caderno/pagina-054.webp",
+      "bytes": 24484,
+      "sha256": "e5e45d6debd4cd56e22e01e4dec2b681989e104cc5fda86a7102755a9a642239"
+    },
+    {
+      "path": "caderno/pagina-055.webp",
+      "bytes": 24556,
+      "sha256": "a4180cb1ab52ddc3bff858064cf084b513c63375fd6136796f0e4b181229c318"
+    },
+    {
+      "path": "caderno/pagina-056.webp",
+      "bytes": 24576,
+      "sha256": "58a40977e371b6047f01d7e3be89f50d4f14b2956598277e815c5c9d218f5d33"
+    },
+    {
+      "path": "caderno/pagina-057.webp",
+      "bytes": 24468,
+      "sha256": "0668b6662e9c74028f50af2a5beea0b9798550fbabbcf0fe3c90171f775d1417"
+    },
+    {
+      "path": "caderno/pagina-058.webp",
+      "bytes": 24596,
+      "sha256": "6ec0790aeb6dee748bca5450866a1db014bb6e7cc3549f680fb181fadf8eb3c7"
+    },
+    {
+      "path": "caderno/pagina-059.webp",
+      "bytes": 24590,
+      "sha256": "9945d2d0e485f5a218591c283ff199cb5dd9b1e39160d1034fc55beb261224bf"
+    },
+    {
+      "path": "caderno/pagina-060.webp",
+      "bytes": 24568,
+      "sha256": "e999d9276d28041f238c1d65ac3c415369dbcc1d4e5aaecdfae0027ac7872a6c"
+    },
+    {
+      "path": "caderno/pagina-061.webp",
+      "bytes": 24434,
+      "sha256": "43ed0433ff77c648179f89df9450b5afac2fb14a577220612850d908442ab45d"
+    },
+    {
+      "path": "caderno/pagina-062.webp",
+      "bytes": 24574,
+      "sha256": "2b2e12e1d410a5dd02f35193759ea7f3d8adcb5ba2104a86b7bc0548909e0991"
+    },
+    {
+      "path": "caderno/pagina-063.webp",
+      "bytes": 24592,
+      "sha256": "f1736acaf30766e2fc5725d18c1e0db2d1f5e1b09cb060ecec8a4540698744bf"
+    },
+    {
+      "path": "caderno/pagina-064.webp",
+      "bytes": 24500,
+      "sha256": "35a079f96fefab1bf6ce41e78f3c6f466a634e1562b57350e63f1a3734c22e2f"
+    },
+    {
+      "path": "caderno/pagina-065.webp",
+      "bytes": 24572,
+      "sha256": "40d07c7e4fbcb476d6624c0a4fcb4fb405b2d61279b368a07c23ce93d667dffa"
+    },
+    {
+      "path": "caderno/pagina-066.webp",
+      "bytes": 24598,
+      "sha256": "958e3f04d3b175c37dca6c23b5dc2eb45082108f025d4399aa6e705f3e0573ae"
+    },
+    {
+      "path": "caderno/pagina-067.webp",
+      "bytes": 24488,
+      "sha256": "0cf1c91cb1398eaba442b691fb75858b1ab856fc5475d6332e4afb79067ba765"
+    },
+    {
+      "path": "caderno/pagina-068.webp",
+      "bytes": 24612,
+      "sha256": "88491de0a9b1f2205535b1ac4a095dbd0d6975bcfc0fe299af556d346f66be25"
+    },
+    {
+      "path": "caderno/pagina-069.webp",
+      "bytes": 24610,
+      "sha256": "1e84070a8dcdbee99c1c973032ed35cd02fadde9cdcd7d6c0e5355eafa961447"
+    },
+    {
+      "path": "caderno/pagina-070.webp",
+      "bytes": 24456,
+      "sha256": "46a87f736b1a10659d3df9fbac92c1035ac55c87c0ddcde311c5ae618dac3627"
+    },
+    {
+      "path": "caderno/pagina-071.webp",
+      "bytes": 24326,
+      "sha256": "fd2ed489a763acc09bd4c60e9264398f74816de4118aa097e7f31cbf2ab979c0"
+    },
+    {
+      "path": "caderno/pagina-072.webp",
+      "bytes": 24464,
+      "sha256": "c92b1fed07171b363dacc80f6449e497da16e1036113a299b938f482757cee69"
+    },
+    {
+      "path": "caderno/pagina-073.webp",
+      "bytes": 24480,
+      "sha256": "fef8264d1dfd658caa73ad7962d332f21010c09939c8c0bc5fc5e323c22bf805"
+    },
+    {
+      "path": "caderno/pagina-074.webp",
+      "bytes": 24396,
+      "sha256": "363a5bad24a29385aef1cac35fb494bfa765edb57a4d9e8a19817064e07efaf6"
+    },
+    {
+      "path": "caderno/pagina-075.webp",
+      "bytes": 24462,
+      "sha256": "684a5418738d38ce53f27d267bf487eea347bdda8f0283ee6a9598e22d842f4d"
+    },
+    {
+      "path": "caderno/pagina-076.webp",
+      "bytes": 24480,
+      "sha256": "5804d3a005ba1cb4a203f45b8aa10ad1829a7c3d50d4ab2d72e39b1223eb6451"
+    },
+    {
+      "path": "caderno/pagina-077.webp",
+      "bytes": 24374,
+      "sha256": "2fe9da77a2f4237c37a901931b265598621832468b277a77495a3a0c4519ee3f"
+    },
+    {
+      "path": "caderno/pagina-078.webp",
+      "bytes": 24500,
+      "sha256": "32071251f356a4ec072b5be4fbd426baf202903fe3efc6e6dee82235be844b5a"
+    },
+    {
+      "path": "caderno/pagina-079.webp",
+      "bytes": 24494,
+      "sha256": "d267f336577ddc6471e1bac5e825ebf3656a35a2c2b8ef8a4f93a04963316ac1"
+    },
+    {
+      "path": "caderno/pagina-080.webp",
+      "bytes": 24574,
+      "sha256": "e55a2fdda71668fc5fdc7b68b5ef586e23836c71e390073199d5a596ec8344bf"
+    },
+    {
+      "path": "caderno/pagina-081.webp",
+      "bytes": 24444,
+      "sha256": "0e2c770d23481752d08ee2c82e512ac615cef99493a436a66d43751a77a0dea3"
+    },
+    {
+      "path": "caderno/pagina-082.webp",
+      "bytes": 24584,
+      "sha256": "891395a2d099fc7aa9e13d96c3187654577692ee497d3d6363aff64253529500"
+    },
+    {
+      "path": "caderno/pagina-083.webp",
+      "bytes": 24602,
+      "sha256": "624210658af29a0a0672ea24376ec5ccdfff78145ef9ad20f9c164d703984cd5"
+    },
+    {
+      "path": "caderno/pagina-084.webp",
+      "bytes": 24506,
+      "sha256": "6da40818415e15ec07f2b0c8d676d43a04fde5deb004dbcc1857b28c72944a18"
+    },
+    {
+      "path": "caderno/pagina-085.webp",
+      "bytes": 24578,
+      "sha256": "569cb5c8144c188746a673f4dc26dba5b2c3c426d62919602609d482c8dd3e91"
+    },
+    {
+      "path": "caderno/pagina-086.webp",
+      "bytes": 24606,
+      "sha256": "f032bd7b34a75187cc718365af96fcc2f1eb18a7cf8e0c965d55807ac236271c"
+    },
+    {
+      "path": "caderno/pagina-087.webp",
+      "bytes": 24492,
+      "sha256": "12653d5b636bfaea5a743e4c3e39fd4d995e808338668a784de9b9e3a837da09"
+    },
+    {
+      "path": "caderno/pagina-088.webp",
+      "bytes": 24620,
+      "sha256": "2e6d1054fc446f39401e357760b6a40c08679546cc0a7b191fe169ab5aab02bd"
+    },
+    {
+      "path": "caderno/pagina-089.webp",
+      "bytes": 24618,
+      "sha256": "d5f549f15fae2a564a0736ab6b0060d86fd04141f416edfba696cfae5fccd173"
+    },
+    {
+      "path": "caderno/pagina-090.webp",
+      "bytes": 24572,
+      "sha256": "b5f972d488e31d92ef904617196793833268d695095be8663b3ba50c1238657d"
+    },
+    {
+      "path": "caderno/pagina-091.webp",
+      "bytes": 24442,
+      "sha256": "70f3bfe79b0e96498e32717a14e6f4b79936f75670acc68a45b190ff98ce1711"
+    },
+    {
+      "path": "caderno/pagina-092.webp",
+      "bytes": 24584,
+      "sha256": "df54e7cdaf6894037854e8dde22113a3b8530a1fafaa55200225b00c726aeb1c"
+    },
+    {
+      "path": "caderno/pagina-093.webp",
+      "bytes": 24604,
+      "sha256": "03602a1bdae5acb423a0c725443bb7a0872e151dd4109b52d05401e6e46cfa6d"
+    },
+    {
+      "path": "caderno/pagina-094.webp",
+      "bytes": 24506,
+      "sha256": "3d67e964238f7f5394920b69cdc7eb6ffac9465b6f70fd314fa6574e61da994e"
+    },
+    {
+      "path": "caderno/pagina-095.webp",
+      "bytes": 24580,
+      "sha256": "c8b1efb17e05a0b248bb2680f0105299c949c597cfb9efd4f2df093fbf8c01a0"
+    },
+    {
+      "path": "caderno/pagina-096.webp",
+      "bytes": 24602,
+      "sha256": "9288df22799c00edb0b8d00f0f9e93195cb72f454a38eefbef21fd7463c89880"
+    },
+    {
+      "path": "caderno/paginas.json",
+      "bytes": 70676,
+      "sha256": "48da763433926f460a5fa35b37a2c867a81618f71329b93ec04e7c3b3d5a7b40"
+    },
+    {
+      "path": "materiais/acolher-familia/folheto-familia-a4.pdf",
+      "bytes": 50182,
+      "sha256": "4cfc3536208cb93bced94caecd2a8df13361f5a370864155194fe945a09a8b9f"
+    },
+    {
+      "path": "materiais/acolher-familia/folheto-familia-a5.pdf",
+      "bytes": 50119,
+      "sha256": "dc36856e89f2e4d22b3506895847da38547583e194877c934ef388a5110601d6"
+    },
+    {
+      "path": "materiais/acolher-familia/manifest.json",
+      "bytes": 1733,
+      "sha256": "7efa598a62a1e5f3d069a300acd3a968bd30104fa1d45936e414b3d9efb1e4f1"
+    },
+    {
+      "path": "materiais/apostilas/cuidados-paciente-critico.pdf",
+      "bytes": 10232257,
+      "sha256": "cc4befd2a5e038f21f58978c83c496cc6b68561f311f6c898e83f29daf953f23"
+    },
+    {
+      "path": "materiais/apostilas/curativos-feridas.pdf",
+      "bytes": 24228286,
+      "sha256": "25a8d1c4c1a8fd8359ea9d008134d7dbe3208f6347d33a732d697563a5fd2fd5"
+    },
+    {
+      "path": "materiais/apostilas/evolucao-anotacao-enfermagem.pdf",
+      "bytes": 21305044,
+      "sha256": "aa186acfd3ac34aa3ce2511532103fb84d31c9b7053c3b3a0674f1f05b91ba16"
+    },
+    {
+      "path": "materiais/apostilas/integridade.json",
+      "bytes": 9384,
+      "sha256": "27796d13f285365adcd3d78a8003c763bc64f2e0d6a0e1a6e74014cec8394ffe"
+    },
+    {
+      "path": "materiais/apostilas/medicacoes-bombas-infusao.pdf",
+      "bytes": 9341472,
+      "sha256": "cd80e4f2e4d070e58695b97bc66963f4b1c2f5bf45b8ff4dce17c60ea043e49f"
+    },
+    {
+      "path": "materiais/apostilas/monitorizacao-equipamentos.pdf",
+      "bytes": 9966782,
+      "sha256": "897eeaa99b239cd862d27e068e34bf882c36362518eab88de38182c6fd4cc716"
+    },
+    {
+      "path": "materiais/caderno-cti-adulto-bolso-a4.pdf",
+      "bytes": 1242866,
+      "sha256": "5cd9aa49767881706da4af5d6dc58ac09c95473915e56cba262a9d2cb94e9dd6"
+    },
+    {
+      "path": "materiais/caderno-cti-adulto-digital.pdf",
+      "bytes": 1196355,
+      "sha256": "a972f44330d1149e06eec607bc39ce314fb607e3d07f7c3c271864459107a0c8"
+    }
+  ],
+  "added_materials": [],
+  "production_deployed": false
+}

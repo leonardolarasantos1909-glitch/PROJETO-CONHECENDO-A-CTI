@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-27",
+  "branch": "ferramentas/calculadora",
+  "baseline_commit": "18a5f0167e43991293c4ebb176d14978607c1873",
+  "implementation_commit": "5569d0f1c9cd42898d3adab7dd7982600b007b6f",
+  "status": "Calculadora comum implementada e testada localmente; pacote pronto para revisão",
+  "production_deployed": false,
+  "main_updated": false,
+  "tests": {
+    "passed": 114,
+    "files": 22,
+    "service_worker": "passed",
+    "build": "passed",
+    "metadata_records": 872
+  },
+  "browser": {
+    "groups_passed": 31,
+    "destinations": 103,
+    "layouts": 120,
+    "viewport_widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "contrast_samples": 192,
+    "minimum_contrast": 4.919696047633856,
+    "failures": [],
+    "errors": [],
+    "warnings": [],
+    "csp_violations": [],
+    "external_requests": []
+  },
+  "privacy": {
+    "login": false,
+    "remote_calculation": false,
+    "calculation_history_persisted": false,
+    "new_storage_keys": 0,
+    "dependencies_added": 0
+  },
+  "package": {
+    "path": "downloads/conhecendo-a-cti-com-calculadora.zip",
+    "files": 126,
+    "bytes": 70301275,
+    "sha256": "b8dabf4df62e5bc92d721057da9b623a64cf8656921a4f542eca0538c75fb01e",
+    "cache": "const CACHE = 'cti-938cecb18315';",
+    "crc_valid": true,
+    "matches_dist": true,
+    "safe_paths": true,
+    "baseline": "downloads/conhecendo-a-cti-acolher-familia.zip",
+    "preserved_assets": 108,
+    "added_materials": [],
+    "production_deployed": false
+  },
+  "limits": [
+    "Chromium headless on Linux only; no physical iPhone/Android, Safari, VoiceOver, TalkBack or NVDA.",
+    "Production Cloudflare and a separate homologation deploy are not exercised by this local test.",
+    "No claim of full WCAG conformance or independent clinical/institutional validation.",
+    "Native browser zoom at200%/400% was not exercised; responsive viewport widths were checked.",
+    "Printer hardware, physical duplex orientation, folded paper and native mobile print dialogs were not exercised; CSS print rendering and supplied PDF imposition were checked."
+  ]
+}

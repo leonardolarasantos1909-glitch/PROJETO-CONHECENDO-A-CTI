@@ -1,0 +1,12 @@
+{
+  "cache": "cti-938cecb18315",
+  "expression": "12,5 + 7,5",
+  "result": "20",
+  "viewportWidths": [
+    390,
+    1440
+  ],
+  "localFavoritesContainsCalculator": true,
+  "favoriteListLinkVerified": true,
+  "note": "Skip-link and the fixed mobile navigation were hidden only while capturing the complete calculator panel; application sources and functional tests were unchanged."
+}

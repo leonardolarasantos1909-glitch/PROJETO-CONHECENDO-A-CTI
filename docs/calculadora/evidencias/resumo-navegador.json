@@ -1,0 +1,70 @@
+{
+  "cache": "cti-938cecb18315",
+  "status": "completed",
+  "browser": "Chromium headless on Linux",
+  "groupsPassed": 31,
+  "uniqueDestinations": 103,
+  "layoutChecks": 120,
+  "viewportWidths": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "contrastSamples": 192,
+  "minimumContrast": 4.919696047633856,
+  "calculatorChecks": [
+    {
+      "name": "Calculator is discoverable through home, search, navigation and stable favorites without identifiers",
+      "route": "#calculadora",
+      "public": true,
+      "search": true,
+      "favorite": true,
+      "patientFields": 0
+    },
+    {
+      "name": "Calculator handles four operations, decimal precision, precedence, signs, correction and errors by touch",
+      "touchCases": 18,
+      "decimal": "0,1+0,2=0,3",
+      "precedence": "2+3×4=14",
+      "noPersistedArithmetic": true
+    },
+    {
+      "name": "Calculator keyboard is scoped and accessible without intercepting search or browser shortcuts",
+      "enter": true,
+      "escape": true,
+      "backspace": true,
+      "commaAndDot": true,
+      "scopedToCalculator": true,
+      "searchUnchanged": true,
+      "modifiedShortcutsIgnored": true
+    },
+    {
+      "name": "Calculator touch targets, contrast and offline operation remain usable with blocked storage",
+      "widths": [
+        320,
+        390,
+        768,
+        1440
+      ],
+      "minimumTouchTarget": 44,
+      "contrastSamples": 25,
+      "offline": true,
+      "storageBlocked": true
+    }
+  ],
+  "failures": [],
+  "errors": [],
+  "warnings": [],
+  "cspViolations": [],
+  "externalRequests": [],
+  "preservationEvidence": "/tmp/cti-calculator-preservation.json",
+  "captureNote": "/tmp/cti-calculator-capture-note.json",
+  "limits": [
+    "Chromium headless on Linux only; no physical iPhone/Android, Safari, VoiceOver, TalkBack or NVDA.",
+    "Production Cloudflare and a separate homologation deploy are not exercised by this local test.",
+    "No claim of full WCAG conformance or independent clinical/institutional validation.",
+    "Native browser zoom at200%/400% was not exercised; responsive viewport widths were checked.",
+    "Printer hardware, physical duplex orientation, folded paper and native mobile print dialogs were not exercised; CSS print rendering and supplied PDF imposition were checked."
+  ]
+}

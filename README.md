@@ -13,6 +13,13 @@ O conteúdo do QR foi decodificado e conferido localmente. A conexão ao endere�
 
 ## Baixar a versão pronta
 
+**Entrega atual — calculadora comum (27/10/2026):** soma, subtração, multiplicação, divisão, vírgula decimal e teclado, com funcionamento offline após o primeiro carregamento. Preserva o módulo de acolhimento familiar e todos os materiais anteriores. Sem publicação automática na Cloudflare.
+
+- [Baixar aplicativo completo com calculadora](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/ferramentas/calculadora/downloads/conhecendo-a-cti-com-calculadora.zip).
+- [Como acessar, usar e atualizar](docs/CALCULADORA.md).
+
+As entregas abaixo pertencem ao histórico anterior.
+
 **Novo módulo — Acolher também é cuidar (27/10/2026):** esta branch acrescenta acolhimento familiar à última entrega completa. São cinco seções, oito simulações, oito situações de fala e folheto em quatro páginas A5, com PDF A4 frente e verso pronto para dobrar. A implantação na Cloudflare e a aprovação institucional continuam pendentes.
 
 - [Baixar o aplicativo completo com acolhimento familiar](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/acolhimento-familiar/implementacao/downloads/conhecendo-a-cti-acolher-familia.zip).
