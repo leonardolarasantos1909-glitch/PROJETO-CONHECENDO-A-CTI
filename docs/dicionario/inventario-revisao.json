@@ -1,0 +1,522 @@
+{
+  "date": "2026-10-30",
+  "conditions": [
+    {
+      "id": "avc-hemorragico",
+      "name": "Acidente vascular cerebral hemorrágico",
+      "category": "Neurológicas",
+      "version": "1.0",
+      "clinicalReviewStatus": "pending",
+      "reviewedAt": null,
+      "references": [
+        {
+          "title": "2022 Guideline for the Management of Patients With Spontaneous Intracerebral Hemorrhage",
+          "organization": "American Heart Association / American Stroke Association (AHA/ASA)",
+          "url": "https://professional.heart.org/en/science-news/2022-guideline-for-the-management-of-patients-with-spontaneous-intracerebral-hemorrhage",
+          "verification": "pending",
+          "note": "Consulta externa bloqueada neste ambiente; título, versão vigente e correspondência do texto à fonte precisam de conferência profissional."
+        }
+      ]
+    },
+    {
+      "id": "avc-isquemico",
+      "name": "Acidente vascular cerebral isquêmico",
+      "category": "Neurológicas",
+      "version": "1.0",
+      "clinicalReviewStatus": "pending",
+      "reviewedAt": null,
+      "references": [
+        {
+          "title": "Stroke and transient ischaemic attack in over 16s: diagnosis and initial management — NG128",
+          "organization": "National Institute for Health and Care Excellence (NICE)",
+          "url": "https://www.nice.org.uk/guidance/ng128",
+          "verification": "pending",
+          "note": "Consulta externa bloqueada neste ambiente; título, versão vigente e correspondência do texto à fonte precisam de conferência profissional."
+        }
+      ]
+    },
+    {
+      "id": "cetoacidose-diabetica",
+      "name": "Cetoacidose diabética",
+      "category": "Renais e metabólicas",
+      "version": "1.0",
+      "clinicalReviewStatus": "pending",
+      "reviewedAt": null,
+      "references": [
+        {
+          "title": "Hyperglycemic Crises in Adults With Diabetes: A Consensus Report — título e versão a conferir",
+          "organization": "American Diabetes Association e sociedades participantes do consenso",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11272983/",
+          "verification": "pending",
+          "note": "Consulta externa bloqueada neste ambiente; conferir título, versão vigente e correspondência do texto à fonte antes da revisão clínica."
+        }
+      ]
+    },
+    {
+      "id": "choque-cardiogenico",
+      "name": "Choque Cardiogênico",
+      "category": "Cardiovasculares",
+      "version": "1.0",
+      "clinicalReviewStatus": "pending",
+      "reviewedAt": null,
+      "references": [
+        {
+          "title": "Acute coronary syndromes — NICE NG185",
+          "organization": "National Institute for Health and Care Excellence (NICE)",
+          "url": "https://www.nice.org.uk/guidance/ng185",
+          "verification": "pending",
+          "note": "Fonte proposta para conferência bibliográfica. A consulta externa foi bloqueada neste ambiente; título, versão vigente e correspondência de cada afirmação à diretriz precisam ser conferidos antes da revisão clínica. Não foi confirmada a vigência desta versão."
+        },
+        {
+          "title": "Acute heart failure: diagnosis and management — NICE CG187",
+          "organization": "National Institute for Health and Care Excellence (NICE)",
+          "url": "https://www.nice.org.uk/guidance/cg187",
+          "verification": "pending",
+          "note": "Fonte proposta para conferência bibliográfica. A consulta externa foi bloqueada neste ambiente; título, versão vigente e correspondência de cada afirmação à diretriz precisam ser conferidos antes da revisão clínica. Não foi confirmada a vigência desta versão."
+        }
+      ]
+    },
+    {
+      "id": "choque-hipovolemico",
+      "name": "Choque hipovolêmico",
+      "category": "Hematológicas e outras condições críticas",
+      "version": "1.0",
+      "clinicalReviewStatus": "pending",
+      "reviewedAt": null,
+      "references": [
+        {
+          "title": "Shock — Professional Version (título e versão a conferir)",
+          "organization": "MSD Manuals",
+          "url": "https://www.msdmanuals.com/professional/critical-care-medicine/shock-and-fluid-resuscitation/shock",
+          "verification": "pending",
+          "note": "Consulta externa bloqueada neste ambiente; conferir título, versão vigente e correspondência do texto à fonte antes da revisão clínica."
+        }
+      ]
+    },
+    {
+      "id": "choque-septico",
+      "name": "Choque séptico",
+      "category": "Infecciosas",
+      "version": "1.0",
+      "clinicalReviewStatus": "pending",
+      "reviewedAt": null,
+      "references": [
+        {
+          "title": "Surviving Sepsis Campaign: Adult Guidelines",
+          "organization": "Society of Critical Care Medicine (SCCM)",
+          "url": "https://sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines",
+          "verification": "pending",
+          "note": "Consulta externa bloqueada no ambiente (HTTP 403). Conferir o título e a versão vigente da diretriz para adultos antes da revisão clínica; as orientações e os critérios precisam de conferência na fonte original."
+        }
+      ]
+    },
+    {
+      "id": "civd",
+      "name": "Coagulação intravascular disseminada",
+      "category": "Hematológicas e outras condições críticas",
+      "version": "1.0",
+      "clinicalReviewStatus": "pending",
+      "reviewedAt": null,
+      "references": [
+        {
+          "title": "Disseminated Intravascular Coagulation (DIC) — Professional Version (título e versão a conferir)",
+          "organization": "MSD Manuals",
+          "url": "https://www.msdmanuals.com/professional/hematology-and-oncology/coagulation-disorders/disseminated-intravascular-coagulation-dic",
+          "verification": "pending",
+          "note": "Consulta externa bloqueada neste ambiente; conferir título, versão vigente e correspondência do texto à fonte antes da revisão clínica."
+        }
+      ]
+    },
+    {
+      "id": "disturbios-potassio",
+      "name": "Distúrbios do potássio",
+      "category": "Renais e metabólicas",
+      "version": "1.0",
+      "clinicalReviewStatus": "pending",
+      "reviewedAt": null,
+      "references": [
+        {
+          "title": "Potassium Management — página de conferência; título e versão a conferir",
+          "organization": "Kidney Disease: Improving Global Outcomes (KDIGO)",
+          "url": "https://kdigo.org/conferences/potassium-management/",
+          "verification": "pending",
+          "note": "Consulta externa bloqueada neste ambiente; conferir título, versão vigente e correspondência do texto à fonte antes da revisão clínica."
+        }
+      ]
+    },
+    {
+      "id": "doenca-renal-cronica",
+      "name": "Doença renal crônica",
+      "category": "Renais e metabólicas",
+      "version": "1.0",
+      "clinicalReviewStatus": "pending",
+      "reviewedAt": null,
+      "references": [
+        {
+          "title": "CKD Evaluation and Management — página de diretriz; título e versão a conferir",
+          "organization": "Kidney Disease: Improving Global Outcomes (KDIGO)",
+          "url": "https://kdigo.org/guidelines/ckd-evaluation-and-management/",
+          "verification": "pending",
+          "note": "Consulta externa bloqueada neste ambiente; conferir título, versão vigente e correspondência do texto à fonte antes da revisão clínica."
+        }
+      ]
+    },
+    {
+      "id": "dpoc-exacerbada",
+      "name": "DPOC exacerbada",
+      "category": "Respiratórias",
+      "version": "1.0",
+      "clinicalReviewStatus": "pending",
+      "reviewedAt": null,
+      "references": [
+        {
+          "title": "Página de relatórios GOLD sobre DPOC — edição e versão a conferir",
+          "organization": "Global Initiative for Chronic Obstructive Lung Disease (GOLD)",
+          "url": "https://goldcopd.org/gold-reports/",
+          "verification": "pending",
+          "note": "Consulta externa bloqueada neste ambiente; conferir título, versão vigente e correspondência do texto à fonte antes da revisão clínica."
+        }
+      ]
+    },
+    {
+      "id": "edema-agudo-pulmao",
+      "name": "Edema agudo de pulmão",
+      "category": "Respiratórias",
+      "version": "1.0",
+      "clinicalReviewStatus": "pending",
+      "reviewedAt": null,
+      "references": [
+        {
+          "title": "Página da diretriz NICE CG187 sobre insuficiência cardíaca aguda — título e versão a conferir",
+          "organization": "National Institute for Health and Care Excellence (NICE)",
+          "url": "https://www.nice.org.uk/guidance/cg187",
+          "verification": "pending",
+          "note": "Consulta externa bloqueada neste ambiente; conferir título, versão vigente e correspondência do texto à fonte antes da revisão clínica."
+        }
+      ]
+    },
+    {
+      "id": "estado-mal-epileptico",
+      "name": "Estado de mal epiléptico",
+      "category": "Neurológicas",
+      "version": "1.0",
+      "clinicalReviewStatus": "pending",
+      "reviewedAt": null,
+      "references": [
+        {
+          "title": "Epilepsies in children, young people and adults — NG217: Treating status epilepticus, repeated or cluster seizures, and prolonged seizures",
+          "organization": "National Institute for Health and Care Excellence (NICE)",
+          "url": "https://www.nice.org.uk/guidance/ng217/chapter/7-Treating-status-epilepticus-repeated-or-cluster-seizures-and-prolonged-seizures",
+          "verification": "pending",
+          "note": "Consulta externa bloqueada neste ambiente; título, versão vigente e correspondência do texto à fonte precisam de conferência profissional."
+        }
+      ]
+    },
+    {
+      "id": "estado-hiperosmolar",
+      "name": "Estado hiperglicêmico hiperosmolar",
+      "category": "Renais e metabólicas",
+      "version": "1.0",
+      "clinicalReviewStatus": "pending",
+      "reviewedAt": null,
+      "references": [
+        {
+          "title": "Hyperglycemic Crises in Adults With Diabetes: A Consensus Report — título e versão a conferir",
+          "organization": "American Diabetes Association e sociedades participantes do consenso",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11272983/",
+          "verification": "pending",
+          "note": "Consulta externa bloqueada neste ambiente; conferir título, versão vigente e correspondência do texto à fonte antes da revisão clínica."
+        }
+      ]
+    },
+    {
+      "id": "asma-grave",
+      "name": "Exacerbação grave da asma",
+      "category": "Respiratórias",
+      "version": "1.0",
+      "clinicalReviewStatus": "pending",
+      "reviewedAt": null,
+      "references": [
+        {
+          "title": "Página de relatórios GINA sobre asma — edição e versão a conferir",
+          "organization": "Global Initiative for Asthma (GINA)",
+          "url": "https://ginasthma.org/reports/",
+          "verification": "pending",
+          "note": "Consulta externa bloqueada neste ambiente; conferir título, versão vigente e correspondência do texto à fonte antes da revisão clínica."
+        }
+      ]
+    },
+    {
+      "id": "fibrilacao-atrial",
+      "name": "Fibrilação Atrial",
+      "category": "Cardiovasculares",
+      "version": "1.0",
+      "clinicalReviewStatus": "pending",
+      "reviewedAt": null,
+      "references": [
+        {
+          "title": "Atrial fibrillation: diagnosis and management — NICE NG196",
+          "organization": "National Institute for Health and Care Excellence (NICE)",
+          "url": "https://www.nice.org.uk/guidance/ng196",
+          "verification": "pending",
+          "note": "Fonte proposta para conferência bibliográfica. A consulta externa foi bloqueada neste ambiente; título, versão vigente e correspondência de cada afirmação à diretriz precisam ser conferidos antes da revisão clínica. Não foi confirmada a vigência desta versão."
+        }
+      ]
+    },
+    {
+      "id": "hemorragia-digestiva-alta",
+      "name": "Hemorragia digestiva alta",
+      "category": "Gastrointestinais e hepáticas",
+      "version": "1.0",
+      "clinicalReviewStatus": "pending",
+      "reviewedAt": null,
+      "references": [
+        {
+          "title": "Acute upper gastrointestinal bleeding in over 16s: management — CG141 (título e versão a conferir)",
+          "organization": "National Institute for Health and Care Excellence (NICE)",
+          "url": "https://www.nice.org.uk/guidance/cg141",
+          "verification": "pending",
+          "note": "Consulta externa bloqueada neste ambiente; conferir título, versão vigente e correspondência do texto à fonte antes da revisão clínica."
+        }
+      ]
+    },
+    {
+      "id": "iam",
+      "name": "Infarto Agudo do Miocárdio",
+      "category": "Cardiovasculares",
+      "version": "1.0",
+      "clinicalReviewStatus": "pending",
+      "reviewedAt": null,
+      "references": [
+        {
+          "title": "Acute coronary syndromes — NICE NG185",
+          "organization": "National Institute for Health and Care Excellence (NICE)",
+          "url": "https://www.nice.org.uk/guidance/ng185",
+          "verification": "pending",
+          "note": "Fonte proposta para conferência bibliográfica. A consulta externa foi bloqueada neste ambiente; título, versão vigente e correspondência de cada afirmação à diretriz precisam ser conferidos antes da revisão clínica. Não foi confirmada a vigência desta versão."
+        }
+      ]
+    },
+    {
+      "id": "itu-complicada",
+      "name": "Infecção do trato urinário complicada",
+      "category": "Infecciosas",
+      "version": "1.0",
+      "clinicalReviewStatus": "pending",
+      "reviewedAt": null,
+      "references": [
+        {
+          "title": "Pyelonephritis (acute): antimicrobial prescribing — NICE guideline NG111",
+          "organization": "National Institute for Health and Care Excellence (NICE)",
+          "url": "https://www.nice.org.uk/guidance/ng111",
+          "verification": "pending",
+          "note": "Consulta externa bloqueada no ambiente (HTTP 403). Conferir o título e a versão vigente antes da revisão clínica. Esta fonte tem escopo de pielonefrite aguda, infecção urinária do trato superior, e não sustenta todas as situações de ITU complicada, bacteriúria ou infecção associada a cateter; essas situações exigem fontes específicas na revisão."
+        }
+      ]
+    },
+    {
+      "id": "insuficiencia-cardiaca",
+      "name": "Insuficiência Cardíaca",
+      "category": "Cardiovasculares",
+      "version": "1.0",
+      "clinicalReviewStatus": "pending",
+      "reviewedAt": null,
+      "references": [
+        {
+          "title": "Acute heart failure: diagnosis and management — NICE CG187",
+          "organization": "National Institute for Health and Care Excellence (NICE)",
+          "url": "https://www.nice.org.uk/guidance/cg187",
+          "verification": "pending",
+          "note": "Fonte proposta para conferência bibliográfica. A consulta externa foi bloqueada neste ambiente; título, versão vigente e correspondência de cada afirmação à diretriz precisam ser conferidos antes da revisão clínica. Não foi confirmada a vigência desta versão."
+        }
+      ]
+    },
+    {
+      "id": "insuficiencia-hepatica-aguda",
+      "name": "Insuficiência hepática aguda",
+      "category": "Gastrointestinais e hepáticas",
+      "version": "1.0",
+      "clinicalReviewStatus": "pending",
+      "reviewedAt": null,
+      "references": [
+        {
+          "title": "Management of Acute Liver Failure (título, data e versão da orientação a conferir)",
+          "organization": "American Association for the Study of Liver Diseases (AASLD)",
+          "url": "https://www.aasld.org/practice-guidelines/management-acute-liver-failure",
+          "verification": "pending",
+          "note": "Consulta externa bloqueada neste ambiente; conferir título, versão vigente e correspondência do texto à fonte antes da revisão clínica. A orientação pode corresponder a documento antigo; não presumir atualidade sem checagem."
+        }
+      ]
+    },
+    {
+      "id": "insuficiencia-respiratoria-aguda",
+      "name": "Insuficiência respiratória aguda",
+      "category": "Respiratórias",
+      "version": "1.0",
+      "clinicalReviewStatus": "pending",
+      "reviewedAt": null,
+      "references": [
+        {
+          "title": "Página sobre respiratory failure — título e versão a conferir",
+          "organization": "National Heart, Lung, and Blood Institute (NHLBI)",
+          "url": "https://www.nhlbi.nih.gov/health/respiratory-failure",
+          "verification": "pending",
+          "note": "Consulta externa bloqueada neste ambiente; conferir título, versão vigente e correspondência do texto à fonte antes da revisão clínica."
+        }
+      ]
+    },
+    {
+      "id": "lesao-renal-aguda",
+      "name": "Lesão renal aguda",
+      "category": "Renais e metabólicas",
+      "version": "1.0",
+      "clinicalReviewStatus": "pending",
+      "reviewedAt": null,
+      "references": [
+        {
+          "title": "Acute Kidney Injury — página de diretriz; título e versão a conferir",
+          "organization": "Kidney Disease: Improving Global Outcomes (KDIGO)",
+          "url": "https://kdigo.org/guidelines/acute-kidney-injury/",
+          "verification": "pending",
+          "note": "Consulta externa bloqueada neste ambiente; conferir título, versão vigente e correspondência do texto à fonte antes da revisão clínica."
+        }
+      ]
+    },
+    {
+      "id": "meningite",
+      "name": "Meningite",
+      "category": "Infecciosas",
+      "version": "1.0",
+      "clinicalReviewStatus": "pending",
+      "reviewedAt": null,
+      "references": [
+        {
+          "title": "Meningitis (bacterial) and meningococcal disease: recognition, diagnosis and management — NICE guideline NG240",
+          "organization": "National Institute for Health and Care Excellence (NICE)",
+          "url": "https://www.nice.org.uk/guidance/ng240",
+          "verification": "pending",
+          "note": "Consulta externa bloqueada no ambiente (HTTP 403). Conferir o título, a versão vigente e a população abrangida antes da revisão clínica. A fonte se refere a meningite bacteriana e doença meningocócica; as demais causas citadas precisam de referências específicas na revisão."
+        }
+      ]
+    },
+    {
+      "id": "pancreatite-aguda",
+      "name": "Pancreatite aguda",
+      "category": "Gastrointestinais e hepáticas",
+      "version": "1.0",
+      "clinicalReviewStatus": "pending",
+      "reviewedAt": null,
+      "references": [
+        {
+          "title": "Pancreatitis — NG104 (título e versão a conferir)",
+          "organization": "National Institute for Health and Care Excellence (NICE)",
+          "url": "https://www.nice.org.uk/guidance/ng104",
+          "verification": "pending",
+          "note": "Consulta externa bloqueada neste ambiente; conferir título, versão vigente e correspondência do texto à fonte antes da revisão clínica."
+        }
+      ]
+    },
+    {
+      "id": "pneumonia",
+      "name": "Pneumonia",
+      "category": "Respiratórias",
+      "version": "1.0",
+      "clinicalReviewStatus": "pending",
+      "reviewedAt": null,
+      "references": [
+        {
+          "title": "Página sobre pneumonia — título e versão a conferir",
+          "organization": "National Heart, Lung, and Blood Institute (NHLBI)",
+          "url": "https://www.nhlbi.nih.gov/health/pneumonia",
+          "verification": "pending",
+          "note": "Consulta externa bloqueada neste ambiente; conferir título, versão vigente e correspondência do texto à fonte antes da revisão clínica."
+        }
+      ]
+    },
+    {
+      "id": "sepse",
+      "name": "Sepse",
+      "category": "Infecciosas",
+      "version": "1.0",
+      "clinicalReviewStatus": "pending",
+      "reviewedAt": null,
+      "references": [
+        {
+          "title": "Surviving Sepsis Campaign: Adult Guidelines",
+          "organization": "Society of Critical Care Medicine (SCCM)",
+          "url": "https://sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines",
+          "verification": "pending",
+          "note": "Consulta externa bloqueada no ambiente (HTTP 403). Conferir o título e a versão vigente da diretriz para adultos antes da revisão clínica; o endereço foi informado, mas seu conteúdo não foi verificado nesta elaboração."
+        }
+      ]
+    },
+    {
+      "id": "sindrome-coronariana-aguda",
+      "name": "Síndrome Coronariana Aguda",
+      "category": "Cardiovasculares",
+      "version": "1.0",
+      "clinicalReviewStatus": "pending",
+      "reviewedAt": null,
+      "references": [
+        {
+          "title": "Acute coronary syndromes — NICE NG185",
+          "organization": "National Institute for Health and Care Excellence (NICE)",
+          "url": "https://www.nice.org.uk/guidance/ng185",
+          "verification": "pending",
+          "note": "Fonte proposta para conferência bibliográfica. A consulta externa foi bloqueada neste ambiente; título, versão vigente e correspondência de cada afirmação à diretriz precisam ser conferidos antes da revisão clínica. Não foi confirmada a vigência desta versão."
+        }
+      ]
+    },
+    {
+      "id": "sdra",
+      "name": "Síndrome do desconforto respiratório agudo",
+      "category": "Respiratórias",
+      "version": "1.0",
+      "clinicalReviewStatus": "pending",
+      "reviewedAt": null,
+      "references": [
+        {
+          "title": "Página sobre ARDS — título e versão a conferir",
+          "organization": "National Heart, Lung, and Blood Institute (NHLBI)",
+          "url": "https://www.nhlbi.nih.gov/health/ards",
+          "verification": "pending",
+          "note": "Consulta externa bloqueada neste ambiente; conferir título, versão vigente e correspondência do texto à fonte antes da revisão clínica."
+        }
+      ]
+    },
+    {
+      "id": "tce",
+      "name": "Traumatismo cranioencefálico",
+      "category": "Neurológicas",
+      "version": "1.0",
+      "clinicalReviewStatus": "pending",
+      "reviewedAt": null,
+      "references": [
+        {
+          "title": "Head injury: assessment and early management — NG232",
+          "organization": "National Institute for Health and Care Excellence (NICE)",
+          "url": "https://www.nice.org.uk/guidance/ng232",
+          "verification": "pending",
+          "note": "Consulta externa bloqueada neste ambiente; título, versão vigente e correspondência do texto à fonte precisam de conferência profissional."
+        }
+      ]
+    },
+    {
+      "id": "tromboembolismo-pulmonar",
+      "name": "Tromboembolismo Pulmonar",
+      "category": "Cardiovasculares",
+      "version": "1.0",
+      "clinicalReviewStatus": "pending",
+      "reviewedAt": null,
+      "references": [
+        {
+          "title": "Venous thromboembolic diseases: diagnosis, management and thrombophilia testing — NICE NG158",
+          "organization": "National Institute for Health and Care Excellence (NICE)",
+          "url": "https://www.nice.org.uk/guidance/ng158",
+          "verification": "pending",
+          "note": "Fonte proposta para conferência bibliográfica. A consulta externa foi bloqueada neste ambiente; título, versão vigente e correspondência de cada afirmação à diretriz precisam ser conferidos antes da revisão clínica. Não foi confirmada a vigência desta versão."
+        }
+      ]
+    }
+  ]
+}

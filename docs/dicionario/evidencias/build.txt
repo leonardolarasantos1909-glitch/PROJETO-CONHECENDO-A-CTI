@@ -1,0 +1,34 @@
+
+> conhecendo-a-cti@0.1.0 build
+> node scripts/check-content.mjs && node scripts/check-book.mjs && node scripts/check-apostilas.mjs && node scripts/check-family-leaflet.mjs && tsc -b && vite build && node scripts/build-sw.mjs
+
+Catálogo conferido: 903 registros públicos; links locais, metadados e evidências de validação consistentes. A revisão clínica permanece independente.
+Livro conferido: 96 páginas e PDF de origem correspondente.
+Apostilas conferidas: 5 PDFs com tamanho e integridade correspondentes ao inventário.
+Folheto conferido: 4 páginas A5, impressão em 2 lados A4 (4|1 e 2|3), fonte e arquivos correspondentes. Validação institucional pendente.
+vite v6.4.4 building for production...
+transforming...
+✓ 1671 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                               0.86 kB │ gzip:   0.47 kB
+dist/assets/PdfReader-BCyel6lV.css            1.01 kB │ gzip:   0.46 kB
+dist/assets/Calculator-DaYHjAGB.css           2.68 kB │ gzip:   0.91 kB
+dist/assets/BookReader-iSPfZ99S.css           7.88 kB │ gzip:   2.18 kB
+dist/assets/FamilyWelcome-BhvNenP7.css       17.22 kB │ gzip:   3.71 kB
+dist/assets/index-De3rJYi3.css              119.33 kB │ gzip:  22.02 kB
+dist/assets/PdfReader-CyTpKchr.js             1.86 kB │ gzip:   0.89 kB
+dist/assets/Calculator-DzM3aMYb.js            8.87 kB │ gzip:   3.43 kB
+dist/assets/BookReader-D81ODTlI.js           13.03 kB │ gzip:   4.64 kB
+dist/assets/ClinicalDictionary-DxLSnUoD.js   16.07 kB │ gzip:   5.14 kB
+dist/assets/FamilyWelcome-CdZT9oca.js        16.75 kB │ gzip:   5.63 kB
+dist/assets/clinical-content-BSFdH9xN.js    154.41 kB │ gzip:  40.33 kB
+dist/assets/react-vendor-CycvGi9z.js        223.22 kB │ gzip:  69.24 kB
+dist/assets/index-DZlPSUS9.js               356.13 kB │ gzip: 104.27 kB
+✓ built in 4.45s
+Service worker generated: ae2d21c4a39b; 5 apostilas available on demand.
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice

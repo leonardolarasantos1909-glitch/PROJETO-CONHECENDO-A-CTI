@@ -1,0 +1,1350 @@
+{
+  "phase": "clinical-dictionary",
+  "cache": "cti-ae2d21c4a39b",
+  "checks": [
+    {
+      "name": "Destaque no topo, acesso direto pelo menu e pesquisa própria sem substituir a busca geral",
+      "featuredBeforeCommonCards": true,
+      "homeSearchPreserved": true,
+      "homeFocusAndTabOrder": true,
+      "mobileAndDesktopOneTouch": true
+    },
+    {
+      "name": "Pesquisa na página inicial aceita siglas, nomes, acentos e ausência de resultados",
+      "queries": [
+        "IAM",
+        "sepse",
+        "IRpA",
+        "lesao renal"
+      ],
+      "queryCarriedToDictionary": true,
+      "noResultsAndClear": true
+    },
+    {
+      "name": "Pesquisa completa por nomes, siglas e sinônimos, sete filtros e lista alfabética",
+      "conditions": 30,
+      "nameAcronymAndSynonyms": true,
+      "categories": 7,
+      "alphabetical": true
+    },
+    {
+      "name": "Todas as 30 fichas preservam resumo, cuidados prioritários, alertas, seções completas e referências",
+      "completeConditions": 30,
+      "expandableSectionsEach": 8,
+      "sourceLinks": 31,
+      "internalResourceLinks": 239,
+      "relatedConditionLinks": 98,
+      "patientInputs": 0,
+      "allPending": true
+    },
+    {
+      "name": "Vínculos bidirecionais com equipamentos, rotinas, escalas, registros, siglário e casos",
+      "destinationFamilies": 7,
+      "routes": [
+        "#equipamentos/canula-nasal-de-alto-fluxo",
+        "#equipamentos/ventilador-mecanico",
+        "#rotinas/balanco-hidrico-e-dispositivos",
+        "#escalas/rass",
+        "#registros",
+        "#glossario",
+        "#quiz"
+      ]
+    },
+    {
+      "name": "Favoritos persistem sem cadastro e convivem com favoritos anteriores",
+      "persistentFavorite": "clinical.iam",
+      "noNewStorageKeys": true,
+      "noLogin": true
+    },
+    {
+      "name": "Compartilhamento copia o link público e oferece alternativa quando a área de transferência falha",
+      "clipboardSuccessAndFallback": true,
+      "personalDataInUrl": false
+    },
+    {
+      "name": "Teclado abre seções nativas e navega links com identificação acessível",
+      "nativeDetailsKeyboard": true,
+      "relatedLinkEnter": true
+    },
+    {
+      "name": "Amostras de contraste e controles principais mantêm leitura e alvos de toque acessíveis",
+      "textSamples": 12,
+      "minimumContrast": 5.600726773636567,
+      "minimumTargetPixels": 44,
+      "measuredControls": 10
+    },
+    {
+      "name": "Ficha desconhecida oferece recuperação sem exceção e sem dados clínicos inventados",
+      "unknownRouteRecovery": true
+    },
+    {
+      "name": "Listas, pesquisa e todas as fichas se adaptam a 320,390,768 e1440pixels sem rolagem horizontal",
+      "widths": [
+        320,
+        390,
+        768,
+        1440
+      ],
+      "checkedLayouts": 128
+    },
+    {
+      "name": "Sem armazenamento disponível, favoritos continuam na sessão com aviso compreensível",
+      "storageBlockedHandled": true,
+      "inSessionFavorite": true
+    },
+    {
+      "name": "Textos e fichas funcionam offline após primeiro carregamento completo com o cache existente",
+      "existingCache": "cti-ae2d21c4a39b",
+      "freshTabOffline": true,
+      "localSearchOffline": true,
+      "offlineReload": true
+    },
+    {
+      "name": "Nenhum erro de execução,CSP ou serviço externo durante a consulta educativa",
+      "runtimeErrors": 0,
+      "consoleErrors": 0,
+      "externalRequests": 0,
+      "cspViolations": 0
+    }
+  ],
+  "failures": [],
+  "routes": [
+    "inicio",
+    "inicio",
+    "inicio",
+    "inicio",
+    "inicio",
+    "dicionario-clinico",
+    "dicionario-clinico/avc-hemorragico",
+    "dicionario-clinico/avc-isquemico",
+    "dicionario-clinico/cetoacidose-diabetica",
+    "dicionario-clinico/choque-cardiogenico",
+    "dicionario-clinico/choque-hipovolemico",
+    "dicionario-clinico/choque-septico",
+    "dicionario-clinico/civd",
+    "dicionario-clinico/disturbios-potassio",
+    "dicionario-clinico/doenca-renal-cronica",
+    "dicionario-clinico/dpoc-exacerbada",
+    "dicionario-clinico/edema-agudo-pulmao",
+    "dicionario-clinico/estado-mal-epileptico",
+    "dicionario-clinico/estado-hiperosmolar",
+    "dicionario-clinico/asma-grave",
+    "dicionario-clinico/fibrilacao-atrial",
+    "dicionario-clinico/hemorragia-digestiva-alta",
+    "dicionario-clinico/iam",
+    "dicionario-clinico/itu-complicada",
+    "dicionario-clinico/insuficiencia-cardiaca",
+    "dicionario-clinico/insuficiencia-hepatica-aguda",
+    "dicionario-clinico/insuficiencia-respiratoria-aguda",
+    "dicionario-clinico/lesao-renal-aguda",
+    "dicionario-clinico/meningite",
+    "dicionario-clinico/pancreatite-aguda",
+    "dicionario-clinico/pneumonia",
+    "dicionario-clinico/sepse",
+    "dicionario-clinico/sindrome-coronariana-aguda",
+    "dicionario-clinico/sdra",
+    "dicionario-clinico/tce",
+    "dicionario-clinico/tromboembolismo-pulmonar",
+    "equipamentos/canula-nasal-de-alto-fluxo",
+    "equipamentos/ventilador-mecanico",
+    "rotinas/balanco-hidrico-e-dispositivos",
+    "escalas/rass",
+    "registros",
+    "glossario",
+    "quiz",
+    "dicionario-clinico/iam",
+    "favoritos",
+    "dicionario-clinico/sepse",
+    "dicionario-clinico/iam",
+    "dicionario-clinico/iam",
+    "dicionario-clinico/ficha-nao-cadastrada",
+    "inicio",
+    "dicionario-clinico",
+    "dicionario-clinico/avc-hemorragico",
+    "dicionario-clinico/avc-isquemico",
+    "dicionario-clinico/cetoacidose-diabetica",
+    "dicionario-clinico/choque-cardiogenico",
+    "dicionario-clinico/choque-hipovolemico",
+    "dicionario-clinico/choque-septico",
+    "dicionario-clinico/civd",
+    "dicionario-clinico/disturbios-potassio",
+    "dicionario-clinico/doenca-renal-cronica",
+    "dicionario-clinico/dpoc-exacerbada",
+    "dicionario-clinico/edema-agudo-pulmao",
+    "dicionario-clinico/estado-mal-epileptico",
+    "dicionario-clinico/estado-hiperosmolar",
+    "dicionario-clinico/asma-grave",
+    "dicionario-clinico/fibrilacao-atrial",
+    "dicionario-clinico/hemorragia-digestiva-alta",
+    "dicionario-clinico/iam",
+    "dicionario-clinico/itu-complicada",
+    "dicionario-clinico/insuficiencia-cardiaca",
+    "dicionario-clinico/insuficiencia-hepatica-aguda",
+    "dicionario-clinico/insuficiencia-respiratoria-aguda",
+    "dicionario-clinico/lesao-renal-aguda",
+    "dicionario-clinico/meningite",
+    "dicionario-clinico/pancreatite-aguda",
+    "dicionario-clinico/pneumonia",
+    "dicionario-clinico/sepse",
+    "dicionario-clinico/sindrome-coronariana-aguda",
+    "dicionario-clinico/sdra",
+    "dicionario-clinico/tce",
+    "dicionario-clinico/tromboembolismo-pulmonar",
+    "inicio",
+    "dicionario-clinico",
+    "dicionario-clinico/avc-hemorragico",
+    "dicionario-clinico/avc-isquemico",
+    "dicionario-clinico/cetoacidose-diabetica",
+    "dicionario-clinico/choque-cardiogenico",
+    "dicionario-clinico/choque-hipovolemico",
+    "dicionario-clinico/choque-septico",
+    "dicionario-clinico/civd",
+    "dicionario-clinico/disturbios-potassio",
+    "dicionario-clinico/doenca-renal-cronica",
+    "dicionario-clinico/dpoc-exacerbada",
+    "dicionario-clinico/edema-agudo-pulmao",
+    "dicionario-clinico/estado-mal-epileptico",
+    "dicionario-clinico/estado-hiperosmolar",
+    "dicionario-clinico/asma-grave",
+    "dicionario-clinico/fibrilacao-atrial",
+    "dicionario-clinico/hemorragia-digestiva-alta",
+    "dicionario-clinico/iam",
+    "dicionario-clinico/itu-complicada",
+    "dicionario-clinico/insuficiencia-cardiaca",
+    "dicionario-clinico/insuficiencia-hepatica-aguda",
+    "dicionario-clinico/insuficiencia-respiratoria-aguda",
+    "dicionario-clinico/lesao-renal-aguda",
+    "dicionario-clinico/meningite",
+    "dicionario-clinico/pancreatite-aguda",
+    "dicionario-clinico/pneumonia",
+    "dicionario-clinico/sepse",
+    "dicionario-clinico/sindrome-coronariana-aguda",
+    "dicionario-clinico/sdra",
+    "dicionario-clinico/tce",
+    "dicionario-clinico/tromboembolismo-pulmonar",
+    "inicio",
+    "dicionario-clinico",
+    "dicionario-clinico/avc-hemorragico",
+    "dicionario-clinico/avc-isquemico",
+    "dicionario-clinico/cetoacidose-diabetica",
+    "dicionario-clinico/choque-cardiogenico",
+    "dicionario-clinico/choque-hipovolemico",
+    "dicionario-clinico/choque-septico",
+    "dicionario-clinico/civd",
+    "dicionario-clinico/disturbios-potassio",
+    "dicionario-clinico/doenca-renal-cronica",
+    "dicionario-clinico/dpoc-exacerbada",
+    "dicionario-clinico/edema-agudo-pulmao",
+    "dicionario-clinico/estado-mal-epileptico",
+    "dicionario-clinico/estado-hiperosmolar",
+    "dicionario-clinico/asma-grave",
+    "dicionario-clinico/fibrilacao-atrial",
+    "dicionario-clinico/hemorragia-digestiva-alta",
+    "dicionario-clinico/iam",
+    "dicionario-clinico/itu-complicada",
+    "dicionario-clinico/insuficiencia-cardiaca",
+    "dicionario-clinico/insuficiencia-hepatica-aguda",
+    "dicionario-clinico/insuficiencia-respiratoria-aguda",
+    "dicionario-clinico/lesao-renal-aguda",
+    "dicionario-clinico/meningite",
+    "dicionario-clinico/pancreatite-aguda",
+    "dicionario-clinico/pneumonia",
+    "dicionario-clinico/sepse",
+    "dicionario-clinico/sindrome-coronariana-aguda",
+    "dicionario-clinico/sdra",
+    "dicionario-clinico/tce",
+    "dicionario-clinico/tromboembolismo-pulmonar",
+    "inicio",
+    "dicionario-clinico",
+    "dicionario-clinico/avc-hemorragico",
+    "dicionario-clinico/avc-isquemico",
+    "dicionario-clinico/cetoacidose-diabetica",
+    "dicionario-clinico/choque-cardiogenico",
+    "dicionario-clinico/choque-hipovolemico",
+    "dicionario-clinico/choque-septico",
+    "dicionario-clinico/civd",
+    "dicionario-clinico/disturbios-potassio",
+    "dicionario-clinico/doenca-renal-cronica",
+    "dicionario-clinico/dpoc-exacerbada",
+    "dicionario-clinico/edema-agudo-pulmao",
+    "dicionario-clinico/estado-mal-epileptico",
+    "dicionario-clinico/estado-hiperosmolar",
+    "dicionario-clinico/asma-grave",
+    "dicionario-clinico/fibrilacao-atrial",
+    "dicionario-clinico/hemorragia-digestiva-alta",
+    "dicionario-clinico/iam",
+    "dicionario-clinico/itu-complicada",
+    "dicionario-clinico/insuficiencia-cardiaca",
+    "dicionario-clinico/insuficiencia-hepatica-aguda",
+    "dicionario-clinico/insuficiencia-respiratoria-aguda",
+    "dicionario-clinico/lesao-renal-aguda",
+    "dicionario-clinico/meningite",
+    "dicionario-clinico/pancreatite-aguda",
+    "dicionario-clinico/pneumonia",
+    "dicionario-clinico/sepse",
+    "dicionario-clinico/sindrome-coronariana-aguda",
+    "dicionario-clinico/sdra",
+    "dicionario-clinico/tce",
+    "dicionario-clinico/tromboembolismo-pulmonar",
+    "inicio",
+    "dicionario-clinico/insuficiencia-respiratoria-aguda",
+    "dicionario-clinico",
+    "dicionario-clinico/sepse",
+    "dicionario-clinico"
+  ],
+  "layouts": [
+    {
+      "route": "inicio",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "dicionario-clinico",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "dicionario-clinico/avc-hemorragico",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "dicionario-clinico/avc-isquemico",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "dicionario-clinico/cetoacidose-diabetica",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "dicionario-clinico/choque-cardiogenico",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "dicionario-clinico/choque-hipovolemico",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "dicionario-clinico/choque-septico",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "dicionario-clinico/civd",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "dicionario-clinico/disturbios-potassio",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "dicionario-clinico/doenca-renal-cronica",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "dicionario-clinico/dpoc-exacerbada",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "dicionario-clinico/edema-agudo-pulmao",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "dicionario-clinico/estado-mal-epileptico",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "dicionario-clinico/estado-hiperosmolar",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "dicionario-clinico/asma-grave",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "dicionario-clinico/fibrilacao-atrial",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "dicionario-clinico/hemorragia-digestiva-alta",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "dicionario-clinico/iam",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "dicionario-clinico/itu-complicada",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "dicionario-clinico/insuficiencia-cardiaca",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "dicionario-clinico/insuficiencia-hepatica-aguda",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "dicionario-clinico/insuficiencia-respiratoria-aguda",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "dicionario-clinico/lesao-renal-aguda",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "dicionario-clinico/meningite",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "dicionario-clinico/pancreatite-aguda",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "dicionario-clinico/pneumonia",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "dicionario-clinico/sepse",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "dicionario-clinico/sindrome-coronariana-aguda",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "dicionario-clinico/sdra",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "dicionario-clinico/tce",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "dicionario-clinico/tromboembolismo-pulmonar",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "inicio",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "dicionario-clinico",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "dicionario-clinico/avc-hemorragico",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "dicionario-clinico/avc-isquemico",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "dicionario-clinico/cetoacidose-diabetica",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "dicionario-clinico/choque-cardiogenico",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "dicionario-clinico/choque-hipovolemico",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "dicionario-clinico/choque-septico",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "dicionario-clinico/civd",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "dicionario-clinico/disturbios-potassio",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "dicionario-clinico/doenca-renal-cronica",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "dicionario-clinico/dpoc-exacerbada",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "dicionario-clinico/edema-agudo-pulmao",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "dicionario-clinico/estado-mal-epileptico",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "dicionario-clinico/estado-hiperosmolar",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "dicionario-clinico/asma-grave",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "dicionario-clinico/fibrilacao-atrial",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "dicionario-clinico/hemorragia-digestiva-alta",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "dicionario-clinico/iam",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "dicionario-clinico/itu-complicada",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "dicionario-clinico/insuficiencia-cardiaca",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "dicionario-clinico/insuficiencia-hepatica-aguda",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "dicionario-clinico/insuficiencia-respiratoria-aguda",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "dicionario-clinico/lesao-renal-aguda",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "dicionario-clinico/meningite",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "dicionario-clinico/pancreatite-aguda",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "dicionario-clinico/pneumonia",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "dicionario-clinico/sepse",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "dicionario-clinico/sindrome-coronariana-aguda",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "dicionario-clinico/sdra",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "dicionario-clinico/tce",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "dicionario-clinico/tromboembolismo-pulmonar",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "inicio",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "dicionario-clinico",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "dicionario-clinico/avc-hemorragico",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "dicionario-clinico/avc-isquemico",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "dicionario-clinico/cetoacidose-diabetica",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "dicionario-clinico/choque-cardiogenico",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "dicionario-clinico/choque-hipovolemico",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "dicionario-clinico/choque-septico",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "dicionario-clinico/civd",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "dicionario-clinico/disturbios-potassio",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "dicionario-clinico/doenca-renal-cronica",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "dicionario-clinico/dpoc-exacerbada",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "dicionario-clinico/edema-agudo-pulmao",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "dicionario-clinico/estado-mal-epileptico",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "dicionario-clinico/estado-hiperosmolar",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "dicionario-clinico/asma-grave",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "dicionario-clinico/fibrilacao-atrial",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "dicionario-clinico/hemorragia-digestiva-alta",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "dicionario-clinico/iam",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "dicionario-clinico/itu-complicada",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "dicionario-clinico/insuficiencia-cardiaca",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "dicionario-clinico/insuficiencia-hepatica-aguda",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "dicionario-clinico/insuficiencia-respiratoria-aguda",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "dicionario-clinico/lesao-renal-aguda",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "dicionario-clinico/meningite",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "dicionario-clinico/pancreatite-aguda",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "dicionario-clinico/pneumonia",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "dicionario-clinico/sepse",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "dicionario-clinico/sindrome-coronariana-aguda",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "dicionario-clinico/sdra",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "dicionario-clinico/tce",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "dicionario-clinico/tromboembolismo-pulmonar",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "inicio",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "dicionario-clinico",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "dicionario-clinico/avc-hemorragico",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "dicionario-clinico/avc-isquemico",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "dicionario-clinico/cetoacidose-diabetica",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "dicionario-clinico/choque-cardiogenico",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "dicionario-clinico/choque-hipovolemico",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "dicionario-clinico/choque-septico",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "dicionario-clinico/civd",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "dicionario-clinico/disturbios-potassio",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "dicionario-clinico/doenca-renal-cronica",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "dicionario-clinico/dpoc-exacerbada",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "dicionario-clinico/edema-agudo-pulmao",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "dicionario-clinico/estado-mal-epileptico",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "dicionario-clinico/estado-hiperosmolar",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "dicionario-clinico/asma-grave",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "dicionario-clinico/fibrilacao-atrial",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "dicionario-clinico/hemorragia-digestiva-alta",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "dicionario-clinico/iam",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "dicionario-clinico/itu-complicada",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "dicionario-clinico/insuficiencia-cardiaca",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "dicionario-clinico/insuficiencia-hepatica-aguda",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "dicionario-clinico/insuficiencia-respiratoria-aguda",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "dicionario-clinico/lesao-renal-aguda",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "dicionario-clinico/meningite",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "dicionario-clinico/pancreatite-aguda",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "dicionario-clinico/pneumonia",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "dicionario-clinico/sepse",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "dicionario-clinico/sindrome-coronariana-aguda",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "dicionario-clinico/sdra",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "dicionario-clinico/tce",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "dicionario-clinico/tromboembolismo-pulmonar",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "externalRequests": [],
+  "screenshots": [
+    {
+      "path": "/tmp/cti-clinical-home-mobile.png",
+      "route": "inicio",
+      "width": 390
+    },
+    {
+      "path": "/tmp/cti-clinical-entry-mobile.png",
+      "route": "dicionario-clinico/insuficiencia-respiratoria-aguda",
+      "width": 390
+    },
+    {
+      "path": "/tmp/cti-clinical-index-desktop.png",
+      "route": "dicionario-clinico",
+      "width": 1440
+    },
+    {
+      "path": "/tmp/cti-clinical-entry-desktop.png",
+      "route": "dicionario-clinico/sepse",
+      "width": 1440
+    }
+  ],
+  "limits": [
+    "Chromium automatizado em Linux. iPhone, Android e Safari físicos, VoiceOver, TalkBack e NVDA não foram executados.",
+    "Servidor HTTP local com simulação de dist/_headers. Homologação e produção no Cloudflare não foram publicadas nem testadas.",
+    "Os testes verificam comportamento de software, integridade dos conteúdos e sinalização de revisão; não conferem aprovação clínica nem conformidade integral com WCAG."
+  ],
+  "contrastSamples": [
+    {
+      "text": "Cardiovasculares",
+      "color": "rgb(123, 57, 69)",
+      "background": "rgb(249, 250, 249)",
+      "ratio": 7.985315872968856
+    },
+    {
+      "text": "Copiar link da ficha",
+      "color": "rgb(67, 92, 73)",
+      "background": "rgb(241, 244, 237)",
+      "ratio": 6.596346494691006
+    },
+    {
+      "text": "Pendente de validação clínica",
+      "color": "rgb(115, 83, 42)",
+      "background": "rgb(251, 242, 231)",
+      "ratio": 6.319491821803953
+    },
+    {
+      "text": "No infarto, parte do músculo cardíaco sofre lesão e morte de células por falta de irrigação. Pode ha",
+      "color": "rgb(82, 102, 80)",
+      "background": "rgb(241, 244, 237)",
+      "ratio": 5.600726773636567
+    },
+    {
+      "text": "Acompanhar os sinais, o ritmo monitorizado e a evolução das queixas conforme o plano de cuidados; ve",
+      "color": "rgb(67, 92, 73)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 7.327989423559539
+    },
+    {
+      "text": "Descrever início, característica, duração e mudanças do desconforto, registrando o que foi observado",
+      "color": "rgb(67, 92, 73)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 7.327989423559539
+    },
+    {
+      "text": "Auxiliar a obtenção de eletrocardiograma e exames conforme atribuição, treinamento e orientação do e",
+      "color": "rgb(67, 92, 73)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 7.327989423559539
+    },
+    {
+      "text": "Conferir e executar cuidados e medicações prescritos, dentro da habilitação e sob supervisão; comuni",
+      "color": "rgb(67, 92, 73)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 7.327989423559539
+    },
+    {
+      "text": "Dor ou desconforto novo ou recorrente, especialmente com falta de ar, suor frio ou palidez.",
+      "color": "rgb(105, 67, 74)",
+      "background": "rgb(255, 248, 248)",
+      "ratio": 8.006096377016378
+    },
+    {
+      "text": "Desmaio, alteração de consciência, piora respiratória ou sinais de perfusão comprometida.",
+      "color": "rgb(105, 67, 74)",
+      "background": "rgb(255, 248, 248)",
+      "ratio": 8.006096377016378
+    },
+    {
+      "text": "Arritmia ou alarme acompanhado de deterioração clínica: solicitar avaliação imediata e seguir o flux",
+      "color": "rgb(105, 67, 74)",
+      "background": "rgb(255, 248, 248)",
+      "ratio": 8.006096377016378
+    },
+    {
+      "text": "Acute coronary syndromes — NICE NG185 — abre em outra aba",
+      "color": "rgb(158, 48, 65)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 7.111576200521008
+    }
+  ],
+  "touchTargets": [
+    {
+      "label": "Salvo",
+      "width": 90.03125,
+      "height": 50
+    },
+    {
+      "label": "Copiar link da ficha",
+      "width": 251.96875,
+      "height": 52
+    },
+    {
+      "label": "Identificação e termos de pesquisa",
+      "width": 352,
+      "height": 54.59375
+    },
+    {
+      "label": "O que é?",
+      "width": 352,
+      "height": 54.59375
+    },
+    {
+      "label": "O que acontece no organismo?",
+      "width": 352,
+      "height": 54.59375
+    },
+    {
+      "label": "Causas e fatores associados",
+      "width": 352,
+      "height": 54.59375
+    },
+    {
+      "label": "Sinais e sintomas",
+      "width": 352,
+      "height": 54.59375
+    },
+    {
+      "label": "Como é diagnosticada?",
+      "width": 352,
+      "height": 54.59375
+    },
+    {
+      "label": "Tratamento — visão geral",
+      "width": 352,
+      "height": 54.59375
+    },
+    {
+      "label": "Exemplo clínico educativo",
+      "width": 352,
+      "height": 54.59375
+    }
+  ],
+  "cspViolations": []
+}

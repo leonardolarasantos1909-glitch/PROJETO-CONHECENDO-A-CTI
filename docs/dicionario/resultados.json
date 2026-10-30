@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-30",
+  "baseline": "aad89c90e068e7a438239be347c7ac361d6c91ad",
+  "branch": "modulos/dicionario-clinico",
+  "cache": "cti-ae2d21c4a39b",
+  "unit_tests": 125,
+  "unit_test_files": 23,
+  "content_registry": 903,
+  "dictionary_browser": {
+    "checks": 14,
+    "failures": 0,
+    "layouts": 128,
+    "widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "unique_routes": 41,
+    "runtime_errors": 0,
+    "external_requests": 0
+  },
+  "conditions": 30,
+  "categories": 7,
+  "reference_links": 31,
+  "unique_reference_urls": 25,
+  "sources_verified_by_independent_reading": 0,
+  "all_conditions_pending": true,
+  "preserved_material_assets": 108,
+  "preserved_pdfs": 9,
+  "preserved_book_pages": 96,
+  "new_dependencies": 0,
+  "new_storage_keys": 0,
+  "production_deployed": false,
+  "zip": {
+    "path": "downloads/conhecendo-a-cti-dicionario-clinico.zip",
+    "files": 128,
+    "bytes": 70352761,
+    "sha256": "fa7273e4f881acfcc0ed944e534eba5752d03ae2297a61fff584c45af465ce3f",
+    "cache": "const CACHE = 'cti-ae2d21c4a39b';",
+    "crc_valid": true,
+    "matches_dist": true,
+    "safe_paths": true,
+    "baseline": "downloads/conhecendo-a-cti-com-calculadora.zip",
+    "preserved_assets": 108,
+    "added_materials": [],
+    "production_deployed": false
+  },
+  "existing_features_browser": {
+    "runner": "scripts/check-calculator-browser.mjs (reutilizado sem alterações; o identificador interno de fase calculator é histórico)",
+    "cache": "cti-ae2d21c4a39b",
+    "checks": 31,
+    "failures": 0,
+    "unique_routes": 103,
+    "layouts": 120,
+    "runtime_errors": 0,
+    "external_requests": 0,
+    "warnings": []
+  },
+  "total_browser_groups": 45
+}

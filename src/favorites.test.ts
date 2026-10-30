@@ -5,6 +5,7 @@ import { glossaryTerms } from './starter-data';
 import { newTools } from './new-tools';
 import { communicationCases, familySections } from './family-welcome';
 import { familyCaseHref, familySectionHref, isFamilySection } from './family-catalog';
+import { getClinicalCondition } from './clinical-dictionary';
 
 describe('Favoritos e atalhos de conteúdo', () => {
   it('abre a aba exata de uma escala e o tópico exato de um módulo', () => {
@@ -20,6 +21,7 @@ describe('Favoritos e atalhos de conteúdo', () => {
       const [path, query] = item.href.slice(1).split('?');
       const [route, target] = path.split('/');
       if (route === 'glossario') { if (target) expect(glossaryTerms.some(term => term.id === target)).toBe(true); }
+      else if (route === 'dicionario-clinico') { if (target) expect(getClinicalCondition(target)).toBeDefined(); }
       else if (route === 'acolher-familia') {
         if (target) expect(isFamilySection(target)).toBe(true);
         if (query) {

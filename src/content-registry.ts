@@ -19,6 +19,7 @@ import { guidedDemoSteps } from './guided-demo';
 import { communicationCases, communicationSituations, familyGuidance, familyReferences, familySections, visitorGuidance } from './family-welcome';
 import { familyCaseHref, familyContentReferences, familyLeafletPdfs, familySectionHref } from './family-catalog';
 import familyLeaflet from './data/family-leaflet.json';
+import { clinicalConditions, clinicalFavoriteId, clinicalHref, clinicalModule } from './clinical-dictionary';
 
 export type ContentReference = { label: string; href: string; page?: number };
 export type ContentMetadata = {
@@ -102,6 +103,12 @@ function additionalToolMetadata(id: string): Partial<ContentMetadata> {
 
 /** Metadata adapts the existing catalogs; it does not duplicate or silently rewrite clinical text. */
 export const contentRegistry: ContentMetadata[] = [
+  pending({ ...clinicalModule, category: 'Módulo', notes: ['Módulo educativo de patologias e condições críticas. As 30 fichas estão pendentes de revisão clínica; não há aprovação institucional.'] }),
+  ...clinicalConditions.map(item => pending({ id: clinicalFavoriteId(item.id), title: item.name, category: 'Dicionário Clínico', description: item.quickSummary, href: clinicalHref(item.id), version: item.version,
+    references: item.references.map(ref => ({ label: `${ref.organization} — ${ref.title}${ref.verification === 'pending' ? ' (conferência pendente)' : ''}`, href: ref.url })),
+    referenceStatus: 'specific_reference_pending',
+    notes: ['Rascunho educativo. A consulta técnica de uma fonte não equivale à revisão profissional da ficha nem à aprovação institucional.', ...item.references.map(ref => ref.note)],
+  })),
   ...modules.map(module => pending({
     id: `module.${module.id}`, title: module.title, description: module.description, category: 'Módulo', href: `#${module.id}`,
     references: moduleReferences(module.id),

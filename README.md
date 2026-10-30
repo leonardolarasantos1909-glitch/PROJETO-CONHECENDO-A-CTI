@@ -13,7 +13,15 @@ O conteúdo do QR foi decodificado e conferido localmente. A conexão ao endere�
 
 ## Baixar a versão pronta
 
-**Entrega atual — calculadora comum (27/10/2026):** soma, subtração, multiplicação, divisão, vírgula decimal e teclado, com funcionamento offline após o primeiro carregamento. Preserva o módulo de acolhimento familiar e todos os materiais anteriores. Sem publicação automática na Cloudflare.
+**Entrega atual — Dicionário Clínico (30/10/2026):** módulo central com 30 fichas educativas, destaque e pesquisa própria no topo da página inicial, menu direto, cuidados do técnico, sinais de alerta, referências e vínculos recíprocos com os materiais existentes. Todas as fichas permanecem pendentes de validação clínica. Nenhuma publicação em produção foi realizada.
+
+- [Baixar aplicativo completo com Dicionário Clínico](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/modulos/dicionario-clinico/downloads/conhecendo-a-cti-dicionario-clinico.zip).
+- [Como usar, revisar e atualizar mantendo o QR Code](docs/DICIONARIO-CLINICO.md).
+- [Testes, fontes e limitações desta entrega](docs/dicionario/README.md).
+
+As entregas seguintes são versões anteriores preservadas.
+
+**Calculadora comum (27/10/2026):** soma, subtração, multiplicação, divisão, vírgula decimal e teclado, com funcionamento offline após o primeiro carregamento. Preserva o módulo de acolhimento familiar e todos os materiais anteriores. Sem publicação automática na Cloudflare.
 
 - [Baixar aplicativo completo com calculadora](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/ferramentas/calculadora/downloads/conhecendo-a-cti-com-calculadora.zip).
 - [Como acessar, usar e atualizar](docs/CALCULADORA.md).

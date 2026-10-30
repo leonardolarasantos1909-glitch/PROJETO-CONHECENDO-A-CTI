@@ -11,6 +11,7 @@ import { annotationScenarios } from './annotation-lab';
 import { virtualStations } from './virtual-cti';
 import { communicationCases, communicationSituations, familySections } from './family-welcome';
 import { familyCaseHref, familyLeafletPdfs, familySectionHref, isFamilySection } from './family-catalog';
+import { getClinicalCondition } from './clinical-dictionary';
 
 describe('Busca por nome e assunto', () => {
   it('prioriza o conteúdo específico para nomes, siglas e aliases', () => {
@@ -62,7 +63,7 @@ describe('Busca por nome e assunto', () => {
 
   it('indexa cada nome do catálogo uma vez e mantém todos os destinos dentro do app', () => {
     expect(new Set(searchIndex.map(item => item.id)).size).toBe(searchIndex.length);
-    expect(searchIndex.filter(item => item.kind === 'Módulo')).toHaveLength(9);
+    expect(searchIndex.filter(item => item.kind === 'Módulo')).toHaveLength(modules.length + 1);
     expect(searchIndex.filter(item => item.kind === 'PDF')).toHaveLength(9);
     expect(searchIndex.filter(item => item.kind === 'Caso simulado')).toHaveLength(13);
     const materialIds = [...learningMaterials, ...apostilas, ...familyLeafletPdfs].map(item => item.id);
@@ -74,6 +75,7 @@ describe('Busca por nome e assunto', () => {
       const [path, query] = item.href.slice(1).split('?');
       const [route, target] = path.split('/');
       if (route === 'glossario') { if (target) expect(glossaryTerms.some(term => term.id === target)).toBe(true); }
+      else if (route === 'dicionario-clinico') { if (target) expect(getClinicalCondition(target)).toBeDefined(); }
       else if (route === 'acolher-familia') {
         if (target) expect(isFamilySection(target)).toBe(true);
         if (query) {

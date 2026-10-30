@@ -1,4 +1,5 @@
 import { useEffect, useId, useRef, useState, type KeyboardEvent, type ReactNode } from 'react';
+import ClinicalRelated from './ClinicalRelated';
 import { Activity, ArrowRight, ArrowUpRight, BookOpen, Brain, ChevronDown, Eye, MessageCircle } from 'lucide-react';
 import { scales, scaleComparison } from './scales';
 import { pdfReaderLink } from './pdf-catalog';
@@ -163,6 +164,7 @@ export default function ScalesGuide({ initialScale, renderFavorite, scaleIds, on
         </section>
       </div>
 
+      <ClinicalRelated href={`#escalas/${scale.id}`}/>
       <section className="scales-card scales-sources" aria-labelledby={`${prefix}-sources-${scale.id}`}>
         <div className="scales-sources-title"><BookOpen size={23} aria-hidden="true"/><h3 id={`${prefix}-sources-${scale.id}`}>Fontes e leitura complementar</h3></div>
         <ul>{scale.references.map(reference => <li key={reference.id}><a {...pdfReaderLink(reference.href)}><span>{reference.label}</span><ArrowUpRight size={18} aria-hidden="true"/>{pdfReaderLink(reference.href).target && <span className="sr-only"> (abre em nova aba)</span>}</a></li>)}</ul>

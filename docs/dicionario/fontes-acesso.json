@@ -1,0 +1,149 @@
+{
+  "attempted_at": "2026-10-30",
+  "scope": "Conferência técnica de acesso, sem revisão clínica nem confirmação da versão vigente.",
+  "conditions": 30,
+  "unique_sources": 25,
+  "results": [
+    {
+      "url": "https://ginasthma.org/reports/",
+      "verification": "pending",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://goldcopd.org/gold-reports/",
+      "verification": "pending",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://kdigo.org/conferences/potassium-management/",
+      "verification": "pending",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://kdigo.org/guidelines/acute-kidney-injury/",
+      "verification": "pending",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://kdigo.org/guidelines/ckd-evaluation-and-management/",
+      "verification": "pending",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11272983/",
+      "verification": "pending",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://professional.heart.org/en/science-news/2022-guideline-for-the-management-of-patients-with-spontaneous-intracerebral-hemorrhage",
+      "verification": "pending",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines",
+      "verification": "pending",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.aasld.org/practice-guidelines/management-acute-liver-failure",
+      "verification": "pending",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.msdmanuals.com/professional/critical-care-medicine/shock-and-fluid-resuscitation/shock",
+      "verification": "pending",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.msdmanuals.com/professional/hematology-and-oncology/coagulation-disorders/disseminated-intravascular-coagulation-dic",
+      "verification": "pending",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.nhlbi.nih.gov/health/ards",
+      "verification": "pending",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.nhlbi.nih.gov/health/pneumonia",
+      "verification": "pending",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.nhlbi.nih.gov/health/respiratory-failure",
+      "verification": "pending",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/cg141",
+      "verification": "pending",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/cg187",
+      "verification": "pending",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/ng104",
+      "verification": "pending",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/ng111",
+      "verification": "pending",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/ng128",
+      "verification": "pending",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/ng158",
+      "verification": "pending",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/ng185",
+      "verification": "pending",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/ng196",
+      "verification": "pending",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/ng217/chapter/7-Treating-status-epilepticus-repeated-or-cluster-seizures-and-prolonged-seizures",
+      "verification": "pending",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/ng232",
+      "verification": "pending",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/ng240",
+      "verification": "pending",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    }
+  ],
+  "attempts_summary": [
+    {
+      "mode": "padrão",
+      "attempted_sources": 25,
+      "http_success": 0,
+      "error": "Tunnel connection failed: 403 Forbidden"
+    },
+    {
+      "mode": "escalada",
+      "attempted_sources": 25,
+      "http_success": 0,
+      "error": "Tunnel connection failed: 403 Forbidden"
+    }
+  ],
+  "verified_sources": 0,
+  "note": "Sem leitura independente das páginas, sem confirmação de títulos, versões vigentes ou correspondência das afirmações. Todas as referências permanecem pending, sem accessedAt. A lista contém fontes propostas para a revisão, não evidência de validação clínica."
+}

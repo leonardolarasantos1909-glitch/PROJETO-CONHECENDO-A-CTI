@@ -13,18 +13,19 @@ import { virtualStations } from './virtual-cti';
 import { communicationCases, communicationSituations, familyGuidance, familySections, localVisitingRule, visitorGuidance } from './family-welcome';
 import { familyCaseHref, familyLeafletPdfs, familySectionHref } from './family-catalog';
 import familyLeaflet from './data/family-leaflet.json';
+import { clinicalConditions, clinicalFavoriteId, clinicalHref, clinicalModule } from './clinical-dictionary';
 
 export type SearchResult = {
   id: string;
   title: string;
-  kind: 'Módulo' | 'Assunto' | 'Escala' | 'Siglário' | 'Ferramenta' | 'PDF' | 'Caso simulado';
+  kind: 'Módulo' | 'Assunto' | 'Escala' | 'Siglário' | 'Ferramenta' | 'PDF' | 'Caso simulado' | 'Dicionário Clínico';
   description: string;
   href: string;
   external?: boolean;
 };
 
 type SearchEntry = SearchResult & { aliases: string[]; body: string };
-export const searchCategories: readonly SearchResult['kind'][] = ['Módulo', 'Assunto', 'Escala', 'Siglário', 'Ferramenta', 'PDF', 'Caso simulado'];
+export const searchCategories: readonly SearchResult['kind'][] = ['Módulo', 'Assunto', 'Escala', 'Siglário', 'Dicionário Clínico', 'Ferramenta', 'PDF', 'Caso simulado'];
 
 /** Preserve letter order, while accepting accents, punctuation and subscripts. */
 export function normalizeSearch(value: string): string {
@@ -53,6 +54,11 @@ const familySectionText: Record<string, string> = {
 };
 
 const entries: SearchEntry[] = [
+  { ...clinicalModule, kind: 'Módulo', aliases: ['patologias', 'condições clínicas', 'dicionário'], body: '' },
+  ...clinicalConditions.map(item => ({ id: clinicalFavoriteId(item.id), title: item.name, kind: 'Dicionário Clínico' as const,
+    description: item.quickSummary, href: clinicalHref(item.id), aliases: [item.acronym, ...item.synonyms],
+    body: [item.category, item.definition, ...item.keywords].join(' '),
+  })),
   ...modules.map(module => ({
     id: `module.${module.id}`,
     title: module.title,
@@ -190,7 +196,7 @@ const normalizedIndex = entries.map((entry, index) => {
 });
 
 const kindOrder: Record<SearchResult['kind'], number> = {
-  Escala: 0, Assunto: 1, Siglário: 2, Ferramenta: 3, PDF: 4, 'Caso simulado': 5, Módulo: 6,
+  Escala: 0, 'Dicionário Clínico': 1, Assunto: 2, Siglário: 3, Ferramenta: 4, PDF: 5, 'Caso simulado': 6, Módulo: 7,
 };
 
 /** All query words must match one entry; return every match in a stable order. */

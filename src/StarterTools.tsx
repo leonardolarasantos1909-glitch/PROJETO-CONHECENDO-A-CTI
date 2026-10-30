@@ -4,6 +4,7 @@ import { filterGlossary, firstDayItems, glossaryTerms } from './starter-data';
 import { glossarySource } from './hospital-glossary';
 import { readSavedIds, writeSavedIds } from './learning-storage';
 import './starter-tools.css';
+import ClinicalRelated from './ClinicalRelated';
 
 const CHECKLIST_KEY = 'cti-first-day-v1';
 const CHECKLIST_IDS = firstDayItems.map(item => item.id);
@@ -115,6 +116,7 @@ export function Glossary({ renderFavorite, initialTerm, initialQuery }: { render
       {item.supplement && <p>{item.supplement}</p>}
       {item.reviewNote && <div className="glossary-review-note"><strong>Conferir com a fonte</strong><p>{item.reviewNote}</p></div>}
       {item.href && <a className="starter-related" href={item.href}>Explorar assunto relacionado <ArrowRight size={17} aria-hidden="true"/></a>}
+      <ClinicalRelated href={`#glossario/${item.id}`}/>
       {item.reference && <div className="starter-term-source"><a href={item.reference.href} target="_blank" rel="noopener noreferrer">{item.reference.label} <ArrowUpRight size={15} aria-hidden="true"/></a></div>}
       {item.sourceLabel !== glossarySource.label && <p className="starter-term-source">{item.sourceLabel}</p>}
     </article>)}</div>
