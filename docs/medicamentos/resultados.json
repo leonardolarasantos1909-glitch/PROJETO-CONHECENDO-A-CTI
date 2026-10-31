@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-31",
+  "baseline": "b9215a69aecf636352c109a6a6806ab8da657e4e",
+  "branch": "modulos/guia-medicamentos",
+  "cache": "cti-d8f7e0ea4627",
+  "tests": 136,
+  "test_files": 24,
+  "browser_groups": [
+    14,
+    14,
+    31
+  ],
+  "total_browser_groups": 59,
+  "layouts": 440,
+  "widths": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "medications": 40,
+  "categories": 11,
+  "fictional_cases": 5,
+  "high_alert_proposals": 23,
+  "clinical_review_all_pending": true,
+  "specific_product_labels_verified": 0,
+  "commercial_names_verified": 0,
+  "registry": 949,
+  "new_dependencies": 0,
+  "new_storage_keys": 0,
+  "all_material_files_preserved": 108,
+  "pdfs_preserved": 9,
+  "book_pages_preserved": 96,
+  "production_deployed": false,
+  "old_cloudflare_account_access": false,
+  "new_cloudflare_url": null,
+  "new_qr_generated": false,
+  "package": {
+    "path": "downloads/conhecendo-a-cti-guia-medicamentos.zip",
+    "files": 131,
+    "bytes": 70404200,
+    "sha256": "2dcab6cb66acdd7901f6cbfc05ff265698442ce552c249e7d018591f8d87b773",
+    "cache": "const CACHE = 'cti-d8f7e0ea4627';",
+    "crc_valid": true,
+    "matches_dist": true,
+    "safe_paths": true,
+    "baseline": "downloads/conhecendo-a-cti-dicionario-clinico.zip",
+    "preserved_assets": 108,
+    "added_materials": [],
+    "production_deployed": false
+  }
+}

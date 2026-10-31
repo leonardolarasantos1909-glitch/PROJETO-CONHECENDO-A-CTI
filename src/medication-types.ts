@@ -1,0 +1,32 @@
+import type { ClinicalReference } from './clinical-types';
+
+export const medicationCategories = ['Vasoativos', 'Sedativos', 'Analgésicos', 'Anticoagulantes', 'Antiarrítmicos', 'Diuréticos', 'Antimicrobianos', 'Antieméticos', 'Insulinas', 'Eletrólitos', 'Outros'] as const;
+export type MedicationCategory = typeof medicationCategories[number];
+export type MedicationReference = ClinicalReference & { id: string; scope: 'product_label' | 'safety' | 'guideline' | 'lookup_portal' };
+export type Medication = {
+  id: string;
+  genericName: string;
+  activeIngredient: string;
+  aliases: string[];
+  commercialNames: { name: string; presentation: string; referenceId: string; verifiedAt: string }[];
+  commercialNamesNote: string;
+  category: MedicationCategory;
+  pharmacologicalClass: string;
+  summary: string;
+  purpose: string;
+  mechanism: string;
+  intensiveCareUses: string[];
+  formulationsNote: string;
+  routes: { name: string; context: string }[];
+  adverseEffects: string[];
+  contraindicationsPrecautions: string[];
+  nursingCare: string[];
+  monitoring: string[];
+  warningSigns: string[];
+  highAlert: { flagged: boolean; scope: string; rationale: string; verification: 'pending'; referenceId?: string };
+  relatedConditionIds: string[];
+  references: MedicationReference[];
+  reviewedAt: null;
+  clinicalReviewStatus: 'pending';
+  version: string;
+};

@@ -1,0 +1,1708 @@
+{
+  "record_date": "2026-10-31",
+  "clinical_review": "pending",
+  "medications": [
+    {
+      "id": "aciclovir",
+      "genericName": "Aciclovir",
+      "activeIngredient": "Aciclovir; apresentações parenterais podem declarar aciclovir sódico, exigindo conferência da equivalência no produto.",
+      "category": "Antimicrobianos",
+      "pharmacologicalClass": "Antiviral análogo de nucleosídeo, ativo contra herpesvírus suscetíveis.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": false,
+        "scope": "Classificação educativa do aciclovir, pendente de conferência institucional.",
+        "rationale": "A ausência de marcação não significa ausência de risco renal ou neurológico. Conferir apresentação e lista institucional atual.",
+        "verification": "pending"
+      },
+      "relatedConditionIds": [
+        "meningite"
+      ],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de aciclovir, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "adenosina",
+      "genericName": "Adenosina",
+      "activeIngredient": "Adenosina. A identidade do princípio ativo, os excipientes e a forma farmacêutica exigem conferência na bula do produto.",
+      "category": "Antiarrítmicos",
+      "pharmacologicalClass": "Nucleosídeo endógeno com ação antiarrítmica sobre a condução nodal atrioventricular.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": true,
+        "scope": "Adenosina intravenosa como antiarrítmico hospitalar.",
+        "rationale": "Sinalização educativa proposta para antiarrítmico intravenoso devido ao potencial de dano grave por erro e por seleção inadequada do contexto. Conferência da classificação vigente e institucional ainda pendente.",
+        "verification": "pending",
+        "referenceId": "ismp-mpp"
+      },
+      "relatedConditionIds": [],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de adenosina, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "adrenalina",
+      "genericName": "Adrenalina",
+      "activeIngredient": "Adrenalina, também denominada epinefrina. O sal e a equivalência declarados na apresentação precisam ser confirmados na bula do produto.",
+      "category": "Vasoativos",
+      "pharmacologicalClass": "Catecolamina simpaticomimética com atividade alfa e beta-adrenérgica.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": true,
+        "scope": "Adrenalina intravenosa como agonista adrenérgico hospitalar; esta sinalização não extrapola automaticamente para outras apresentações e vias.",
+        "rationale": "Sinalização educativa proposta devido ao potencial de dano grave por erros envolvendo vasopressores intravenosos. Conferência da lista atual e da apresentação ainda pendente.",
+        "verification": "pending",
+        "referenceId": "ismp-mpp"
+      },
+      "relatedConditionIds": [
+        "choque-septico",
+        "choque-cardiogenico"
+      ],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de adrenalina, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "amiodarona",
+      "genericName": "Amiodarona",
+      "activeIngredient": "Amiodarona; apresentações podem conter cloridrato de amiodarona. Conferir o sal e a equivalência declarados na bula específica.",
+      "category": "Antiarrítmicos",
+      "pharmacologicalClass": "Antiarrítmico de classe III com ações adicionais em canais iônicos e receptores adrenérgicos.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": true,
+        "scope": "Amiodarona intravenosa como antiarrítmico hospitalar; a sinalização desta ficha não atribui automaticamente a mesma classificação à apresentação oral.",
+        "rationale": "Sinalização educativa proposta para antiarrítmico intravenoso devido ao risco de dano grave por erro. Confirmação da lista vigente e do enquadramento institucional permanece pendente.",
+        "verification": "pending",
+        "referenceId": "ismp-mpp"
+      },
+      "relatedConditionIds": [
+        "fibrilacao-atrial"
+      ],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de amiodarona, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "cefepima",
+      "genericName": "Cefepima",
+      "activeIngredient": "Cefepima, usualmente na forma de cloridrato; conferir sal, equivalência e demais componentes da apresentação.",
+      "category": "Antimicrobianos",
+      "pharmacologicalClass": "Antibacteriano betalactâmico; cefalosporina de quarta geração.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": false,
+        "scope": "Classificação educativa da cefepima, sujeita à lista institucional.",
+        "rationale": "A ausência de sinalização não elimina riscos como neurotoxicidade. A classificação da apresentação ainda está pendente de verificação.",
+        "verification": "pending"
+      },
+      "relatedConditionIds": [
+        "pneumonia",
+        "sepse",
+        "itu-complicada"
+      ],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de cefepima, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "ceftriaxona",
+      "genericName": "Ceftriaxona",
+      "activeIngredient": "Ceftriaxona, geralmente apresentada como ceftriaxona sódica; conferir o sal e a equivalência declarados no produto.",
+      "category": "Antimicrobianos",
+      "pharmacologicalClass": "Antibacteriano betalactâmico; cefalosporina de terceira geração.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": false,
+        "scope": "Classificação educativa da ceftriaxona, pendente de conferência institucional.",
+        "rationale": "Ausência de sinalização não significa ausência de risco. A lista institucional e a apresentação específica ainda precisam ser verificadas.",
+        "verification": "pending"
+      },
+      "relatedConditionIds": [
+        "pneumonia",
+        "sepse",
+        "meningite"
+      ],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de ceftriaxona, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "cetamina",
+      "genericName": "Cetamina",
+      "activeIngredient": "Cetamina; confirmar o sal e a composição da apresentação. Escetamina é um princípio ativo distinto e não deve ser presumida equivalente.",
+      "category": "Sedativos",
+      "pharmacologicalClass": "Anestésico dissociativo com efeito analgésico, antagonista de receptores NMDA.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": true,
+        "scope": "Anestésico e sedativo intravenoso; outras vias e princípios ativos exigem conferência própria na lista local.",
+        "rationale": "A sedação dissociativa pode cursar com eventos graves de via aérea e instabilidade circulatória. A classificação documental permanece pendente de revisão.",
+        "verification": "pending",
+        "referenceId": "ismp-mpp"
+      },
+      "relatedConditionIds": [
+        "asma-grave"
+      ],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de cetamina, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "cloreto-potassio",
+      "genericName": "Cloreto de potássio",
+      "activeIngredient": "Cloreto de potássio; o sal, a forma farmacêutica e a quantidade de potássio declarada devem ser conferidos na apresentação prescrita.",
+      "category": "Eletrólitos",
+      "pharmacologicalClass": "Repositor de potássio.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": true,
+        "scope": "Cloreto de potássio concentrado para uso intravenoso; a sinalização não equipara automaticamente todas as apresentações orais.",
+        "rationale": "O concentrado intravenoso oferece risco de dano grave ou fatal por erro de produto ou via. Conferência da classificação e dos controles locais permanece pendente.",
+        "verification": "pending",
+        "referenceId": "ismp-mpp"
+      },
+      "relatedConditionIds": [
+        "disturbios-potassio",
+        "lesao-renal-aguda",
+        "doenca-renal-cronica"
+      ],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de cloreto de potássio, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "cloreto-sodio",
+      "genericName": "Cloreto de sódio",
+      "activeIngredient": "Cloreto de sódio; soluções com diferentes tonicidades e formas farmacêuticas possuem indicações e vias distintas.",
+      "category": "Eletrólitos",
+      "pharmacologicalClass": "Solução eletrolítica contendo sódio e cloreto.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": true,
+        "scope": "Cloreto de sódio hipertônico para uso intravenoso; a sinalização não abrange automaticamente toda solução isotônica ou produto de uso local.",
+        "rationale": "Soluções hipertônicas apresentam risco elevado por troca de produto e alterações inadequadas de sódio. A classificação da apresentação e da lista atual permanece pendente de verificação.",
+        "verification": "pending",
+        "referenceId": "ismp-mpp"
+      },
+      "relatedConditionIds": [
+        "choque-hipovolemico",
+        "tce",
+        "lesao-renal-aguda"
+      ],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de cloreto de sódio, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "dexmedetomidina",
+      "genericName": "Dexmedetomidina",
+      "activeIngredient": "Dexmedetomidina, usualmente apresentada como cloridrato; confirmar a composição do produto prescrito.",
+      "category": "Sedativos",
+      "pharmacologicalClass": "Agonista alfa-2 adrenérgico com ação sedativa e simpatolítica.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": true,
+        "scope": "Sedativo intravenoso; confirmar classificação e barreiras locais na lista institucional.",
+        "rationale": "Sedação e alterações importantes de frequência cardíaca ou pressão podem causar dano grave. A verificação da referência está pendente.",
+        "verification": "pending",
+        "referenceId": "ismp-mpp"
+      },
+      "relatedConditionIds": [
+        "sdra"
+      ],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de dexmedetomidina, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "dipirona",
+      "genericName": "Dipirona",
+      "activeIngredient": "Dipirona (metamizol); confirmar a forma salina, hidratação e composição na apresentação prescrita.",
+      "category": "Analgésicos",
+      "pharmacologicalClass": "Analgésico e antitérmico não opioide, derivado pirazolônico.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": false,
+        "scope": "Analgésico não opioide: marcação provisória nesta ficha; revisão da lista e das regras locais continua necessária.",
+        "rationale": "A ausência de marcação não garante segurança nem exclui dano grave por hipersensibilidade, alterações hematológicas ou erros de uso. Verificação institucional e documental pendente.",
+        "verification": "pending",
+        "referenceId": "ismp-mpp"
+      },
+      "relatedConditionIds": [],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de dipirona, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "dobutamina",
+      "genericName": "Dobutamina",
+      "activeIngredient": "Dobutamina; apresentações podem conter cloridrato de dobutamina, com equivalência em princípio ativo que deve ser conferida na bula específica.",
+      "category": "Vasoativos",
+      "pharmacologicalClass": "Catecolamina simpaticomimética com efeito inotrópico predominantemente beta-adrenérgico.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": true,
+        "scope": "Dobutamina intravenosa no contexto hospitalar.",
+        "rationale": "Sinalização educativa proposta para agonista adrenérgico inotrópico intravenoso, pelo risco de dano grave por erros. A classificação na lista atual e na instituição permanece pendente.",
+        "verification": "pending",
+        "referenceId": "ismp-mpp"
+      },
+      "relatedConditionIds": [
+        "insuficiencia-cardiaca",
+        "choque-cardiogenico"
+      ],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de dobutamina, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "dopamina",
+      "genericName": "Dopamina",
+      "activeIngredient": "Dopamina; apresentações podem conter cloridrato de dopamina. Confirmar na bula o sal e a equivalência em princípio ativo.",
+      "category": "Vasoativos",
+      "pharmacologicalClass": "Catecolamina com efeitos dopaminérgicos e adrenérgicos.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": true,
+        "scope": "Dopamina intravenosa no contexto hospitalar.",
+        "rationale": "Sinalização educativa proposta para agonista adrenérgico intravenoso com potencial de dano grave por erro. A confirmação na lista vigente e a avaliação institucional estão pendentes.",
+        "verification": "pending",
+        "referenceId": "ismp-mpp"
+      },
+      "relatedConditionIds": [
+        "choque-cardiogenico"
+      ],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de dopamina, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "enoxaparina",
+      "genericName": "Enoxaparina",
+      "activeIngredient": "Enoxaparina sódica.",
+      "category": "Anticoagulantes",
+      "pharmacologicalClass": "Heparina de baixo peso molecular; anticoagulante parenteral.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": true,
+        "scope": "Anticoagulante parenteral, incluindo uso preventivo ou terapêutico conforme apresentação e protocolo.",
+        "rationale": "Erros de identificação ou administração podem produzir hemorragia grave; são necessárias barreiras institucionais.",
+        "verification": "pending",
+        "referenceId": "ismp-mpp"
+      },
+      "relatedConditionIds": [
+        "tromboembolismo-pulmonar",
+        "sindrome-coronariana-aguda",
+        "iam"
+      ],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de Enoxaparina, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "espironolactona",
+      "genericName": "Espironolactona",
+      "activeIngredient": "Espironolactona.",
+      "category": "Diuréticos",
+      "pharmacologicalClass": "Antagonista do receptor mineralocorticoide; diurético poupador de potássio.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": false,
+        "scope": "Antagonista mineralocorticoide oral; classificação institucional ainda pendente de conferência.",
+        "rationale": "A ausência de sinalização não elimina o risco de hipercalemia grave e disfunção renal.",
+        "verification": "pending"
+      },
+      "relatedConditionIds": [
+        "insuficiencia-cardiaca",
+        "doenca-renal-cronica",
+        "disturbios-potassio"
+      ],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de Espironolactona, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "fentanila",
+      "genericName": "Fentanila",
+      "activeIngredient": "Fentanila; produtos injetáveis podem conter citrato de fentanila, enquanto produtos transdérmicos têm formulação própria. Conferir o princípio ativo e o sal no produto.",
+      "category": "Analgésicos",
+      "pharmacologicalClass": "Analgésico opioide agonista de receptores mu.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": true,
+        "scope": "Opioide: considerar a categoria ampla, incluindo apresentações intravenosas e transdérmicas; conferir a lista institucional vigente.",
+        "rationale": "Erros ou duplicidade podem causar depressão respiratória fatal; a classificação não se restringe à sedação intravenosa. Conferência documental pendente.",
+        "verification": "pending",
+        "referenceId": "ismp-mpp"
+      },
+      "relatedConditionIds": [
+        "sdra"
+      ],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de fentanila, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "fluconazol",
+      "genericName": "Fluconazol",
+      "activeIngredient": "Fluconazol; conferir forma farmacêutica e excipientes na bula da apresentação prescrita.",
+      "category": "Antimicrobianos",
+      "pharmacologicalClass": "Antifúngico da classe dos triazóis.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": false,
+        "scope": "Classificação educativa do fluconazol, a conferir por apresentação na instituição.",
+        "rationale": "Ausência de sinalização não significa ausência de risco cardíaco, hepático ou de interações. A verificação institucional permanece pendente.",
+        "verification": "pending"
+      },
+      "relatedConditionIds": [
+        "sepse"
+      ],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de fluconazol, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "furosemida",
+      "genericName": "Furosemida",
+      "activeIngredient": "Furosemida; confirmar a identificação do princípio ativo na apresentação prescrita.",
+      "category": "Diuréticos",
+      "pharmacologicalClass": "Diurético de alça.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": false,
+        "scope": "Diurético de alça; classificação institucional e apresentação ainda pendentes de conferência.",
+        "rationale": "A ausência de sinalização nesta ficha não significa ausência de risco: hipovolemia e alterações eletrolíticas podem ser graves.",
+        "verification": "pending"
+      },
+      "relatedConditionIds": [
+        "insuficiencia-cardiaca",
+        "edema-agudo-pulmao",
+        "lesao-renal-aguda",
+        "disturbios-potassio"
+      ],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de Furosemida, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "gluconato-calcio",
+      "genericName": "Gluconato de cálcio",
+      "activeIngredient": "Gluconato de cálcio; a quantidade de cálcio elementar e a forma farmacêutica precisam ser conferidas na bula específica.",
+      "category": "Eletrólitos",
+      "pharmacologicalClass": "Repositor de cálcio.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": false,
+        "scope": "Gluconato de cálcio: classificação específica da apresentação e da lista institucional ainda não conferida.",
+        "rationale": "A ausência de sinalização nesta ficha não significa ausência de risco. Arritmias, troca de sal e extravasamento podem causar dano grave; não se afirma inclusão universal na lista ISMP sem conferência documental.",
+        "verification": "pending",
+        "referenceId": "ismp-mpp"
+      },
+      "relatedConditionIds": [
+        "disturbios-potassio",
+        "lesao-renal-aguda",
+        "doenca-renal-cronica"
+      ],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de gluconato de cálcio, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "heparina-nao-fracionada",
+      "genericName": "Heparina não fracionada",
+      "activeIngredient": "Heparina; o sal, como heparina sódica, deve corresponder exatamente à apresentação prescrita.",
+      "category": "Anticoagulantes",
+      "pharmacologicalClass": "Anticoagulante parenteral; potencializador da antitrombina.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": true,
+        "scope": "Anticoagulante parenteral; confirmar apresentação, finalidade e classificação institucional.",
+        "rationale": "Erros de produto, via ou administração podem provocar hemorragia grave; requer barreiras institucionais específicas.",
+        "verification": "pending",
+        "referenceId": "ismp-mpp"
+      },
+      "relatedConditionIds": [
+        "tromboembolismo-pulmonar",
+        "sindrome-coronariana-aguda",
+        "iam"
+      ],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de Heparina não fracionada, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "hidrocortisona",
+      "genericName": "Hidrocortisona",
+      "activeIngredient": "Hidrocortisona; o sal, como succinato sódico em determinados injetáveis, e a apresentação precisam de conferência específica.",
+      "category": "Outros",
+      "pharmacologicalClass": "Corticosteroide com atividade glicocorticoide e mineralocorticoide.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": false,
+        "scope": "Hidrocortisona: sem classificação universal afirmada nesta ficha; conferir apresentação e lista local.",
+        "rationale": "A ausência de sinalização não significa uso isento de risco. Interações, hiperglicemia e infecção exigem vigilância; classificação documental permanece pendente.",
+        "verification": "pending",
+        "referenceId": "ismp-mpp"
+      },
+      "relatedConditionIds": [
+        "choque-septico",
+        "asma-grave",
+        "dpoc-exacerbada"
+      ],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de hidrocortisona, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "insulina-glargina",
+      "genericName": "Insulina glargina",
+      "activeIngredient": "Insulina glargina, análogo de insulina de ação prolongada; princípio ativo distinto da insulina humana regular e da insulina humana NPH.",
+      "category": "Insulinas",
+      "pharmacologicalClass": "Análogo de insulina basal de ação prolongada.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": true,
+        "scope": "Insulina glargina por via subcutânea no contexto hospitalar.",
+        "rationale": "Sinalização educativa para insulina com risco de dano grave por troca de produto, concentração ou via; classificação atual e barreiras institucionais pendentes de conferência.",
+        "verification": "pending",
+        "referenceId": "ismp-mpp"
+      },
+      "relatedConditionIds": [
+        "cetoacidose-diabetica",
+        "estado-hiperosmolar"
+      ],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de insulina glargina, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "insulina-humana-regular",
+      "genericName": "Insulina humana regular",
+      "activeIngredient": "Insulina humana regular, de ação curta; não corresponde à insulina NPH nem aos análogos de ação prolongada.",
+      "category": "Insulinas",
+      "pharmacologicalClass": "Hormônio pancreático hipoglicemiante de ação curta.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": true,
+        "scope": "Insulina humana regular por todas as vias de uso hospitalar aprovadas para a apresentação.",
+        "rationale": "Sinalização educativa por risco de dano grave em erros de insulina; a correspondência com a lista atual e as barreiras locais permanece pendente de conferência.",
+        "verification": "pending",
+        "referenceId": "ismp-mpp"
+      },
+      "relatedConditionIds": [
+        "cetoacidose-diabetica",
+        "estado-hiperosmolar",
+        "disturbios-potassio"
+      ],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de insulina humana regular, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "linezolida",
+      "genericName": "Linezolida",
+      "activeIngredient": "Linezolida; conferir forma farmacêutica e componentes da apresentação prescrita.",
+      "category": "Antimicrobianos",
+      "pharmacologicalClass": "Antibacteriano da classe das oxazolidinonas.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": false,
+        "scope": "Classificação educativa da linezolida, a conferir na lista institucional.",
+        "rationale": "Ausência de sinalização não reduz a importância das interações ou da mielossupressão. A classificação específica ainda está pendente.",
+        "verification": "pending"
+      },
+      "relatedConditionIds": [
+        "pneumonia"
+      ],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de linezolida, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "meropenem",
+      "genericName": "Meropenem",
+      "activeIngredient": "Meropenem; conferir a forma química, a equivalência em princípio ativo e os componentes na bula específica.",
+      "category": "Antimicrobianos",
+      "pharmacologicalClass": "Antibacteriano betalactâmico da classe dos carbapenêmicos.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": false,
+        "scope": "Classificação educativa do meropenem, a conferir com a instituição.",
+        "rationale": "Ausência de marcação não significa medicamento sem risco. A lista institucional e a apresentação precisam de verificação.",
+        "verification": "pending"
+      },
+      "relatedConditionIds": [
+        "sepse",
+        "pneumonia",
+        "meningite"
+      ],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de meropenem, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "metoclopramida",
+      "genericName": "Metoclopramida",
+      "activeIngredient": "Metoclopramida, usualmente como cloridrato de metoclopramida; conferir sal e apresentação prescritos.",
+      "category": "Antieméticos",
+      "pharmacologicalClass": "Antagonista dopaminérgico com ação antiemética e procinética.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": false,
+        "scope": "Antiemético e procinético; classificação institucional ainda pendente de conferência.",
+        "rationale": "A ausência de sinalização não elimina o risco de reações neurológicas graves e contraindicações gastrointestinais.",
+        "verification": "pending"
+      },
+      "relatedConditionIds": [
+        "pancreatite-aguda",
+        "lesao-renal-aguda"
+      ],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de Metoclopramida, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "metoprolol",
+      "genericName": "Metoprolol",
+      "activeIngredient": "Metoprolol. Produtos podem conter tartarato ou succinato de metoprolol; o sal, a equivalência e o tipo de liberação precisam ser confirmados na bula de cada apresentação.",
+      "category": "Antiarrítmicos",
+      "pharmacologicalClass": "Betabloqueador relativamente seletivo para receptores beta-1; antiarrítmico de classe II.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": true,
+        "scope": "Metoprolol intravenoso como antagonista adrenérgico hospitalar; esta sinalização não classifica automaticamente as apresentações orais.",
+        "rationale": "Sinalização educativa proposta devido ao potencial de dano grave por erros com antagonistas adrenérgicos intravenosos. Conferência da lista vigente, da apresentação e do protocolo institucional ainda pendente.",
+        "verification": "pending",
+        "referenceId": "ismp-mpp"
+      },
+      "relatedConditionIds": [
+        "fibrilacao-atrial",
+        "sindrome-coronariana-aguda",
+        "insuficiencia-cardiaca"
+      ],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de metoprolol, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "metronidazol",
+      "genericName": "Metronidazol",
+      "activeIngredient": "Metronidazol; apresentações orais específicas podem declarar derivados, como benzoilmetronidazol, cuja identidade e equivalência precisam de conferência.",
+      "category": "Antimicrobianos",
+      "pharmacologicalClass": "Antibacteriano contra anaeróbios e antiprotozoário da classe dos nitroimidazóis.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": false,
+        "scope": "Classificação educativa do metronidazol, pendente de conferência local.",
+        "rationale": "A ausência de marcação não significa ausência de risco neurológico, hepático ou de interações. Conferir a lista institucional e a apresentação.",
+        "verification": "pending"
+      },
+      "relatedConditionIds": [
+        "sepse"
+      ],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de metronidazol, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "midazolam",
+      "genericName": "Midazolam",
+      "activeIngredient": "Midazolam; a forma química e os excipientes devem ser conferidos na apresentação prescrita.",
+      "category": "Sedativos",
+      "pharmacologicalClass": "Benzodiazepínico de ação sedativa, ansiolítica e amnésica.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": true,
+        "scope": "Sedação intravenosa; confirmar também a classificação das demais apresentações na lista institucional.",
+        "rationale": "Sedativos intravenosos podem causar rapidamente perda de proteção da via aérea e depressão cardiorrespiratória. Classificação e fonte ainda pendentes de conferência.",
+        "verification": "pending",
+        "referenceId": "ismp-mpp"
+      },
+      "relatedConditionIds": [
+        "sdra",
+        "tce"
+      ],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de midazolam, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "morfina",
+      "genericName": "Morfina",
+      "activeIngredient": "Morfina, disponível em produtos com sais específicos, como sulfato; conferir o sal e os excipientes da apresentação prescrita.",
+      "category": "Analgésicos",
+      "pharmacologicalClass": "Analgésico opioide agonista de receptores mu.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": true,
+        "scope": "Opioide: classificação ampla que requer atenção também a produtos orais, além dos injetáveis; confirmar a lista institucional.",
+        "rationale": "Erros entre apresentações ou vias e acúmulo podem provocar depressão respiratória grave. A fonte e a classificação atual ainda precisam de conferência.",
+        "verification": "pending",
+        "referenceId": "ismp-mpp"
+      },
+      "relatedConditionIds": [],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de morfina, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "noradrenalina",
+      "genericName": "Noradrenalina",
+      "activeIngredient": "Noradrenalina, também denominada norepinefrina. O sal declarado no produto, como hemitartarato, e a equivalência em princípio ativo exigem conferência na bula específica.",
+      "category": "Vasoativos",
+      "pharmacologicalClass": "Catecolamina simpaticomimética com ação vasopressora predominantemente alfa-adrenérgica.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": true,
+        "scope": "Noradrenalina por via intravenosa no contexto hospitalar.",
+        "rationale": "Sinalização educativa proposta para vasopressor intravenoso, devido ao potencial de dano grave por erros. Classificação da apresentação e lista institucional atual ainda pendentes de conferência.",
+        "verification": "pending",
+        "referenceId": "ismp-mpp"
+      },
+      "relatedConditionIds": [
+        "choque-septico",
+        "choque-cardiogenico"
+      ],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de noradrenalina, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "omeprazol",
+      "genericName": "Omeprazol",
+      "activeIngredient": "Omeprazol; determinados produtos parenterais declaram sal sódico e exigem conferência da equivalência na bula específica.",
+      "category": "Outros",
+      "pharmacologicalClass": "Inibidor da bomba de prótons.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": false,
+        "scope": "Omeprazol: classificação da apresentação e lista institucional ainda não conferidas.",
+        "rationale": "A ausência de sinalização não indica ausência de risco. Interações, restrições da forma farmacêutica e reações adversas requerem avaliação; não há classificação universal afirmada nesta ficha.",
+        "verification": "pending",
+        "referenceId": "ismp-mpp"
+      },
+      "relatedConditionIds": [
+        "hemorragia-digestiva-alta"
+      ],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de omeprazol, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "ondansetrona",
+      "genericName": "Ondansetrona",
+      "activeIngredient": "Ondansetrona, frequentemente apresentada como cloridrato de ondansetrona; confirmar o sal na apresentação prescrita.",
+      "category": "Antieméticos",
+      "pharmacologicalClass": "Antagonista de receptores de serotonina 5-HT3.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": false,
+        "scope": "Antiemético; classificação institucional e apresentação ainda pendentes de conferência.",
+        "rationale": "A ausência de sinalização não significa ausência de risco: arritmias e hipersensibilidade podem ser graves.",
+        "verification": "pending"
+      },
+      "relatedConditionIds": [
+        "disturbios-potassio",
+        "pancreatite-aguda"
+      ],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de Ondansetrona, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "paracetamol",
+      "genericName": "Paracetamol",
+      "activeIngredient": "Paracetamol (acetaminofeno); conferir a composição e os excipientes da apresentação prescrita.",
+      "category": "Analgésicos",
+      "pharmacologicalClass": "Analgésico e antitérmico não opioide.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": false,
+        "scope": "Analgésico não opioide: marcação provisória sujeita à revisão institucional da apresentação e de sua lista vigente.",
+        "rationale": "Ausência de marcação não significa uso seguro em qualquer contexto; duplicidades e exposição excessiva podem provocar dano hepático grave. Conferência documental pendente.",
+        "verification": "pending",
+        "referenceId": "ismp-mpp"
+      },
+      "relatedConditionIds": [],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de paracetamol, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "propofol",
+      "genericName": "Propofol",
+      "activeIngredient": "Propofol, em emulsão injetável cuja composição deve ser conferida no produto prescrito.",
+      "category": "Sedativos",
+      "pharmacologicalClass": "Anestésico geral intravenoso com ação hipnótica.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": true,
+        "scope": "Anestésico e sedativo intravenoso; revisar classificação na lista institucional vigente.",
+        "rationale": "Pode produzir rapidamente inconsciência, apneia e instabilidade circulatória. A conferência documental da classificação permanece pendente.",
+        "verification": "pending",
+        "referenceId": "ismp-mpp"
+      },
+      "relatedConditionIds": [
+        "sdra",
+        "tce"
+      ],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de propofol, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "rivaroxabana",
+      "genericName": "Rivaroxabana",
+      "activeIngredient": "Rivaroxabana.",
+      "category": "Anticoagulantes",
+      "pharmacologicalClass": "Anticoagulante oral direto inibidor do fator Xa.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": true,
+        "scope": "Anticoagulante oral direto; confirmar apresentação e classificação no protocolo institucional.",
+        "rationale": "Erros e interações podem causar hemorragia grave, com risco acrescido quando há disfunção orgânica.",
+        "verification": "pending",
+        "referenceId": "ismp-mpp"
+      },
+      "relatedConditionIds": [
+        "fibrilacao-atrial",
+        "tromboembolismo-pulmonar",
+        "avc-isquemico"
+      ],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de Rivaroxabana, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "sulfato-magnesio",
+      "genericName": "Sulfato de magnésio",
+      "activeIngredient": "Sulfato de magnésio; conferir o sal e a equivalência declarada na bula da apresentação prescrita.",
+      "category": "Eletrólitos",
+      "pharmacologicalClass": "Repositor de magnésio com efeitos sobre excitabilidade neuromuscular e cardíaca.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": true,
+        "scope": "Sulfato de magnésio injetável por via intravenosa no ambiente hospitalar.",
+        "rationale": "Sinalização educativa pelo potencial de toxicidade neuromuscular, respiratória e cardíaca em erros de administração; apresentação e lista institucional atual pendentes de conferência.",
+        "verification": "pending",
+        "referenceId": "ismp-mpp"
+      },
+      "relatedConditionIds": [
+        "asma-grave",
+        "disturbios-potassio",
+        "lesao-renal-aguda"
+      ],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de sulfato de magnésio, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "vancomicina",
+      "genericName": "Vancomicina",
+      "activeIngredient": "Vancomicina, frequentemente como cloridrato; conferir sal, equivalência e forma farmacêutica no produto.",
+      "category": "Antimicrobianos",
+      "pharmacologicalClass": "Antibacteriano glicopeptídico.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": false,
+        "scope": "Classificação educativa da vancomicina por apresentação e via, pendente de verificação local.",
+        "rationale": "Ausência de sinalização não indica ausência de risco renal ou de reação grave. Conferir a lista institucional atual para cada apresentação.",
+        "verification": "pending"
+      },
+      "relatedConditionIds": [
+        "pneumonia",
+        "sepse"
+      ],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de vancomicina, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "varfarina",
+      "genericName": "Varfarina",
+      "activeIngredient": "Varfarina sódica.",
+      "category": "Anticoagulantes",
+      "pharmacologicalClass": "Anticoagulante oral antagonista da vitamina K.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": true,
+        "scope": "Anticoagulante oral; acompanhamento individual pelo INR e protocolo institucional.",
+        "rationale": "Interações e variação de resposta podem produzir hemorragia grave ou proteção insuficiente contra trombose.",
+        "verification": "pending",
+        "referenceId": "ismp-mpp"
+      },
+      "relatedConditionIds": [
+        "fibrilacao-atrial",
+        "tromboembolismo-pulmonar",
+        "avc-isquemico"
+      ],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de Varfarina, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    },
+    {
+      "id": "vasopressina",
+      "genericName": "Vasopressina",
+      "activeIngredient": "Vasopressina, também denominada argipressina em referências de nomenclatura. Confirmar a identidade do princípio ativo e eventuais excipientes na bula da apresentação prescrita.",
+      "category": "Vasoativos",
+      "pharmacologicalClass": "Hormônio antidiurético com atividade vasopressora; agente vasoativo não catecolaminérgico.",
+      "commercialNames": [],
+      "commercialNamesNote": "Nomes comerciais não publicados: dependem de conferência da bula e do registro da apresentação no Brasil. Nenhum nome de marca foi apresentado como verificado sem evidência.",
+      "highAlert": {
+        "flagged": true,
+        "scope": "Vasopressina intravenosa empregada como vasopressor hospitalar.",
+        "rationale": "Sinalização educativa proposta pelo potencial de dano grave de erros em suporte vasoativo. Enquadramento da apresentação na lista vigente e no protocolo institucional ainda pendente.",
+        "verification": "pending",
+        "referenceId": "ismp-mpp"
+      },
+      "relatedConditionIds": [
+        "choque-septico"
+      ],
+      "references": [
+        {
+          "id": "anvisa-bulario",
+          "title": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita",
+          "organization": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+          "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+          "scope": "lookup_portal",
+          "verification": "pending",
+          "note": "Pendente localizar e conferir a bula aprovada específica de vasopressina, incluindo fabricante, registro, sal, apresentação, vias e versão. O acesso externo foi bloqueado neste ambiente. Este portal de pesquisa não comprova as afirmações desta ficha."
+        },
+        {
+          "id": "ismp-mpp",
+          "title": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019",
+          "organization": "Instituto para Práticas Seguras no Uso de Medicamentos (ISMP Brasil)",
+          "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+          "scope": "safety",
+          "verification": "pending",
+          "note": "Documento de 2019 indicado para conferência; não foi possível ler o arquivo nem confirmar sua vigência ou substituição neste ambiente. Conferir a lista mais recente e a classificação da apresentação com a instituição. Não valida indicações, vias ou preparo de um produto específico."
+        }
+      ],
+      "reviewedAt": null,
+      "clinicalReviewStatus": "pending",
+      "version": "1.0"
+    }
+  ]
+}

@@ -10,6 +10,7 @@ export default defineConfig({
           if (id.includes('/node_modules/react/') || id.includes('/node_modules/react-dom/') || id.includes('/node_modules/scheduler/')) return 'react-vendor';
           // Shared with the local searches; cache the clinical text independently.
           if (id.includes('/src/data/clinical-')) return 'clinical-content';
+          if (id.includes('/src/data/medications-')) return 'medication-content';
         },
       },
     },

@@ -1,0 +1,2005 @@
+{
+  "phase": "medication-guide",
+  "cache": "cti-d8f7e0ea4627",
+  "checks": [
+    {
+      "name": "Destaque equivalente ao dicionário, busca geral preservada e acesso direto pelos menus",
+      "equalDesktopProminence": {
+        "medication": {
+          "top": 145.796875,
+          "width": 536,
+          "height": 466.046875
+        },
+        "clinical": {
+          "top": 145.796875,
+          "width": 536,
+          "height": 466.046875
+        },
+        "common": {
+          "top": 2270.09375,
+          "width": 261,
+          "height": 255.75
+        },
+        "headings": [
+          "29px",
+          "29px"
+        ]
+      },
+      "homeSearchPreserved": true,
+      "mobileNavigationLinks": 7,
+      "oneTouchMenus": true,
+      "quickSearchKeyboard": true
+    },
+    {
+      "name": "Pesquisa rápida local aceita nome, classe, alias, acentos e ausência de resultado",
+      "sampleQueries": [
+        "noradrenalina",
+        "antiemetico",
+        "Epinefrina",
+        "vancomicina"
+      ],
+      "localResults": true,
+      "clearAndNoResults": true,
+      "queryCarriedToGuide": true
+    },
+    {
+      "name": "Quarenta nomes, classes e aliases, onze categorias, filtro MPP e ordem alfabética",
+      "medications": 40,
+      "classes": 40,
+      "aliases": 37,
+      "categories": 11,
+      "highAlertCount": 23,
+      "combinedCategoryAndMppFilters": true,
+      "alphabetical": true
+    },
+    {
+      "name": "Todas as fichas mostram conteúdo completo, vias contextualizadas, MPP e fontes pendentes sem marcas inventadas",
+      "completeProfiles": 40,
+      "sectionsEach": 7,
+      "sourceLinks": 80,
+      "conditionLinks": 78,
+      "contextualizedRoutes": 71,
+      "allReviewAndSourcesPending": true,
+      "verifiedBrands": 0,
+      "patientInputs": 0
+    },
+    {
+      "name": "Vínculos entre medicamentos e condições permitem ida e volta e expansão acessível",
+      "reciprocalLinks": 78,
+      "expandableConditionGroups": 1
+    },
+    {
+      "name": "Favoritos de fichas e módulo persistem e convivem com o dicionário sem novas chaves",
+      "persistentMedicationAndModule": true,
+      "clinicalFavoritesPreserved": true,
+      "noNewStorageKeys": true,
+      "noLogin": true
+    },
+    {
+      "name": "Compartilhamento copia URL pública e mantém alternativa acessível quando clipboard falha",
+      "clipboardSuccessAndFallback": true,
+      "personalDataInUrl": false
+    },
+    {
+      "name": "Teclado, amostras de contraste e alvos principais permitem consulta acessível",
+      "nativeDetailsKeyboard": true,
+      "relatedLinkEnter": true,
+      "contrastSamples": 19,
+      "minimumContrast": 5.600726773636567,
+      "minimumTargetPixels": 44
+    },
+    {
+      "name": "Rotas desconhecidas permitem recuperação sem criar conteúdo clínico",
+      "unknownProfileRecovery": true
+    },
+    {
+      "name": "Cinco casos fictícios aceitam escolhas, explicam cada resposta e permitem repetir sem dados de pacientes",
+      "fictionalCases": 5,
+      "allChoicesAndFeedback": 15,
+      "linkedProfiles": 19,
+      "keyboardAnswersAndRetry": true,
+      "selectorAndBackNavigation": true,
+      "persistentCaseFavorite": true,
+      "patientInputs": 0
+    },
+    {
+      "name": "Página inicial, lista, quarenta fichas e cinco casos cabem em 320,390,768 e1440pixels",
+      "widths": [
+        320,
+        390,
+        768,
+        1440
+      ],
+      "checkedLayouts": 192,
+      "profilesEachWidth": 40,
+      "fictionalCasesEachWidth": 5
+    },
+    {
+      "name": "Favoritos continuam em sessão e mostram aviso quando armazenamento está bloqueado",
+      "blockedStorageHandled": true,
+      "inSessionFavorite": true
+    },
+    {
+      "name": "Cache existente abre ficha e casos em abas novas offline, com pesquisa e recarga locais",
+      "existingCache": "cti-d8f7e0ea4627",
+      "freshProfileTabOffline": true,
+      "freshCaseTabOffline": true,
+      "localSearchOffline": true,
+      "offlineReload": true
+    },
+    {
+      "name": "Consulta educativa não gera exceções,CSP,novas chaves ou chamadas externas",
+      "runtimeErrors": 0,
+      "consoleErrors": 0,
+      "cspViolations": 0,
+      "externalRequests": 0,
+      "newStorageKeys": 0,
+      "medicalValidationClaim": false
+    }
+  ],
+  "failures": [],
+  "routes": [
+    "inicio",
+    "inicio",
+    "inicio",
+    "inicio",
+    "inicio",
+    "inicio",
+    "medicamentos",
+    "medicamentos/aciclovir",
+    "medicamentos/adenosina",
+    "medicamentos/adrenalina",
+    "medicamentos/amiodarona",
+    "medicamentos/cefepima",
+    "medicamentos/ceftriaxona",
+    "medicamentos/cetamina",
+    "medicamentos/cloreto-potassio",
+    "medicamentos/cloreto-sodio",
+    "medicamentos/dexmedetomidina",
+    "medicamentos/dipirona",
+    "medicamentos/dobutamina",
+    "medicamentos/dopamina",
+    "medicamentos/enoxaparina",
+    "medicamentos/espironolactona",
+    "medicamentos/fentanila",
+    "medicamentos/fluconazol",
+    "medicamentos/furosemida",
+    "medicamentos/gluconato-calcio",
+    "medicamentos/heparina-nao-fracionada",
+    "medicamentos/hidrocortisona",
+    "medicamentos/insulina-glargina",
+    "medicamentos/insulina-humana-regular",
+    "medicamentos/linezolida",
+    "medicamentos/meropenem",
+    "medicamentos/metoclopramida",
+    "medicamentos/metoprolol",
+    "medicamentos/metronidazol",
+    "medicamentos/midazolam",
+    "medicamentos/morfina",
+    "medicamentos/noradrenalina",
+    "medicamentos/omeprazol",
+    "medicamentos/ondansetrona",
+    "medicamentos/paracetamol",
+    "medicamentos/propofol",
+    "medicamentos/rivaroxabana",
+    "medicamentos/sulfato-magnesio",
+    "medicamentos/vancomicina",
+    "medicamentos/varfarina",
+    "medicamentos/vasopressina",
+    "dicionario-clinico/avc-isquemico",
+    "dicionario-clinico/cetoacidose-diabetica",
+    "dicionario-clinico/choque-cardiogenico",
+    "dicionario-clinico/choque-hipovolemico",
+    "dicionario-clinico/choque-septico",
+    "dicionario-clinico/disturbios-potassio",
+    "dicionario-clinico/doenca-renal-cronica",
+    "dicionario-clinico/dpoc-exacerbada",
+    "dicionario-clinico/edema-agudo-pulmao",
+    "dicionario-clinico/estado-hiperosmolar",
+    "dicionario-clinico/asma-grave",
+    "dicionario-clinico/fibrilacao-atrial",
+    "dicionario-clinico/hemorragia-digestiva-alta",
+    "dicionario-clinico/iam",
+    "dicionario-clinico/itu-complicada",
+    "dicionario-clinico/insuficiencia-cardiaca",
+    "dicionario-clinico/lesao-renal-aguda",
+    "dicionario-clinico/meningite",
+    "dicionario-clinico/pancreatite-aguda",
+    "dicionario-clinico/pneumonia",
+    "dicionario-clinico/sepse",
+    "dicionario-clinico/sindrome-coronariana-aguda",
+    "dicionario-clinico/sdra",
+    "dicionario-clinico/tce",
+    "dicionario-clinico/tromboembolismo-pulmonar",
+    "dicionario-clinico/iam",
+    "medicamentos/noradrenalina",
+    "medicamentos",
+    "medicamentos/noradrenalina",
+    "favoritos",
+    "medicamentos/vancomicina",
+    "medicamentos/noradrenalina",
+    "medicamentos/ficha-nao-cadastrada",
+    "medicamentos/casos?caso=apresentacao-prescrita",
+    "medicamentos/casos?caso=alarme-vasoativo",
+    "medicamentos/casos?caso=sangramento-anticoagulante",
+    "medicamentos/casos?caso=observacao-insulina",
+    "medicamentos/casos?caso=reacao-antimicrobiano",
+    "medicamentos/casos?caso=apresentacao-prescrita",
+    "favoritos",
+    "inicio",
+    "medicamentos",
+    "medicamentos/aciclovir",
+    "medicamentos/adenosina",
+    "medicamentos/adrenalina",
+    "medicamentos/amiodarona",
+    "medicamentos/cefepima",
+    "medicamentos/ceftriaxona",
+    "medicamentos/cetamina",
+    "medicamentos/cloreto-potassio",
+    "medicamentos/cloreto-sodio",
+    "medicamentos/dexmedetomidina",
+    "medicamentos/dipirona",
+    "medicamentos/dobutamina",
+    "medicamentos/dopamina",
+    "medicamentos/enoxaparina",
+    "medicamentos/espironolactona",
+    "medicamentos/fentanila",
+    "medicamentos/fluconazol",
+    "medicamentos/furosemida",
+    "medicamentos/gluconato-calcio",
+    "medicamentos/heparina-nao-fracionada",
+    "medicamentos/hidrocortisona",
+    "medicamentos/insulina-glargina",
+    "medicamentos/insulina-humana-regular",
+    "medicamentos/linezolida",
+    "medicamentos/meropenem",
+    "medicamentos/metoclopramida",
+    "medicamentos/metoprolol",
+    "medicamentos/metronidazol",
+    "medicamentos/midazolam",
+    "medicamentos/morfina",
+    "medicamentos/noradrenalina",
+    "medicamentos/omeprazol",
+    "medicamentos/ondansetrona",
+    "medicamentos/paracetamol",
+    "medicamentos/propofol",
+    "medicamentos/rivaroxabana",
+    "medicamentos/sulfato-magnesio",
+    "medicamentos/vancomicina",
+    "medicamentos/varfarina",
+    "medicamentos/vasopressina",
+    "medicamentos/casos",
+    "medicamentos/casos?caso=apresentacao-prescrita",
+    "medicamentos/casos?caso=alarme-vasoativo",
+    "medicamentos/casos?caso=sangramento-anticoagulante",
+    "medicamentos/casos?caso=observacao-insulina",
+    "medicamentos/casos?caso=reacao-antimicrobiano",
+    "inicio",
+    "medicamentos",
+    "medicamentos/aciclovir",
+    "medicamentos/adenosina",
+    "medicamentos/adrenalina",
+    "medicamentos/amiodarona",
+    "medicamentos/cefepima",
+    "medicamentos/ceftriaxona",
+    "medicamentos/cetamina",
+    "medicamentos/cloreto-potassio",
+    "medicamentos/cloreto-sodio",
+    "medicamentos/dexmedetomidina",
+    "medicamentos/dipirona",
+    "medicamentos/dobutamina",
+    "medicamentos/dopamina",
+    "medicamentos/enoxaparina",
+    "medicamentos/espironolactona",
+    "medicamentos/fentanila",
+    "medicamentos/fluconazol",
+    "medicamentos/furosemida",
+    "medicamentos/gluconato-calcio",
+    "medicamentos/heparina-nao-fracionada",
+    "medicamentos/hidrocortisona",
+    "medicamentos/insulina-glargina",
+    "medicamentos/insulina-humana-regular",
+    "medicamentos/linezolida",
+    "medicamentos/meropenem",
+    "medicamentos/metoclopramida",
+    "medicamentos/metoprolol",
+    "medicamentos/metronidazol",
+    "medicamentos/midazolam",
+    "medicamentos/morfina",
+    "medicamentos/noradrenalina",
+    "medicamentos/omeprazol",
+    "medicamentos/ondansetrona",
+    "medicamentos/paracetamol",
+    "medicamentos/propofol",
+    "medicamentos/rivaroxabana",
+    "medicamentos/sulfato-magnesio",
+    "medicamentos/vancomicina",
+    "medicamentos/varfarina",
+    "medicamentos/vasopressina",
+    "medicamentos/casos",
+    "medicamentos/casos?caso=apresentacao-prescrita",
+    "medicamentos/casos?caso=alarme-vasoativo",
+    "medicamentos/casos?caso=sangramento-anticoagulante",
+    "medicamentos/casos?caso=observacao-insulina",
+    "medicamentos/casos?caso=reacao-antimicrobiano",
+    "inicio",
+    "medicamentos",
+    "medicamentos/aciclovir",
+    "medicamentos/adenosina",
+    "medicamentos/adrenalina",
+    "medicamentos/amiodarona",
+    "medicamentos/cefepima",
+    "medicamentos/ceftriaxona",
+    "medicamentos/cetamina",
+    "medicamentos/cloreto-potassio",
+    "medicamentos/cloreto-sodio",
+    "medicamentos/dexmedetomidina",
+    "medicamentos/dipirona",
+    "medicamentos/dobutamina",
+    "medicamentos/dopamina",
+    "medicamentos/enoxaparina",
+    "medicamentos/espironolactona",
+    "medicamentos/fentanila",
+    "medicamentos/fluconazol",
+    "medicamentos/furosemida",
+    "medicamentos/gluconato-calcio",
+    "medicamentos/heparina-nao-fracionada",
+    "medicamentos/hidrocortisona",
+    "medicamentos/insulina-glargina",
+    "medicamentos/insulina-humana-regular",
+    "medicamentos/linezolida",
+    "medicamentos/meropenem",
+    "medicamentos/metoclopramida",
+    "medicamentos/metoprolol",
+    "medicamentos/metronidazol",
+    "medicamentos/midazolam",
+    "medicamentos/morfina",
+    "medicamentos/noradrenalina",
+    "medicamentos/omeprazol",
+    "medicamentos/ondansetrona",
+    "medicamentos/paracetamol",
+    "medicamentos/propofol",
+    "medicamentos/rivaroxabana",
+    "medicamentos/sulfato-magnesio",
+    "medicamentos/vancomicina",
+    "medicamentos/varfarina",
+    "medicamentos/vasopressina",
+    "medicamentos/casos",
+    "medicamentos/casos?caso=apresentacao-prescrita",
+    "medicamentos/casos?caso=alarme-vasoativo",
+    "medicamentos/casos?caso=sangramento-anticoagulante",
+    "medicamentos/casos?caso=observacao-insulina",
+    "medicamentos/casos?caso=reacao-antimicrobiano",
+    "inicio",
+    "medicamentos",
+    "medicamentos/aciclovir",
+    "medicamentos/adenosina",
+    "medicamentos/adrenalina",
+    "medicamentos/amiodarona",
+    "medicamentos/cefepima",
+    "medicamentos/ceftriaxona",
+    "medicamentos/cetamina",
+    "medicamentos/cloreto-potassio",
+    "medicamentos/cloreto-sodio",
+    "medicamentos/dexmedetomidina",
+    "medicamentos/dipirona",
+    "medicamentos/dobutamina",
+    "medicamentos/dopamina",
+    "medicamentos/enoxaparina",
+    "medicamentos/espironolactona",
+    "medicamentos/fentanila",
+    "medicamentos/fluconazol",
+    "medicamentos/furosemida",
+    "medicamentos/gluconato-calcio",
+    "medicamentos/heparina-nao-fracionada",
+    "medicamentos/hidrocortisona",
+    "medicamentos/insulina-glargina",
+    "medicamentos/insulina-humana-regular",
+    "medicamentos/linezolida",
+    "medicamentos/meropenem",
+    "medicamentos/metoclopramida",
+    "medicamentos/metoprolol",
+    "medicamentos/metronidazol",
+    "medicamentos/midazolam",
+    "medicamentos/morfina",
+    "medicamentos/noradrenalina",
+    "medicamentos/omeprazol",
+    "medicamentos/ondansetrona",
+    "medicamentos/paracetamol",
+    "medicamentos/propofol",
+    "medicamentos/rivaroxabana",
+    "medicamentos/sulfato-magnesio",
+    "medicamentos/vancomicina",
+    "medicamentos/varfarina",
+    "medicamentos/vasopressina",
+    "medicamentos/casos",
+    "medicamentos/casos?caso=apresentacao-prescrita",
+    "medicamentos/casos?caso=alarme-vasoativo",
+    "medicamentos/casos?caso=sangramento-anticoagulante",
+    "medicamentos/casos?caso=observacao-insulina",
+    "medicamentos/casos?caso=reacao-antimicrobiano",
+    "favoritos",
+    "inicio",
+    "medicamentos/vancomicina",
+    "inicio",
+    "medicamentos",
+    "medicamentos/noradrenalina",
+    "medicamentos"
+  ],
+  "layouts": [
+    {
+      "route": "inicio",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/aciclovir",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/adenosina",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/adrenalina",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/amiodarona",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/cefepima",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/ceftriaxona",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/cetamina",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/cloreto-potassio",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/cloreto-sodio",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/dexmedetomidina",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/dipirona",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/dobutamina",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/dopamina",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/enoxaparina",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/espironolactona",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/fentanila",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/fluconazol",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/furosemida",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/gluconato-calcio",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/heparina-nao-fracionada",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/hidrocortisona",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/insulina-glargina",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/insulina-humana-regular",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/linezolida",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/meropenem",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/metoclopramida",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/metoprolol",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/metronidazol",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/midazolam",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/morfina",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/noradrenalina",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/omeprazol",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/ondansetrona",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/paracetamol",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/propofol",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/rivaroxabana",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/sulfato-magnesio",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/vancomicina",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/varfarina",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/vasopressina",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/casos",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/casos?caso=apresentacao-prescrita",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/casos?caso=alarme-vasoativo",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/casos?caso=sangramento-anticoagulante",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/casos?caso=observacao-insulina",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "medicamentos/casos?caso=reacao-antimicrobiano",
+      "width": 320,
+      "root": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "route": "inicio",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/aciclovir",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/adenosina",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/adrenalina",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/amiodarona",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/cefepima",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/ceftriaxona",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/cetamina",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/cloreto-potassio",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/cloreto-sodio",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/dexmedetomidina",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/dipirona",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/dobutamina",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/dopamina",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/enoxaparina",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/espironolactona",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/fentanila",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/fluconazol",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/furosemida",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/gluconato-calcio",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/heparina-nao-fracionada",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/hidrocortisona",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/insulina-glargina",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/insulina-humana-regular",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/linezolida",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/meropenem",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/metoclopramida",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/metoprolol",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/metronidazol",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/midazolam",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/morfina",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/noradrenalina",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/omeprazol",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/ondansetrona",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/paracetamol",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/propofol",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/rivaroxabana",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/sulfato-magnesio",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/vancomicina",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/varfarina",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/vasopressina",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/casos",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/casos?caso=apresentacao-prescrita",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/casos?caso=alarme-vasoativo",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/casos?caso=sangramento-anticoagulante",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/casos?caso=observacao-insulina",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "medicamentos/casos?caso=reacao-antimicrobiano",
+      "width": 390,
+      "root": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "route": "inicio",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/aciclovir",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/adenosina",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/adrenalina",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/amiodarona",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/cefepima",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/ceftriaxona",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/cetamina",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/cloreto-potassio",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/cloreto-sodio",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/dexmedetomidina",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/dipirona",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/dobutamina",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/dopamina",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/enoxaparina",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/espironolactona",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/fentanila",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/fluconazol",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/furosemida",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/gluconato-calcio",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/heparina-nao-fracionada",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/hidrocortisona",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/insulina-glargina",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/insulina-humana-regular",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/linezolida",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/meropenem",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/metoclopramida",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/metoprolol",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/metronidazol",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/midazolam",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/morfina",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/noradrenalina",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/omeprazol",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/ondansetrona",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/paracetamol",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/propofol",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/rivaroxabana",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/sulfato-magnesio",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/vancomicina",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/varfarina",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/vasopressina",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/casos",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/casos?caso=apresentacao-prescrita",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/casos?caso=alarme-vasoativo",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/casos?caso=sangramento-anticoagulante",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/casos?caso=observacao-insulina",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "medicamentos/casos?caso=reacao-antimicrobiano",
+      "width": 768,
+      "root": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "route": "inicio",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/aciclovir",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/adenosina",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/adrenalina",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/amiodarona",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/cefepima",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/ceftriaxona",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/cetamina",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/cloreto-potassio",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/cloreto-sodio",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/dexmedetomidina",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/dipirona",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/dobutamina",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/dopamina",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/enoxaparina",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/espironolactona",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/fentanila",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/fluconazol",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/furosemida",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/gluconato-calcio",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/heparina-nao-fracionada",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/hidrocortisona",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/insulina-glargina",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/insulina-humana-regular",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/linezolida",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/meropenem",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/metoclopramida",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/metoprolol",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/metronidazol",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/midazolam",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/morfina",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/noradrenalina",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/omeprazol",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/ondansetrona",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/paracetamol",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/propofol",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/rivaroxabana",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/sulfato-magnesio",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/vancomicina",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/varfarina",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/vasopressina",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/casos",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/casos?caso=apresentacao-prescrita",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/casos?caso=alarme-vasoativo",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/casos?caso=sangramento-anticoagulante",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/casos?caso=observacao-insulina",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "medicamentos/casos?caso=reacao-antimicrobiano",
+      "width": 1440,
+      "root": 1440,
+      "body": 1440,
+      "viewport": 1440
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "externalRequests": [],
+  "screenshots": [
+    {
+      "path": "/tmp/cti-medication-home-mobile.png",
+      "route": "inicio",
+      "width": 390
+    },
+    {
+      "path": "/tmp/cti-medication-entry-mobile.png",
+      "route": "medicamentos/vancomicina",
+      "width": 390
+    },
+    {
+      "path": "/tmp/cti-medication-home-desktop.png",
+      "route": "inicio",
+      "width": 1440
+    },
+    {
+      "path": "/tmp/cti-medication-index-desktop.png",
+      "route": "medicamentos",
+      "width": 1440
+    },
+    {
+      "path": "/tmp/cti-medication-entry-desktop.png",
+      "route": "medicamentos/noradrenalina",
+      "width": 1440
+    }
+  ],
+  "limits": [
+    "Chromium automatizado em Linux. Dispositivos físicos, Safari, VoiceOver, TalkBack e NVDA não foram executados.",
+    "Servidor HTTP local com simulação de dist/_headers. Cloudflare de homologação e produção não foram publicados nem testados.",
+    "Verificação de software e integridade editorial; não representa validação farmacológica, aprovação clínica ou conformidade integral com WCAG.",
+    "Fontes clínicas externas permanecem sem conferência neste ambiente; o bloqueio de acesso HTTP 403 não é prova de validação das fichas."
+  ],
+  "contrastSamples": [
+    {
+      "text": "Vasoativos",
+      "color": "rgb(123, 57, 69)",
+      "background": "rgb(249, 250, 249)",
+      "ratio": 7.985315872968856
+    },
+    {
+      "text": "Copiar link da ficha",
+      "color": "rgb(67, 92, 73)",
+      "background": "rgb(241, 244, 237)",
+      "ratio": 6.596346494691006
+    },
+    {
+      "text": "Pendente de validação clínica",
+      "color": "rgb(115, 83, 42)",
+      "background": "rgb(251, 242, 231)",
+      "ratio": 6.319491821803953
+    },
+    {
+      "text": "Vasopressor utilizado em cenários selecionados de hipotensão com hipoperfusão. Exige vigilância hemo",
+      "color": "rgb(82, 102, 80)",
+      "background": "rgb(241, 244, 237)",
+      "ratio": 5.600726773636567
+    },
+    {
+      "text": "Escopo: Noradrenalina por via intravenosa no contexto hospitalar.",
+      "color": "rgb(105, 67, 74)",
+      "background": "rgb(255, 248, 248)",
+      "ratio": 8.006096377016378
+    },
+    {
+      "text": "Sinalização educativa proposta para vasopressor intravenoso, devido ao potencial de dano grave por e",
+      "color": "rgb(105, 67, 74)",
+      "background": "rgb(255, 248, 248)",
+      "ratio": 8.006096377016378
+    },
+    {
+      "text": "Conferência da classificação: pendente. A classificação de medicamento potencialmente perigoso (MPP)",
+      "color": "rgb(105, 67, 74)",
+      "background": "rgb(255, 248, 248)",
+      "ratio": 8.006096377016378
+    },
+    {
+      "text": "Fonte indicada para conferir esta classificação: Medicamentos potencialmente perigosos de uso hospit",
+      "color": "rgb(105, 67, 74)",
+      "background": "rgb(255, 248, 248)",
+      "ratio": 8.006096377016378
+    },
+    {
+      "text": "Conferir prescrição vigente, identificação do paciente, produto, sal e via antes de qualquer cuidado",
+      "color": "rgb(67, 92, 73)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 7.327989423559539
+    },
+    {
+      "text": "Atuar dentro da competência legal e dos protocolos; a equipe de enfermagem deve observar a supervisã",
+      "color": "rgb(67, 92, 73)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 7.327989423559539
+    },
+    {
+      "text": "Inspecionar o acesso e a pele adjacente, registrar dor, palidez ou alteração de temperatura e comuni",
+      "color": "rgb(67, 92, 73)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 7.327989423559539
+    },
+    {
+      "text": "Registrar tendências de pressão, ritmo e perfusão, relacionando-as ao quadro clínico e comunicando m",
+      "color": "rgb(67, 92, 73)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 7.327989423559539
+    },
+    {
+      "text": "Manter rastreabilidade das avaliações e participar das barreiras institucionais de segurança para me",
+      "color": "rgb(67, 92, 73)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 7.327989423559539
+    },
+    {
+      "text": "Extremidade fria, pálida, cianótica ou dolorosa, especialmente se nova ou assimétrica.",
+      "color": "rgb(105, 67, 74)",
+      "background": "rgb(255, 248, 248)",
+      "ratio": 8.006096377016378
+    },
+    {
+      "text": "Dor torácica, alteração do ritmo ou piora súbita da perfusão.",
+      "color": "rgb(105, 67, 74)",
+      "background": "rgb(255, 248, 248)",
+      "ratio": 8.006096377016378
+    },
+    {
+      "text": "Dor, edema, palidez ou alteração de temperatura no local do acesso.",
+      "color": "rgb(105, 67, 74)",
+      "background": "rgb(255, 248, 248)",
+      "ratio": 8.006096377016378
+    },
+    {
+      "text": "Alteração importante da pressão ou do estado mental: comunicar imediatamente à equipe responsável.",
+      "color": "rgb(105, 67, 74)",
+      "background": "rgb(255, 248, 248)",
+      "ratio": 8.006096377016378
+    },
+    {
+      "text": "Bulário Eletrônico — localizar a bula profissional da apresentação prescrita — abre em outra aba",
+      "color": "rgb(158, 48, 65)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 7.111576200521008
+    },
+    {
+      "text": "Medicamentos potencialmente perigosos de uso hospitalar — Boletim ISMP Brasil, fevereiro de 2019 — a",
+      "color": "rgb(158, 48, 65)",
+      "background": "rgb(255, 255, 255)",
+      "ratio": 7.111576200521008
+    }
+  ],
+  "touchTargets": [
+    {
+      "label": "Todos os medicamentos",
+      "width": 200.765625,
+      "height": 48
+    },
+    {
+      "label": "Salvo",
+      "width": 90.03125,
+      "height": 50
+    },
+    {
+      "label": "Copiar link da ficha",
+      "width": 251.96875,
+      "height": 52
+    },
+    {
+      "label": "Identificação, princípio ativo e nomes comerciais",
+      "width": 352,
+      "height": 80.1875
+    },
+    {
+      "label": "Finalidade e mecanismo de ação",
+      "width": 352,
+      "height": 54.59375
+    },
+    {
+      "label": "Usos no contexto da terapia intensiva",
+      "width": 352,
+      "height": 54.59375
+    },
+    {
+      "label": "Apresentações e vias — contexto educativo",
+      "width": 352,
+      "height": 80.1875
+    },
+    {
+      "label": "Efeitos adversos",
+      "width": 352,
+      "height": 54.59375
+    },
+    {
+      "label": "Contraindicações, precauções e interações",
+      "width": 352,
+      "height": 80.1875
+    },
+    {
+      "label": "Monitorização e registros",
+      "width": 352,
+      "height": 54.59375
+    },
+    {
+      "label": "Choque séptico",
+      "width": 314,
+      "height": 49.796875
+    },
+    {
+      "label": "Choque Cardiogênico",
+      "width": 314,
+      "height": 49.796875
+    },
+    {
+      "label": "O mesmo nome não garante a mesma apresentação",
+      "width": 314,
+      "height": 73.59375
+    },
+    {
+      "label": "Alarme durante uma infusão prescrita",
+      "width": 314,
+      "height": 49.796875
+    },
+    {
+      "label": "Voltar ao Guia de Medicamentos",
+      "width": 256.625,
+      "height": 48
+    }
+  ],
+  "cspViolations": []
+}

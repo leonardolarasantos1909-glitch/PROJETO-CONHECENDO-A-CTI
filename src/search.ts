@@ -14,18 +14,19 @@ import { communicationCases, communicationSituations, familyGuidance, familySect
 import { familyCaseHref, familyLeafletPdfs, familySectionHref } from './family-catalog';
 import familyLeaflet from './data/family-leaflet.json';
 import { clinicalConditions, clinicalFavoriteId, clinicalHref, clinicalModule } from './clinical-dictionary';
+import { medications, medicationFavoriteId, medicationHref, medicationModule, medicationCases, medicationCaseHref } from './medication-guide';
 
 export type SearchResult = {
   id: string;
   title: string;
-  kind: 'Módulo' | 'Assunto' | 'Escala' | 'Siglário' | 'Ferramenta' | 'PDF' | 'Caso simulado' | 'Dicionário Clínico';
+  kind: 'Módulo' | 'Assunto' | 'Escala' | 'Siglário' | 'Ferramenta' | 'PDF' | 'Caso simulado' | 'Dicionário Clínico' | 'Medicamento';
   description: string;
   href: string;
   external?: boolean;
 };
 
 type SearchEntry = SearchResult & { aliases: string[]; body: string };
-export const searchCategories: readonly SearchResult['kind'][] = ['Módulo', 'Assunto', 'Escala', 'Siglário', 'Dicionário Clínico', 'Ferramenta', 'PDF', 'Caso simulado'];
+export const searchCategories: readonly SearchResult['kind'][] = ['Módulo', 'Assunto', 'Escala', 'Siglário', 'Dicionário Clínico', 'Medicamento', 'Ferramenta', 'PDF', 'Caso simulado'];
 
 /** Preserve letter order, while accepting accents, punctuation and subscripts. */
 export function normalizeSearch(value: string): string {
@@ -54,6 +55,11 @@ const familySectionText: Record<string, string> = {
 };
 
 const entries: SearchEntry[] = [
+  { ...medicationModule, kind: 'Módulo', aliases: ['fármacos', 'farmacologia', 'remédios', 'medicamentos potencialmente perigosos', 'MPP'], body: '' },
+  ...medications.map(item => ({ id: medicationFavoriteId(item.id), title: item.genericName, kind: 'Medicamento' as const, description: item.summary, href: medicationHref(item.id),
+    aliases: [item.activeIngredient, ...item.aliases, ...item.commercialNames.map(brand => brand.name)], body: [item.category, item.pharmacologicalClass, item.highAlert.flagged ? 'medicamento potencialmente perigoso MPP' : ''].join(' '),
+  })),
+  ...medicationCases.map(item => ({ id: `medication-case.${item.id}`, title: item.title, kind: 'Caso simulado' as const, description: item.scenario, href: medicationCaseHref(item.id), aliases: ['caso fictício de medicamento', 'farmacologia educativa'], body: item.question })),
   { ...clinicalModule, kind: 'Módulo', aliases: ['patologias', 'condições clínicas', 'dicionário'], body: '' },
   ...clinicalConditions.map(item => ({ id: clinicalFavoriteId(item.id), title: item.name, kind: 'Dicionário Clínico' as const,
     description: item.quickSummary, href: clinicalHref(item.id), aliases: [item.acronym, ...item.synonyms],
@@ -196,7 +202,7 @@ const normalizedIndex = entries.map((entry, index) => {
 });
 
 const kindOrder: Record<SearchResult['kind'], number> = {
-  Escala: 0, 'Dicionário Clínico': 1, Assunto: 2, Siglário: 3, Ferramenta: 4, PDF: 5, 'Caso simulado': 6, Módulo: 7,
+  Escala: 0, 'Dicionário Clínico': 1, Medicamento: 2, Assunto: 3, Siglário: 4, Ferramenta: 5, PDF: 6, 'Caso simulado': 7, Módulo: 8,
 };
 
 /** All query words must match one entry; return every match in a stable order. */

@@ -1,0 +1,19 @@
+
+> conhecendo-a-cti@0.1.0 test
+> vitest run && node scripts/check-sw.mjs
+
+
+ RUN  v4.1.12 /workspace/PROJETO-CONHECENDO-A-CTI
+
+
+ Test Files  24 passed (24)
+      Tests  136 passed (136)
+   Start at  18:11:10
+   Duration  8.63s (transform 4.76s, setup 0ms, import 10.64s, tests 2.36s, environment 5ms)
+
+Service worker OK: Range/If-Range, cache completo sob demanda, leitura offline, allowlist e falhas de armazenamento.
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice

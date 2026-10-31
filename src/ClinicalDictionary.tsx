@@ -1,6 +1,7 @@
 import { useEffect, useId, useRef, useState, type ReactNode } from 'react';
 import { ArrowLeft, ArrowRight, BookOpen, Check, ClipboardList, Copy, Search, ShieldCheck, TriangleAlert, X } from 'lucide-react';
 import { FavoriteButton } from './Favorites';
+import MedicationLinks from './MedicationLinks';
 import {
   clinicalCategories, clinicalConditions, clinicalFavoriteId, clinicalHref, clinicalResourceLinks,
   getClinicalCondition, relatedClinicalConditions, searchClinicalConditions,
@@ -103,6 +104,7 @@ function ClinicalConditionDetail({ condition }: { condition: ClinicalCondition }
     <section className="clinical-linked-content" aria-labelledby={`${prefix}-links`}><h3 id={`${prefix}-links`}>Conecte com a prática de enfermagem</h3><p>Equipamentos, dispositivos, escalas e materiais já disponíveis no aplicativo. A escolha de instrumentos depende da condição e da capacidade de comunicação da pessoa.</p>
       {links.length ? <ul className="clinical-resource-list">{links.map(link => <li key={`${link.href}-${link.label}`}><a href={link.href}><span><small>{link.kind}</small><strong>{link.label}</strong></span><ArrowRight size={18} aria-hidden="true"/></a></li>)}</ul> : <p>Os conteúdos relacionados desta ficha ainda precisam ser vinculados.</p>}
     </section>
+    <MedicationLinks conditionId={condition.id}/>
     <section className="clinical-related-conditions" aria-labelledby={`${prefix}-related`}><h3 id={`${prefix}-related`}>Patologias e condições relacionadas</h3><p>Relações para estudo: as condições podem coexistir, compartilhar manifestações ou ter vínculos fisiopatológicos. Uma não confirma a presença da outra.</p><ul className="clinical-related-list">{related.map(item => <li key={item.id}><a href={clinicalHref(item.id)}>{item.name}<ArrowRight size={17} aria-hidden="true"/></a></li>)}</ul></section>
     <section className="clinical-references" aria-labelledby={`${prefix}-references`}><h3 id={`${prefix}-references`}><BookOpen size={22} aria-hidden="true"/>Referências e rastreabilidade</h3><p>Fontes de consulta vinculadas a esta ficha. Conferir uma referência não equivale a revisão clínica, aprovação institucional ou garantia de vigência de todas as recomendações.</p><ul>{condition.references.map((reference, index) => <li key={`${reference.url}-${index}`}>
       <a href={reference.url} target="_blank" rel="noopener noreferrer">{reference.title}<span className="sr-only"> — abre em outra aba</span></a>

@@ -13,7 +13,17 @@ O conteúdo do QR foi decodificado e conferido localmente. A conexão ao endere�
 
 ## Baixar a versão pronta
 
-**Entrega atual — Dicionário Clínico (30/10/2026):** módulo central com 30 fichas educativas, destaque e pesquisa própria no topo da página inicial, menu direto, cuidados do técnico, sinais de alerta, referências e vínculos recíprocos com os materiais existentes. Todas as fichas permanecem pendentes de validação clínica. Nenhuma publicação em produção foi realizada.
+**Entrega atual — Guia de Medicamentos (31/10/2026):** 40 fichas educativas em 11 categorias, busca local, favoritos, relações com o Dicionário Clínico, seção de medicamentos potencialmente perigosos e cinco casos fictícios. Fontes específicas, marcas comerciais, apresentações e validação clínica continuam pendentes. Sem doses, preparo ou ajustes de tratamento; nenhuma publicação automática na Cloudflare.
+
+- [Baixar aplicativo completo com Guia de Medicamentos](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/modulos/guia-medicamentos/downloads/conhecendo-a-cti-guia-medicamentos.zip).
+- [Guia em português, seleção dos 40 itens e relatório de pendências](docs/GUIA-MEDICAMENTOS.md).
+- [Evidências técnicas e integridade](docs/medicamentos/README.md).
+
+Perder acesso à conta de hospedagem não apaga o código no GitHub. É possível publicar o ZIP pronto na nova conta após os testes e a autorização aplicável. Um endereço `workers.dev` associado a outra conta normalmente muda; o QR Code precisa ser atualizado depois que o endereço novo estiver definido. Recuperar a conta antiga é a melhor oportunidade de conservar o endereço anterior.
+
+As entregas abaixo são versões anteriores preservadas.
+
+**Dicionário Clínico (30/10/2026):** módulo central com 30 fichas educativas, destaque e pesquisa própria no topo da página inicial, menu direto, cuidados do técnico, sinais de alerta, referências e vínculos recíprocos com os materiais existentes. Todas as fichas permanecem pendentes de validação clínica. Nenhuma publicação em produção foi realizada.
 
 - [Baixar aplicativo completo com Dicionário Clínico](https://github.com/leonardolarasantos1909-glitch/PROJETO-CONHECENDO-A-CTI/raw/refs/heads/modulos/dicionario-clinico/downloads/conhecendo-a-cti-dicionario-clinico.zip).
 - [Como usar, revisar e atualizar mantendo o QR Code](docs/DICIONARIO-CLINICO.md).

@@ -13,8 +13,14 @@ try {
   const { familySections, communicationCases } = await server.ssrLoadModule('/src/family-welcome.ts');
   const { clinicalConditions, assertClinicalConditions, clinicalResources } = await server.ssrLoadModule('/src/clinical-dictionary.ts');
   assertClinicalConditions(clinicalConditions);
+  const { medications, assertMedications, medicationCases } = await server.ssrLoadModule('/src/medication-guide.ts');
+  assertMedications(medications);
+  if (medications.length !== 40) throw new Error('As 40 fichas de medicamentos iniciais são obrigatórias.');
+  for (const studyCase of medicationCases) {
+    if (studyCase.medicationIds.some(id => !medications.some(item => item.id === id)) || !studyCase.options[studyCase.answer]) throw new Error(`Caso de medicamento inválido: ${studyCase.id}`);
+  }
   if (clinicalConditions.length !== 30) throw new Error('As 30 fichas clínicas iniciais são obrigatórias.');
-  const routes = new Set(['inicio', 'modulos', 'projeto', 'caderno', 'pdf', 'primeiro-dia', 'glossario', 'favoritos', 'dicionario-clinico', ...modules.map(item => item.id), ...newTools.map(item => item.href.slice(1))]);
+  const routes = new Set(['inicio', 'modulos', 'projeto', 'caderno', 'pdf', 'primeiro-dia', 'glossario', 'favoritos', 'dicionario-clinico', 'medicamentos', ...modules.map(item => item.id), ...newTools.map(item => item.href.slice(1))]);
   assertPublishableMetadata(contentRegistry);
   const verifyLink = async (href, owner) => {
     if (href.startsWith('https://')) { new URL(href); return; }
@@ -25,6 +31,12 @@ try {
     if (target && route === 'quiz' && !caseStudies.some(item => item.id === target)) throw new Error(`Caso ausente: ${href}`);
     if (target && route === 'laboratorio' && !annotationScenarios.some(item => item.id === target)) throw new Error(`Cenário ausente: ${href}`);
     if (target && route === 'dicionario-clinico' && !clinicalConditions.some(item => item.id === target)) throw new Error(`Ficha clínica ausente: ${href}`);
+    if (route === 'medicamentos' && target) {
+      if (target === 'casos') {
+        const caseId = new URLSearchParams(href.split('?')[1]).get('caso');
+        if (caseId && !medicationCases.some(item => item.id === caseId)) throw new Error(`Caso de medicamento ausente: ${href}`);
+      } else if (!medications.some(item => item.id === target)) throw new Error(`Medicamento ausente: ${href}`);
+    }
     if (route === 'acolher-familia') {
       if (target && !familySections.some(item => item.id === target)) throw new Error(`Seção de acolhimento ausente: ${href}`);
       const caseId = new URLSearchParams(href.split('?')[1]).get('caso');

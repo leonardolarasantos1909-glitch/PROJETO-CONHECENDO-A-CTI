@@ -6,6 +6,7 @@ import { newTools } from './new-tools';
 import { communicationCases, familySections } from './family-welcome';
 import { familyCaseHref, familySectionHref } from './family-catalog';
 import { clinicalConditions, clinicalFavoriteId, clinicalHref, clinicalModule } from './clinical-dictionary';
+import { medications, medicationFavoriteId, medicationHref, medicationModule, medicationCases, medicationCaseHref } from './medication-guide';
 export { topicSlug } from './topic-identifiers';
 
 export type FavoriteEntry = { id: string; title: string; href: string; kind: string };
@@ -20,6 +21,9 @@ export function topicFavoriteId(moduleId: string, title: string): string {
 }
 
 export const favoriteCatalog: FavoriteEntry[] = [
+  { ...medicationModule, kind: 'Módulo' },
+  ...medications.map(item => ({ id: medicationFavoriteId(item.id), title: item.genericName, href: medicationHref(item.id), kind: 'Medicamento' })),
+  ...medicationCases.map(item => ({ id: `medication-case.${item.id}`, title: item.title, href: medicationCaseHref(item.id), kind: 'Caso de medicamento' })),
   { ...clinicalModule, kind: 'Módulo' },
   ...clinicalConditions.map(item => ({ id: clinicalFavoriteId(item.id), title: item.name, href: clinicalHref(item.id), kind: 'Dicionário Clínico' })),
   ...modules.map(module => ({ id: `module.${module.id}`, title: module.title, href: `#${module.id}`, kind: 'Módulo' })),

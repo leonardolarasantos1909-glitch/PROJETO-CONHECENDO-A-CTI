@@ -20,6 +20,7 @@ import { communicationCases, communicationSituations, familyGuidance, familyRefe
 import { familyCaseHref, familyContentReferences, familyLeafletPdfs, familySectionHref } from './family-catalog';
 import familyLeaflet from './data/family-leaflet.json';
 import { clinicalConditions, clinicalFavoriteId, clinicalHref, clinicalModule } from './clinical-dictionary';
+import { medications, medicationFavoriteId, medicationHref, medicationModule, medicationCases, medicationCaseHref } from './medication-guide';
 
 export type ContentReference = { label: string; href: string; page?: number };
 export type ContentMetadata = {
@@ -103,6 +104,15 @@ function additionalToolMetadata(id: string): Partial<ContentMetadata> {
 
 /** Metadata adapts the existing catalogs; it does not duplicate or silently rewrite clinical text. */
 export const contentRegistry: ContentMetadata[] = [
+  pending({ ...medicationModule, category: 'Módulo', notes: ['Guia farmacológico educativo. Quarenta fichas pendentes de conferência das bulas específicas, de nomes comerciais e de validação clínica. Não fornece prescrição, preparo, diluição, compatibilidade ou ajustes.'] }),
+  ...medications.map(item => pending({ id: medicationFavoriteId(item.id), title: item.genericName, category: 'Medicamento', description: item.summary, href: medicationHref(item.id), version: item.version,
+    references: item.references.map(ref => ({ label: `${ref.organization} — ${ref.title} (conferência pendente)`, href: ref.url })), referenceStatus: 'specific_reference_pending',
+    notes: [item.formulationsNote, item.commercialNamesNote, 'Portais de consulta não equivalem à bula aprovada de uma apresentação. A classificação MPP também depende de conferência e da instituição.'],
+  })),
+  ...medicationCases.map(item => pending({ id: `medication-case.${item.id}`, title: item.title, category: 'Caso simulado', description: item.scenario, href: medicationCaseHref(item.id),
+    references: [{ label: 'Guia de Medicamentos — fichas e pendências de referências', href: '#medicamentos' }],
+    notes: ['Criação educativa com dados inteiramente fictícios. Não certifica competência, avalia pacientes ou define condutas; revisão clínica pendente.'],
+  })),
   pending({ ...clinicalModule, category: 'Módulo', notes: ['Módulo educativo de patologias e condições críticas. As 30 fichas estão pendentes de revisão clínica; não há aprovação institucional.'] }),
   ...clinicalConditions.map(item => pending({ id: clinicalFavoriteId(item.id), title: item.name, category: 'Dicionário Clínico', description: item.quickSummary, href: clinicalHref(item.id), version: item.version,
     references: item.references.map(ref => ({ label: `${ref.organization} — ${ref.title}${ref.verification === 'pending' ? ' (conferência pendente)' : ''}`, href: ref.url })),

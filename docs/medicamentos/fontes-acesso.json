@@ -1,0 +1,25 @@
+{
+  "record_date": "2026-10-31",
+  "scope": "Tentativas de acesso técnico nesta sessão, sem leitura confirmada de bula específica e sem validação farmacológica.",
+  "verified_product_labels": 0,
+  "published_verified_commercial_names": 0,
+  "results": [
+    {
+      "url": "https://www.gov.br/anvisa/pt-br/sistemas/bulario-eletronico",
+      "standard_result": "HTTP403;curl exit22",
+      "escalated_result": "HTTP403;curl exit22",
+      "verification": "pending"
+    },
+    {
+      "url": "https://www.ismp-brasil.org/site/wp-content/uploads/2019/02/615-boletim-ismp-fevereiro-2019.pdf",
+      "standard_result": "HTTP403;curl exit22",
+      "escalated_result": "HTTP403;curl exit22",
+      "verification": "pending"
+    }
+  ],
+  "limitations": [
+    "O portal Anvisa não substitui a bula profissional da apresentação específica.",
+    "A edição 2019 do ISMP é uma referência proposta de segurança; vigência, substituição e aplicabilidade não foram confirmadas.",
+    "Todas as 80 referências cadastradas nas 40 fichas estão pendentes. Não se afirmou conferência de 80 documentos distintos."
+  ]
+}
