@@ -1,15 +1,15 @@
 .home-search {
   margin-bottom: 25px;
   padding: 25px;
-  border: 1px solid #dfe6da;
+  border: 1px solid #e4e4e4;
   border-radius: 12px;
   background: #fff;
-  color: #435c49;
+  color: #555555;
   min-width: 0;
 }
 
 .home-search h2 {
-  color: #435c49;
+  color: #555555;
   font-size: 22px;
   font-weight: 650;
   line-height: 1.4;
@@ -18,7 +18,7 @@
 
 .home-search .home-search-intro {
   margin-top: 6px;
-  color: #617660;
+  color: #707070;
   font-size: 15px;
   line-height: 1.7;
 }
@@ -41,7 +41,7 @@
   min-width: 0;
   min-height: 54px;
   padding: 0 5px 0 15px;
-  border: 1px solid #d8e1d2;
+  border: 1px solid #dedede;
   border-radius: 8px;
   background: #f8faf6;
 }
@@ -53,7 +53,7 @@
 
 .home-search .home-search-field > svg {
   flex-shrink: 0;
-  color: #617660;
+  color: #707070;
 }
 
 .home-search input {
@@ -68,7 +68,7 @@
   border-radius: 0;
   outline: none;
   background: transparent;
-  color: #293737;
+  color: #343434;
   font-size: 16px;
   line-height: 1.5;
   appearance: none;
@@ -76,7 +76,7 @@
 }
 
 .home-search input::placeholder {
-  color: #687764;
+  color: #727272;
   opacity: 1;
 }
 
@@ -102,11 +102,11 @@
   border: 0;
   border-radius: 6px;
   background: #edf1e8;
-  color: #435c49;
+  color: #555555;
 }
 
 .home-search .home-search-clear:hover {
-  background: #e0e8d8;
+  background: #e5e5e5;
 }
 
 .home-search .home-search-submit {
@@ -131,7 +131,7 @@
   flex-wrap: wrap;
   gap: 7px;
   margin-top: 13px;
-  color: #617660;
+  color: #707070;
   font-size: 14px;
 }
 
@@ -142,21 +142,21 @@
 .home-search .home-search-shortcuts button {
   min-height: 44px;
   padding: 9px 15px;
-  border: 1px solid #dfe6da;
+  border: 1px solid #e4e4e4;
   border-radius: 24px;
   background: #f1f3ed;
-  color: #435c49;
+  color: #555555;
   font-weight: 600;
 }
 
 .home-search .home-search-shortcuts button:hover {
-  border-color: #b7c6af;
-  background: #e8ede1;
+  border-color: #c1c1c1;
+  background: #ebebeb;
 }
 
 .home-search .home-search-status {
   margin: 19px 0 0;
-  color: #5d725e;
+  color: #6c6c6c;
   font-size: 14px;
   line-height: 1.8;
   overflow-wrap: anywhere;
@@ -174,7 +174,7 @@
   width: fit-content;
   max-width: 100%;
   margin: 0 0 13px;
-  color: #435c49;
+  color: #555555;
   font-size: 18px;
   font-weight: 650;
   line-height: 1.5;
@@ -201,15 +201,15 @@
   height: 100%;
   min-height: 44px;
   padding: 19px;
-  border: 1px solid #dfe6da;
+  border: 1px solid #e4e4e4;
   border-radius: 9px;
   background: #fff;
-  color: #435c49;
+  color: #555555;
   text-decoration: none;
 }
 
 .home-search .home-search-list a:hover {
-  border-color: #b7c6af;
+  border-color: #c1c1c1;
   background: #f8faf6;
 }
 
@@ -227,14 +227,14 @@
 
 .home-search .home-search-list h4 {
   margin: 4px 0 6px;
-  color: #435c49;
+  color: #555555;
   font-size: 17px;
   font-weight: 650;
   line-height: 1.5;
 }
 
 .home-search .home-search-list p {
-  color: #617660;
+  color: #707070;
   font-size: 14px;
   line-height: 1.75;
 }
@@ -252,10 +252,10 @@
   gap: 8px;
   min-height: 44px;
   padding: 11px 17px;
-  border: 1px solid #d8e1d2;
+  border: 1px solid #dedede;
   border-radius: 8px;
   background: #f1f3ed;
-  color: #435c49;
+  color: #555555;
   font-weight: 600;
 }
 
@@ -266,15 +266,15 @@
 
 .home-search .home-search-more:hover,
 .home-search .home-search-empty button:hover {
-  background: #e8ede1;
+  background: #ebebeb;
 }
 
 .home-search .home-search-empty {
   padding: 18px;
-  border: 1px solid #dfe6da;
+  border: 1px solid #e4e4e4;
   border-radius: 9px;
   background: #f8faf6;
-  color: #617660;
+  color: #707070;
   font-size: 15px;
   line-height: 1.8;
 }

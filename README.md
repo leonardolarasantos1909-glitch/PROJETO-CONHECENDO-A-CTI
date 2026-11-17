@@ -1,3 +1,24 @@
+# CTI Conecta
+
+Conectando conhecimento ao cuidado intensivo. **Aprender, acolher e cuidar.**
+
+A versão atual usa React, TypeScript, Vite, React Router e Cloudflare Workers. Consulte o [guia atual de desenvolvimento, funcionalidades e pendências](docs/CTI-CONECTA.md) e as [instruções de publicação na nova conta Cloudflare](docs/DEPLOY-CLOUDFLARE.md).
+
+```sh
+npm ci
+npm run dev
+npm test
+npm run typecheck
+npm run build
+npm run deploy:check
+```
+
+A tabela institucional de diluição e conteúdos da versão `d7a60e6` não acessível precisam ser fornecidos. O acervo disponível foi preservado e continua com revisão clínica pendente. Nenhuma publicação na nova conta está confirmada apenas pelo envio deste código.
+
+---
+
+O texto abaixo registra o histórico da base anterior. Seus ZIPs, endereços e QR Codes referem-se às versões antigas; para a versão atual, use o build e os guias acima.
+
 # Conhecendo a CTI
 
 Protótipo PWA educativo, em português, para acolhimento de estagiários de Técnico em Enfermagem em terapia intensiva. React, TypeScript, Vite, Tailwind CSS e ícones Lucide. Sem login, backend, analytics ou coleta de identificação dos estudantes. Marcações, favoritos, visitas e a página do caderno ficam somente no navegador.

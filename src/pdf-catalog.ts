@@ -17,11 +17,11 @@ export function validPdfPage(value: unknown, total: number): number {
   return Number.isSafeInteger(page) && page >= 1 && page <= total ? page : 1;
 }
 
-/** Open the original file in another tab while preserving the application. */
+/** Route known documents to the internal reader and preserve reference pages. */
 export function pdfReaderLink(href: string): { href: string; target?: '_blank'; rel?: string } {
   const [path, fragment] = href.split('#');
   const document = appPdfs.find(item => item.href === path);
   if (!document) return { href, target: '_blank', rel: 'noopener noreferrer' };
   const page = validPdfPage(new URLSearchParams(fragment).get('page'), document.pages);
-  return { href: `${document.href}#page=${page}`, target: '_blank', rel: 'noopener noreferrer' };
+  return { href: `#pdf/${document.id}?page=${page}` };
 }

@@ -11,3 +11,7 @@ test-results/
 # Histórico local da integração encerrada; não faz parte da versão independente.
 docs/historico/
 docs/inventario-google-sites.md
+
+# Generated third-party notices and local Wrangler state.
+public/licenses/
+.wrangler/

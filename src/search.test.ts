@@ -70,7 +70,7 @@ describe('Busca por nome e assunto', () => {
       if (route === 'glossario') { if (target) expect(glossaryTerms.some(term => term.id === target)).toBe(true); }
       else if (route === 'biblioteca') { if (target) expect(materialIds).toContain(target); }
       else if (route === 'quiz') { if (target) expect(caseStudies.some(studyCase => studyCase.id === target)).toBe(true); }
-      else if (['caderno', 'primeiro-dia', 'favoritos'].includes(route)) expect(target).toBeUndefined();
+      else if (['caderno', 'primeiro-dia', 'favoritos', 'clinica', 'diluicao', 'integracao', 'rcp', 'cti-virtual'].includes(route)) expect(target).toBeUndefined();
       else {
         const module = modules.find(entry => entry.id === route);
         expect(module).toBeDefined();

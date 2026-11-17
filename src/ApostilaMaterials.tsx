@@ -14,7 +14,7 @@ export function ApostilaMaterials() {
       <p>{material.description}</p>
       <div className="pdf-meta"><FileText size={14}/> PDF · {material.pages} páginas · {(material.bytes / 1024 / 1024).toLocaleString('pt-BR', { maximumFractionDigits: 1 })} MB</div>
       <div className="pdf-actions">
-        <a className="button" href={material.href} target="_blank" rel="noopener noreferrer" aria-label={`Abrir PDF: ${material.title} (outra aba ou visualizador do aparelho)`}><BookOpen size={16}/> Abrir PDF <ArrowUpRight size={15}/></a>
+        <a className="button" href={`#pdf/${material.id}`} aria-label={`Abrir PDF: ${material.title} (leitor interno)`}><BookOpen size={16}/> Abrir PDF <ArrowUpRight size={15}/></a>
         <a className="pdf-open" href={material.href} download={material.downloadFilename} aria-label={`Baixar apostila: ${material.title}`}><Download size={15}/> Baixar PDF</a>
       </div>
     </article>)}</div>
@@ -27,7 +27,7 @@ export function RelatedApostilas({ moduleId }: { moduleId: string }) {
   if (!related.length) return null;
   return <section className="apostila-related" aria-label="Apostilas relacionadas ao módulo">
     <h2>Aprofunde com as apostilas</h2>
-    <ul>{related.map(material => <li key={material.id}><a href={material.href} target="_blank" rel="noopener noreferrer"><FileText size={20}/><span><strong>{material.title}</strong><span>PDF · {material.pages} páginas</span></span><ArrowUpRight size={17}/><span className="sr-only">Abrir PDF em outra aba ou no visualizador do aparelho</span></a></li>)}</ul>
+    <ul>{related.map(material => <li key={material.id}><a href={`#pdf/${material.id}`}><FileText size={20}/><span><strong>{material.title}</strong><span>PDF · {material.pages} páginas</span></span><ArrowUpRight size={17}/><span className="sr-only">Ler PDF no aplicativo</span></a></li>)}</ul>
     <a className="apostila-library-link" href="#biblioteca">Ver todas as apostilas na Biblioteca <ArrowUpRight size={14}/></a>
   </section>;
 }

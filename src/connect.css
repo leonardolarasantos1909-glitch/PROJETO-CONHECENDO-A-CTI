@@ -1,0 +1,372 @@
+@import "@fontsource/inter/latin-400.css";
+@import "@fontsource/inter/latin-600.css";
+@import "@fontsource/poppins/latin-600.css";
+:root {
+  --brand: #b63346;
+  --brand-dark: #98253b;
+  color: #303030;
+  background: #faf9f9;
+}
+h1,
+h2,
+h3,
+.brand {
+  font-family: Poppins, Inter, sans-serif;
+}
+.button,
+.rcp-fab,
+.rcp-arrival {
+  background: var(--brand);
+  color: white;
+}
+.button:hover,
+.rcp-arrival:hover {
+  background: var(--brand-dark);
+}
+input,
+select,
+textarea {
+  font-size: 16px;
+  max-width: 100%;
+  border: 1px solid #d5cdd0;
+  border-radius: 8px;
+  padding: 10px;
+  background: white;
+  color: #303030;
+}
+.tool-form {
+  display: grid;
+  gap: 16px;
+  margin: 24px 0;
+}
+.tool-form label,
+.rcp label,
+.panel > label {
+  display: grid;
+  gap: 6px;
+}
+.tool-form output {
+  padding: 18px;
+  border: 1px solid #b63346;
+  border-radius: 10px;
+  background: #fbf0f2;
+}
+.tool-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+.rcp {
+  display: grid;
+  gap: 20px;
+}
+.rcp button:not(.button):not(.rcp-arrival) {
+  padding: 12px;
+  border: 1px solid #d5cdd0;
+  border-radius: 8px;
+  background: #fff;
+  color: #98253b;
+}
+.rcp-start {
+  justify-content: center;
+  min-height: 65px;
+}
+.rcp-clock {
+  font-size: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.rcp-clock strong {
+  font-variant-numeric: tabular-nums;
+  font-size: 36px;
+}
+.rcp-arrival {
+  border-radius: 50%;
+  width: 220px;
+  height: 220px;
+  justify-self: center;
+  padding: 30px;
+  font-size: 22px;
+  font-weight: 600;
+}
+.rcp-fab {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  border-radius: 50%;
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  z-index: 20;
+  box-shadow: 0 4px 18px #98253b40;
+}
+.report {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  background: #f7f3f4;
+  padding: 16px;
+  border-radius: 8px;
+}
+.integration-item {
+  display: flex !important;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 15px 0;
+}
+.integration-item input {
+  margin-top: 6px;
+  accent-color: #b63346;
+}
+.connect-shortcuts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 25px 0;
+}
+.connect-shortcuts a {
+  padding: 22px;
+  background: white;
+  border: 1px solid #e8d7db;
+  border-radius: 14px;
+}
+.connect-shortcuts strong,
+.connect-shortcuts span {
+  display: block;
+}
+.connect-shortcuts strong {
+  color: #98253b;
+}
+.connect-shortcuts span {
+  font-size: 13px;
+  color: #666;
+}
+.top-menu {
+  position: relative;
+}
+.top-menu summary {
+  cursor: pointer;
+  font-size: 15px;
+}
+.top-menu nav {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  z-index: 35;
+  padding: 15px;
+  background: white;
+  border: 1px solid #d5cdd0;
+  border-radius: 12px;
+  display: grid;
+  width: 210px;
+  box-shadow: 0 5px 20px #30303615;
+}
+.top-menu nav a {
+  padding: 10px;
+}
+.topbar .secondary {
+  font-size: 14px;
+  padding: 8px;
+}
+.compact-brand {
+  font-weight: 700;
+  color: #98253b;
+  font-size: 16px;
+}
+.install-hint {
+  position: fixed;
+  bottom: 95px;
+  right: 15px;
+  max-width: 330px;
+  background: white;
+  border: 1px solid #b63346;
+  border-radius: 14px;
+  padding: 18px;
+  z-index: 30;
+  box-shadow: 0 8px 28px #30303622;
+  font-size: 13px;
+}
+.install-hint button {
+  color: #98253b;
+  background: #fbecee;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 7px;
+}
+.reading-mode .sidebar,
+.reading-mode .topbar,
+.reading-mode .mobile-nav,
+.reading-mode .rcp-fab,
+.reading-mode .breadcrumb,
+.reading-mode footer,
+.reading-mode .install-hint {
+  display: none;
+}
+.reading-mode .page {
+  margin: 0;
+}
+.reading-mode main {
+  max-width: none;
+  padding: 16px;
+}
+.reading-mode main > h1,
+.reading-mode main > .page-description,
+.reading-mode main > .eyebrow {
+  display: none;
+}
+.sidebar {
+  overflow-y: auto;
+}
+.sidebar-bottom {
+  padding-top: 15px;
+}
+.sidebar-caption {
+  margin-bottom: 18px;
+}
+.sidebar nav {
+  gap: 2px;
+}
+.badge {
+  display: none !important;
+}
+.scales-tabs {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.scale-tabs {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+@media (max-width: 700px) {
+  .topbar {
+    padding: 12px 16px;
+    gap: 10px;
+    height: auto;
+    min-height: 68px;
+  }
+  .topbar > div {
+    gap: 12px;
+  }
+  .avatar {
+    display: none;
+  }
+  .connect-shortcuts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .connect-shortcuts a {
+    padding: 16px;
+  }
+  .rcp-fab {
+    bottom: 88px;
+    right: 15px;
+  }
+  .tool-actions > * {
+    flex: 1 1 140px;
+  }
+  dialog {
+    max-width: calc(100vw - 24px);
+    max-height: 90dvh;
+    overflow: auto;
+  }
+  .rcp-arrival {
+    width: 200px;
+    height: 200px;
+  }
+  .install-hint {
+    bottom: 155px;
+  }
+  .reading-mode main {
+    padding: 8px;
+  }
+}
+@media (min-width: 701px) {
+  .sidebar nav a {
+    padding: 8px 10px;
+  }
+}
+.pdf-controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 12px 0;
+}
+.pdf-controls h1 {
+  font-size: 18px;
+  flex: 1 1 230px;
+}
+.pdf-controls input[type="number"] {
+  width: 85px;
+}
+.pdf-controls button,
+.pdf-controls > a {
+  padding: 9px 14px;
+  border: 1px solid #dacdd1;
+  background: white;
+  border-radius: 8px;
+  color: #98253b;
+}
+.pdf-controls button:disabled {
+  opacity: 0.4;
+}
+.pdf-canvas {
+  width: 100%;
+  overflow: auto;
+  min-height: 250px;
+  background: #eeeaec;
+  padding: 12px;
+}
+.pdf-canvas canvas {
+  display: block;
+  margin: auto;
+}
+.full-pdf {
+  max-width: 1200px;
+  margin: auto;
+}
+.scale-tabs,
+.scales-nav {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.scales-tabs {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+.module-icon[class*="color-"] {
+  background: #faedf0;
+  color: #98253b;
+}
+.art-monitor svg path {
+  stroke: #b63346;
+}
+.home-search h2,
+.learning-shortcut h3,
+.learning-shortcut-card h3 {
+  color: #303036;
+}
+.sidebar .brand-symbol {
+  background: transparent;
+}
+.rcp-fab:focus-visible {
+  outline: 3px solid #98253b;
+  outline-offset: 4px;
+}
+
+.connect-intro {
+  margin: 24px 0;
+  color: #303036;
+}
+.connect-intro h1 {
+  font-size: 28px;
+  line-height: 1.4;
+}
+.connect-intro p {
+  color: #98253b;
+  font-size: 17px;
+  margin: 8px 0;
+}
+.connect-intro span {
+  font-size: 14px;
+  color: #666;
+}

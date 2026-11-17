@@ -36,6 +36,13 @@ const moduleAliases: Record<string, string[]> = {
 };
 
 const entries: SearchEntry[] = [
+  ...[
+    ['clinica','Enciclopédia clínica','Temas e categorias com revisão pendente.','enciclopédia clínica consulta'],
+    ['diluicao','Diluição','Tabela institucional ainda não fornecida.','diluição medicamento apresentação'],
+    ['integracao','Checklist de integração','Roteiro organizacional marcável.','integração colaborador'],
+    ['rcp','Registro de RCP','Registro manual de eventos e tempos.','RCP parada registro'],
+    ['cti-virtual','CTI virtual educativo','Explore os módulos de equipamentos, dispositivos e rotinas.','CTI virtual'],
+  ].map(([id,title,description,alias])=>({id:`tool.${id}`,title,description,kind:'Ferramenta' as const,href:`#${id}`,aliases:[alias],body:''})),
   ...modules.map(module => ({
     id: `module.${module.id}`,
     title: module.title,

@@ -1,6 +1,6 @@
 export const LAST_PAGE_KEY = 'cti-book-page-v1';
 
-const LEARNING_KEYS = ['cti-first-day-v1', 'cti-favorites-v1', LAST_PAGE_KEY, 'cti-visited'] as const;
+const LEARNING_KEYS = ['cti-first-day-v1', 'cti-favorites-v1', LAST_PAGE_KEY, 'cti-visited', 'cti-integration-v1'] as const;
 
 /** Read only known identifiers; stored values never become labels, URLs or markup. */
 export function readSavedIds(key: string, allowed: readonly string[]): string[] {

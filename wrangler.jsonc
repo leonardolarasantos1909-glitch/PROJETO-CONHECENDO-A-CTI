@@ -1,11 +1,12 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "conhecendo-a-cti",
+  "name": "projeto-cti-conect",
   "compatibility_date": "2026-11-16",
   "build": {
-    "command": "npm run build"
+    "command": "npm run build",
   },
   "assets": {
-    "directory": "./dist"
-  }
+    "directory": "./dist",
+    "not_found_handling": "single-page-application",
+  },
 }

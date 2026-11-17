@@ -9,12 +9,12 @@ describe('Acesso aos PDFs originais', () => {
     for (const id of [undefined, 'desconhecido', '__proto__', '../../outro.pdf', 'https://exemplo.com']) expect(findAppPdf(id)).toBeUndefined();
     for (const item of appPdfs) {
       expect(item.href).toMatch(/^\/materiais\/(?:apostilas\/)?[a-z0-9-]+\.pdf$/);
-      expect(pdfReaderLink(item.href)).toEqual({ href: `${item.href}#page=1`, target: '_blank', rel: 'noopener noreferrer' });
+      expect(pdfReaderLink(item.href)).toEqual({ href: `#pdf/${item.id}?page=1` });
     }
   });
-  it('abre o arquivo original e preserva a página da referência em outra aba', () => {
-    expect(pdfReaderLink('/materiais/caderno-cti-adulto-digital.pdf#page=43')).toEqual({ href: '/materiais/caderno-cti-adulto-digital.pdf#page=43', target: '_blank', rel: 'noopener noreferrer' });
-    expect(pdfReaderLink('/materiais/apostilas/cuidados-paciente-critico.pdf#page=4')).toEqual({ href: '/materiais/apostilas/cuidados-paciente-critico.pdf#page=4', target: '_blank', rel: 'noopener noreferrer' });
+  it('abre o leitor interno e preserva a página da referência', () => {
+    expect(pdfReaderLink('/materiais/caderno-cti-adulto-digital.pdf#page=43')).toEqual({ href: `#pdf/${appPdfs.find(p=>p.href==='/materiais/caderno-cti-adulto-digital.pdf')!.id}?page=43` });
+    expect(pdfReaderLink('/materiais/apostilas/cuidados-paciente-critico.pdf#page=4')).toEqual({ href: '#pdf/cuidados-paciente-critico?page=4' });
     expect(pdfReaderLink('https://www.gov.br/anvisa/')).toEqual({ href: 'https://www.gov.br/anvisa/', target: '_blank', rel: 'noopener noreferrer' });
   });
   it('aceita apenas páginas inteiras dentro do documento', () => {
