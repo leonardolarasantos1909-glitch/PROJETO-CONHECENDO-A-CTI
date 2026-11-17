@@ -50,6 +50,8 @@ O servidor de desenvolvimento não registra service worker. Para testar a experi
 
 ## Atualização manual da publicação
 
+Para publicar pelo Cloudflare Workers Builds com `npx wrangler deploy`, use a configuração estática em `wrangler.jsonc` e siga [Deploy no Cloudflare Workers](docs/DEPLOY-CLOUDFLARE.md). Esse fluxo publica `dist/` e pode ser conectado à branch `main`; o fluxo manual por ZIP abaixo continua disponível.
+
 Não há publicação automática configurada. O autor informou o endereço de teste na Cloudflare registrado acima. O responsável pode atualizar o mesmo projeto com o ZIP pronto; para gerar um pacote a partir do código, execute `npm ci` e `npm run build` e publique **somente os arquivos de `dist/`**, com `index.html` na raiz. Use HTTPS e cabeçalho `Cache-Control: no-cache` para `index.html`, `sw.js` e manifesto; os arquivos em `assets/` possuem hash e podem ter cache longo. Este protótipo usa caminhos absolutos e não está configurado para subdiretórios como GitHub Pages de projeto. Para isso, adapte conscientemente o `base`, manifesto e caminhos do service worker em uma tarefa de código.
 
 Nenhuma credencial é necessária para rodar localmente. A atualização da hospedagem é feita na conta Cloudflare do responsável. O QR Code incluído aponta para o endereço de teste informado pelo autor e permanece válido enquanto esse endereço for mantido. Teste sua abertura em Android e iPhone; se trocar o domínio ou endereço, gere e confira outro QR.
