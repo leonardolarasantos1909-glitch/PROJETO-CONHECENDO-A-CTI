@@ -1,1 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><rect width="512" height="512" rx="110" fill="#b63346"/><path d="M95 256h90l30-85 58 165 35-80h109" fill="none" stroke="white" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/><circle cx="90" cy="256" r="19" fill="white"/><circle cx="422" cy="256" r="19" fill="white"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1254 1254">
+  <defs>
+    <linearGradient id="background" x2="1" y2="1">
+      <stop stop-color="#af2b42"/>
+      <stop offset="1" stop-color="#982038"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#ed8c9c"/>
+      <stop offset=".16" stop-color="#bd465b"/>
+      <stop offset=".8" stop-color="#ae344b"/>
+      <stop offset="1" stop-color="#dd647a"/>
+    </linearGradient>
+    <clipPath id="tile">
+      <rect x="30" y="36" width="1192" height="1180" rx="305"/>
+    </clipPath>
+    <filter id="soften">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+  </defs>
+  <rect x="30" y="36" width="1192" height="1180" rx="305" fill="url(#background)"/>
+  <g clip-path="url(#tile)">
+    <rect x="34" y="40" width="1184" height="1172" rx="301" fill="none" stroke="url(#rim)" stroke-width="12" filter="url(#soften)"/>
+  </g>
+  <path d="M298 665h178l71-137 95 291 115-425 97 271h51" fill="none" stroke="#fafafa" stroke-width="48" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="298" cy="666" r="55" fill="#86182d"/>
+</svg>
